@@ -2052,7 +2052,7 @@
         "icon_size": 36,
         "icon_spacing": 10,
         "item_gap": 60,
-        "letter_spacing": 0.5,
+        "letter_spacing": 1,
         "mobile_font_size": 43,
         "mobile_icon_size": 28,
         "mobile_item_gap": 30,

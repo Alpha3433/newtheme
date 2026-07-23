@@ -2324,7 +2324,7 @@
         "mobile_item_gap": 30,
         "font_size": 35,
         "mobile_font_size": 43,
-        "letter_spacing": 0.5,
+        "letter_spacing": 1,
         "uppercase_text": false,
         "override_bold": false,
         "icon_size": 36,
