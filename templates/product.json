@@ -624,7 +624,7 @@
       ],
       "name": "Scrolling Features Bar",
       "settings": {
-        "theme_color_mode": "theme_default",
+        "theme_color_mode": "custom",
         "vertical_padding": 15,
         "item_gap": 60,
         "mobile_item_gap": 30,
