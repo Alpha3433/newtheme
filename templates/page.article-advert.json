@@ -1,0 +1,1286 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "use_theme_colors": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "listicle_eje9Jc": {
+      "type": "listicle",
+      "blocks": {
+        "header_qtrn7C": {
+          "type": "listicle-header",
+          "settings": {
+            "title": "10 Reasons Why This Revolutionary Under-Eye Device Belongs in Your Daily Beauty Routine ✨",
+            "title_size": 48,
+            "show_author_info": true,
+            "author_name": "Dr. Sarah Mitchell, MD",
+            "author_date": "Last Updated January 27, 2025",
+            "avatar_size": 50,
+            "title_size_mobile": 40,
+            "alignment": "left",
+            "margin_top": 35,
+            "margin_bottom": 40
+          }
+        },
+        "countdown_banner_KpxAhw": {
+          "type": "listicle-timer",
+          "settings": {
+            "title": "⚡ FLASH SALE ENDING SOON ⚡",
+            "subtitle": "60% OFF + FREE SERUM - Limited Stock Available!",
+            "countdown_type": "duration",
+            "countdown_hours": 2,
+            "countdown_minutes": 47,
+            "countdown_seconds": 33,
+            "countdown_deadline": "2025-09-03T23:59:59Z",
+            "hours_label": "HRS",
+            "minutes_label": "MIN",
+            "seconds_label": "SEC",
+            "background_color": "#25282a",
+            "title_color": "#ffffff",
+            "subtitle_color": "#ffffff",
+            "gap": 16,
+            "padding_vertical": 8,
+            "padding_horizontal": 20,
+            "title_size": 14,
+            "subtitle_size": 12,
+            "timer_background_color": "#d9ecfc",
+            "timer_value_color": "#25282a",
+            "timer_label_color": "#25282a",
+            "timer_separator_color": "#25282a",
+            "timer_border_radius": 6,
+            "timer_padding_vertical": 6,
+            "timer_padding_horizontal": 10,
+            "unit_min_width": 34,
+            "timer_value_size": 18,
+            "timer_label_size": 10,
+            "mobile_gap": 10,
+            "mobile_padding_vertical": 6,
+            "mobile_padding_horizontal": 15,
+            "mobile_title_size": 13,
+            "mobile_subtitle_size": 11,
+            "mobile_timer_padding_vertical": 5,
+            "mobile_timer_padding_horizontal": 8,
+            "mobile_unit_min_width": 28,
+            "mobile_timer_value_size": 16,
+            "mobile_timer_label_size": 9
+          }
+        },
+        "summary_rjTdBw": {
+          "type": "listicle-summary",
+          "settings": {
+            "content": "<p><strong>Summary:</strong> You can now achieve professional-grade under-eye rejuvenation right from home without expensive spa treatments, painful injections, or harsh chemicals! The Eye Glow Kit is simply the <strong>most advanced</strong> (and effective) red light therapy device ever created for under-eye care. Keep reading to discover why thousands are calling it a \"game-changer\"!</p>",
+            "margin_top": 30,
+            "margin_bottom": 30,
+            "padding_bottom": 25
+          }
+        },
+        "listicle_item_awJkTb": {
+          "type": "listicle-item",
+          "settings": {
+            "title": "1. Feels so luxurious you won't believe it's science-backed therapy",
+            "content": "<p>Meet the most indulgent and effective eye treatment ever created. Imagine being able to <strong>enjoy the most relaxing, spa-like experience while actually reversing years of under-eye aging.</strong> The Eye Glow Kit's red light therapy glasses feel like a luxurious retreat, but they're powered by clinically-proven technology that <strong>stimulates collagen production, reduces inflammation, and restores youthful radiance.</strong> Say goodbye to harsh chemicals, painful procedures, and disappointing results. With the Eye Glow Kit, you can pamper yourself and turn back time with each and every session!</p>",
+            "highlight_text": "clinically-proven technology",
+            "enable_container": false,
+            "enable_highlight": true,
+            "highlight_color": "#fcdef4"
+          }
+        },
+        "listicle_item_jhe3mP": {
+          "type": "listicle-item",
+          "settings": {
+            "title": "2. You can ditch expensive spa treatments and become your own aesthetician",
+            "content": "<p>Skip the $200+ spa appointments, long waiting lists, and inconsistent results. The Eye Glow Kit makes it so easy to create <strong>professional-grade results right from your bedroom.</strong> Within minutes you can achieve what dermatologists charge hundreds for, and do it in the comfort of your own space. Stop overpaying with your time and money at expensive clinics and start becoming your own skincare expert — it's relaxing, effective, affordable, and scientifically proven!</p>",
+            "highlight_text": "professional-grade results right from your bedroom",
+            "enable_container": false,
+            "enable_highlight": true,
+            "highlight_color": "#fcdef4"
+          }
+        },
+        "listicle_item_Hx9UTA": {
+          "type": "listicle-item",
+          "settings": {
+            "title": "3. As simple or advanced as you want your routine to be",
+            "content": "<p>With <strong>multiple treatment modes and customizable session lengths,</strong> you can create the perfect routine for your lifestyle. Want a quick 5-minute morning boost? Done. Prefer a luxurious 15-minute evening ritual? Perfect. Whether you're a skincare minimalist or a beauty enthusiast, you can officially personalize your under-eye care your way with the Eye Glow Kit!</p>",
+            "highlight_text": "multiple treatment modes and customizable session lengths",
+            "enable_container": false,
+            "enable_highlight": true,
+            "highlight_color": "#fcdef4"
+          }
+        },
+        "listicle_item_8Yjgb4": {
+          "type": "listicle-item",
+          "settings": {
+            "title": "4. It's the ultimate money-saver compared to professional treatments",
+            "content": "<p>By using the Eye Glow Kit to recreate professional red light therapy at home, you'll save thousands that you would typically spend on dermatologist visits, spa treatments, and injectable procedures. <strong>One single botox session costs more than this entire device!</strong> You will never want to spend $300+ on under-eye treatments again after experiencing Eye Glow Kit results.</p><p><strong>BONUS:</strong> You can get the Eye Glow Kit for just $79.99 (60% off) with FREE premium serum for a limited time here.</p>",
+            "highlight_text": "One single botox session costs more than this entire device!",
+            "enable_container": false,
+            "enable_highlight": true,
+            "highlight_color": "#fcdef4"
+          }
+        },
+        "listicle_item_mmWwjR": {
+          "type": "listicle-item",
+          "settings": {
+            "title": "5. You can finally ditch harsh chemicals and invasive procedures",
+            "content": "<p>Traditional under-eye treatments often involve <strong>harsh retinoids, chemical peels, or painful injections</strong> that can cause irritation, downtime, and unpredictable results. Red light therapy is completely natural, non-invasive, and works with your body's own healing processes. The Eye Glow Kit harnesses the power of clinically-proven wavelengths to naturally stimulate collagen production and cellular repair without any side effects.</p><p><strong>Scientific Fact:</strong> Red light therapy at 660nm has been shown to increase collagen synthesis by up to 31% in clinical studies!</p>",
+            "highlight_text": "harsh retinoids, chemical peels, or painful injections",
+            "enable_container": false,
+            "enable_highlight": true,
+            "highlight_color": "#fcdef4"
+          }
+        },
+        "listicle_item_AqwgN8": {
+          "type": "listicle-item",
+          "settings": {
+            "title": "6. It's the trending beauty secret celebrities won't stop talking about",
+            "content": "<p><strong><em>Editor's Note: A-list celebrities are obsessed with red light therapy! 🌟</em></strong> From Hollywood stars to beauty influencers, everyone is discovering the anti-aging power of targeted red light therapy. Social media is buzzing with before-and-after transformations, and the Eye Glow Kit is leading the revolution in at-home professional treatments. Join the millions who've discovered this cutting-edge technology that's reshaping the beauty industry!</p>",
+            "highlight_text": "A-list celebrities are obsessed with red light therapy!",
+            "enable_container": false,
+            "enable_highlight": true,
+            "highlight_color": "#fcdef4"
+          }
+        },
+        "listicle_item_RJxp7c": {
+          "type": "listicle-item",
+          "settings": {
+            "title": "7. Avoid the afternoon energy crash that tired eyes create",
+            "content": "<p>When your under-eyes look tired, puffy, and aged, it affects your entire appearance and confidence. <strong>The visible signs of fatigue can make you feel older and less energetic</strong> throughout the day. The Eye Glow Kit's red light therapy provides a natural \"awakening\" effect, reducing puffiness, brightening dark circles, and creating that well-rested, youthful glow that makes you look and feel more vibrant all day long.</p>",
+            "highlight_text": "The visible signs of fatigue can make you feel older and less energetic",
+            "enable_container": false,
+            "enable_highlight": true,
+            "highlight_color": "#fcdef4"
+          }
+        },
+        "listicle_item_jFPFzb": {
+          "type": "listicle-item",
+          "settings": {
+            "title": "8. It makes your entire skincare routine more effective",
+            "content": "<p><strong><em>Pro Tip: Use the Eye Glow Kit before applying your favorite eye creams for maximum absorption! 💡</em></strong> The red light therapy increases circulation and prepares your skin to better absorb nutrients from your skincare products. Many users report that their expensive eye creams work significantly better when combined with Eye Glow Kit treatments. It's like having a professional aesthetician prep your skin for optimal product penetration every single time!</p>",
+            "highlight_text": "Use the Eye Glow Kit before applying your favorite eye creams for maximum absorption!",
+            "enable_container": false,
+            "enable_highlight": true,
+            "highlight_color": "#fcdef4"
+          }
+        },
+        "listicle_item_fGD6wd": {
+          "type": "listicle-item",
+          "settings": {
+            "title": "9. There have been over 100,000+ treatments completed with SereneLift technology",
+            "content": "<p>The Eye Glow Kit has helped thousands of customers achieve dramatic under-eye transformations with <strong>over 210 five-star reviews and counting!</strong> With proven results showing visible improvements in just 30 days, our customers are obsessed with how easy and effective red light therapy can be. From busy professionals to beauty enthusiasts, people of all ages are discovering the life-changing benefits of at-home red light therapy.</p>",
+            "highlight_text": "over 210 five-star reviews and counting!",
+            "enable_container": false,
+            "enable_highlight": true,
+            "highlight_color": "#fcdef4"
+          }
+        },
+        "listicle_item_GYrWYp": {
+          "type": "listicle-item",
+          "settings": {
+            "title": "10. It comes with a risk-free 90-day money-back guarantee",
+            "content": "<p>We're so confident that the Eye Glow Kit will transform your under-eye area that we offer an industry-leading 90-day guarantee. <strong>If you don't see dramatic improvements in puffiness, dark circles, and fine lines, simply return it for a full refund.</strong> We've seen thousands of incredible transformations, and we know you'll love your results. With absolutely zero risk, there's never been a better time to experience the future of under-eye care!</p>",
+            "highlight_text": "If you don't see dramatic improvements in puffiness, dark circles, and fine lines, simply return it for a full refund.",
+            "enable_container": false,
+            "enable_highlight": true,
+            "highlight_color": "#fcdef4"
+          }
+        },
+        "limited_time_sale_tGGhdR": {
+          "type": "limited-time-sale",
+          "settings": {
+            "media_bg_color": "#d9ecfc",
+            "card_bg_color": "#ffffff",
+            "margin_top": 0,
+            "margin_bottom": 0
+          },
+          "blocks": {
+            "limited_time_sale_tGGhdR_chip": {
+              "type": "lts-chip",
+              "settings": {
+                "text": "FREE $40 PREMIUM SERUM WITH YOUR ORDER",
+                "bg_color": "#25282a"
+              }
+            },
+            "limited_time_sale_tGGhdR_headline": {
+              "type": "lts-headline",
+              "settings": {
+                "eyebrow_text": "60% OFF FOR A LIMITED TIME ONLY!",
+                "headline_accent": "$79.99",
+                "headline_strong": "(was $199.99)",
+                "eyebrow_font_size": 11,
+                "eyebrow_font_size_mobile": 10,
+                "headline_font_size": 32,
+                "headline_font_size_mobile": 28,
+                "accent_color": "#fcdef4",
+                "headline_color": "#25282a"
+              }
+            },
+            "limited_time_sale_tGGhdR_description": {
+              "type": "lts-description",
+              "settings": {
+                "text": "This exclusive offer is in high demand and stock keeps selling out.",
+                "font_size": 14,
+                "font_size_mobile": 14,
+                "text_color": "#25282a"
+              }
+            },
+            "limited_time_sale_tGGhdR_button": {
+              "type": "lts-button",
+              "settings": {
+                "text": "CLAIM 60% OFF + FREE SERUM",
+                "link": "https://radiance.com/eye-glow-kit-special",
+                "font_size": 16,
+                "font_size_mobile": 15,
+                "bg_color": "#25282a"
+              }
+            },
+            "limited_time_sale_tGGhdR_countdown": {
+              "type": "lts-countdown",
+              "settings": {
+                "label": "DEAL ENDING IN:",
+                "countdown_mode": "duration",
+                "duration_hours": 2,
+                "duration_minutes": 33,
+                "duration_seconds": 53,
+                "deadline": "2025-09-03T23:59:59Z",
+                "font_size": 16,
+                "font_size_mobile": 15,
+                "time_color": "#d22f2f",
+                "label_color": "#25282a"
+              }
+            },
+            "limited_time_sale_tGGhdR_metabox": {
+              "type": "lts-meta-box",
+              "settings": {
+                "item_1_label": "Sell-Out Risk:",
+                "item_1_value": "VERY HIGH",
+                "item_1_value_color": "#d22f2f",
+                "item_2_text": "FREE SHIPPING",
+                "bg_color": "#faf2e8",
+                "border_color": "#f0e2d3",
+                "label_color": "#6b6b6b",
+                "divider_color": "#d9cfc4",
+                "font_size": 13,
+                "font_size_mobile": 12,
+                "text_color": "#25282a"
+              }
+            },
+            "limited_time_sale_tGGhdR_guarantee": {
+              "type": "lts-guarantee",
+              "settings": {
+                "text": "90-Day Money-Back Guarantee",
+                "font_size": 12,
+                "font_size_mobile": 11,
+                "text_color": "#25282a"
+              }
+            }
+          },
+          "block_order": [
+            "limited_time_sale_tGGhdR_chip",
+            "limited_time_sale_tGGhdR_headline",
+            "limited_time_sale_tGGhdR_description",
+            "limited_time_sale_tGGhdR_button",
+            "limited_time_sale_tGGhdR_countdown",
+            "limited_time_sale_tGGhdR_metabox",
+            "limited_time_sale_tGGhdR_guarantee"
+          ]
+        },
+        "sticky_add_to_cart_qTFY6q": {
+          "type": "listicle-sticky-atc",
+          "settings": {
+            "button_text": "YES, GET 60% OFF + FREE SERUM NOW",
+            "button_link": "https://radiance.com/eye-glow-kit-special",
+            "button_text_color": "#ffffff",
+            "button_font_size": 16,
+            "button_border_radius": 8,
+            "max_width": 600,
+            "button_bg": "#25282a",
+            "button_font_size_mobile": 15,
+            "button_padding_y": 16,
+            "button_padding_x": 24,
+            "show_subtext": true,
+            "subtext": "Join 2,000+ customers who've transformed their under-eye area with the Eye Glow Kit",
+            "subtext_color": "#25282a",
+            "subtext_font_size": 13
+          }
+        },
+        "advertorial_footer_CVQtnj": {
+          "type": "advertorial-footer",
+          "settings": {
+            "disclaimer_text": "*This offer is valid for new customers only. Discount applies to first order. Cannot be combined with other offers. Terms and conditions apply.",
+            "copyright_text": "© 2025 Eye Glow Kit. All rights reserved.",
+            "show_links": true,
+            "terms_text": "Terms of Service",
+            "terms_link": "",
+            "privacy_text": "Privacy Policy",
+            "privacy_link": "",
+            "background_color": "#d9ecfc",
+            "text_color": "#25282a",
+            "link_color": "#25282a",
+            "link_hover_color": "#fcdef4",
+            "link_decoration": "underline",
+            "link_hover_decoration": "none",
+            "max_width": 1000,
+            "padding_vertical": 40,
+            "padding_horizontal": 30,
+            "gap": 20,
+            "disclaimer_font_size": 13,
+            "disclaimer_line_height": 1.5,
+            "disclaimer_alignment": "left",
+            "disclaimer_opacity": 0.9,
+            "bottom_layout": "row",
+            "bottom_alignment": "center",
+            "bottom_justify": "space-between",
+            "bottom_gap": 15,
+            "copyright_font_size": 12,
+            "copyright_opacity": 0.8,
+            "link_font_size": 12,
+            "links_gap": 10,
+            "mobile_padding_vertical": 25,
+            "mobile_padding_horizontal": 20,
+            "mobile_disclaimer_font_size": 12,
+            "mobile_disclaimer_alignment": "left",
+            "mobile_bottom_layout": "column",
+            "mobile_bottom_alignment": "center",
+            "mobile_bottom_justify": "center",
+            "mobile_bottom_gap": 10,
+            "mobile_copyright_font_size": 11,
+            "mobile_link_font_size": 11,
+            "mobile_links_gap": 8
+          }
+        }
+      },
+      "block_order": [
+        "header_qtrn7C",
+        "countdown_banner_KpxAhw",
+        "summary_rjTdBw",
+        "listicle_item_awJkTb",
+        "listicle_item_jhe3mP",
+        "listicle_item_Hx9UTA",
+        "listicle_item_8Yjgb4",
+        "listicle_item_mmWwjR",
+        "listicle_item_AqwgN8",
+        "listicle_item_RJxp7c",
+        "listicle_item_jFPFzb",
+        "listicle_item_fGD6wd",
+        "listicle_item_GYrWYp",
+        "limited_time_sale_tGGhdR",
+        "sticky_add_to_cart_qTFY6q",
+        "advertorial_footer_CVQtnj"
+      ],
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "use_theme_colors": false,
+        "section_background_color": "#ffffff",
+        "container_padding_horizontal": 40,
+        "mobile_container_padding": 20,
+        "section_text_color": "#25282a"
+      },
+      "name": "Listicle",
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 769px) {.listicle-title {font-size: 48px !important;} .item-title {font-size: 24px !important;}}",
+        "@media (max-width: 768px) {.listicle-title {font-size: 40px !important;} .item-title {font-size: 24px !important;} .item-content, .item-content p {font-size: 16px !important;}}"
+      ]
+    },
+    "article_advert_xabxnM": {
+      "type": "article-advert",
+      "blocks": {
+        "breadcrumb_D9dVyK": {
+          "type": "breadcrumb",
+          "settings": {
+            "link_1_text": "Home",
+            "link_1_url": "/",
+            "link_2_text": "Trending",
+            "link_2_url": "",
+            "link_3_text": "Beauty & Wellness",
+            "text_color": "#666666",
+            "current_page_color": "#000000",
+            "font_size": 13,
+            "margin_top": 0,
+            "margin_bottom": 8
+          }
+        },
+        "article_category_jrcztC": {
+          "type": "article_category",
+          "settings": {
+            "category_text": "TRENDING",
+            "category_color": "#000000",
+            "underline_color": "#ff8354",
+            "category_font_size": 24,
+            "category_font_weight": "600",
+            "underline_thickness": 2,
+            "underline_offset": 2,
+            "category_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": -10
+          }
+        },
+        "header_xrK36b": {
+          "type": "header",
+          "settings": {
+            "title_text": "<p>I Spent $12,000 on Anti-Aging Treatments. Then I Discovered This $249 Device That Works Better.</p>",
+            "title_highlight_text": "$249 Device",
+            "use_section_colors": true,
+            "title_size": 38,
+            "title_line_height": 1.2,
+            "title_color": "#111111",
+            "title_highlight_color": "#000000",
+            "section_subtitle": "Dermatologists don't want you to know about this NASA-inspired technology you can use at home.",
+            "subtitle_size": 18,
+            "subtitle_line_height": 1.4,
+            "subtitle_color": "#666666",
+            "subtitle_margin_top": 8,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "article_author_PBFCEC": {
+          "type": "article_author",
+          "settings": {
+            "author_image": "shopify://shop_images/female_doctor_2.png",
+            "author_image_size": 50,
+            "author_name": "<p>Jennifer Matthews</p>",
+            "publish_date": "February 14th, 2025",
+            "text_color": "#000000",
+            "author_name_font_size": 16,
+            "publish_date_font_size": 14,
+            "text_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": 1
+          }
+        },
+        "social_sharing_AktF4N": {
+          "type": "social_sharing",
+          "settings": {
+            "icon_size": 24,
+            "icon_spacing": 16,
+            "alignment": "left",
+            "share_text": "",
+            "share_text_font_size": 14,
+            "share_text_color": "#666666",
+            "icon_color": "#666666",
+            "icon_hover_color": "#333333",
+            "show_facebook": true,
+            "show_x": true,
+            "show_email": true,
+            "show_share": true,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "article_image_64z4VG": {
+          "type": "article_image",
+          "settings": {
+            "article_image": "shopify://shop_images/acne_after.png",
+            "full_width_mobile": true,
+            "border_radius": 8,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "text_block_4Bz6CK": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p><em>Image From Luvea Skincare Magazine © 2025</em></p>",
+            "text_font_size": 13,
+            "text_color": "#a7a7a7",
+            "text_alignment": "left",
+            "line_height": 1.5,
+            "highlight_words": "",
+            "highlight_background_color": "#e0e0e0",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": -2,
+            "margin_bottom": -2
+          }
+        },
+        "text_block_mQ7YAA": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p><strong>Did you know there's a clinically-proven way to reverse visible signs of aging in just 10 minutes a day, without needles, downtime, or dermatologist visits?</strong></p><p>I'm 47, and for years I watched my reflection betray me. Deep lines around my eyes. Sagging along my jawline. Age spots that makeup couldn't hide. Every morning felt like a reminder that I was losing the battle against time.</p><p>The worst part? I'd already tried everything. I've spent over $12,000 in the past three years alone. Professional microneedling at $400 per session. Prescription retinoids that burned my skin. $200 serums. Monthly hydrafacials. LED treatments at my dermatologist's office for $150 each.</p><p>They helped... temporarily. My skin would look better for a few days, then right back to square one. I was trapped in an expensive cycle with no end in sight.</p><p>My dermatologist kept pushing me toward Botox or fillers. But the thought of injecting toxins into my face every few months terrified me. Plus, those costs never end.</p><p>I was ready to accept that youthful, glowing skin was behind me.</p><p><strong>Until my sister's wedding changed everything.</strong></p><p>At the reception, I barely recognized her maid of honor—my childhood friend Rachel. We're the same age, but her skin was absolutely glowing. No visible pores. Smooth texture. That natural radiance I thought was gone forever.</p><p>She showed me a before photo from just 4 months earlier. I couldn't believe it was the same person. The transformation was dramatic—and she'd done it all at home with an LED light therapy mask she used for just 10 minutes a day.</p><p>For less than two visits to my dermatologist, I could own one forever. Three days later, mine arrived.</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "",
+            "highlight_background_color": "#e0e0e0",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 1
+          }
+        },
+        "divider_line_gkkVCA": {
+          "type": "divider_line",
+          "settings": {
+            "divider_width": 80,
+            "divider_height": 1,
+            "divider_color": "#e0e0e0",
+            "divider_alignment": "center",
+            "margin_top": 30,
+            "margin_bottom": 30
+          }
+        },
+        "article_heading_qAJbVp": {
+          "type": "article_heading",
+          "settings": {
+            "heading_text": "<p><strong>What Is This Device?</strong></p>",
+            "highlight_text": "",
+            "heading_font_size": 36,
+            "heading_line_height": 1.2,
+            "text_color": "#000000",
+            "highlight_color": "#000000",
+            "text_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": 6
+          }
+        },
+        "text_block_kwdTFC": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p>Introducing <strong>Luvea</strong>, a breakthrough LED face mask that brings professional-grade light therapy into your home.</p><p>This isn't some gimmicky beauty gadget. The technology behind LED light therapy was originally developed by NASA for wound healing in space. Dermatologists have been using it in their offices for years, charging $150-300 per session.</p><p>Luvea uses seven different wavelengths of light, each targeting specific skin concerns:</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "Luvea,NASA,seven different wavelengths",
+            "highlight_background_color": "#f5f5f5",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 20
+          }
+        },
+        "symptom_nRxQBg": {
+          "type": "symptom",
+          "settings": {
+            "symptom_title": "Red Light (630nm & 660nm)",
+            "symptom_description": "<p>Penetrates deep into skin to stimulate collagen and elastin production. This is what reduces fine lines, wrinkles, and improves skin firmness.</p>",
+            "symptom_science_text": "<p>Clinical studies show red light increases collagen density by up to 31% after 12 weeks of consistent use.</p>",
+            "symptom_icon": "shopify://shop_images/light.svg",
+            "icon_container_size": 48,
+            "icon_border_radius": 8,
+            "icon_background_color": "rgba(0,0,0,0)",
+            "highlight_words": "",
+            "highlight_background_color": "#e0e0e0",
+            "highlight_text_color": "#000000",
+            "use_section_colors": false,
+            "custom_background_color": "#f7f7f7",
+            "custom_border_color": "#000000",
+            "custom_title_color": "#111111",
+            "custom_description_color": "#333333",
+            "custom_science_color": "#666666",
+            "symptom_title_size": 18,
+            "description_size": 15,
+            "science_text_size": 13,
+            "science_icon_size": 43,
+            "custom_border_width": 0,
+            "show_supporting_divider": true,
+            "custom_divider_color": "#e0e0e0",
+            "element_vertical_gap": 14,
+            "remove_box_padding": false,
+            "box_padding_desktop": 20,
+            "box_padding_mobile": 16,
+            "margin_top": 0,
+            "margin_bottom": 14
+          }
+        },
+        "symptom_QCXihd": {
+          "type": "symptom",
+          "settings": {
+            "symptom_title": "Blue Light (415nm)",
+            "symptom_description": "<p>Destroys acne-causing bacteria beneath the skin's surface. If you struggle with breakouts, hormonal acne, or occasional blemishes, blue light is your secret weapon.</p>",
+            "symptom_science_text": "<p>Blue light therapy has been shown to reduce inflammatory acne lesions by up to 77% in clinical trials.</p>",
+            "symptom_icon": "shopify://shop_images/light_2.svg",
+            "icon_container_size": 48,
+            "icon_border_radius": 8,
+            "icon_background_color": "rgba(0,0,0,0)",
+            "highlight_words": "",
+            "highlight_background_color": "#e0e0e0",
+            "highlight_text_color": "#000000",
+            "use_section_colors": false,
+            "custom_background_color": "#f7f7f7",
+            "custom_border_color": "#000000",
+            "custom_title_color": "#111111",
+            "custom_description_color": "#333333",
+            "custom_science_color": "#666666",
+            "symptom_title_size": 18,
+            "description_size": 15,
+            "science_text_size": 13,
+            "science_icon_size": 50,
+            "custom_border_width": 0,
+            "show_supporting_divider": true,
+            "custom_divider_color": "#e0e0e0",
+            "element_vertical_gap": 14,
+            "remove_box_padding": false,
+            "box_padding_desktop": 20,
+            "box_padding_mobile": 16,
+            "margin_top": 0,
+            "margin_bottom": 14
+          }
+        },
+        "symptom_7WDTqf": {
+          "type": "symptom",
+          "settings": {
+            "symptom_title": "Near-Infrared Light (850nm)",
+            "symptom_description": "<p>The deepest penetrating wavelength that promotes healing, reduces inflammation, and improves skin tone. This is what gives you that enviable glow.</p>",
+            "symptom_science_text": "<p>Near-infrared light reduces inflammation markers and accelerates skin repair at the cellular level.</p>",
+            "symptom_icon": "shopify://shop_images/light_1.svg",
+            "icon_container_size": 48,
+            "icon_border_radius": 8,
+            "icon_background_color": "rgba(0,0,0,0)",
+            "highlight_words": "",
+            "highlight_background_color": "#e0e0e0",
+            "highlight_text_color": "#000000",
+            "use_section_colors": false,
+            "custom_background_color": "#f7f7f7",
+            "custom_border_color": "#000000",
+            "custom_title_color": "#111111",
+            "custom_description_color": "#333333",
+            "custom_science_color": "#666666",
+            "symptom_title_size": 18,
+            "description_size": 15,
+            "science_text_size": 13,
+            "science_icon_size": 50,
+            "custom_border_width": 0,
+            "show_supporting_divider": true,
+            "custom_divider_color": "#e0e0e0",
+            "element_vertical_gap": 14,
+            "remove_box_padding": false,
+            "box_padding_desktop": 20,
+            "box_padding_mobile": 16,
+            "margin_top": 0,
+            "margin_bottom": 20
+          }
+        },
+        "text_block_7A7xWi": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p>Unlike drugstore LED masks that use weak, ineffective lights, Luvea delivers medical-grade intensity without any heat, pain, or side effects. And it works on all skin types and tones—something many laser treatments can't claim.</p><p><strong>How Does It Work?</strong></p><p>Your skin cells have photoreceptors—they literally absorb light energy just like plants do. When exposed to specific wavelengths of LED light, it triggers a cascade of beneficial cellular responses. Red light penetrates 8-10mm deep, stimulating fibroblasts to produce more collagen and elastin. Blue light destroys P. acnes bacteria. Near-infrared light boosts circulation, delivering more oxygen and nutrients to skin cells.</p><p>The result? Skin that looks and acts younger at a cellular level. Most users start seeing visible improvements within 2-3 weeks. By week 8-12, the results are dramatic—reduced wrinkles, smaller pores, more even tone, and that healthy glow.</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "",
+            "highlight_background_color": "#e0e0e0",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 1
+          }
+        },
+        "article_heading_9Nprhh": {
+          "type": "article_heading",
+          "settings": {
+            "heading_text": "<p><strong>How Do You Use It?</strong></p>",
+            "highlight_text": "",
+            "heading_font_size": 36,
+            "heading_line_height": 1.2,
+            "text_color": "#000000",
+            "highlight_color": "#000000",
+            "text_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": 16
+          }
+        },
+        "article_image_XdH3ma": {
+          "type": "article_image",
+          "settings": {
+            "article_image": "shopify://shop_images/6346.png",
+            "full_width_mobile": false,
+            "border_radius": 8,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "text_block_M4bJj3": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p>This is the best part—it's ridiculously easy. No complicated routines. No painful procedures.</p><p><strong>Step 1:</strong> Cleanse your face like you normally would</p><p><strong>Step 2:</strong> Put on the mask, select your treatment mode (there are 7 preset combinations), and relax</p><p><strong>Step 3:</strong> After 10 minutes, the mask automatically shuts off. Remove it, apply your serum or moisturizer, and you're done</p><p>That's it. Ten minutes. Once a day. You can do it while you answer emails, watch TV, or meditate. The mask is completely hands-free with an adjustable strap, so you can move around while using it. And unlike some LED devices that feel hot or uncomfortable, this one stays cool and gentle on your skin.</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "10 minutes,Once a day",
+            "highlight_background_color": "#f5f5f5",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 28
+          }
+        },
+        "article_heading_cnAx4C": {
+          "type": "article_heading",
+          "settings": {
+            "heading_text": "<p><strong>My Own 90-Day Transformation</strong></p>",
+            "highlight_text": "",
+            "heading_font_size": 36,
+            "heading_line_height": 1.2,
+            "text_color": "#000000",
+            "highlight_color": "#000000",
+            "text_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": 16
+          }
+        },
+        "text_block_PRRLDU": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p>When my mask arrived, I took a no-makeup selfie in harsh bathroom lighting. Trust me, it wasn't pretty. But I wanted to track my results honestly.</p><p>The first week, I didn't notice much. By week 3, my husband commented that my skin looked \"really good lately.\" My pores appeared smaller, and I had this subtle glow even without makeup.</p><p>Week 6 was when things got dramatic. The fine lines around my eyes had noticeably softened. A dark sun spot on my cheek had lightened by at least 40%. My skin felt firmer when I touched it.</p><p>Now, at 90 days, I barely recognize myself—in the best way possible. The forehead lines that used to bother me every time I looked in the mirror? Significantly reduced. My jawline looks more defined. My skin tone is more even. And that healthy, youthful glow I thought was gone forever? It's back.</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "90 days",
+            "highlight_background_color": "#f5f5f5",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 28
+          }
+        },
+        "article_heading_FnYhDC": {
+          "type": "article_heading",
+          "settings": {
+            "heading_text": "<p><strong>Why Haven't You Heard About This Before?</strong></p>",
+            "highlight_text": "",
+            "heading_font_size": 33,
+            "heading_line_height": 1.2,
+            "text_color": "#000000",
+            "highlight_color": "#000000",
+            "text_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": 16
+          }
+        },
+        "text_block_g8RkKJ": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p>Here's the uncomfortable truth: the medical aesthetics industry is worth $60 billion annually. Dermatologists make substantial income from in-office LED treatments, Botox, fillers, and laser procedures.</p><p>If everyone knew they could achieve professional results at home for a one-time cost of $249, that's a lot of recurring revenue at risk.</p><p>Luvea uses the exact same technology and similar power output as the professional machines. The main difference? You own it. You use it in your bathroom. And you never have to book another expensive appointment.</p><p>That's why you won't find this in Sephora or Ulta. We sell directly to consumers to keep costs down and put the power literally in your hands.</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "",
+            "highlight_background_color": "#e0e0e0",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 28
+          }
+        },
+        "divider_line_nJBMdR": {
+          "type": "divider_line",
+          "settings": {
+            "divider_width": 80,
+            "divider_height": 1,
+            "divider_color": "#e0e0e0",
+            "divider_alignment": "center",
+            "margin_top": 0,
+            "margin_bottom": 30
+          }
+        },
+        "article_heading_aRhF3c": {
+          "type": "article_heading",
+          "settings": {
+            "heading_text": "<p><strong>Why Other Solutions Keep Failing You</strong></p>",
+            "highlight_text": "",
+            "heading_font_size": 36,
+            "heading_line_height": 1.2,
+            "text_color": "#000000",
+            "highlight_color": "#000000",
+            "text_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": 16
+          }
+        },
+        "comparison_table_N8TUFb": {
+          "type": "comparison_table",
+          "settings": {
+            "product_image": "shopify://shop_images/f23_fa81a25c-ee97-4579-a164-db443f4cff44.png",
+            "table_font": "inter_n4",
+            "table_font_size": 14,
+            "table_text_color": "#000000",
+            "enable_outer_border": true,
+            "outer_border_color": "#dfdfdf",
+            "outer_border_width": 1,
+            "outer_border_style": "solid",
+            "outer_border_radius": 0,
+            "table_border_color": "#e0e0e0",
+            "table_border_width": 1,
+            "table_border_style": "solid",
+            "table_border_radius": 8,
+            "enable_inner_borders": true,
+            "inner_border_width": 1,
+            "enable_alternating_rows": true,
+            "table_row_alt_background": "#f9f9f9",
+            "product_column_background": "#ffffff",
+            "feature_column_background": "#ffffff",
+            "competitor_column_background": "#f5f5f5",
+            "icon_size": 18,
+            "check_icon_color": "#000000",
+            "cross_icon_color": "#666666",
+            "feature_1": "Clinically Proven Results",
+            "competitor_1": "cross",
+            "feature_2": "No Needles or Injections",
+            "competitor_2": "cross",
+            "feature_3": "Works on All Skin Types",
+            "competitor_3": "cross",
+            "feature_4": "One-Time Cost",
+            "competitor_4": "cross",
+            "feature_5": "Pain-Free Treatment",
+            "competitor_5": "cross",
+            "feature_6": "No Downtime",
+            "competitor_6": "cross",
+            "feature_7": "90-Day Guarantee",
+            "competitor_7": "cross",
+            "feature_8": "Medical-Grade Power",
+            "competitor_8": "cross",
+            "margin_top": 0,
+            "margin_bottom": 20
+          }
+        },
+        "text_block_fRJxYV": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p><strong>Expensive Creams & Serums:</strong> At best, they work on the surface. Most active ingredients can't penetrate deep enough to stimulate real collagen production.</p><p><strong>In-Office Treatments:</strong> They work! But you're paying $150-300 per session, twice weekly. That's $1,200-2,400 per month. Most people can't sustain that.</p><p><strong>Botox & Fillers:</strong> Temporary paralysis or artificial volume. You'll need repeat treatments every 3-6 months, forever. Plus, they don't actually improve skin health.</p><p><strong>Cheap LED Devices:</strong> Most don't have enough power output or the right wavelengths to create real change. They're basically expensive night lights.</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "",
+            "highlight_background_color": "#e0e0e0",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 28
+          }
+        },
+        "article_heading_j9i7Lt": {
+          "type": "article_heading",
+          "settings": {
+            "heading_text": "<p><strong>Special Launch Pricing: 40% OFF</strong></p>",
+            "highlight_text": "40% OFF",
+            "heading_font_size": 36,
+            "heading_line_height": 1.2,
+            "text_color": "#000000",
+            "highlight_color": "#000000",
+            "text_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": 16
+          }
+        },
+        "text_block_7fYAVT": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p>Professional LED light therapy sessions cost $150-300 per visit. Dermatologists recommend at least 2 sessions per week for 12 weeks to see optimal results. That's $3,600-7,200 for three months of treatment.</p><p>Luvea costs $249. Use it every day for the rest of your life.</p><p>For the next 48 hours, we're offering Luvea at <strong>40% OFF the regular price</strong>. That brings your cost to just <strong>$149</strong>—less than the cost of a single professional LED session.</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "40% OFF,$149",
+            "highlight_background_color": "#f5f5f5",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 16
+          }
+        },
+        "icon_bullet_list_ygxh4r": {
+          "type": "icon_bullet_list",
+          "settings": {
+            "list_content": "<ul><li>FREE protective storage case ($39 value)</li><li>FREE shipping anywhere in the US</li><li>Complete user guide with treatment protocols</li><li>90-day money-back guarantee</li><li>2-year manufacturer warranty</li></ul>",
+            "icon_size": 20,
+            "list_font_size": 16,
+            "list_text_color": "#333333",
+            "line_height": 1.5,
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 20
+          }
+        },
+        "text_block_rV89zg": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p>If you use this for just 10 minutes a day for one year (365 days), that's <strong>41¢ per treatment</strong>.</p><p>Compare that to professional LED sessions ($150-300), Botox ($400-600), prescription retinoids ($80-200), or monthly facials ($150-250).</p><p>After just one month of daily use, your cost per treatment drops to mere pennies. This isn't just more effective than expensive creams and sporadic treatments—it's also the most economical way to maintain young, healthy skin long-term.</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "41¢ per treatment",
+            "highlight_background_color": "#f5f5f5",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 24
+          }
+        },
+        "cta_gtNhMc": {
+          "type": "cta",
+          "settings": {
+            "cta_text": "CLAIM MY 40% DISCOUNT NOW",
+            "cta_link": "",
+            "use_section_button_style": true,
+            "cta_background": "#000000",
+            "cta_text_color": "#ffffff",
+            "cta_border_color": "#000000",
+            "cta_font_size": 16,
+            "cta_border_radius": 8,
+            "cta_border_width": 2,
+            "cta_padding_top": 12,
+            "cta_padding_bottom": 12,
+            "cta_padding_left": 24,
+            "cta_padding_right": 24,
+            "margin_top": 8,
+            "margin_bottom": 28
+          }
+        },
+        "article_heading_nMMdKh": {
+          "type": "article_heading",
+          "settings": {
+            "heading_text": "<p><strong>You Get 90 Days to Try It Risk-Free</strong></p>",
+            "highlight_text": "",
+            "heading_font_size": 36,
+            "heading_line_height": 1.2,
+            "text_color": "#000000",
+            "highlight_color": "#000000",
+            "text_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": 16
+          }
+        },
+        "text_block_XwJUte": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p>Use Luvea for a full 90 days. If you don't see visible improvement in your skin—fewer wrinkles, clearer complexion, better texture, more radiance—return it for a complete refund.</p><p>No questions asked. No restocking fees. No hassle.</p><p>We can make this guarantee because we know the technology works. Thousands of women (and men) have transformed their skin with this device. The science is solid. The results are real.</p><p>But we also know you've been burned by products that promised miracles before. So we're putting our money where our mouth is.</p><p>Either this becomes your favorite skincare tool and you wonder how you ever lived without it, or you get every penny back. That's what a true risk-free guarantee looks like.</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "90 days,complete refund",
+            "highlight_background_color": "#f5f5f5",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 24
+          }
+        },
+        "cta_T844DB": {
+          "type": "cta",
+          "settings": {
+            "cta_text": "TRY LUVEA RISK-FREE",
+            "cta_link": "",
+            "use_section_button_style": true,
+            "cta_background": "#000000",
+            "cta_text_color": "#ffffff",
+            "cta_border_color": "#000000",
+            "cta_font_size": 16,
+            "cta_border_radius": 8,
+            "cta_border_width": 2,
+            "cta_padding_top": 12,
+            "cta_padding_bottom": 12,
+            "cta_padding_left": 24,
+            "cta_padding_right": 24,
+            "margin_top": 8,
+            "margin_bottom": 28
+          }
+        },
+        "article_heading_AweVmd": {
+          "type": "article_heading",
+          "settings": {
+            "heading_text": "<p><strong>Don't Wait—Stock Is Limited</strong></p>",
+            "highlight_text": "",
+            "heading_font_size": 36,
+            "heading_line_height": 1.2,
+            "text_color": "#000000",
+            "highlight_color": "#000000",
+            "text_alignment": "left",
+            "margin_top": 0,
+            "margin_bottom": 16
+          }
+        },
+        "text_block_jUGkCN": {
+          "type": "text_block",
+          "settings": {
+            "text_content": "<p>Click the button below to secure your Luvea mask at 40% OFF before this offer ends.</p><p>You'll be taken to our secure checkout page where you can choose your mask color (rose gold, pearl white, or matte black) and see your 40% discount automatically applied.</p><p>Your order will ship within 24 hours with tracking information sent via email.</p><p><strong>Many customers order two</strong>—one for themselves and one as a gift. With Mother's Day, birthdays, and holidays coming up, this makes an incredible present for any woman who cares about her skin.</p><p>But here's the important part: <strong>this 40% discount expires in 48 hours</strong>, and our current inventory is selling faster than expected. We manufacture these in limited batches to ensure quality control, and when this batch sells out, the next one won't arrive for 6-8 weeks. The discount definitely won't be available then.</p><p><strong>STOCK ALERT:</strong> As of this morning, we have fewer than 200 units remaining in this production run. At our current sales velocity, we expect to sell out within the next 24-36 hours.</p><p>Don't let another month go by watching your skin age when you could be actively reversing the damage. Click below to claim your Luvea mask while this offer lasts.</p>",
+            "text_font_size": 16,
+            "text_color": "#000000",
+            "text_alignment": "left",
+            "line_height": 1.6,
+            "highlight_words": "40% discount expires in 48 hours,fewer than 200 units",
+            "highlight_background_color": "#f5f5f5",
+            "highlight_text_color": "#000000",
+            "highlight_padding": 2,
+            "highlight_border_radius": 3,
+            "margin_top": 0,
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb_D9dVyK",
+        "article_category_jrcztC",
+        "header_xrK36b",
+        "article_author_PBFCEC",
+        "social_sharing_AktF4N",
+        "article_image_64z4VG",
+        "text_block_4Bz6CK",
+        "text_block_mQ7YAA",
+        "divider_line_gkkVCA",
+        "article_heading_qAJbVp",
+        "text_block_kwdTFC",
+        "symptom_nRxQBg",
+        "symptom_QCXihd",
+        "symptom_7WDTqf",
+        "text_block_7A7xWi",
+        "article_heading_9Nprhh",
+        "article_image_XdH3ma",
+        "text_block_M4bJj3",
+        "article_heading_cnAx4C",
+        "text_block_PRRLDU",
+        "article_heading_FnYhDC",
+        "text_block_g8RkKJ",
+        "divider_line_nJBMdR",
+        "article_heading_aRhF3c",
+        "comparison_table_N8TUFb",
+        "text_block_fRJxYV",
+        "article_heading_j9i7Lt",
+        "text_block_7fYAVT",
+        "icon_bullet_list_ygxh4r",
+        "text_block_rV89zg",
+        "cta_gtNhMc",
+        "article_heading_nMMdKh",
+        "text_block_XwJUte",
+        "cta_T844DB",
+        "article_heading_AweVmd",
+        "text_block_jUGkCN"
+      ],
+      "name": "Article Advert",
+      "settings": {
+        "page_width": 800,
+        "full_width_background": false,
+        "full_width_background_color": "#ffffff",
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "override_global_colors": false,
+        "override_global_typography": false,
+        "custom_font": "system_ui_n4",
+        "button_font_size": 18,
+        "button_vertical_padding": 14,
+        "button_horizontal_padding": 32,
+        "button_background_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_border_color": "#000000",
+        "button_border_radius": 8,
+        "button_border_width": 0,
+        "button_show_arrow": false,
+        "button_arrow_size": 16,
+        "enable_simple_sticky_btn": true,
+        "simple_sticky_text": "TRY RESILIA RISK-FREE",
+        "simple_sticky_url": "",
+        "simple_sticky_threshold": 300,
+        "simple_sticky_bg": "#f27b21",
+        "simple_sticky_text_color": "#ffffff",
+        "simple_sticky_font_size": 16,
+        "simple_sticky_radius": 8,
+        "simple_sticky_padding_v": 15,
+        "simple_sticky_padding_h": 30,
+        "simple_sticky_width_max": 400,
+        "section_background": "#ffffff",
+        "section_padding": 40,
+        "box_background": "#ffffff",
+        "box_border_color": "#000000",
+        "box_border_radius": 10,
+        "number_size": 20,
+        "title_size": 38,
+        "title_color": "#111111",
+        "subtitle_size": 16,
+        "subtitle_color": "#666666",
+        "symptom_title_size": 18,
+        "symptom_title_color": "#111111",
+        "description_size": 14,
+        "description_color": "#333333",
+        "science_text_size": 13,
+        "science_text_color": "#666666",
+        "science_icon_size": 50,
+        "legacy_button_background": "#000000",
+        "legacy_button_text_color": "#ffffff",
+        "legacy_button_text_size": 16,
+        "legacy_button_padding": 12,
+        "legacy_button_border_radius": 8
+      }
+    },
+    "amazon_styled_reviews_WwzEey": {
+      "type": "amazon-styled-reviews",
+      "blocks": {
+        "review_LaGCxq": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Vito A",
+            "review_title": "I Feel Like I Have Aged In Reverse",
+            "show_review_title": true,
+            "rating": 5,
+            "show_verified": true,
+            "verified_badge_text": "<p>Verified Purchase | Color: Black | Style: headphones</p>",
+            "highlight_words": "Verified Purchase",
+            "highlight_color": "#c45500",
+            "review_country": "United States",
+            "review_date": "May 5, 2024",
+            "review_content": "I've been drinking from the Hydroh bottle for 3 months now and the difference in my energy levels is unbelievable! Before, I'd struggle to get through the day without at least 4 cups of coffee, and I was basically dead on my feet by 6 pm. Now I've noticed that my natural energy levels have soared, and I'm not crashing in the afternoon. My mental clarity has definitely improved too - I'm more focused at work and I've stopped forgetting things I used to remember. I never knew something as simple as changing my water could make such a difference in how I feel.",
+            "image_aspect_ratio": "auto",
+            "helpful_count": 76,
+            "helpful_text": "people found this helpful",
+            "show_helpful_report_buttons": true,
+            "helpful_button_text": "Helpful",
+            "report_button_text": "Report"
+          }
+        },
+        "review_ExQENf": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Mark R.",
+            "review_title": "The Difference Is Unbelievable",
+            "show_review_title": true,
+            "rating": 5,
+            "show_verified": true,
+            "verified_badge_text": "<p>Verified Purchase | Size: Large | Color: Blue</p>",
+            "highlight_words": "Verified Purchase",
+            "highlight_color": "#c45500",
+            "review_country": "United States",
+            "review_date": "June 3, 2024",
+            "review_content": "For the last few years, I've been struggling with feeling 'off. I've always been active so it didn't really make sense to me. My buddy told me about this (he was very excited about it) and to be honest I didn't believe it at first. I gave it a try though and after a few weeks of drinking it 2-3x per day, I started noticing small improvements in my knee pain and overall energy levels. After a few months, 1 literally feel like I have aged in reverse, it's awesome. I love how easy it is to carry around.",
+            "image_aspect_ratio": "auto",
+            "helpful_count": 54,
+            "helpful_text": "people found this helpful",
+            "show_helpful_report_buttons": true,
+            "helpful_button_text": "Helpful",
+            "report_button_text": "Report"
+          }
+        },
+        "review_Ac87Ai": {
+          "type": "review",
+          "settings": {
+            "reviewer_name": "Sarah L.",
+            "review_title": "Life changing!",
+            "show_review_title": true,
+            "rating": 5,
+            "show_verified": true,
+            "verified_badge_text": "<p>Verified Purchase | Color: White | Size: Medium</p>",
+            "highlight_words": "Verified Purchase",
+            "highlight_color": "#c45500",
+            "review_country": "United States",
+            "review_date": "June 26, 2024",
+            "review_content": "As a busy 44-year-old mom, I was used to feeling exhausted and run down all the time. But after just a few weeks of using my new Hydroh Hydrogen Bottle, I've experienced a big change. Not only do I have the energy to keep up with my kids, but what I thought was chronic pain has melted, and my skin looks better than it has in years! It's given me a renewed sense of vitality and confidence that I never thought I'd feel again. I'm so grateful that I tried it!",
+            "image_aspect_ratio": "auto",
+            "helpful_count": 40,
+            "helpful_text": "people found this helpful",
+            "show_helpful_report_buttons": true,
+            "helpful_button_text": "Helpful",
+            "report_button_text": "Report"
+          }
+        }
+      },
+      "block_order": [
+        "review_LaGCxq",
+        "review_ExQENf",
+        "review_Ac87Ai"
+      ],
+      "name": "Amazon Style Reviews",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "header_alignment": "center",
+        "max_width": 800,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "horizontal_padding": 0,
+        "heading_size": 52,
+        "heading_color": "#0f1111",
+        "heading_weight": "700",
+        "heading_margin": 10,
+        "subheading_size": 20,
+        "subheading_color": "#565959",
+        "subheading_weight": "400",
+        "header_spacing": 30,
+        "background_color": "#ffffff",
+        "review_background": "#ffffff",
+        "review_border_color": "#d5d9d9",
+        "review_padding": 0,
+        "review_spacing": 35,
+        "review_border_width": 0,
+        "review_border_radius": 0,
+        "review_shadow": "none",
+        "avatar_size": 40,
+        "avatar_spacing": 12,
+        "avatar_placeholder_bg": "#dddddd",
+        "avatar_placeholder_text": "#666666",
+        "review_header_spacing": 6,
+        "name_size": 16,
+        "name_color": "#0f1111",
+        "name_weight": "600",
+        "title_size": 16,
+        "title_color": "#0f1111",
+        "title_weight": "600",
+        "meta_spacing": 6,
+        "meta_margin": 0,
+        "star_size": 20,
+        "star_color": "#ffa41c",
+        "star_empty_color": "#dddddd",
+        "badge_background": "#ffffff",
+        "badge_color": "#c45500",
+        "badge_padding": "0",
+        "badge_radius": 0,
+        "badge_size": 12,
+        "badge_weight": "600",
+        "date_color": "#565959",
+        "date_size": 13,
+        "content_size": 16,
+        "content_color": "#0f1111",
+        "content_line_height": 1.5,
+        "content_margin": 16,
+        "review_image_height": 100,
+        "image_gap": 10,
+        "image_margin": 12,
+        "image_border_radius": 0,
+        "helpful_color": "#565959",
+        "helpful_size": 16,
+        "helpful_weight": "600",
+        "helpful_margin": 10,
+        "action_buttons_margin": 12,
+        "action_buttons_spacing": 8,
+        "action_button_size": 13,
+        "helpful_button_color": "#767676",
+        "helpful_button_hover_color": "#555555",
+        "helpful_clicked_color": "#00a652",
+        "report_button_color": "#767676",
+        "report_button_hover_color": "#555555",
+        "divider_color": "#767676",
+        "action_button_padding": "4px 0",
+        "divider_spacing": 6
+      }
+    }
+  },
+  "order": [
+    "main",
+    "listicle_eje9Jc",
+    "article_advert_xabxnM",
+    "amazon_styled_reviews_WwzEey"
+  ]
+}

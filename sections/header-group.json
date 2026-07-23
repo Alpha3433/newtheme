@@ -1,0 +1,114 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement_bar_HdjCdC": {
+      "type": "announcement-bar",
+      "custom_css": [
+        ".announcement-text {font-size: 15px;}"
+      ],
+      "name": "Countdown Banner",
+      "settings": {
+        "use_theme_colors": true,
+        "sticky_with_header": false,
+        "announcement_text": "TONIGHT ONLY: BUY 1 GET 1 FREE",
+        "show_days": false,
+        "custom_date": false,
+        "end_date": "2026-5-26 23:59:59",
+        "timezone": "America/New_York",
+        "days_label": "DAYS",
+        "hours_label": "HRS",
+        "minutes_label": "MIN",
+        "seconds_label": "SEC",
+        "hide_shine_effect": true,
+        "text_color": "#000000",
+        "timer_bg_color": "#000000",
+        "timer_text_color": "#282828",
+        "label_text_color": "#282828",
+        "gradient_color_1": "#cc0000",
+        "gradient_color_2": "#ff0000",
+        "gradient_color_3": "#aa0000",
+        "gradient_color_4": "#ff0000"
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        ".country-filter * {background: none !important; background-image: none !important; background-color: transparent !important; border: none !important; box-shadow: none !important;}",
+        ".country-filter *::before,.country-filter *::after {background: none !important; background-image: none !important; background-color: transparent !important; display: none !important;}",
+        ".country-filter .field__input {background-color: #ffffff !important; border: 1px solid #e0e0e0 !important;}"
+      ],
+      "settings": {
+        "logo_position": "middle-center",
+        "mobile_logo_position": "center",
+        "menu": "main-menu",
+        "menu_type_desktop": "dropdown",
+        "sticky_header_type": "on-scroll-up",
+        "show_line_separator": true,
+        "full_width_header": false,
+        "header_horizontal_padding": 30,
+        "enable_top_border": true,
+        "top_border_width": 1,
+        "top_border_style": "solid",
+        "top_border_color": "#282828",
+        "use_theme_colors": true,
+        "use_global_gradient": true,
+        "enable_country_selector": false,
+        "enable_language_selector": true,
+        "enable_customer_avatar": true,
+        "cart_icon_type": "cart",
+        "margin_bottom": 0,
+        "padding_top": 2,
+        "padding_bottom": 2
+      }
+    },
+    "sticky_add_to_cart_QBhMc4": {
+      "type": "sticky-add-to-cart",
+      "name": "Sticky Add to Cart",
+      "settings": {
+        "trigger_behavior": "atc_button",
+        "scroll_percentage_trigger": 25,
+        "select_button_behavior": "atc",
+        "show_section_numbers": false,
+        "scroll_offset": 100,
+        "scroll_to_percentage": 50,
+        "button_link": "",
+        "button_text": "CLAIM LIMITED OFFER",
+        "satc_toggle_variant": false,
+        "delivery_days": 4,
+        "title_color": "#000000",
+        "title_desktop_font_size": 16,
+        "title_letter_spacing": 0,
+        "rating_text": "",
+        "use_theme_colors": true,
+        "use_global_button_styling": true,
+        "custom_button_padding_y": 15,
+        "custom_button_font_size": 14,
+        "button_bg_color": "#ef4a65",
+        "button_hover_color": "#7bdbf1",
+        "button_text_color": "#ffffff",
+        "star_color": "#99e9ff",
+        "background_color": "#ffffff",
+        "border_radius": 6,
+        "z_index": 9900,
+        "rating_text_color": "#333333",
+        "rating_text_font_weight": "var(--font-weight-regular)",
+        "rating_text_desktop_font_size": 14,
+        "rating_text_letter_spacing": 0,
+        "delivery_text_color": "#333333",
+        "delivery_text_font_weight": "var(--font-weight-regular)",
+        "delivery_text_desktop_font_size": 14,
+        "delivery_text_mobile_font_size": 11,
+        "delivery_text_letter_spacing": 0,
+        "delivery_date_display_format": "weekday_month_day",
+        "turn_off_delivery_date": false,
+        "delivery_text_prefix": "Arrives by"
+      }
+    }
+  },
+  "order": [
+    "announcement_bar_HdjCdC",
+    "header",
+    "sticky_add_to_cart_QBhMc4"
+  ]
+}
