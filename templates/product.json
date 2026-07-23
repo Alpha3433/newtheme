@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "shop_product_details_JbqzwH": {
@@ -3088,27 +3079,425 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "scrolling_features_bar_b": {
+      "type": "scrolling-features-bar",
+      "blocks": {
+        "feature_item_WgQWBw": {
+          "type": "feature_item",
+          "settings": {
+            "text": "CLINICALLY STUDIED",
+            "icon_type": "svg",
+            "icon": ""
+          }
+        },
+        "feature_item_fwtitn": {
+          "type": "feature_item",
+          "settings": {
+            "text": "THIRD PARTY TESTED",
+            "icon_type": "svg",
+            "icon": ""
+          }
+        },
+        "feature_item_TzGn98": {
+          "type": "feature_item",
+          "settings": {
+            "text": "WORKS FOR MEN & WOMEN",
+            "icon_type": "svg",
+            "icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_WgQWBw",
+        "feature_item_fwtitn",
+        "feature_item_TzGn98"
+      ],
+      "name": "Scrolling Features Bar",
+      "settings": {
+        "theme_color_mode": "theme_default",
+        "vertical_padding": 15,
+        "item_gap": 60,
+        "mobile_item_gap": 30,
+        "font_size": 35,
+        "mobile_font_size": 43,
+        "letter_spacing": 1,
+        "uppercase_text": false,
+        "override_bold": false,
+        "icon_size": 36,
+        "mobile_icon_size": 28,
+        "icon_spacing": 10,
+        "slider_direction": "left",
+        "scrolling_velocity": 25,
+        "pause_on_hover": false,
+        "background_color": "#ef4a65",
+        "text_color": "#ffffff",
+        "icon_color": "#ffffff",
+        "use_gradient_background": true,
+        "background_gradient": "linear-gradient(90deg, rgba(251, 121, 72, 1), rgba(255, 196, 95, 1) 97%)",
+        "enable_top_border": false,
+        "top_border_width": 1,
+        "top_border_style": "solid",
+        "top_border_color": "#e5e5e5",
+        "enable_bottom_border": false,
+        "bottom_border_width": 1,
+        "bottom_border_style": "solid",
+        "bottom_border_color": "#e5e5e5"
+      }
+    },
+    "scrolling_features_bar_c": {
+      "type": "scrolling-features-bar",
+      "blocks": {
+        "feature_item_WgQWBw": {
+          "type": "feature_item",
+          "settings": {
+            "text": "CLINICALLY STUDIED",
+            "icon_type": "svg",
+            "icon": ""
+          }
+        },
+        "feature_item_fwtitn": {
+          "type": "feature_item",
+          "settings": {
+            "text": "THIRD PARTY TESTED",
+            "icon_type": "svg",
+            "icon": ""
+          }
+        },
+        "feature_item_TzGn98": {
+          "type": "feature_item",
+          "settings": {
+            "text": "WORKS FOR MEN & WOMEN",
+            "icon_type": "svg",
+            "icon": ""
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_WgQWBw",
+        "feature_item_fwtitn",
+        "feature_item_TzGn98"
+      ],
+      "name": "Scrolling Features Bar",
+      "settings": {
+        "theme_color_mode": "theme_default",
+        "vertical_padding": 15,
+        "item_gap": 60,
+        "mobile_item_gap": 30,
+        "font_size": 35,
+        "mobile_font_size": 43,
+        "letter_spacing": 1,
+        "uppercase_text": false,
+        "override_bold": false,
+        "icon_size": 36,
+        "mobile_icon_size": 28,
+        "icon_spacing": 10,
+        "slider_direction": "left",
+        "scrolling_velocity": 25,
+        "pause_on_hover": false,
+        "background_color": "#ef4a65",
+        "text_color": "#ffffff",
+        "icon_color": "#ffffff",
+        "use_gradient_background": true,
+        "background_gradient": "linear-gradient(90deg, rgba(251, 121, 72, 1), rgba(255, 196, 95, 1) 97%)",
+        "enable_top_border": false,
+        "top_border_width": 1,
+        "top_border_style": "solid",
+        "top_border_color": "#e5e5e5",
+        "enable_bottom_border": false,
+        "bottom_border_width": 1,
+        "bottom_border_style": "solid",
+        "bottom_border_color": "#e5e5e5"
+      }
+    },
+    "testimonials_reflow": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_1": {
+          "type": "testimonial",
+          "settings": {
+            "show_stars": true,
+            "content": "<p>My dermatologist actually told me about pumpkin seed oil as a natural DHT blocker. Found this brand and the 2000mg dose is the highest I've seen anywhere. Results speak for themselves.</p>",
+            "author_name": "Sarah, 64",
+            "rating": 5,
+            "verified": true,
+            "show_purchase_date": false
+          }
+        },
+        "testimonial_2": {
+          "type": "testimonial",
+          "settings": {
+            "show_stars": true,
+            "content": "<p>My crown was the problem area. Not fully bald but noticeably thin when photos were taken from behind. 90 days on these and there's clear regrowth in that area. My barber noticed before I even mentioned it which was the best confirmation I could get.</p>",
+            "author_name": "Michael, 35",
+            "rating": 5,
+            "verified": true,
+            "show_purchase_date": false
+          }
+        },
+        "testimonial_3": {
+          "type": "testimonial",
+          "settings": {
+            "show_stars": true,
+            "content": "<p>I looked into prescription options but the side effects put me off completely. These are completely natural and I've had zero issues taking them. Hair is noticeably thicker at the 10 week mark and I feel like I'm not constantly losing hair anymore. Will keep taking these indefinitely.</p>",
+            "author_name": "Jessica, 42",
+            "rating": 4,
+            "verified": true,
+            "show_purchase_date": false
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_1",
+        "testimonial_2",
+        "testimonial_3"
+      ],
+      "settings": {
+        "use_theme_colors": true,
+        "section_background": "linear-gradient(180deg, rgba(26, 26, 26, 1), rgba(42, 42, 42, 1) 100%)",
+        "heading_color": "#ffffff",
+        "subtitle_color": "#cccccc",
+        "text_color": "#ffffff",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "heading": "Customer",
+        "heading_size": 42,
+        "heading_size_mobile": 40,
+        "heading_accent": "Testimonials",
+        "subtitle": "Real experiences from real customers who love our products and service.",
+        "subtitle_size": 18,
+        "override_global_accent": false,
+        "accent_color": "#ef4a65",
+        "use_accent_gradient": false,
+        "accent_text_gradient": "linear-gradient(45deg, rgba(239, 74, 101, 1), rgba(255, 107, 157, 1) 100%)",
+        "accent_font_family": "inherit",
+        "accent_font_style": "normal",
+        "accent_font_weight": "inherit",
+        "accent_text_margin_left": 0,
+        "use_trustpilot_stars": false,
+        "trustpilot_star_color": "#00b67a",
+        "trustpilot_star_empty_color": "#dcdce6",
+        "testimonial_title_size": 18,
+        "testimonial_title_size_mobile": 16,
+        "testimonial_content_size": 14,
+        "testimonial_content_size_mobile": 13,
+        "author_name_size": 12,
+        "author_avatar_text_size": 16,
+        "verified_badge_size": 12,
+        "verified_badge_size_mobile": 11,
+        "verified_icon_size": 10,
+        "purchase_date_size": 12,
+        "purchase_date_size_mobile": 11,
+        "card_rating_size": 16,
+        "show_rating": true,
+        "enable_mask_fade": false,
+        "rating_summary_text": "<p>Excellent 4.8/5 based on 2,500+ customer reviews</p>",
+        "rating_value": 4.8,
+        "rating_max": 5,
+        "summary_star_color": "#ffd700",
+        "summary_star_empty_color": "#e5e5e5",
+        "rating_summary_text_color": "#333333",
+        "star_color": "#9acd32",
+        "star_empty_color": "#e5e5e5",
+        "rating_summary_bg_color": "#f8f8f8",
+        "rating_summary_background": "linear-gradient(45deg, rgba(248, 248, 248, 1), rgba(232, 232, 232, 1) 100%)",
+        "enable_rating_summary_border": false,
+        "rating_summary_border_width": 1,
+        "rating_summary_border_style": "solid",
+        "rating_summary_border_color": "#e5e5e5",
+        "rating_summary_border_radius": 25,
+        "card_background": "#2a2a2a",
+        "card_text_color": "#ffffff",
+        "testimonial_title_color": "#ffffff",
+        "card_border_radius": 12,
+        "card_gap": 20,
+        "card_width_mobile": 85,
+        "card_width_desktop": 320,
+        "enable_card_border": false,
+        "card_border_width": 1,
+        "card_border_style": "solid",
+        "card_border_color": "#e5e5e5",
+        "avatar_color": "#9acd32",
+        "avatar_text_color": "#000000",
+        "verified_color": "#4caf50",
+        "verified_text": "Verified customer",
+        "author_info_bg_color": "#f8f8f8",
+        "enable_author_info_border": false,
+        "author_info_border_width": 1,
+        "author_info_border_style": "solid",
+        "author_info_border_color": "#e5e5e5",
+        "author_info_border_radius": 50,
+        "purchase_date_prefix": "Purchased on",
+        "purchase_date_color": "#666666",
+        "purchase_date_icon_color": "#666666",
+        "show_navigation": true,
+        "show_dots": true,
+        "nav_button_bg": "#ffffff",
+        "nav_button_color": "#000000",
+        "nav_button_border": "#e5e5e5",
+        "nav_button_radius": 25,
+        "dot_color": "#ffffff",
+        "anchor_id": ""
+      }
+    },
+    "product_benefits_reflow": {
+      "type": "product-benefits",
+      "blocks": {
+        "benefit_8hTXxD": {
+          "type": "benefit",
+          "settings": {
+            "title": "DUAL DHT BLOCKING FORMULA",
+            "description": "Pumpkin seed oil and saw palmetto work through two separate pathways to block DHT, the hormone responsible for shrinking follicles and causing hair loss. Two blockers are significantly more powerful than one.",
+            "benefit_color": "#ffffff",
+            "benefit_description_color": "#b4b4b4",
+            "icon_size": 24,
+            "use_image": true,
+            "preset_icon": "check",
+            "use_custom_icon": true,
+            "custom_icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 640 640\"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill=\"#333030\" d=\"M576 96C576 204.1 499.4 294.3 397.6 315.4C389.7 257.3 363.6 205 325.1 164.5C365.2 104 433.9 64 512 64L544 64C561.7 64 576 78.3 576 96zM64 160C64 142.3 78.3 128 96 128L128 128C251.7 128 352 228.3 352 352L352 544C352 561.7 337.7 576 320 576C302.3 576 288 561.7 288 544L288 384C164.3 384 64 283.7 64 160z\"></path></svg>"
+          }
+        },
+        "benefit_JUa9Gz": {
+          "type": "benefit",
+          "settings": {
+            "title": "2,000MG THERAPEUTIC DOSE",
+            "description": "Most competitors use 400-1,000mg, the minimum to put it on the label. We use 2,000mg cold-pressed virgin pumpkin seed oil per serving because that's the dose that actually moves the needle.",
+            "benefit_color": "",
+            "benefit_description_color": "#b4b4b4",
+            "icon_size": 24,
+            "use_image": true,
+            "preset_icon": "clock",
+            "use_custom_icon": true,
+            "custom_icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 640 640\"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d=\"M256 64L256 144L384 144L384 120L456 120C469.3 120 480 109.3 480 96C480 82.7 469.3 72 456 72L384 72L384 64C384 46.3 369.7 32 352 32L288 32C270.3 32 256 46.3 256 64zM224 192C188.7 192 160 220.7 160 256L160 512C160 547.3 188.7 576 224 576L416 576C451.3 576 480 547.3 480 512L480 256C480 220.7 451.3 192 416 192L224 192zM288 312C288 303.2 295.2 296 304 296L336 296C344.8 296 352 303.2 352 312L352 352L392 352C400.8 352 408 359.2 408 368L408 400C408 408.8 400.8 416 392 416L352 416L352 456C352 464.8 344.8 472 336 472L304 472C295.2 472 288 464.8 288 456L288 416L248 416C239.2 416 232 408.8 232 400L232 368C232 359.2 239.2 352 248 352L288 352L288 312z\"></path></svg>"
+          }
+        },
+        "benefit_inyExA": {
+          "type": "benefit",
+          "settings": {
+            "title": "COLD-PRESSED FOR MAXIMUM POTENCY",
+            "description": "Heat extraction destroys the active compounds that make pumpkin seed oil effective. Our oil is cold-pressed and virgin,  preserving 100% of the beta-sitosterol your follicles need.",
+            "benefit_color": "#ffffff",
+            "benefit_description_color": "#b4b4b4",
+            "icon_size": 24,
+            "use_image": true,
+            "preset_icon": "sparkle",
+            "use_custom_icon": true,
+            "custom_icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 640 640\"><!--!Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d=\"M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z\"></path></svg>"
+          }
+        },
+        "benefit_9kXR4i": {
+          "type": "benefit",
+          "settings": {
+            "title": "WORKS FROM THE INSIDE OUT",
+            "description": "Topical treatments sit on the surface. Our softgel format delivers nutrients directly into your bloodstream, reaching follicles at the root level where hair loss actually starts.",
+            "benefit_color": "#ffffff",
+            "benefit_description_color": "#b4b4b4",
+            "icon_size": 24,
+            "use_image": true,
+            "preset_icon": "check",
+            "use_custom_icon": false,
+            "custom_icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 24 24\" fill=\"currentColor\"><path d=\"M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z\"></path></svg>"
+          }
+        }
+      },
+      "block_order": [
+        "benefit_8hTXxD",
+        "benefit_JUa9Gz",
+        "benefit_inyExA",
+        "benefit_9kXR4i"
+      ],
+      "name": "Product Benefits",
+      "settings": {
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "padding_left": 25,
+        "padding_right": 25,
+        "image_position_desktop": "right",
+        "heading_size_mobile": 45,
+        "heading_size_desktop": 56,
+        "subtitle_size_mobile": 13,
+        "subtitle_size_desktop": 13,
+        "benefit_title_size_mobile": 14,
+        "benefit_title_size_desktop": 14,
+        "benefit_description_size_mobile": 12,
+        "benefit_description_size_desktop": 12,
+        "accent_color": "#ffffff",
+        "use_theme_colors": false,
+        "title_below_icon": false,
+        "override_global_accent": false,
+        "accent_font_family": "inherit",
+        "accent_font_style": "normal",
+        "accent_font_weight": "inherit",
+        "use_accent_gradient": true,
+        "accent_text_gradient": "linear-gradient(180deg, rgba(251, 121, 72, 1) 26%, rgba(255, 192, 86, 1) 100%)",
+        "accent_text_margin_left": 0,
+        "list_background": "linear-gradient(180deg, rgba(40, 40, 40, 1), rgba(24, 27, 29, 1) 100%)",
+        "list_border_radius": 0,
+        "benefits_list_max_width": 450,
+        "border_color": "#333030",
+        "heading_accent": "From Within",
+        "heading_regular": "Healthy Hair Starts",
+        "subtitle": "No topicals, no prescriptions, no complicated routines. Just two clinically studied compounds that target hair loss at the source.",
+        "show_image": false,
+        "media_type": "image",
+        "image_alt": "Feature product image",
+        "video_autoplay": true,
+        "video_muted": true,
+        "video_loop": true,
+        "video_controls": false,
+        "mobile_image_full_width": true,
+        "hide_media_on_desktop": true,
+        "image_column_full_height": false,
+        "image_margin_top": 0,
+        "image_margin_bottom": -30,
+        "heading_color": "#ffffff",
+        "subtitle_color": "#b4b4b4",
+        "description_color": "#333030",
+        "section_background": "linear-gradient(0deg, rgba(255, 236, 162, 1) 2.518%, rgba(255, 197, 99, 1) 20%, rgba(251, 121, 72, 1) 35%, rgba(40, 40, 40, 1) 67%)",
+        "use_background_image": true,
+        "background_image_size": "cover",
+        "background_image_position_mode": "preset",
+        "background_image_position": "center center",
+        "background_focal_point_x": 4,
+        "background_focal_point_y": 100,
+        "background_image_attachment": "scroll",
+        "background_overlay_enable": false,
+        "background_overlay_color": "#0000004d",
+        "background_overlay_opacity": 30,
+        "enable_top_border": true,
+        "top_border_width": 1,
+        "top_border_style": "solid",
+        "top_border_color": "#282828",
+        "enable_bottom_border": true,
+        "bottom_border_width": 1,
+        "bottom_border_style": "solid",
+        "bottom_border_color": "#282828"
+      }
     }
   },
   "order": [
     "shop_product_details_JbqzwH",
-    "image_with_text_MnK3Cx",
-    "divider_cH7pyC",
-    "before_after_KeXf6z",
+    "scrolling_features_bar_xXQrtb",
     "as_seen_in_logos_hpfJT6",
+    "testimonials_reflow",
+    "scrolling_features_bar_b",
     "4_benefits_jtwY6M",
-    "4_cards_WYHJLQ",
-    "roadmap_GEaDNe",
-    "statistics_grid_pXC34G",
     "steps_XmnA8k",
+    "product_benefits_reflow",
+    "scrolling_features_bar_c",
+    "image_with_text_MnK3Cx",
     "image_with_text_xJRmMd",
     "image_with_text_4Nrjxn",
     "alternating_features_VLaNd9",
-    "scrolling_features_bar_xXQrtb",
+    "4_cards_WYHJLQ",
+    "roadmap_GEaDNe",
     "product_comparison_ahRqAP",
+    "statistics_grid_pXC34G",
+    "before_after_KeXf6z",
     "customer_reviews_carousel_GEVJYY",
     "satisfaction_guarantee_J4ypTy",
     "store_faq_hidFcc",
+    "divider_cH7pyC",
     "17740590596d2788d8",
     "1773652095685ba445",
     "17738904936c54e966"
