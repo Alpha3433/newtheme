@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "shop_product_details_JbqzwH": {
@@ -519,12 +510,67 @@
             "margin_top": 0,
             "margin_bottom": 0
           }
+        },
+        "limited_inventory_urgency": {
+          "type": "limited_inventory",
+          "settings": {
+            "inventory_text": "Low stock — high demand this week",
+            "bold_first_word": true,
+            "show_dot": true,
+            "dot_color": "#d93c55",
+            "text_color": "#d93c55",
+            "font_size": 13,
+            "margin_top": 10,
+            "margin_bottom": 5
+          }
+        },
+        "selling_out_fast_urgency": {
+          "type": "selling_out_fast",
+          "settings": {
+            "show_icon": true,
+            "icon_type": "fire",
+            "icon_size": 18,
+            "icon_color": "#d93c55",
+            "text_alignment": "left",
+            "main_text": "SELLING OUT FAST",
+            "subtitle_text": "Due to high demand, limited quantities available",
+            "progress_percentage": 93,
+            "progress_text": "SOLD",
+            "enable_multiple_bars": false,
+            "background_color": "#ffffff",
+            "text_color": "#282828",
+            "progress_bar_gradient": true,
+            "progress_bar_gradient_start": "#fb7948",
+            "progress_bar_gradient_end": "#ffc96c",
+            "progress_bar_color": "#fb7948",
+            "progress_background_color": "#f4f4f4",
+            "progress_bar_height": 28,
+            "show_progress_border": true,
+            "progress_border_width": 1,
+            "progress_border_color": "#eaeaea",
+            "show_block_border": true,
+            "block_border_width": 1,
+            "block_border_color": "#f2f2f2",
+            "block_border_radius": 8,
+            "show_background": true,
+            "progress_text_overlay": true,
+            "overlay_text_color": "#ffffff",
+            "overlay_text_weight": "semibold",
+            "main_text_size": 16,
+            "subtitle_text_size": 11,
+            "progress_text_size": 11,
+            "overlay_text_size": 11,
+            "margin_top": 0,
+            "margin_bottom": 9,
+            "padding": 12
+          }
         }
       },
       "block_order": [
         "reviews_4Q87j7",
         "title_4EWLUd",
         "divider_UJYaan",
+        "limited_inventory_urgency",
         "custom_text_CtXXXE",
         "custom_text_6gdF7K",
         "benefits_grid_TYPpNT",
@@ -533,8 +579,9 @@
         "quantity_selector_gk43hi",
         "add_to_cart_7nhY9K",
         "divider_QLHqYr",
-        "payment_icons_6bWLc3",
         "guarantee_badges_HAWQYD",
+        "payment_icons_6bWLc3",
+        "selling_out_fast_urgency",
         "divider_DttfTp",
         "custom_money_back_FNGwrh",
         "product_faq_4yXjYU",
