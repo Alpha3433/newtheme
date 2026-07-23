@@ -1,8 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "license_key": "LIC-1765379101885-7kk4spivw",
+    "license_key": "LIC-1765607753046-mpc75gfcq",
     "logo": "shopify://shop_images/hf_20260509_170327_c83b61e7-455e-4c70-94eb-e812328a9e2a.png",
     "logo_width": 160,
+    "favicon": "shopify://shop_images/hf_20260509_170327_c83b61e7-455e-4c70-94eb-e812328a9e2a.png",
     "global_section_background_color": "#ffffff",
     "global_section_text_color": "#282828",
     "global_section_use_gradient_background": true,
@@ -13,6 +23,7 @@
     "global_accent_text_gradient_dark": "linear-gradient(179deg, rgba(255, 199, 105, 1) 2%, rgba(251, 136, 72, 1) 100%)",
     "use_dedicated_button_colors": true,
     "global_section_button_color": "#282828",
+    "global_section_button_text_color": "#ffffff",
     "global_header_color": "#ffffff",
     "header_border_color": "#282828",
     "global_footer_color": "#282828",
@@ -39,9 +50,13 @@
     "global_button_text_transform": "uppercase",
     "global_button_radius": 0,
     "global_button_background_color": "#c6fa54",
+    "global_button_text_color_primary": "#ffffff",
     "global_button_border_color": "#ffd793",
     "global_button_border_width": 3,
+    "global_button_bottom_border_width": 4,
+    "global_button_bottom_border_color": "#fa9e00",
     "global_button_hover_bg_color": "#fb7948",
+    "global_button_hover_text_color": "#e4e2bc",
     "enable_button_box_shadow": false,
     "button_shadow_intensity": 1,
     "enable_button_gradient": true,
@@ -50,6 +65,7 @@
     "button_gradient_direction": "to top",
     "button_gradient_hover_start": "#fb7948",
     "button_gradient_hover_end": "#fb7948",
+    "enable_gradient_shine": true,
     "enable_global_button_styling": true,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -148,6 +164,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "enable_image_protection": true,
     "spacing_grid_horizontal": 8,
     "spacing_grid_vertical": 8,
     "rely_on_product": "neck-massager",
@@ -295,15 +312,6 @@
         }
       }
     },
-    "content_for_index": [],
-    "favicon": "shopify://shop_images/hf_20260509_170327_c83b61e7-455e-4c70-94eb-e812328a9e2a.png",
-    "global_section_button_text_color": "#ffffff",
-    "global_button_text_color_primary": "#ffffff",
-    "global_button_bottom_border_width": 4,
-    "global_button_bottom_border_color": "#fa9e00",
-    "global_button_hover_text_color": "#e4e2bc",
-    "enable_gradient_shine": true,
-    "enable_image_protection": true,
     "cart_drawer_checkout_button_text": "#17433c",
     "cart_drawer_continue_shopping_text_color": "#17433c",
     "sections": {
@@ -434,6 +442,11 @@
           "price_drawer_margin_bottom": 10,
           "price_saving_padding_y": 2,
           "price_saving_padding_x": 6,
+          "discount_tag_bg_color": "#f1f1f1",
+          "discount_tag_text_color": "#555555",
+          "discount_tag_border_radius": 3,
+          "discount_tag_font_size": 12,
+          "discount_tag_icon_size": 14,
           "drawer_width_desktop": 40,
           "drawer_footer_padding_top": 15,
           "drawer_footer_padding_bottom": 15,
@@ -468,10 +481,20 @@
           "cart_drawer_discount_text_color": "#ffffff",
           "cart_drawer_discount_icon_color": "#ffffff",
           "cart_drawer_discount_border_radius": 4,
-          "cart_drawer_checkout_button_label": "COMPLETE MY ORDER"
+          "cart_drawer_checkout_button_label": "COMPLETE MY ORDER",
+          "cart_drawer_checkout_button_border_radius": 4,
+          "enable_subscribe_cta": false,
+          "subscribe_cta_text": "Subscribe & Save",
+          "subscribe_cta_frequency_label": "Delivers every",
+          "subscribe_cta_text_color": "#000000",
+          "subscribe_cta_background_color": "#ffffff",
+          "subscribe_cta_border_color": "#000000",
+          "subscribe_cta_frequency_label_color": "#6e6e6e",
+          "subscribe_cta_frequency_select_color": "#0374a5"
         }
       }
     },
+    "content_for_index": [],
     "blocks": {
       "1143683040400472741": {
         "type": "shopify://apps/trustwill-trustoo/blocks/trustoo-review-switch/c8f15077-6475-4e86-ad06-b66038d5ba2c",
