@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -20,11 +29,14 @@
         "hours_label": "HRS",
         "minutes_label": "MIN",
         "seconds_label": "SEC",
-        "hide_shine_effect": true,
         "text_color": "#000000",
         "timer_bg_color": "#000000",
         "timer_text_color": "#282828",
         "label_text_color": "#282828",
+        "background_type": "animated_gradient",
+        "hide_shine_effect": true,
+        "static_gradient_value": "linear-gradient(135deg, #FFF5EA, #FF99A9)",
+        "solid_bg_color": "#ff99a9",
         "gradient_color_1": "#cc0000",
         "gradient_color_2": "#ff0000",
         "gradient_color_3": "#aa0000",
@@ -51,6 +63,8 @@
         "top_border_width": 1,
         "top_border_style": "solid",
         "top_border_color": "#282828",
+        "menu_underline_thickness": 2,
+        "menu_underline_color": "#FD7A00",
         "use_theme_colors": true,
         "use_global_gradient": true,
         "enable_country_selector": false,
@@ -73,36 +87,40 @@
         "scroll_offset": 100,
         "scroll_to_percentage": 50,
         "button_link": "",
+        "fallback_title": "",
         "button_text": "CLAIM LIMITED OFFER",
+        "rating_text": "",
         "satc_toggle_variant": false,
+        "turn_off_delivery_date": false,
         "delivery_days": 4,
+        "delivery_text_prefix": "Arrives by",
+        "delivery_date_display_format": "weekday_month_day",
+        "use_theme_colors": true,
+        "background_color": "#ffffff",
+        "star_color": "#99e9ff",
+        "mobile_style": "default",
+        "z_index": 9900,
         "title_color": "#000000",
         "title_desktop_font_size": 16,
+        "title_mobile_font_size": 14,
         "title_letter_spacing": 0,
-        "rating_text": "",
-        "use_theme_colors": true,
         "use_global_button_styling": true,
         "custom_button_padding_y": 15,
         "custom_button_font_size": 14,
         "button_bg_color": "#ef4a65",
         "button_hover_color": "#7bdbf1",
         "button_text_color": "#ffffff",
-        "star_color": "#99e9ff",
-        "background_color": "#ffffff",
         "border_radius": 6,
-        "z_index": 9900,
         "rating_text_color": "#333333",
         "rating_text_font_weight": "var(--font-weight-regular)",
         "rating_text_desktop_font_size": 14,
+        "rating_text_mobile_font_size": 14,
         "rating_text_letter_spacing": 0,
         "delivery_text_color": "#333333",
         "delivery_text_font_weight": "var(--font-weight-regular)",
         "delivery_text_desktop_font_size": 14,
         "delivery_text_mobile_font_size": 11,
-        "delivery_text_letter_spacing": 0,
-        "delivery_date_display_format": "weekday_month_day",
-        "turn_off_delivery_date": false,
-        "delivery_text_prefix": "Arrives by"
+        "delivery_text_letter_spacing": 0
       }
     }
   },
