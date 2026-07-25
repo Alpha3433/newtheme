@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "order": [
     "shop_product_details_JbqzwH",
@@ -387,7 +378,7 @@
       "blocks": {
         "logo_7XKwQ6": {
           "settings": {
-            "logo_alt": "Brand logo",
+            "logo_alt": "BuzzFeed",
             "logo_image": "shopify://shop_images/buzzfeed-logo-black-transparent.png",
             "logo_link": "",
             "mobile_size_adjustment": 100,
@@ -398,7 +389,7 @@
         },
         "logo_VcJnmr": {
           "settings": {
-            "logo_alt": "Brand logo",
+            "logo_alt": "TODAY Show",
             "logo_image": "shopify://shop_images/today-show-seeklogo.png",
             "logo_link": "",
             "mobile_size_adjustment": 100,
@@ -409,7 +400,7 @@
         },
         "logo_jCzRpU": {
           "settings": {
-            "logo_alt": "Brand logo",
+            "logo_alt": "TikTok",
             "logo_image": "shopify://shop_images/TikTok_logo_svg.png",
             "logo_link": "",
             "mobile_size_adjustment": 100,
@@ -471,7 +462,7 @@
         "before_and_after_8t6Gjh": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260316_130345_96ed7bcd-1fc0-4406-af02-f73203a818e5.png",
-            "after_label": "After 6 treatment",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260316_130318_cf8ed94c-da76-41ac-b69b-11a6bea84e17.png",
             "before_label": "Before",
             "category": "Men"
@@ -481,7 +472,7 @@
         "before_and_after_HWdqJN": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260316_131633_ec843593-47fa-4dd5-a603-de1a3ef6be1d.png",
-            "after_label": "After 6 treatment",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260316_131657_f6728ed6-c41c-4677-896b-df3e3bf4976e.png",
             "before_label": "Before",
             "category": "Women"
@@ -491,7 +482,7 @@
         "before_and_after_JzVkkc": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260316_125601_7b0fa0f0-d938-4e8f-967b-6f10ea6ada23.png",
-            "after_label": "After 6 treatments",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260316_125422_a86b2a58-df6e-4706-a176-dc70ea4861cb.png",
             "before_label": "Before",
             "category": "90 Days"
@@ -501,7 +492,7 @@
         "before_and_after_awXjxE": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260317_110637_ceae7150-6a01-431c-97da-adda39d81f42.png",
-            "after_label": "After 6 treatment",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260317_110737_6dd67269-0dcc-4f65-8bab-f5cdacb1121e.png",
             "before_label": "Before",
             "category": "General"
@@ -511,7 +502,7 @@
         "before_and_after_cfGH8f": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260316_130633_6450372b-4a30-497b-90f7-d743e3971404.png",
-            "after_label": "After 6 treatments",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260316_130652_95a6504b-554e-460d-ba60-1db62d494ba4.png",
             "before_label": "Before",
             "category": "Women"
@@ -521,7 +512,7 @@
         "before_and_after_epAB4r": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260316_132119_22281636-79f4-4b40-8147-917f51dc30c0.png",
-            "after_label": "After 6 treatment",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260316_131918_c1713c8c-9aca-4e7d-abe1-db63c0e8a78c.png",
             "before_label": "Before",
             "category": "Women"
@@ -531,7 +522,7 @@
         "before_and_after_r8excL": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260316_131154_676a117d-c5b9-4e9d-813a-02ab51d4d63f.png",
-            "after_label": "After 6 treatment",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260316_131110_248ce412-0b03-41d6-9bb5-e3e9667d75ab.png",
             "before_label": "Before",
             "category": "General"
@@ -541,7 +532,7 @@
         "before_and_after_w6ekrN": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260316_124854_b2e156fe-8407-476f-8071-d24ba9f22a0a.png",
-            "after_label": "After 6 treatment",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260316_124901_a999785d-4e19-4165-bcb5-b8b48eb25af6.png",
             "before_label": "Before",
             "category": "Men"
@@ -551,7 +542,7 @@
         "before_and_after_xNNaYm": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260317_122943_80cf094f-e3ef-4679-a564-d06eeadeed68.png",
-            "after_label": "After 6 treatment",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260317_122732_a2c7adfa-c6e5-4198-836e-26134b23c236.png",
             "before_label": "Before",
             "category": "General"
@@ -561,7 +552,7 @@
         "before_and_after_yqRiFt": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260316_124412_77b309f4-0cf8-4f6e-85da-956fe0b58667.png",
-            "after_label": "After 6 treatment",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260316_124108_2eb3b3b4-134b-4d58-9f56-7183c35390f4.png",
             "before_label": "Before",
             "category": "General"
@@ -571,7 +562,7 @@
         "before_and_after_ztma3M": {
           "settings": {
             "after_image": "shopify://shop_images/hf_20260316_132957_b8cff676-07ea-44c8-973e-41fba631e494.png",
-            "after_label": "After 6 treatment",
+            "after_label": "After 90 Days",
             "before_image": "shopify://shop_images/hf_20260316_132722_6f8c6140-dc2c-44d8-a432-43fb82af7cd5.png",
             "before_label": "Before",
             "category": "Men"
@@ -906,7 +897,7 @@
             "list_item_1_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_2": "No prescriptions",
             "list_item_2_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_3": "30-Day money-back guarantee",
+            "list_item_3": "90-Day money-back guarantee",
             "list_item_3_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_4": "Non-GMO, gluten-free, no additives",
             "list_item_4_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
@@ -1075,8 +1066,8 @@
         "enable_shadow": false,
         "enable_top_border": false,
         "full_height_section_height": 50,
-        "heading": "Clinic-grade skin results",
-        "heading_accent": "without the clinic price",
+        "heading": "Clinic-grade hair results without the clinic price",
+        "heading_accent": "",
         "heading_color": "#333333",
         "heading_size_desktop": 48,
         "image": "shopify://shop_images/hf_20260320_131458_bc9b50f7-ce81-439b-b42e-7c38e9e4c621.jpg",
@@ -1137,17 +1128,17 @@
             "font_size_desktop": 1.6,
             "font_size_mobile": 1.6,
             "list_color": "#333333",
-            "list_item_1": "Clinically proven active ingredients",
+            "list_item_1": "Clinically studied DHT-blocking compounds",
             "list_item_1_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_2": "Safe for sensitive skin",
+            "list_item_2": "Works for men and women",
             "list_item_2_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_3": "Dermatologist-tested formulas",
+            "list_item_3": "No prescription required",
             "list_item_3_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_4": "Sustainable packaging",
+            "list_item_4": "Third-party tested for purity",
             "list_item_4_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_5": "Cruelty-free development",
+            "list_item_5": "Non-GMO, gluten-free, no fillers",
             "list_item_5_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_6": "Professional-grade concentrations",
+            "list_item_6": "2,000mg therapeutic dose",
             "list_item_6_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_title": "",
             "list_title_color": "#333333",
@@ -1173,7 +1164,7 @@
             "margin_bottom": 5,
             "margin_top": -10,
             "paragraph_color": "#333333",
-            "paragraph_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>"
+            "paragraph_text": ""
           },
           "type": "paragraph"
         },
@@ -1203,7 +1194,7 @@
             "subtitle_line_height": 1.4,
             "subtitle_size": 1.5,
             "subtitle_size_desktop": 1.5,
-            "subtitle_text": "Lorem ipsum...",
+            "subtitle_text": "",
             "use_background": true,
             "use_theme_colors": false
           },
@@ -1267,8 +1258,8 @@
         "enable_shadow": false,
         "enable_top_border": false,
         "full_height_section_height": 100,
-        "heading": "Why Premium Skincare",
-        "heading_accent": "Makes the Difference",
+        "heading": "Why the dose and the press matter",
+        "heading_accent": "",
         "heading_color": "#333333",
         "heading_size_desktop": 48,
         "image_border_radius": 8,
@@ -1384,22 +1375,22 @@
             "icon_border_radius": 4,
             "icon_size_desktop": 60,
             "icon_size_mobile": 54,
-            "item_1_content": "<p>Information about <strong>neck pain</strong> and treatment options:</p><ul><li>Hair falling out in the shower or on your pillow</li><li>Thinning at the crown or parting line</li><li>Noticeably less volume over time</li><li>DHT overproduction shrinking your follicles</li></ul>",
+            "item_1_content": "<p>The <strong>shedding stage</strong> — what you notice first:</p><ul><li>Hair falling out in the shower or on your pillow</li><li>Thinning at the crown or parting line</li><li>Noticeably less volume over time</li><li>DHT overproduction shrinking your follicles</li></ul>",
             "item_1_svg": "",
             "item_1_title": "Excessive Shedding",
-            "item_2_content": "<p>Comprehensive <strong>back pain</strong> solutions:</p><ul><li>Fine, limp hair that lacks body</li><li>Wider parting line becoming visible</li><li>Ponytail noticeably thinner in circumference</li><li>Follicles producing weaker, shorter strands</li></ul>",
+            "item_2_content": "<p>The <strong>thinning stage</strong> — when density starts to drop:</p><ul><li>Fine, limp hair that lacks body</li><li>Wider parting line becoming visible</li><li>Ponytail noticeably thinner in circumference</li><li>Follicles producing weaker, shorter strands</li></ul>",
             "item_2_svg": "",
             "item_2_title": "Thinning & Low Density",
-            "item_3_content": "<p>Understanding <strong>sciatica</strong> and relief options:</p><ul><li>Hair not growing past a certain length</li><li>Bald patches that haven't recovered</li><li>Hairline recession with no regrowth</li><li>Dormant follicles no longer producing hair</li></ul>",
+            "item_3_content": "<p>The <strong>stalled stage</strong> — when follicles stop producing:</p><ul><li>Hair not growing past a certain length</li><li>Bald patches that haven't recovered</li><li>Hairline recession with no regrowth</li><li>Dormant follicles no longer producing hair</li></ul>",
             "item_3_svg": "",
             "item_3_title": "Slow or Stalled Growth",
-            "item_4_content": "<p><strong>SI joint & hip pain</strong> treatment approaches:</p><ul><li>SI joint dysfunction</li><li>Hip flexor pain</li><li>Bursitis</li><li>Articular pain</li><li>Pelvic misalignment</li></ul>",
+            "item_4_content": "",
             "item_4_svg": "",
             "item_4_title": "",
-            "item_5_content": "<p><strong>Strains & sprains</strong> recovery programs:</p><ul><li>Muscle strain</li><li>Ligament sprain</li><li>Tendon injury</li><li>Overuse injury</li><li>Acute injury</li></ul>",
+            "item_5_content": "",
             "item_5_svg": "",
             "item_5_title": "",
-            "item_6_content": "<p>Comprehensive <strong>injury recovery</strong> solutions:</p><ul><li>Post-surgery recovery</li><li>Sports injury rehab</li><li>Physical therapy</li><li>Mobility restoration</li><li>Pain management</li></ul>",
+            "item_6_content": "",
             "item_6_svg": "",
             "item_6_title": "",
             "item_spacing": 8,
@@ -1531,8 +1522,8 @@
         "enable_shadow": false,
         "enable_top_border": false,
         "full_height_section_height": 55,
-        "heading": "A New Era Of Skincare",
-        "heading_accent": "Is Here",
+        "heading": "One capsule, total hair recovery",
+        "heading_accent": "",
         "heading_color": "#ffffff",
         "heading_size_desktop": 48,
         "image": "shopify://shop_images/hf_20260318_134553_8a092931-dbcb-4ef6-8eeb-9da85b5e5974.jpg",
@@ -1975,7 +1966,7 @@
         "description_line_height": 1.5,
         "description_size_desktop": 14,
         "description_size_mobile": 14,
-        "description_text": "We're so confident in the quality of our product that we offer a satisfaction guarantee. If you're not completely satisfied with your purchase, simply return the item within 30 days for a full refund.",
+        "description_text": "We're so confident you'll see thicker, fuller hair that we back every order with a full 90-day money-back guarantee. Take it every day for 3 months. If you don't see visible results, contact us for a complete refund. No forms. No hassle. No questions asked.",
         "enable_border": true,
         "enable_bottom_border": false,
         "enable_shadow": false,
@@ -1998,7 +1989,7 @@
         "padding_top_no_photos_mobile": 15,
         "polaroid_size_desktop": 180,
         "polaroid_size_mobile": 100,
-        "product_name": "Premium Product",
+        "product_name": "Pumpkin Seed Oil Capsules",
         "redirect_product": "",
         "section_background": "linear-gradient(180deg, rgba(40, 40, 40, 1), rgba(40, 40, 40, 1) 100%)",
         "section_padding_horizontal": 0,
@@ -2345,10 +2336,10 @@
             "pagination_dot_active_color": "#333333",
             "pagination_dot_color": "#dddddd",
             "rating": 5,
-            "review_text": "This product exceeded my expectations. The quality is outstanding and I would highly recommend it to anyone.",
+            "review_text": "Six weeks in and the shedding has almost stopped. I used to dread washing my hair because of how much came out — that's gone now.",
             "review_text_color": "#666666",
             "review_text_size": 14,
-            "reviewer_name": "Lauren J.",
+            "reviewer_name": "Rachel M.",
             "reviewer_name_size": 16,
             "show_active_shadow": true,
             "show_navigation": true,
@@ -2393,7 +2384,7 @@
             "badge_1_custom_icon": "",
             "badge_1_icon": "custom",
             "badge_1_show": true,
-            "badge_1_text": "30-Day Money-Back Guarantee |",
+            "badge_1_text": "90-Day Money-Back Guarantee |",
             "badge_2_custom_icon": "",
             "badge_2_icon": "custom",
             "badge_2_show": true,
@@ -2448,9 +2439,9 @@
             "items_limit": 10,
             "margin_bottom": 10,
             "margin_top": 10,
-            "question_1": "Description",
+            "question_1": "What is it?",
             "question_10": "",
-            "question_2": "How to apply",
+            "question_2": "How do I take it?",
             "question_3": "Ingredients",
             "question_4": "Does it really work?",
             "question_5": "What is the 100% results guarantee?",
