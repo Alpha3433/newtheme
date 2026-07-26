@@ -510,6 +510,32 @@
             "margin_top": 0,
             "margin_bottom": 0
           }
+        },
+        "offer_reminder": {
+          "type": "custom_text",
+          "settings": {
+            "text": "<p><strong>TONIGHT ONLY:</strong> Buy 1, Get 1 Free — plus free shipping on every order</p>",
+            "text_align": "center",
+            "font_size": 14,
+            "text_color": "#282828",
+            "show_icon": true,
+            "custom_icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
+            "icon_color": "#fb7948",
+            "icon_size": 20,
+            "icon_alignment": "center",
+            "icon_margin_right": 8,
+            "use_container": true,
+            "container_bg_type": "color",
+            "container_bg": "#FFF4EC",
+            "container_padding_v": 10,
+            "container_padding_h": 14,
+            "border_radius": 8,
+            "show_border": true,
+            "border_width": 1,
+            "border_color": "#fb7948",
+            "margin_top": 4,
+            "margin_bottom": 12
+          }
         }
       },
       "block_order": [
@@ -522,6 +548,7 @@
         "shipping_notice_ycmz4B",
         "kaching_bundles_app_block_969AMy",
         "quantity_selector_gk43hi",
+        "offer_reminder",
         "add_to_cart_7nhY9K",
         "divider_QLHqYr",
         "payment_icons_6bWLc3",
@@ -3307,6 +3334,180 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "pattern_by_gender": {
+      "type": "two-column-content",
+      "blocks": {
+        "left_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "left",
+            "heading_text": "In women",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_desktop": 2.0,
+            "font_size_mobile": 1.5,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "left_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "left",
+            "list_items": "Your part is getting wider every time you look|Your ponytail feels thinner in your hand|Thinning spreads across the top instead of receding|More hair in the brush, the drain, the pillow|Scalp showing through under bright light",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "right_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "right",
+            "heading_text": "In men",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_desktop": 2.0,
+            "font_size_mobile": 1.5,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "right_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "right",
+            "list_items": "Your hairline is creeping back at the temples|The crown is thinning where you can’t easily see it|Scalp visible in photos taken from behind|More hair in the shower every single morning|Styling no longer hides what it used to",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "left_heading",
+        "left_list",
+        "right_heading",
+        "right_list"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "section_heading": "Hair loss doesn’t look the same",
+        "section_heading_accent": "for everyone",
+        "section_heading_tag": "h2",
+        "section_heading_size_desktop": 2.6,
+        "section_heading_size_mobile": 1.8,
+        "section_heading_line_height": 1.2,
+        "section_heading_margin_bottom": 16,
+        "section_subheading": "DHT is the hormone behind both patterns. That’s why one formula works for men and women alike — it targets the cause, not the symptom.",
+        "section_subheading_size_desktop": 1.1,
+        "section_subheading_size_mobile": 1.0,
+        "section_header_align": "center",
+        "section_header_margin_bottom_desktop": 48,
+        "section_header_margin_bottom_mobile": 32,
+        "use_theme_colors": true,
+        "left_column_width": 50
+      }
+    },
+    "who_its_for": {
+      "type": "two-column-content",
+      "blocks": {
+        "left_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "left",
+            "heading_text": "This is for you if…",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_desktop": 2.0,
+            "font_size_mobile": 1.5,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "left_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "left",
+            "list_items": "You’re shedding noticeably more than you used to|Your part is widening or your hairline is moving back|There’s still fine, wispy hair where it’s thinning|You’d rather act early than wait and see|You ruled out finasteride because of the side effects",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "right_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "right",
+            "heading_text": "This isn’t for you if…",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_desktop": 2.0,
+            "font_size_mobile": 1.5,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "right_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "right",
+            "list_items": "An area has been completely bald for years — dormant follicles can wake up, dead ones can’t|You want results in two weeks — this needs 90 days of daily use|Your hair fell out suddenly in round patches — see a doctor about alopecia areata|You’re pregnant, breastfeeding, or taking blood thinners|You’re after a one-off fix rather than a daily habit",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "icon_color": "#8a8a8a",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "left_heading",
+        "left_list",
+        "right_heading",
+        "right_list"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "section_heading": "Who this works for",
+        "section_heading_accent": "— and who it doesn’t",
+        "section_heading_tag": "h2",
+        "section_heading_size_desktop": 2.6,
+        "section_heading_size_mobile": 1.8,
+        "section_heading_line_height": 1.2,
+        "section_heading_margin_bottom": 16,
+        "section_subheading": "We’d rather lose the sale than take your money for something that won’t help. Read the right-hand column honestly before you order.",
+        "section_subheading_size_desktop": 1.1,
+        "section_subheading_size_mobile": 1.0,
+        "section_header_align": "center",
+        "section_header_margin_bottom_desktop": 48,
+        "section_header_margin_bottom_mobile": 32,
+        "use_theme_colors": true,
+        "left_column_width": 50
+      }
     }
   },
   "order": [
@@ -3314,6 +3515,7 @@
     "scrolling_features_bar_xXQrtb",
     "as_seen_in_logos_hpfJT6",
     "testimonials_reflow",
+    "pattern_by_gender",
     "4_benefits_jtwY6M",
     "steps_XmnA8k",
     "scrolling_features_bar_c",
@@ -3327,6 +3529,7 @@
     "statistics_grid_pXC34G",
     "before_after_KeXf6z",
     "customer_reviews_carousel_GEVJYY",
+    "who_its_for",
     "satisfaction_guarantee_J4ypTy",
     "store_faq_hidFcc",
     "divider_cH7pyC",
