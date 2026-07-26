@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "shop_product_details_JbqzwH": {
@@ -250,6 +259,68 @@
             "text_color": "#000000",
             "margin_top": 0,
             "margin_bottom": 12
+          }
+        },
+        "offer_reminder": {
+          "type": "custom_text",
+          "settings": {
+            "text": "<p><strong>TONIGHT ONLY:</strong> Buy 1, Get 1 Free — plus free shipping on every order</p>",
+            "show_description": false,
+            "description": "<p>Add additional descriptive text here</p>",
+            "description_font_size": 12,
+            "description_spacing": 4,
+            "description_color": "#666666",
+            "description_opacity": 0.8,
+            "show_accent_text": false,
+            "accent_text": "Accent Text",
+            "accent_text_position": "before",
+            "use_accent_gradient": true,
+            "accent_text_gradient": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+            "accent_text_color": "#667eea",
+            "accent_text_font_size": 16,
+            "accent_text_font_weight": "semibold",
+            "accent_text_spacing": 8,
+            "show_icon": true,
+            "custom_icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg>",
+            "icon_color": "#fb7948",
+            "icon_size": 20,
+            "icon_spacing": 8,
+            "icon_alignment": "center",
+            "icon_margin_left": 0,
+            "icon_margin_right": 8,
+            "use_image_icon": false,
+            "show_after_icon": false,
+            "after_custom_icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><path d=\"M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z\"></path></svg>",
+            "after_icon_color": "#333333",
+            "after_icon_size": 20,
+            "after_icon_alignment": "center",
+            "after_icon_margin_left": 8,
+            "after_icon_margin_right": 0,
+            "use_image_after_icon": false,
+            "text_align": "center",
+            "font_size": 14,
+            "text_color": "#282828",
+            "link_color": "#0066cc",
+            "margin_top": 4,
+            "margin_bottom": 12,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "use_container": true,
+            "container_bg_type": "color",
+            "container_bg": "#fff4ec",
+            "container_bg_gradient": "linear-gradient(180deg, #F8F8F8 0%, #E5E5E5 100%)",
+            "container_padding_v": 10,
+            "container_padding_h": 14,
+            "container_fit_content": false,
+            "border_radius": 8,
+            "show_border": true,
+            "border_width": 1,
+            "border_color": "#fb7948",
+            "show_divider": false,
+            "divider_color": "#e0e0e0",
+            "divider_height": 1,
+            "divider_style": "solid",
+            "divider_spacing": 12
           }
         },
         "add_to_cart_7nhY9K": {
@@ -510,32 +581,6 @@
             "margin_top": 0,
             "margin_bottom": 0
           }
-        },
-        "offer_reminder": {
-          "type": "custom_text",
-          "settings": {
-            "text": "<p><strong>TONIGHT ONLY:</strong> Buy 1, Get 1 Free — plus free shipping on every order</p>",
-            "text_align": "center",
-            "font_size": 14,
-            "text_color": "#282828",
-            "show_icon": true,
-            "custom_icon": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M20 12v10H4V12M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>",
-            "icon_color": "#fb7948",
-            "icon_size": 20,
-            "icon_alignment": "center",
-            "icon_margin_right": 8,
-            "use_container": true,
-            "container_bg_type": "color",
-            "container_bg": "#FFF4EC",
-            "container_padding_v": 10,
-            "container_padding_h": 14,
-            "border_radius": 8,
-            "show_border": true,
-            "border_width": 1,
-            "border_color": "#fb7948",
-            "margin_top": 4,
-            "margin_bottom": 12
-          }
         }
       },
       "block_order": [
@@ -568,7 +613,7 @@
         "use_theme_colors": false,
         "main_image_border_radius": 0,
         "thumbnail_border_radius": 0,
-        "current_product": "",
+        "current_product": "elaren-pumpkin-seed-oil-regrowth-serum",
         "section_bg_color": "#ffffff",
         "blocks_spacing": 4,
         "text_color": "#333030",
@@ -764,19 +809,6 @@
             "purchase_date": "March 14th, 2024"
           }
         },
-        "testimonial_2": {
-          "type": "testimonial",
-          "settings": {
-            "show_stars": true,
-            "title": "Clear Regrowth At The Crown",
-            "content": "<p>My crown was the problem area. Not fully bald but noticeably thin when photos were taken from behind. 90 days on these and there's clear regrowth in that area. My barber noticed before I even mentioned it which was the best confirmation I could get.</p>",
-            "author_name": "Michael, 35",
-            "rating": 5,
-            "verified": true,
-            "show_purchase_date": false,
-            "purchase_date": "March 14th, 2024"
-          }
-        },
         "testimonial_3": {
           "type": "testimonial",
           "settings": {
@@ -785,6 +817,19 @@
             "content": "<p>I looked into prescription options but the side effects put me off completely. These are completely natural and I've had zero issues taking them. Hair is noticeably thicker at the 10 week mark and I feel like I'm not constantly losing hair anymore. Will keep taking these indefinitely.</p>",
             "author_name": "Jessica, 42",
             "rating": 4,
+            "verified": true,
+            "show_purchase_date": false,
+            "purchase_date": "March 14th, 2024"
+          }
+        },
+        "testimonial_2": {
+          "type": "testimonial",
+          "settings": {
+            "show_stars": true,
+            "title": "Clear Regrowth At The Crown",
+            "content": "<p>My crown was the problem area. Not fully bald but noticeably thin when photos were taken from behind. 90 days on these and there's clear regrowth in that area. My barber noticed before I even mentioned it which was the best confirmation I could get.</p>",
+            "author_name": "Michael, 35",
+            "rating": 5,
             "verified": true,
             "show_purchase_date": false,
             "purchase_date": "March 14th, 2024"
@@ -887,6 +932,141 @@
         "nav_button_radius": 25,
         "dot_color": "#ffffff",
         "anchor_id": ""
+      }
+    },
+    "pattern_by_gender": {
+      "type": "two-column-content",
+      "blocks": {
+        "left_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "left",
+            "heading_text": "In women",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "left_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "left",
+            "list_items": "Your part is getting wider every time you look|Your ponytail feels thinner in your hand|Thinning spreads across the top instead of receding|More hair in the brush, the drain, the pillow|Scalp showing through under bright light",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "right_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "right",
+            "heading_text": "In men",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "right_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "right",
+            "list_items": "Your hairline is creeping back at the temples|The crown is thinning where you can’t easily see it|Scalp visible in photos taken from behind|More hair in the shower every single morning|Styling no longer hides what it used to",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "left_heading",
+        "left_list",
+        "right_heading",
+        "right_list"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "section_heading": "Hair loss doesn’t look the same",
+        "section_heading_accent": "for everyone",
+        "section_heading_tag": "h2",
+        "section_heading_size_desktop": 2.6,
+        "section_heading_size_mobile": 1.8,
+        "section_heading_line_height": 1.2,
+        "section_heading_color": "#000000",
+        "section_heading_margin_bottom": 16,
+        "section_subheading": "DHT is the hormone behind both patterns. That’s why one formula works for men and women alike — it targets the cause, not the symptom.",
+        "section_subheading_size_desktop": 1.1,
+        "section_subheading_size_mobile": 1,
+        "section_subheading_color": "#666666",
+        "section_header_align": "center",
+        "section_header_margin_bottom_desktop": 48,
+        "section_header_margin_bottom_mobile": 32,
+        "use_theme_colors": true,
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "accent_color": "#e63946",
+        "override_global_accent": false,
+        "use_accent_gradient": false,
+        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
+        "accent_font_family": "assistant_n4",
+        "accent_font_style": "italic",
+        "accent_font_weight": "inherit",
+        "accent_text_margin_left": 0,
+        "max_width": 1200,
+        "left_column_width": 50,
+        "right_column_width": 50,
+        "column_order": "left_first",
+        "mobile_column_order": "left_first",
+        "vertical_alignment": "center",
+        "column_gap_desktop": 40,
+        "column_gap_mobile": 30,
+        "show_column_divider": false,
+        "divider_color": "#e0e0e0",
+        "divider_width": 1,
+        "divider_height": 60,
+        "show_divider_mobile": false,
+        "left_column_text_align": "left",
+        "right_column_text_align": "left",
+        "mobile_text_align": "left",
+        "left_column_padding": 0,
+        "right_column_padding": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "padding_horizontal_mobile": 20,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_horizontal_desktop": 40,
+        "button_bg_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 24,
+        "button_border_radius": 4,
+        "image_border_radius": 8
       }
     },
     "4_benefits_jtwY6M": {
@@ -2644,16 +2824,6 @@
     "before_after_KeXf6z": {
       "type": "before-after",
       "blocks": {
-        "before_and_after_yqRiFt": {
-          "type": "before_and_after",
-          "settings": {
-            "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_124108_2eb3b3b4-134b-4d58-9f56-7183c35390f4.png",
-            "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_124412_77b309f4-0cf8-4f6e-85da-956fe0b58667.png",
-            "category": "General"
-          }
-        },
         "before_and_after_cfGH8f": {
           "type": "before_and_after",
           "settings": {
@@ -2662,46 +2832,6 @@
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_130633_6450372b-4a30-497b-90f7-d743e3971404.png",
             "category": "Women"
-          }
-        },
-        "before_and_after_w6ekrN": {
-          "type": "before_and_after",
-          "settings": {
-            "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_124901_a999785d-4e19-4165-bcb5-b8b48eb25af6.png",
-            "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_124854_b2e156fe-8407-476f-8071-d24ba9f22a0a.png",
-            "category": "Men"
-          }
-        },
-        "before_and_after_8t6Gjh": {
-          "type": "before_and_after",
-          "settings": {
-            "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_130318_cf8ed94c-da76-41ac-b69b-11a6bea84e17.png",
-            "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_130345_96ed7bcd-1fc0-4406-af02-f73203a818e5.png",
-            "category": "Men"
-          }
-        },
-        "before_and_after_JzVkkc": {
-          "type": "before_and_after",
-          "settings": {
-            "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_125422_a86b2a58-df6e-4706-a176-dc70ea4861cb.png",
-            "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_125601_7b0fa0f0-d938-4e8f-967b-6f10ea6ada23.png",
-            "category": "90 Days"
-          }
-        },
-        "before_and_after_r8excL": {
-          "type": "before_and_after",
-          "settings": {
-            "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_131110_248ce412-0b03-41d6-9bb5-e3e9667d75ab.png",
-            "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_131154_676a117d-c5b9-4e9d-813a-02ab51d4d63f.png",
-            "category": "General"
           }
         },
         "before_and_after_HWdqJN": {
@@ -2724,14 +2854,24 @@
             "category": "Women"
           }
         },
-        "before_and_after_ztma3M": {
+        "before_and_after_yqRiFt": {
           "type": "before_and_after",
           "settings": {
             "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_132722_6f8c6140-dc2c-44d8-a432-43fb82af7cd5.png",
+            "before_image": "shopify://shop_images/hf_20260316_124108_2eb3b3b4-134b-4d58-9f56-7183c35390f4.png",
             "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_132957_b8cff676-07ea-44c8-973e-41fba631e494.png",
-            "category": "Men"
+            "after_image": "shopify://shop_images/hf_20260316_124412_77b309f4-0cf8-4f6e-85da-956fe0b58667.png",
+            "category": "General"
+          }
+        },
+        "before_and_after_r8excL": {
+          "type": "before_and_after",
+          "settings": {
+            "before_label": "Before",
+            "before_image": "shopify://shop_images/hf_20260316_131110_248ce412-0b03-41d6-9bb5-e3e9667d75ab.png",
+            "after_label": "After 90 Days",
+            "after_image": "shopify://shop_images/hf_20260316_131154_676a117d-c5b9-4e9d-813a-02ab51d4d63f.png",
+            "category": "General"
           }
         },
         "before_and_after_awXjxE": {
@@ -2752,6 +2892,46 @@
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260317_122943_80cf094f-e3ef-4679-a564-d06eeadeed68.png",
             "category": "General"
+          }
+        },
+        "before_and_after_JzVkkc": {
+          "type": "before_and_after",
+          "settings": {
+            "before_label": "Before",
+            "before_image": "shopify://shop_images/hf_20260316_125422_a86b2a58-df6e-4706-a176-dc70ea4861cb.png",
+            "after_label": "After 90 Days",
+            "after_image": "shopify://shop_images/hf_20260316_125601_7b0fa0f0-d938-4e8f-967b-6f10ea6ada23.png",
+            "category": "90 Days"
+          }
+        },
+        "before_and_after_w6ekrN": {
+          "type": "before_and_after",
+          "settings": {
+            "before_label": "Before",
+            "before_image": "shopify://shop_images/hf_20260316_124901_a999785d-4e19-4165-bcb5-b8b48eb25af6.png",
+            "after_label": "After 90 Days",
+            "after_image": "shopify://shop_images/hf_20260316_124854_b2e156fe-8407-476f-8071-d24ba9f22a0a.png",
+            "category": "Men"
+          }
+        },
+        "before_and_after_8t6Gjh": {
+          "type": "before_and_after",
+          "settings": {
+            "before_label": "Before",
+            "before_image": "shopify://shop_images/hf_20260316_130318_cf8ed94c-da76-41ac-b69b-11a6bea84e17.png",
+            "after_label": "After 90 Days",
+            "after_image": "shopify://shop_images/hf_20260316_130345_96ed7bcd-1fc0-4406-af02-f73203a818e5.png",
+            "category": "Men"
+          }
+        },
+        "before_and_after_ztma3M": {
+          "type": "before_and_after",
+          "settings": {
+            "before_label": "Before",
+            "before_image": "shopify://shop_images/hf_20260316_132722_6f8c6140-dc2c-44d8-a432-43fb82af7cd5.png",
+            "after_label": "After 90 Days",
+            "after_image": "shopify://shop_images/hf_20260316_132957_b8cff676-07ea-44c8-973e-41fba631e494.png",
+            "category": "Men"
           }
         }
       },
@@ -2898,26 +3078,6 @@
             "purchase_date": "March 14th, 2025"
           }
         },
-        "review_wzdDnY": {
-          "type": "review",
-          "settings": {
-            "review_image": "shopify://shop_images/hf_20260321_053957_ea54f901-6772-4ce9-952a-09491bd2c65b.jpg",
-            "image_position": "center center",
-            "wrap_image": false,
-            "rating": 5,
-            "review_text": "My crown was the problem area. Not fully bald but noticeably thin when photos were taken from behind. 90 days on these and there's clear regrowth in that area. My barber noticed before I even mentioned it which was the best confirmation I could get.",
-            "reviewer_name": "Michael",
-            "reviewer_age": "35",
-            "show_verified_badge": true,
-            "show_purchased_product": false,
-            "product_reference": "pumpkin-seed-oil-capsules",
-            "product_title": "Product Name",
-            "product_price": "$29.99",
-            "product_compare_price": "$39.99",
-            "show_purchase_date": true,
-            "purchase_date": "March 14th, 2025"
-          }
-        },
         "review_mwrxnG": {
           "type": "review",
           "settings": {
@@ -2928,6 +3088,26 @@
             "review_text": "I looked into prescription options but the side effects put me off completely. These are completely natural and I've had zero issues taking them. Hair is noticeably thicker at the 10 week mark and I feel like I'm not constantly losing hair anymore. Will keep taking these indefinitely.",
             "reviewer_name": "Jessica",
             "reviewer_age": "42",
+            "show_verified_badge": true,
+            "show_purchased_product": false,
+            "product_reference": "pumpkin-seed-oil-capsules",
+            "product_title": "Product Name",
+            "product_price": "$29.99",
+            "product_compare_price": "$39.99",
+            "show_purchase_date": true,
+            "purchase_date": "March 14th, 2025"
+          }
+        },
+        "review_wzdDnY": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/hf_20260321_053957_ea54f901-6772-4ce9-952a-09491bd2c65b.jpg",
+            "image_position": "center center",
+            "wrap_image": false,
+            "rating": 5,
+            "review_text": "My crown was the problem area. Not fully bald but noticeably thin when photos were taken from behind. 90 days on these and there's clear regrowth in that area. My barber noticed before I even mentioned it which was the best confirmation I could get.",
+            "reviewer_name": "Michael",
+            "reviewer_age": "35",
             "show_verified_badge": true,
             "show_purchased_product": false,
             "product_reference": "pumpkin-seed-oil-capsules",
@@ -3058,6 +3238,141 @@
         "rating_summary_border_style": "solid",
         "rating_summary_border_color": "#ffbf00",
         "rating_summary_border_radius": 50
+      }
+    },
+    "who_its_for": {
+      "type": "two-column-content",
+      "blocks": {
+        "left_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "left",
+            "heading_text": "This is for you if…",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "left_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "left",
+            "list_items": "You’re shedding noticeably more than you used to|Your part is widening or your hairline is moving back|There’s still fine, wispy hair where it’s thinning|You’d rather act early than wait and see|You ruled out finasteride because of the side effects",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "right_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "right",
+            "heading_text": "This isn’t for you if…",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "right_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "right",
+            "list_items": "An area has been completely bald for years — dormant follicles can wake up, dead ones can’t|You want results in two weeks — this needs 90 days of daily use|Your hair fell out suddenly in round patches — see a doctor about alopecia areata|You’re pregnant, breastfeeding, or taking blood thinners|You’re after a one-off fix rather than a daily habit",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#8a8a8a",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "left_heading",
+        "left_list",
+        "right_heading",
+        "right_list"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "section_heading": "Who this works for",
+        "section_heading_accent": "— and who it doesn’t",
+        "section_heading_tag": "h2",
+        "section_heading_size_desktop": 2.6,
+        "section_heading_size_mobile": 1.8,
+        "section_heading_line_height": 1.2,
+        "section_heading_color": "#000000",
+        "section_heading_margin_bottom": 16,
+        "section_subheading": "We’d rather lose the sale than take your money for something that won’t help. Read the right-hand column honestly before you order.",
+        "section_subheading_size_desktop": 1.1,
+        "section_subheading_size_mobile": 1,
+        "section_subheading_color": "#666666",
+        "section_header_align": "center",
+        "section_header_margin_bottom_desktop": 48,
+        "section_header_margin_bottom_mobile": 32,
+        "use_theme_colors": true,
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "accent_color": "#e63946",
+        "override_global_accent": false,
+        "use_accent_gradient": false,
+        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
+        "accent_font_family": "assistant_n4",
+        "accent_font_style": "italic",
+        "accent_font_weight": "inherit",
+        "accent_text_margin_left": 0,
+        "max_width": 1200,
+        "left_column_width": 50,
+        "right_column_width": 50,
+        "column_order": "left_first",
+        "mobile_column_order": "left_first",
+        "vertical_alignment": "center",
+        "column_gap_desktop": 40,
+        "column_gap_mobile": 30,
+        "show_column_divider": false,
+        "divider_color": "#e0e0e0",
+        "divider_width": 1,
+        "divider_height": 60,
+        "show_divider_mobile": false,
+        "left_column_text_align": "left",
+        "right_column_text_align": "left",
+        "mobile_text_align": "left",
+        "left_column_padding": 0,
+        "right_column_padding": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "padding_horizontal_mobile": 20,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_horizontal_desktop": 40,
+        "button_bg_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 24,
+        "button_border_radius": 4,
+        "image_border_radius": 8
       }
     },
     "satisfaction_guarantee_J4ypTy": {
@@ -3333,180 +3648,6 @@
       ],
       "settings": {
         "include_margins": true
-      }
-    },
-    "pattern_by_gender": {
-      "type": "two-column-content",
-      "blocks": {
-        "left_heading": {
-          "type": "heading",
-          "settings": {
-            "column": "left",
-            "heading_text": "In women",
-            "heading_tag": "h3",
-            "text_align": "left",
-            "font_size_desktop": 2.0,
-            "font_size_mobile": 1.5,
-            "line_height": 1.2,
-            "use_custom_color": false,
-            "margin_top": 0,
-            "margin_bottom": 15
-          }
-        },
-        "left_list": {
-          "type": "bullet_list",
-          "settings": {
-            "column": "left",
-            "list_items": "Your part is getting wider every time you look|Your ponytail feels thinner in your hand|Thinning spreads across the top instead of receding|More hair in the brush, the drain, the pillow|Scalp showing through under bright light",
-            "font_size": 15,
-            "icon_size": 18,
-            "use_custom_color": false,
-            "icon_color": "#fb7948",
-            "item_spacing": 12,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "right_heading": {
-          "type": "heading",
-          "settings": {
-            "column": "right",
-            "heading_text": "In men",
-            "heading_tag": "h3",
-            "text_align": "left",
-            "font_size_desktop": 2.0,
-            "font_size_mobile": 1.5,
-            "line_height": 1.2,
-            "use_custom_color": false,
-            "margin_top": 0,
-            "margin_bottom": 15
-          }
-        },
-        "right_list": {
-          "type": "bullet_list",
-          "settings": {
-            "column": "right",
-            "list_items": "Your hairline is creeping back at the temples|The crown is thinning where you can’t easily see it|Scalp visible in photos taken from behind|More hair in the shower every single morning|Styling no longer hides what it used to",
-            "font_size": 15,
-            "icon_size": 18,
-            "use_custom_color": false,
-            "icon_color": "#fb7948",
-            "item_spacing": 12,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "left_heading",
-        "left_list",
-        "right_heading",
-        "right_list"
-      ],
-      "settings": {
-        "show_section_header": true,
-        "section_heading": "Hair loss doesn’t look the same",
-        "section_heading_accent": "for everyone",
-        "section_heading_tag": "h2",
-        "section_heading_size_desktop": 2.6,
-        "section_heading_size_mobile": 1.8,
-        "section_heading_line_height": 1.2,
-        "section_heading_margin_bottom": 16,
-        "section_subheading": "DHT is the hormone behind both patterns. That’s why one formula works for men and women alike — it targets the cause, not the symptom.",
-        "section_subheading_size_desktop": 1.1,
-        "section_subheading_size_mobile": 1.0,
-        "section_header_align": "center",
-        "section_header_margin_bottom_desktop": 48,
-        "section_header_margin_bottom_mobile": 32,
-        "use_theme_colors": true,
-        "left_column_width": 50
-      }
-    },
-    "who_its_for": {
-      "type": "two-column-content",
-      "blocks": {
-        "left_heading": {
-          "type": "heading",
-          "settings": {
-            "column": "left",
-            "heading_text": "This is for you if…",
-            "heading_tag": "h3",
-            "text_align": "left",
-            "font_size_desktop": 2.0,
-            "font_size_mobile": 1.5,
-            "line_height": 1.2,
-            "use_custom_color": false,
-            "margin_top": 0,
-            "margin_bottom": 15
-          }
-        },
-        "left_list": {
-          "type": "bullet_list",
-          "settings": {
-            "column": "left",
-            "list_items": "You’re shedding noticeably more than you used to|Your part is widening or your hairline is moving back|There’s still fine, wispy hair where it’s thinning|You’d rather act early than wait and see|You ruled out finasteride because of the side effects",
-            "font_size": 15,
-            "icon_size": 18,
-            "use_custom_color": false,
-            "icon_color": "#fb7948",
-            "item_spacing": 12,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "right_heading": {
-          "type": "heading",
-          "settings": {
-            "column": "right",
-            "heading_text": "This isn’t for you if…",
-            "heading_tag": "h3",
-            "text_align": "left",
-            "font_size_desktop": 2.0,
-            "font_size_mobile": 1.5,
-            "line_height": 1.2,
-            "use_custom_color": false,
-            "margin_top": 0,
-            "margin_bottom": 15
-          }
-        },
-        "right_list": {
-          "type": "bullet_list",
-          "settings": {
-            "column": "right",
-            "list_items": "An area has been completely bald for years — dormant follicles can wake up, dead ones can’t|You want results in two weeks — this needs 90 days of daily use|Your hair fell out suddenly in round patches — see a doctor about alopecia areata|You’re pregnant, breastfeeding, or taking blood thinners|You’re after a one-off fix rather than a daily habit",
-            "font_size": 15,
-            "icon_size": 18,
-            "use_custom_color": false,
-            "icon_color": "#8a8a8a",
-            "item_spacing": 12,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "left_heading",
-        "left_list",
-        "right_heading",
-        "right_list"
-      ],
-      "settings": {
-        "show_section_header": true,
-        "section_heading": "Who this works for",
-        "section_heading_accent": "— and who it doesn’t",
-        "section_heading_tag": "h2",
-        "section_heading_size_desktop": 2.6,
-        "section_heading_size_mobile": 1.8,
-        "section_heading_line_height": 1.2,
-        "section_heading_margin_bottom": 16,
-        "section_subheading": "We’d rather lose the sale than take your money for something that won’t help. Read the right-hand column honestly before you order.",
-        "section_subheading_size_desktop": 1.1,
-        "section_subheading_size_mobile": 1.0,
-        "section_header_align": "center",
-        "section_header_margin_bottom_desktop": 48,
-        "section_header_margin_bottom_mobile": 32,
-        "use_theme_colors": true,
-        "left_column_width": 50
       }
     }
   },
