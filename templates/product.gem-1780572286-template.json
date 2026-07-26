@@ -458,7 +458,7 @@
             "video_size": 110,
             "show_social_badge": true,
             "social_platform": "tiktok",
-            "view_count": 56,
+            "view_count": 1.7,
             "badge_text": "Over",
             "badge_suffix": "M Views On TikTok",
             "use_gradient_text": false,
@@ -867,17 +867,17 @@
         }
       },
       "block_order": [
-        "before_and_after_yqRiFt",
         "before_and_after_cfGH8f",
-        "before_and_after_w6ekrN",
-        "before_and_after_8t6Gjh",
-        "before_and_after_JzVkkc",
-        "before_and_after_r8excL",
         "before_and_after_HWdqJN",
         "before_and_after_epAB4r",
-        "before_and_after_ztma3M",
+        "before_and_after_yqRiFt",
+        "before_and_after_r8excL",
         "before_and_after_awXjxE",
-        "before_and_after_xNNaYm"
+        "before_and_after_xNNaYm",
+        "before_and_after_JzVkkc",
+        "before_and_after_w6ekrN",
+        "before_and_after_8t6Gjh",
+        "before_and_after_ztma3M"
       ],
       "name": "Before & After Slider",
       "settings": {

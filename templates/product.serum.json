@@ -932,17 +932,17 @@
         }
       },
       "block_order": [
-        "before_and_after_yqRiFt",
         "before_and_after_cfGH8f",
-        "before_and_after_w6ekrN",
-        "before_and_after_8t6Gjh",
-        "before_and_after_JzVkkc",
-        "before_and_after_r8excL",
         "before_and_after_HWdqJN",
         "before_and_after_epAB4r",
-        "before_and_after_ztma3M",
+        "before_and_after_yqRiFt",
+        "before_and_after_r8excL",
         "before_and_after_awXjxE",
-        "before_and_after_xNNaYm"
+        "before_and_after_xNNaYm",
+        "before_and_after_JzVkkc",
+        "before_and_after_w6ekrN",
+        "before_and_after_8t6Gjh",
+        "before_and_after_ztma3M"
       ],
       "custom_css": [
         ".label {font-size: 12px !important; padding: 1px 12px !important;}"
