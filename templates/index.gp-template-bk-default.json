@@ -685,8 +685,8 @@
         },
         "title_KkipGq": {
           "settings": {
-            "accent_text": "James T.",
-            "title": "\"I could see new growth along my hairline by week 6. My barber noticed before I even said anything.\""
+            "accent_text": "Jessica, 42",
+            "title": "\"Hair is noticeably thicker at the 10 week mark and I feel like I’m not constantly losing hair anymore.\""
           },
           "type": "title"
         }
@@ -857,7 +857,7 @@
         "faq_item_wkFR6D": {
           "settings": {
             "answer": "<p>Yes. DHT-related hair loss affects both genders and pumpkin seed oil works on the same hormonal pathway regardless.</p>",
-            "question": "Does it work for both men and women?"
+            "question": "Does it work for both women and men?"
           },
           "type": "faq_item"
         }

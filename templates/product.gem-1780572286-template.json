@@ -53,7 +53,7 @@
         "custom_text_CtXXXE": {
           "type": "custom_text",
           "settings": {
-            "text": "<p>Our cold-pressed, virgin formula delivers 2000mg per serving directly targeting DHT at the follicle level — slowing shedding, reactivating dormant follicles, and rebuilding hair density from the root up. Clinically studied. Third-party tested. 90 days to visibly fuller hair.</p>",
+            "text": "<p>Noticing a wider part, a thinner ponytail, more hair in the brush than there used to be? Our cold-pressed, virgin formula delivers 2000mg per serving directly targeting DHT at the follicle level — slowing shedding, reactivating dormant follicles, and rebuilding hair density from the root up. Clinically studied. Third-party tested. Works for women and men. 90 days to visibly fuller hair.</p>",
             "show_description": false,
             "description": "<p>Add additional descriptive text here</p>",
             "description_font_size": 14,
@@ -357,7 +357,7 @@
             "accordion_mode": true,
             "question_1": "What is it?",
             "use_product_description_for_question_1": false,
-            "answer_1": "<p>Seed Oil Capsules are a 100% natural DHT-blocking supplement designed to reduce hair loss and restore thicker, fuller hair. </p><p>Each softgel contains 2000mg of cold-pressed, virgin pumpkin seed oil — one of the most studied natural compounds for hair regrowth in both men and women.</p>",
+            "answer_1": "<p>Seed Oil Capsules are a 100% natural DHT-blocking supplement designed to reduce hair loss and restore thicker, fuller hair. </p><p>Each softgel contains 2000mg of cold-pressed, virgin pumpkin seed oil — one of the most studied natural compounds for hair regrowth in both women and men.</p>",
             "question_2": "How do I take it?",
             "answer_2": "<p>Take 2 softgels daily with a meal. For best results, take consistently for a minimum of 90 days. No topical application needed — works from the inside out.</p>",
             "question_3": "Ingredients",
@@ -592,7 +592,7 @@
             "list_title": "",
             "list_item_1": "Clinically studied DHT-blocking compounds",
             "list_item_1_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_2": "Works for men and women",
+            "list_item_2": "Works for women and men",
             "list_item_2_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_3": "No prescription required",
             "list_item_3_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
@@ -1759,15 +1759,15 @@
             "icon_size_desktop": 60,
             "icon_size_mobile": 54,
             "icon_border_radius": 4,
-            "item_1_title": "Excessive Shedding",
+            "item_1_title": "The Widening Part & Thinning Ponytail",
             "item_1_svg": "",
-            "item_1_content": "<p>The <strong>shedding stage</strong> — what you notice first:</p><ul><li>Hair falling out in the shower or on your pillow</li><li>Thinning at the crown or parting line</li><li>Noticeably less volume over time</li><li>DHT overproduction shrinking your follicles</li></ul>",
-            "item_2_title": "Thinning & Low Density",
+            "item_1_content": "<p>The pattern <strong>most women</strong> notice first:</p><ul><li>Your part looks wider every time you check</li><li>Ponytail noticeably thinner in circumference</li><li>Fine, limp hair that lacks body</li><li>More hair in the brush, the drain, the pillow</li></ul>",
+            "item_2_title": "The Receding Hairline & Thinning Crown",
             "item_2_svg": "",
-            "item_2_content": "<p>The <strong>thinning stage</strong> — when density starts to drop:</p><ul><li>Fine, limp hair that lacks body</li><li>Wider parting line becoming visible</li><li>Ponytail noticeably thinner in circumference</li><li>Follicles producing weaker, shorter strands</li></ul>",
+            "item_2_content": "<p>The pattern <strong>most men</strong> notice first:</p><ul><li>Hairline creeping back at the temples</li><li>Thinning at the crown where you can’t easily see it</li><li>Scalp visible in photos taken from behind</li><li>More hair in the shower every single morning</li></ul>",
             "item_3_title": "Slow or Stalled Growth",
             "item_3_svg": "",
-            "item_3_content": "<p>The <strong>stalled stage</strong> — when follicles stop producing:</p><ul><li>Hair not growing past a certain length</li><li>Bald patches that haven't recovered</li><li>Hairline recession with no regrowth</li><li>Dormant follicles no longer producing hair</li></ul>",
+            "item_3_content": "<p>The <strong>stalled stage</strong> — when follicles stop producing:</p><ul><li>Hair not growing past a certain length</li><li>Bald patches that haven’t recovered</li><li>Hairline recession with no regrowth</li><li>Dormant follicles no longer producing hair</li></ul>",
             "item_4_title": "",
             "item_4_svg": "",
             "item_4_content": "",
@@ -2272,7 +2272,7 @@
         "feature_item_TzGn98": {
           "type": "feature_item",
           "settings": {
-            "text": "WORKS FOR MEN & WOMEN",
+            "text": "WORKS FOR WOMEN & MEN",
             "icon_type": "svg",
             "icon": ""
           }
@@ -2378,7 +2378,7 @@
           "type": "feature_row",
           "name": "2",
           "settings": {
-            "feature_name": "Works for Men & Women",
+            "feature_name": "Works for Women & Men",
             "show_icon": true,
             "feature_icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewbox=\"0 0 256 256\">\n  <path d=\"M54.46,201.54c-9.2-9.2-3.1-28.53-7.78-39.85C41.82,150,24,140.5,24,128s17.82-22,22.68-33.69C51.36,83,45.26,63.66,54.46,54.46S83,51.36,94.31,46.68C106.05,41.82,115.5,24,128,24S150,41.82,161.69,46.68c11.32,4.68,30.65-1.42,39.85,7.78s3.1,28.53,7.78,39.85C214.18,106.05,232,115.5,232,128S214.18,150,209.32,161.69c-4.68,11.32,1.42,30.65-7.78,39.85s-28.53,3.1-39.85,7.78C150,214.18,140.5,232,128,232s-22-17.82-33.69-22.68C83,204.64,63.66,210.74,54.46,201.54Z\" opacity=\"0.2\"></path>\n  <path d=\"M54.46,201.54c-9.2-9.2-3.1-28.53-7.78-39.85C41.82,150,24,140.5,24,128s17.82-22,22.68-33.69C51.36,83,45.26,63.66,54.46,54.46S83,51.36,94.31,46.68C106.05,41.82,115.5,24,128,24S150,41.82,161.69,46.68c11.32,4.68,30.65-1.42,39.85,7.78s3.1,28.53,7.78,39.85C214.18,106.05,232,115.5,232,128S214.18,150,209.32,161.69c-4.68,11.32,1.42,30.65-7.78,39.85s-28.53,3.1-39.85,7.78C150,214.18,140.5,232,128,232s-22-17.82-33.69-22.68C83,204.64,63.66,210.74,54.46,201.54Z\" fill=\"white\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"16\"></path>\n  <polyline points=\"88 136 112 160 168 104\" fill=\"none\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"16\"></polyline>\n</svg>",
             "value_type": "checkmark",
@@ -2611,8 +2611,8 @@
       },
       "block_order": [
         "review_pgiAYL",
-        "review_wzdDnY",
         "review_mwrxnG",
+        "review_wzdDnY",
         "review_bDiUCe"
       ],
       "name": "Customer Reviews",
@@ -2808,8 +2808,8 @@
         "faq_item_zJpqH3": {
           "type": "faq_item",
           "settings": {
-            "question": "Does it work for both men and women?",
-            "answer": "<p>Yes. DHT-related hair loss affects both men and women and pumpkin seed oil works on the same hormonal pathway regardless of gender.</p>"
+            "question": "Does it work for both women and men?",
+            "answer": "<p>Yes. DHT-related hair loss affects both women and men and pumpkin seed oil works on the same hormonal pathway regardless of gender.</p>"
           }
         },
         "faq_item_U4fWGe": {
