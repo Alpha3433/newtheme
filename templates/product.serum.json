@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "shop_product_details_JbqzwH": {
@@ -537,12 +528,25 @@
             "margin_top": 0,
             "margin_bottom": 0
           }
+        },
+        "headline_promise": {
+          "type": "custom_text",
+          "settings": {
+            "text": "<p><strong>Less Shedding in 14 Days</strong></p>",
+            "text_align": "left",
+            "font_size": 26,
+            "text_color": "#282828",
+            "show_icon": false,
+            "margin_top": 0,
+            "margin_bottom": 4
+          }
         }
       },
       "block_order": [
         "reviews_4Q87j7",
         "viewer_notice_YHX7Dm",
         "title_4EWLUd",
+        "headline_promise",
         "divider_UJYaan",
         "custom_text_CtXXXE",
         "custom_text_6gdF7K",
@@ -551,8 +555,8 @@
         "quantity_selector_qJAYDN",
         "add_to_cart_7nhY9K",
         "divider_EDzRzC",
-        "payment_icons_6bWLc3",
         "guarantee_badges_HAWQYD",
+        "payment_icons_6bWLc3",
         "divider_DttfTp",
         "custom_money_back_FNGwrh",
         "product_faq_4yXjYU",
@@ -2002,7 +2006,7 @@
         "border_color": "#e5e7eb",
         "border_radius": 8,
         "enable_shadow": false,
-        "heading": "One capsule, total hair recovery",
+        "heading": "One serum, total hair recovery",
         "heading_accent": "",
         "image": "shopify://shop_images/hf_20260514_101827_4ee3613a-c64c-42da-b1d5-31d0188ae135.png",
         "enable_image_fade_mask": true,
@@ -2300,7 +2304,8 @@
         "use_accent_gradient": false,
         "accent_text_gradient": "linear-gradient(45deg, rgba(239, 74, 101, 1), rgba(255, 107, 157, 1) 100%)",
         "accent_text_margin_left": 0
-      }
+      },
+      "disabled": true
     },
     "alternating_features_VLaNd9": {
       "type": "alternating-features",
@@ -2386,7 +2391,8 @@
         "feature_title_size_desktop": 28,
         "description_size_mobile": 13,
         "description_size_desktop": 17
-      }
+      },
+      "disabled": true
     },
     "scrolling_features_bar_xXQrtb": {
       "type": "scrolling-features-bar",
@@ -3135,6 +3141,276 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "pattern_by_gender_serum": {
+      "type": "two-column-content",
+      "blocks": {
+        "left_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "left",
+            "heading_text": "In women",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "left_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "left",
+            "list_items": "Your part is getting wider every time you look|Your ponytail feels thinner in your hand|Thinning spreads across the top instead of receding|More hair in the brush, the drain, the pillow|Scalp showing through under bright light",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "right_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "right",
+            "heading_text": "In men",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "right_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "right",
+            "list_items": "Your hairline is creeping back at the temples|The crown is thinning where you can’t easily see it|Scalp visible in photos taken from behind|More hair in the shower every single morning|Styling no longer hides what it used to",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "left_heading",
+        "left_list",
+        "right_heading",
+        "right_list"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "section_heading": "Hair loss doesn’t look the same",
+        "section_heading_accent": "for everyone",
+        "section_heading_tag": "h2",
+        "section_heading_size_desktop": 2.6,
+        "section_heading_size_mobile": 1.8,
+        "section_heading_line_height": 1.2,
+        "section_heading_color": "#000000",
+        "section_heading_margin_bottom": 16,
+        "section_subheading": "DHT is the hormone behind both patterns. That’s why one formula works for men and women alike — it targets the cause, not the symptom.",
+        "section_subheading_size_desktop": 1.1,
+        "section_subheading_size_mobile": 1,
+        "section_subheading_color": "#666666",
+        "section_header_align": "center",
+        "section_header_margin_bottom_desktop": 48,
+        "section_header_margin_bottom_mobile": 32,
+        "use_theme_colors": true,
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "accent_color": "#e63946",
+        "override_global_accent": false,
+        "use_accent_gradient": false,
+        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
+        "accent_font_family": "assistant_n4",
+        "accent_font_style": "italic",
+        "accent_font_weight": "inherit",
+        "accent_text_margin_left": 0,
+        "max_width": 1200,
+        "left_column_width": 50,
+        "right_column_width": 50,
+        "column_order": "left_first",
+        "mobile_column_order": "left_first",
+        "vertical_alignment": "center",
+        "column_gap_desktop": 40,
+        "column_gap_mobile": 30,
+        "show_column_divider": false,
+        "divider_color": "#e0e0e0",
+        "divider_width": 1,
+        "divider_height": 60,
+        "show_divider_mobile": false,
+        "left_column_text_align": "left",
+        "right_column_text_align": "left",
+        "mobile_text_align": "left",
+        "left_column_padding": 0,
+        "right_column_padding": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "padding_horizontal_mobile": 20,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_horizontal_desktop": 40,
+        "button_bg_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 24,
+        "button_border_radius": 4,
+        "image_border_radius": 8
+      }
+    },
+    "who_its_for_serum": {
+      "type": "two-column-content",
+      "blocks": {
+        "left_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "left",
+            "heading_text": "This is for you if…",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "left_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "left",
+            "list_items": "You’re shedding noticeably more than you used to|Your part is widening or your hairline is moving back|There’s still fine, wispy hair where it’s thinning|You’d rather act early than wait and see|You ruled out finasteride because of the side effects",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "right_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "right",
+            "heading_text": "This isn’t for you if…",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "right_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "right",
+            "list_items": "An area has been completely bald for years — dormant follicles can wake up, dead ones can’t|You want results in two weeks — this needs 90 days of daily use|Your hair fell out suddenly in round patches — see a doctor about alopecia areata|You’re pregnant, breastfeeding, or taking blood thinners|You’re after a one-off fix rather than a daily habit",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#8a8a8a",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "left_heading",
+        "left_list",
+        "right_heading",
+        "right_list"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "section_heading": "Who this works for",
+        "section_heading_accent": "— and who it doesn’t",
+        "section_heading_tag": "h2",
+        "section_heading_size_desktop": 2.6,
+        "section_heading_size_mobile": 1.8,
+        "section_heading_line_height": 1.2,
+        "section_heading_color": "#000000",
+        "section_heading_margin_bottom": 16,
+        "section_subheading": "We’d rather lose the sale than take your money for something that won’t help. Read the right-hand column honestly before you order.",
+        "section_subheading_size_desktop": 1.1,
+        "section_subheading_size_mobile": 1,
+        "section_subheading_color": "#666666",
+        "section_header_align": "center",
+        "section_header_margin_bottom_desktop": 48,
+        "section_header_margin_bottom_mobile": 32,
+        "use_theme_colors": true,
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "accent_color": "#e63946",
+        "override_global_accent": false,
+        "use_accent_gradient": false,
+        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
+        "accent_font_family": "assistant_n4",
+        "accent_font_style": "italic",
+        "accent_font_weight": "inherit",
+        "accent_text_margin_left": 0,
+        "max_width": 1200,
+        "left_column_width": 50,
+        "right_column_width": 50,
+        "column_order": "left_first",
+        "mobile_column_order": "left_first",
+        "vertical_alignment": "center",
+        "column_gap_desktop": 40,
+        "column_gap_mobile": 30,
+        "show_column_divider": false,
+        "divider_color": "#e0e0e0",
+        "divider_width": 1,
+        "divider_height": 60,
+        "show_divider_mobile": false,
+        "left_column_text_align": "left",
+        "right_column_text_align": "left",
+        "mobile_text_align": "left",
+        "left_column_padding": 0,
+        "right_column_padding": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "padding_horizontal_mobile": 20,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_horizontal_desktop": 40,
+        "button_bg_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 24,
+        "button_border_radius": 4,
+        "image_border_radius": 8
+      }
     }
   },
   "order": [
@@ -3142,11 +3418,12 @@
     "image_with_text_MnK3Cx",
     "divider_cH7pyC",
     "before_after_KeXf6z",
+    "statistics_grid_pXC34G",
     "as_seen_in_logos_hpfJT6",
+    "pattern_by_gender_serum",
     "4_benefits_jtwY6M",
     "4_cards_WYHJLQ",
     "roadmap_GEaDNe",
-    "statistics_grid_pXC34G",
     "steps_XmnA8k",
     "image_with_text_xJRmMd",
     "image_with_text_4Nrjxn",
@@ -3154,6 +3431,7 @@
     "scrolling_features_bar_xXQrtb",
     "product_comparison_ahRqAP",
     "customer_reviews_carousel_GEVJYY",
+    "who_its_for_serum",
     "satisfaction_guarantee_J4ypTy",
     "store_faq_hidFcc",
     "17740590596d2788d8",
