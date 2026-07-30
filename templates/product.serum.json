@@ -306,7 +306,7 @@
         "divider_EDzRzC": {
           "type": "divider",
           "settings": {
-            "color": "#FFFFFF",
+            "color": "#ffffff",
             "style": "solid",
             "thickness": 1,
             "width": "100%",
@@ -829,16 +829,6 @@
     "before_after_KeXf6z": {
       "type": "before-after",
       "blocks": {
-        "before_and_after_yqRiFt": {
-          "type": "before_and_after",
-          "settings": {
-            "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_124108_2eb3b3b4-134b-4d58-9f56-7183c35390f4.png",
-            "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_124412_77b309f4-0cf8-4f6e-85da-956fe0b58667.png",
-            "category": "General"
-          }
-        },
         "before_and_after_cfGH8f": {
           "type": "before_and_after",
           "settings": {
@@ -847,46 +837,6 @@
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_130633_6450372b-4a30-497b-90f7-d743e3971404.png",
             "category": "Women"
-          }
-        },
-        "before_and_after_w6ekrN": {
-          "type": "before_and_after",
-          "settings": {
-            "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_124901_a999785d-4e19-4165-bcb5-b8b48eb25af6.png",
-            "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_124854_b2e156fe-8407-476f-8071-d24ba9f22a0a.png",
-            "category": "Men"
-          }
-        },
-        "before_and_after_8t6Gjh": {
-          "type": "before_and_after",
-          "settings": {
-            "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_130318_cf8ed94c-da76-41ac-b69b-11a6bea84e17.png",
-            "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_130345_96ed7bcd-1fc0-4406-af02-f73203a818e5.png",
-            "category": "Men"
-          }
-        },
-        "before_and_after_JzVkkc": {
-          "type": "before_and_after",
-          "settings": {
-            "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_125422_a86b2a58-df6e-4706-a176-dc70ea4861cb.png",
-            "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_125601_7b0fa0f0-d938-4e8f-967b-6f10ea6ada23.png",
-            "category": "90 Days"
-          }
-        },
-        "before_and_after_r8excL": {
-          "type": "before_and_after",
-          "settings": {
-            "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_131110_248ce412-0b03-41d6-9bb5-e3e9667d75ab.png",
-            "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_131154_676a117d-c5b9-4e9d-813a-02ab51d4d63f.png",
-            "category": "General"
           }
         },
         "before_and_after_HWdqJN": {
@@ -909,14 +859,24 @@
             "category": "Women"
           }
         },
-        "before_and_after_ztma3M": {
+        "before_and_after_yqRiFt": {
           "type": "before_and_after",
           "settings": {
             "before_label": "Before",
-            "before_image": "shopify://shop_images/hf_20260316_132722_6f8c6140-dc2c-44d8-a432-43fb82af7cd5.png",
+            "before_image": "shopify://shop_images/hf_20260316_124108_2eb3b3b4-134b-4d58-9f56-7183c35390f4.png",
             "after_label": "After 90 Days",
-            "after_image": "shopify://shop_images/hf_20260316_132957_b8cff676-07ea-44c8-973e-41fba631e494.png",
-            "category": "Men"
+            "after_image": "shopify://shop_images/hf_20260316_124412_77b309f4-0cf8-4f6e-85da-956fe0b58667.png",
+            "category": "General"
+          }
+        },
+        "before_and_after_r8excL": {
+          "type": "before_and_after",
+          "settings": {
+            "before_label": "Before",
+            "before_image": "shopify://shop_images/hf_20260316_131110_248ce412-0b03-41d6-9bb5-e3e9667d75ab.png",
+            "after_label": "After 90 Days",
+            "after_image": "shopify://shop_images/hf_20260316_131154_676a117d-c5b9-4e9d-813a-02ab51d4d63f.png",
+            "category": "General"
           }
         },
         "before_and_after_awXjxE": {
@@ -937,6 +897,46 @@
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260317_122943_80cf094f-e3ef-4679-a564-d06eeadeed68.png",
             "category": "General"
+          }
+        },
+        "before_and_after_JzVkkc": {
+          "type": "before_and_after",
+          "settings": {
+            "before_label": "Before",
+            "before_image": "shopify://shop_images/hf_20260316_125422_a86b2a58-df6e-4706-a176-dc70ea4861cb.png",
+            "after_label": "After 90 Days",
+            "after_image": "shopify://shop_images/hf_20260316_125601_7b0fa0f0-d938-4e8f-967b-6f10ea6ada23.png",
+            "category": "90 Days"
+          }
+        },
+        "before_and_after_w6ekrN": {
+          "type": "before_and_after",
+          "settings": {
+            "before_label": "Before",
+            "before_image": "shopify://shop_images/hf_20260316_124901_a999785d-4e19-4165-bcb5-b8b48eb25af6.png",
+            "after_label": "After 90 Days",
+            "after_image": "shopify://shop_images/hf_20260316_124854_b2e156fe-8407-476f-8071-d24ba9f22a0a.png",
+            "category": "Men"
+          }
+        },
+        "before_and_after_8t6Gjh": {
+          "type": "before_and_after",
+          "settings": {
+            "before_label": "Before",
+            "before_image": "shopify://shop_images/hf_20260316_130318_cf8ed94c-da76-41ac-b69b-11a6bea84e17.png",
+            "after_label": "After 90 Days",
+            "after_image": "shopify://shop_images/hf_20260316_130345_96ed7bcd-1fc0-4406-af02-f73203a818e5.png",
+            "category": "Men"
+          }
+        },
+        "before_and_after_ztma3M": {
+          "type": "before_and_after",
+          "settings": {
+            "before_label": "Before",
+            "before_image": "shopify://shop_images/hf_20260316_132722_6f8c6140-dc2c-44d8-a432-43fb82af7cd5.png",
+            "after_label": "After 90 Days",
+            "after_image": "shopify://shop_images/hf_20260316_132957_b8cff676-07ea-44c8-973e-41fba631e494.png",
+            "category": "Men"
           }
         }
       },
@@ -2721,26 +2721,6 @@
             "purchase_date": "March 14th, 2025"
           }
         },
-        "review_wzdDnY": {
-          "type": "review",
-          "settings": {
-            "review_image": "shopify://shop_images/hf_20260321_053957_ea54f901-6772-4ce9-952a-09491bd2c65b.jpg",
-            "image_position": "center center",
-            "wrap_image": false,
-            "rating": 5,
-            "review_text": "My crown was the problem area. Not fully bald but noticeably thin when photos were taken from behind. 90 days on these and there's clear regrowth in that area. My barber noticed before I even mentioned it which was the best confirmation I could get.",
-            "reviewer_name": "Michael",
-            "reviewer_age": "35",
-            "show_verified_badge": true,
-            "show_purchased_product": false,
-            "product_reference": "pumpkin-seed-oil-capsules",
-            "product_title": "Product Name",
-            "product_price": "$29.99",
-            "product_compare_price": "$39.99",
-            "show_purchase_date": true,
-            "purchase_date": "March 14th, 2025"
-          }
-        },
         "review_mwrxnG": {
           "type": "review",
           "settings": {
@@ -2751,6 +2731,26 @@
             "review_text": "I looked into prescription options but the side effects put me off completely. These are completely natural and I've had zero issues taking them. Hair is noticeably thicker at the 10 week mark and I feel like I'm not constantly losing hair anymore. Will keep taking these indefinitely.",
             "reviewer_name": "Jessica",
             "reviewer_age": "42",
+            "show_verified_badge": true,
+            "show_purchased_product": false,
+            "product_reference": "pumpkin-seed-oil-capsules",
+            "product_title": "Product Name",
+            "product_price": "$29.99",
+            "product_compare_price": "$39.99",
+            "show_purchase_date": true,
+            "purchase_date": "March 14th, 2025"
+          }
+        },
+        "review_wzdDnY": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify://shop_images/hf_20260321_053957_ea54f901-6772-4ce9-952a-09491bd2c65b.jpg",
+            "image_position": "center center",
+            "wrap_image": false,
+            "rating": 5,
+            "review_text": "My crown was the problem area. Not fully bald but noticeably thin when photos were taken from behind. 90 days on these and there's clear regrowth in that area. My barber noticed before I even mentioned it which was the best confirmation I could get.",
+            "reviewer_name": "Michael",
+            "reviewer_age": "35",
             "show_verified_badge": true,
             "show_purchased_product": false,
             "product_reference": "pumpkin-seed-oil-capsules",
