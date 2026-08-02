@@ -130,7 +130,8 @@
       "settings": {
         "trigger_behavior": "atc_button",
         "scroll_percentage_trigger": 25,
-        "select_button_behavior": "atc",
+        "select_button_behavior": "scroll_to_section",
+        "scroll_to_section_number": 1,
         "show_section_numbers": false,
         "scroll_offset": 0,
         "scroll_to_percentage": 50,
