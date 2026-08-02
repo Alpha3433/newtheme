@@ -78,7 +78,6 @@
     },
     "sticky_add_to_cart_QBhMc4": {
       "type": "sticky-add-to-cart",
-      "disabled": true,
       "name": "Sticky Add to Cart",
       "settings": {
         "trigger_behavior": "atc_button",
@@ -123,11 +122,60 @@
         "delivery_text_mobile_font_size": 11,
         "delivery_text_letter_spacing": 0
       }
+    },
+    "sticky_add_to_cart_bwgYem": {
+      "type": "sticky-add-to-cart",
+      "disabled": true,
+      "name": "Sticky Add to Cart",
+      "settings": {
+        "trigger_behavior": "atc_button",
+        "scroll_percentage_trigger": 25,
+        "select_button_behavior": "atc",
+        "show_section_numbers": false,
+        "scroll_offset": 0,
+        "scroll_to_percentage": 50,
+        "button_link": "",
+        "fallback_title": "",
+        "button_text": "CLAIM OFFER",
+        "rating_text": "Excellent 4.8 | 1319 reviews",
+        "satc_toggle_variant": false,
+        "turn_off_delivery_date": false,
+        "delivery_days": 5,
+        "delivery_text_prefix": "Arrives by",
+        "delivery_date_display_format": "weekday_month_day",
+        "use_theme_colors": true,
+        "background_color": "#FFFFFF",
+        "star_color": "#99E9FF",
+        "mobile_style": "default",
+        "z_index": 9900,
+        "title_color": "#000000",
+        "title_desktop_font_size": 16,
+        "title_mobile_font_size": 14,
+        "title_letter_spacing": 0,
+        "use_global_button_styling": true,
+        "custom_button_padding_y": 15,
+        "custom_button_font_size": 14,
+        "button_bg_color": "#EF4A65",
+        "button_hover_color": "#7BDBF1",
+        "button_text_color": "#FFFFFF",
+        "border_radius": 6,
+        "rating_text_color": "#333333",
+        "rating_text_font_weight": "var(--font-weight-regular)",
+        "rating_text_desktop_font_size": 14,
+        "rating_text_mobile_font_size": 14,
+        "rating_text_letter_spacing": 0,
+        "delivery_text_color": "#333333",
+        "delivery_text_font_weight": "var(--font-weight-regular)",
+        "delivery_text_desktop_font_size": 14,
+        "delivery_text_mobile_font_size": 11,
+        "delivery_text_letter_spacing": 0
+      }
     }
   },
   "order": [
     "announcement_bar_HdjCdC",
     "header",
-    "sticky_add_to_cart_QBhMc4"
+    "sticky_add_to_cart_QBhMc4",
+    "sticky_add_to_cart_bwgYem"
   ]
 }
