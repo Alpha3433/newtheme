@@ -77,7 +77,7 @@
             "text": "<p><strong>Less Shedding in 14 Days</strong></p>",
             "show_description": false,
             "description": "<p>Add additional descriptive text here</p>",
-            "description_font_size": 9,
+            "description_font_size": 8,
             "description_spacing": 4,
             "description_color": "#666666",
             "description_opacity": 0.8,
