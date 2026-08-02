@@ -1369,6 +1369,7 @@
         "right_heading",
         "right_list"
       ],
+      "disabled": true,
       "settings": {
         "show_section_header": true,
         "section_heading": "Hair loss doesn’t look the same",
@@ -1393,7 +1394,7 @@
         "accent_color": "#e63946",
         "override_global_accent": false,
         "use_accent_gradient": false,
-        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
+        "accent_text_gradient": "linear-gradient(45deg, rgba(239, 74, 101, 1), rgba(255, 107, 157, 1) 100%)",
         "accent_font_family": "assistant_n4",
         "accent_font_style": "italic",
         "accent_font_weight": "inherit",
@@ -3143,6 +3144,7 @@
         "right_heading",
         "right_list"
       ],
+      "disabled": true,
       "settings": {
         "show_section_header": true,
         "section_heading": "Who this works for",
@@ -3167,7 +3169,7 @@
         "accent_color": "#e63946",
         "override_global_accent": false,
         "use_accent_gradient": false,
-        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
+        "accent_text_gradient": "linear-gradient(45deg, rgba(239, 74, 101, 1), rgba(255, 107, 157, 1) 100%)",
         "accent_font_family": "assistant_n4",
         "accent_font_style": "italic",
         "accent_font_weight": "inherit",
