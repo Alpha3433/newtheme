@@ -37,9 +37,9 @@
         "hide_shine_effect": false,
         "static_gradient_value": "linear-gradient(135deg, #FFF5EA, #FF99A9)",
         "solid_bg_color": "#ff99a9",
-        "gradient_color_1": "#CC6D00",
+        "gradient_color_1": "#cc6d00",
         "gradient_color_2": "#ff0000",
-        "gradient_color_3": "#aa0000",
+        "gradient_color_3": "#fd7a00",
         "gradient_color_4": "#ff0000"
       }
     },
@@ -78,6 +78,7 @@
     },
     "sticky_add_to_cart_QBhMc4": {
       "type": "sticky-add-to-cart",
+      "disabled": true,
       "name": "Sticky Add to Cart",
       "settings": {
         "trigger_behavior": "atc_button",
