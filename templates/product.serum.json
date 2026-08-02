@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "shop_product_details_JbqzwH": {
@@ -60,6 +69,68 @@
             "margin_bottom": 0,
             "title_color": "#333030",
             "line_height": 1
+          }
+        },
+        "headline_promise": {
+          "type": "custom_text",
+          "settings": {
+            "text": "<p><strong>Less Shedding in 14 Days</strong></p>",
+            "show_description": false,
+            "description": "<p>Add additional descriptive text here</p>",
+            "description_font_size": 9,
+            "description_spacing": 4,
+            "description_color": "#666666",
+            "description_opacity": 0.8,
+            "show_accent_text": false,
+            "accent_text": "Accent Text",
+            "accent_text_position": "before",
+            "use_accent_gradient": true,
+            "accent_text_gradient": "linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1) 100%)",
+            "accent_text_color": "#667eea",
+            "accent_text_font_size": 16,
+            "accent_text_font_weight": "semibold",
+            "accent_text_spacing": 8,
+            "show_icon": false,
+            "custom_icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" class=\"bi bi-stars\"><path d=\"M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z\"></path></svg>",
+            "icon_color": "#333333",
+            "icon_size": 20,
+            "icon_spacing": 8,
+            "icon_alignment": "center",
+            "icon_margin_left": 0,
+            "icon_margin_right": 8,
+            "use_image_icon": false,
+            "show_after_icon": false,
+            "after_custom_icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><path d=\"M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z\"></path></svg>",
+            "after_icon_color": "#333333",
+            "after_icon_size": 20,
+            "after_icon_alignment": "center",
+            "after_icon_margin_left": 8,
+            "after_icon_margin_right": 0,
+            "use_image_after_icon": false,
+            "text_align": "left",
+            "font_size": 26,
+            "text_color": "#282828",
+            "link_color": "#0066cc",
+            "margin_top": 0,
+            "margin_bottom": 4,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "use_container": false,
+            "container_bg_type": "color",
+            "container_bg": "#f8f8f8",
+            "container_bg_gradient": "linear-gradient(180deg, rgba(248, 248, 248, 1), rgba(229, 229, 229, 1) 100%)",
+            "container_padding_v": 10,
+            "container_padding_h": 14,
+            "container_fit_content": false,
+            "border_radius": 4,
+            "show_border": false,
+            "border_width": 1,
+            "border_color": "#e0e0e0",
+            "show_divider": false,
+            "divider_color": "#e0e0e0",
+            "divider_height": 1,
+            "divider_style": "solid",
+            "divider_spacing": 12
           }
         },
         "divider_UJYaan": {
@@ -307,17 +378,6 @@
             "margin_bottom": 10
           }
         },
-        "payment_icons_6bWLc3": {
-          "type": "payment_icons",
-          "settings": {
-            "custom_payment_icons": "mastercard, american_express, apple_pay, google_pay, shopify_pay, discover, visa",
-            "alignment": "center",
-            "icon_height": 22,
-            "icon_spacing": 6,
-            "margin_top": -6,
-            "margin_bottom": 8
-          }
-        },
         "guarantee_badges_HAWQYD": {
           "type": "guarantee_badges",
           "settings": {
@@ -343,6 +403,17 @@
             "gap": 6,
             "align_center": true,
             "mobile_stack": false
+          }
+        },
+        "payment_icons_6bWLc3": {
+          "type": "payment_icons",
+          "settings": {
+            "custom_payment_icons": "mastercard, american_express, apple_pay, google_pay, shopify_pay, discover, visa",
+            "alignment": "center",
+            "icon_height": 22,
+            "icon_spacing": 6,
+            "margin_top": -6,
+            "margin_bottom": 8
           }
         },
         "divider_DttfTp": {
@@ -527,18 +598,6 @@
             "custom_badge_text": "",
             "margin_top": 0,
             "margin_bottom": 0
-          }
-        },
-        "headline_promise": {
-          "type": "custom_text",
-          "settings": {
-            "text": "<p><strong>Less Shedding in 14 Days</strong></p>",
-            "text_align": "left",
-            "font_size": 26,
-            "text_color": "#282828",
-            "show_icon": false,
-            "margin_top": 0,
-            "margin_bottom": 4
           }
         }
       },
@@ -1067,6 +1126,113 @@
         "show_on_mobile": true
       }
     },
+    "statistics_grid_pXC34G": {
+      "type": "statistics-grid",
+      "blocks": {
+        "statistic_acnwta": {
+          "type": "statistic",
+          "settings": {
+            "percentage": 89,
+            "title": "Reduction in Hair Shedding",
+            "description": "3 in 4 customers report noticeably less shedding within the first 30 days."
+          }
+        },
+        "statistic_k4mcQt": {
+          "type": "statistic",
+          "settings": {
+            "percentage": 82,
+            "title": "Saw Visible Regrowth",
+            "description": "Over 4 in 5 customers noticed new hair growth within 90 days of consistent use."
+          }
+        },
+        "statistic_bLf9xr": {
+          "type": "statistic",
+          "settings": {
+            "percentage": 85,
+            "title": "Reported Thicker Hair",
+            "description": "More than two thirds of customers said their hair felt denser and fuller after completing a full cycle."
+          }
+        },
+        "statistic_m9tA4T": {
+          "type": "statistic",
+          "settings": {
+            "percentage": 90,
+            "title": "Would Recommend",
+            "description": "9 out of 10 customers said they would recommend our Pumpkin Seed Oil Serum to someone."
+          }
+        }
+      },
+      "block_order": [
+        "statistic_acnwta",
+        "statistic_k4mcQt",
+        "statistic_bLf9xr",
+        "statistic_m9tA4T"
+      ],
+      "name": "Statistics Grid",
+      "settings": {
+        "use_theme_colors": false,
+        "heading_part_1": "The Numbers Don't",
+        "heading_part_2": "Lie",
+        "subheading": "Backed by clinical research and validated by thousands of real customers who've seen the results firsthand.",
+        "header_bottom_margin": 10,
+        "stats_grid_margin_top": 30,
+        "mobile_columns": "1",
+        "section_max_width": 1100,
+        "remove_card_background": false,
+        "hide_progress_circle": false,
+        "card_border_radius": 0,
+        "card_min_height_desktop_no_circle": 180,
+        "card_min_height_mobile_no_circle": 140,
+        "percentage_font_size_desktop": 48,
+        "percentage_font_size_mobile": 36,
+        "percentage_margin_bottom_desktop": 10,
+        "percentage_margin_bottom_mobile": 10,
+        "background_color": "#282828",
+        "card_background_color": "#363636",
+        "use_gradient": false,
+        "gradient_background": "linear-gradient(180deg, rgba(239, 74, 101, 1), rgba(216, 27, 96, 1) 100%)",
+        "accent_color": "#282828",
+        "circle_bg_color": "#2b2b2b",
+        "use_gradient_circle": true,
+        "circle_gradient_type": "linear",
+        "circle_gradient_start": "#ff8354",
+        "circle_gradient_end": "#ffdb9e",
+        "circle_gradient_angle": 90,
+        "heading_color": "#ffffff",
+        "heading_accent_color": "#ffffff",
+        "subtitle_color": "#9c9c9c",
+        "statistic_title_color": "#ffffff",
+        "statistic_description_color": "#9c9c9c",
+        "percentage_text_color": "#ffffff",
+        "heading_font_size_desktop": 54,
+        "heading_font_size_mobile": 44,
+        "text_font_size": 16,
+        "statistic_title_font_size_desktop": 15,
+        "statistic_title_font_size_mobile": 15,
+        "statistic_description_font_size_desktop": 14,
+        "statistic_description_font_size_mobile": 12,
+        "percentage_text_font_size_desktop": 40,
+        "percentage_text_font_size_mobile": 32,
+        "circle_width_desktop": 80,
+        "circle_width_tablet": 55,
+        "circle_width_mobile": 75,
+        "override_global_accent": false,
+        "accent_text_margin": -4,
+        "use_accent_gradient": true,
+        "accent_text_gradient": "linear-gradient(180deg, rgba(251, 121, 72, 1), rgba(255, 219, 158, 1) 97%)",
+        "accent_font_family": "inherit",
+        "accent_font_style": "normal",
+        "accent_font_weight": "inherit",
+        "desktop_padding_top": 60,
+        "desktop_padding_right": 40,
+        "desktop_padding_bottom": 100,
+        "desktop_padding_left": 40,
+        "mobile_padding_top": 60,
+        "mobile_padding_right": 20,
+        "mobile_padding_bottom": 60,
+        "mobile_padding_left": 20
+      }
+    },
     "as_seen_in_logos_hpfJT6": {
       "type": "as-seen-in-logos",
       "blocks": {
@@ -1141,6 +1307,141 @@
         "mobile_logo_max_width": 100,
         "mobile_logo_height": 40,
         "mobile_gap": 15
+      }
+    },
+    "pattern_by_gender_serum": {
+      "type": "two-column-content",
+      "blocks": {
+        "left_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "left",
+            "heading_text": "In women",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "left_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "left",
+            "list_items": "Your part is getting wider every time you look|Your ponytail feels thinner in your hand|Thinning spreads across the top instead of receding|More hair in the brush, the drain, the pillow|Scalp showing through under bright light",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "right_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "right",
+            "heading_text": "In men",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "right_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "right",
+            "list_items": "Your hairline is creeping back at the temples|The crown is thinning where you can’t easily see it|Scalp visible in photos taken from behind|More hair in the shower every single morning|Styling no longer hides what it used to",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "left_heading",
+        "left_list",
+        "right_heading",
+        "right_list"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "section_heading": "Hair loss doesn’t look the same",
+        "section_heading_accent": "for everyone",
+        "section_heading_tag": "h2",
+        "section_heading_size_desktop": 2.6,
+        "section_heading_size_mobile": 1.8,
+        "section_heading_line_height": 1.2,
+        "section_heading_color": "#000000",
+        "section_heading_margin_bottom": 16,
+        "section_subheading": "DHT is the hormone behind both patterns. That’s why one formula works for men and women alike — it targets the cause, not the symptom.",
+        "section_subheading_size_desktop": 1.1,
+        "section_subheading_size_mobile": 1,
+        "section_subheading_color": "#666666",
+        "section_header_align": "center",
+        "section_header_margin_bottom_desktop": 48,
+        "section_header_margin_bottom_mobile": 32,
+        "use_theme_colors": true,
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "accent_color": "#e63946",
+        "override_global_accent": false,
+        "use_accent_gradient": false,
+        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
+        "accent_font_family": "assistant_n4",
+        "accent_font_style": "italic",
+        "accent_font_weight": "inherit",
+        "accent_text_margin_left": 0,
+        "max_width": 1200,
+        "left_column_width": 50,
+        "right_column_width": 50,
+        "column_order": "left_first",
+        "mobile_column_order": "left_first",
+        "vertical_alignment": "center",
+        "column_gap_desktop": 40,
+        "column_gap_mobile": 30,
+        "show_column_divider": false,
+        "divider_color": "#e0e0e0",
+        "divider_width": 1,
+        "divider_height": 60,
+        "show_divider_mobile": false,
+        "left_column_text_align": "left",
+        "right_column_text_align": "left",
+        "mobile_text_align": "left",
+        "left_column_padding": 0,
+        "right_column_padding": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "padding_horizontal_mobile": 20,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_horizontal_desktop": 40,
+        "button_bg_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 24,
+        "button_border_radius": 4,
+        "image_border_radius": 8
       }
     },
     "4_benefits_jtwY6M": {
@@ -1539,113 +1840,6 @@
         "button_text_color": "#ffffff",
         "button_hover_background_color": "#ffffff",
         "button_hover_text_color": "#000000"
-      }
-    },
-    "statistics_grid_pXC34G": {
-      "type": "statistics-grid",
-      "blocks": {
-        "statistic_acnwta": {
-          "type": "statistic",
-          "settings": {
-            "percentage": 89,
-            "title": "Reduction in Hair Shedding",
-            "description": "3 in 4 customers report noticeably less shedding within the first 30 days."
-          }
-        },
-        "statistic_k4mcQt": {
-          "type": "statistic",
-          "settings": {
-            "percentage": 82,
-            "title": "Saw Visible Regrowth",
-            "description": "Over 4 in 5 customers noticed new hair growth within 90 days of consistent use."
-          }
-        },
-        "statistic_bLf9xr": {
-          "type": "statistic",
-          "settings": {
-            "percentage": 85,
-            "title": "Reported Thicker Hair",
-            "description": "More than two thirds of customers said their hair felt denser and fuller after completing a full cycle."
-          }
-        },
-        "statistic_m9tA4T": {
-          "type": "statistic",
-          "settings": {
-            "percentage": 90,
-            "title": "Would Recommend",
-            "description": "9 out of 10 customers said they would recommend our Pumpkin Seed Oil Serum to someone."
-          }
-        }
-      },
-      "block_order": [
-        "statistic_acnwta",
-        "statistic_k4mcQt",
-        "statistic_bLf9xr",
-        "statistic_m9tA4T"
-      ],
-      "name": "Statistics Grid",
-      "settings": {
-        "use_theme_colors": false,
-        "heading_part_1": "The Numbers Don't",
-        "heading_part_2": "Lie",
-        "subheading": "Backed by clinical research and validated by thousands of real customers who've seen the results firsthand.",
-        "header_bottom_margin": 10,
-        "stats_grid_margin_top": 30,
-        "mobile_columns": "1",
-        "section_max_width": 1100,
-        "remove_card_background": false,
-        "hide_progress_circle": false,
-        "card_border_radius": 0,
-        "card_min_height_desktop_no_circle": 180,
-        "card_min_height_mobile_no_circle": 140,
-        "percentage_font_size_desktop": 48,
-        "percentage_font_size_mobile": 36,
-        "percentage_margin_bottom_desktop": 10,
-        "percentage_margin_bottom_mobile": 10,
-        "background_color": "#282828",
-        "card_background_color": "#363636",
-        "use_gradient": false,
-        "gradient_background": "linear-gradient(180deg, rgba(239, 74, 101, 1), rgba(216, 27, 96, 1) 100%)",
-        "accent_color": "#282828",
-        "circle_bg_color": "#2b2b2b",
-        "use_gradient_circle": true,
-        "circle_gradient_type": "linear",
-        "circle_gradient_start": "#ff8354",
-        "circle_gradient_end": "#ffdb9e",
-        "circle_gradient_angle": 90,
-        "heading_color": "#ffffff",
-        "heading_accent_color": "#ffffff",
-        "subtitle_color": "#9c9c9c",
-        "statistic_title_color": "#ffffff",
-        "statistic_description_color": "#9c9c9c",
-        "percentage_text_color": "#ffffff",
-        "heading_font_size_desktop": 54,
-        "heading_font_size_mobile": 44,
-        "text_font_size": 16,
-        "statistic_title_font_size_desktop": 15,
-        "statistic_title_font_size_mobile": 15,
-        "statistic_description_font_size_desktop": 14,
-        "statistic_description_font_size_mobile": 12,
-        "percentage_text_font_size_desktop": 40,
-        "percentage_text_font_size_mobile": 32,
-        "circle_width_desktop": 80,
-        "circle_width_tablet": 55,
-        "circle_width_mobile": 75,
-        "override_global_accent": false,
-        "accent_text_margin": -4,
-        "use_accent_gradient": true,
-        "accent_text_gradient": "linear-gradient(180deg, rgba(251, 121, 72, 1), rgba(255, 219, 158, 1) 97%)",
-        "accent_font_family": "inherit",
-        "accent_font_style": "normal",
-        "accent_font_weight": "inherit",
-        "desktop_padding_top": 60,
-        "desktop_padding_right": 40,
-        "desktop_padding_bottom": 100,
-        "desktop_padding_left": 40,
-        "mobile_padding_top": 60,
-        "mobile_padding_right": 20,
-        "mobile_padding_bottom": 60,
-        "mobile_padding_left": 20
       }
     },
     "steps_XmnA8k": {
@@ -2200,6 +2394,7 @@
         "subtitle_wJPtnQ",
         "bullet_list_TTjh3d"
       ],
+      "disabled": true,
       "name": "Image with Text",
       "settings": {
         "use_theme_colors": true,
@@ -2304,8 +2499,7 @@
         "use_accent_gradient": false,
         "accent_text_gradient": "linear-gradient(45deg, rgba(239, 74, 101, 1), rgba(255, 107, 157, 1) 100%)",
         "accent_text_margin_left": 0
-      },
-      "disabled": true
+      }
     },
     "alternating_features_VLaNd9": {
       "type": "alternating-features",
@@ -2337,6 +2531,7 @@
         "feature_nCcA3J",
         "feature_9jC7wj"
       ],
+      "disabled": true,
       "name": "Alternating Features",
       "settings": {
         "use_theme_colors": true,
@@ -2391,8 +2586,7 @@
         "feature_title_size_desktop": 28,
         "description_size_mobile": 13,
         "description_size_desktop": 17
-      },
-      "disabled": true
+      }
     },
     "scrolling_features_bar_xXQrtb": {
       "type": "scrolling-features-bar",
@@ -2889,6 +3083,141 @@
         "rating_summary_border_radius": 50
       }
     },
+    "who_its_for_serum": {
+      "type": "two-column-content",
+      "blocks": {
+        "left_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "left",
+            "heading_text": "This is for you if…",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "left_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "left",
+            "list_items": "You’re shedding noticeably more than you used to|Your part is widening or your hairline is moving back|There’s still fine, wispy hair where it’s thinning|You’d rather act early than wait and see|You ruled out finasteride because of the side effects",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#fb7948",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        },
+        "right_heading": {
+          "type": "heading",
+          "settings": {
+            "column": "right",
+            "heading_text": "This isn’t for you if…",
+            "heading_accent": "",
+            "heading_tag": "h3",
+            "text_align": "left",
+            "font_size_mobile": 1.5,
+            "font_size_desktop": 2,
+            "line_height": 1.2,
+            "use_custom_color": false,
+            "heading_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 15
+          }
+        },
+        "right_list": {
+          "type": "bullet_list",
+          "settings": {
+            "column": "right",
+            "list_items": "An area has been completely bald for years — dormant follicles can wake up, dead ones can’t|You want results in two weeks — this needs 90 days of daily use|Your hair fell out suddenly in round patches — see a doctor about alopecia areata|You’re pregnant, breastfeeding, or taking blood thinners|You’re after a one-off fix rather than a daily habit",
+            "font_size": 15,
+            "icon_size": 18,
+            "use_custom_color": false,
+            "text_color": "#333333",
+            "icon_color": "#8a8a8a",
+            "item_spacing": 12,
+            "margin_top": 0,
+            "margin_bottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "left_heading",
+        "left_list",
+        "right_heading",
+        "right_list"
+      ],
+      "settings": {
+        "show_section_header": true,
+        "section_heading": "Who this works for",
+        "section_heading_accent": "— and who it doesn’t",
+        "section_heading_tag": "h2",
+        "section_heading_size_desktop": 2.6,
+        "section_heading_size_mobile": 1.8,
+        "section_heading_line_height": 1.2,
+        "section_heading_color": "#000000",
+        "section_heading_margin_bottom": 16,
+        "section_subheading": "We’d rather lose the sale than take your money for something that won’t help. Read the right-hand column honestly before you order.",
+        "section_subheading_size_desktop": 1.1,
+        "section_subheading_size_mobile": 1,
+        "section_subheading_color": "#666666",
+        "section_header_align": "center",
+        "section_header_margin_bottom_desktop": 48,
+        "section_header_margin_bottom_mobile": 32,
+        "use_theme_colors": true,
+        "background_color": "#ffffff",
+        "text_color": "#000000",
+        "heading_color": "#000000",
+        "accent_color": "#e63946",
+        "override_global_accent": false,
+        "use_accent_gradient": false,
+        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
+        "accent_font_family": "assistant_n4",
+        "accent_font_style": "italic",
+        "accent_font_weight": "inherit",
+        "accent_text_margin_left": 0,
+        "max_width": 1200,
+        "left_column_width": 50,
+        "right_column_width": 50,
+        "column_order": "left_first",
+        "mobile_column_order": "left_first",
+        "vertical_alignment": "center",
+        "column_gap_desktop": 40,
+        "column_gap_mobile": 30,
+        "show_column_divider": false,
+        "divider_color": "#e0e0e0",
+        "divider_width": 1,
+        "divider_height": 60,
+        "show_divider_mobile": false,
+        "left_column_text_align": "left",
+        "right_column_text_align": "left",
+        "mobile_text_align": "left",
+        "left_column_padding": 0,
+        "right_column_padding": 0,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "padding_horizontal_mobile": 20,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_horizontal_desktop": 40,
+        "button_bg_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 24,
+        "button_border_radius": 4,
+        "image_border_radius": 8
+      }
+    },
     "satisfaction_guarantee_J4ypTy": {
       "type": "satisfaction-guarantee",
       "settings": {
@@ -3140,276 +3469,6 @@
       ],
       "settings": {
         "include_margins": true
-      }
-    },
-    "pattern_by_gender_serum": {
-      "type": "two-column-content",
-      "blocks": {
-        "left_heading": {
-          "type": "heading",
-          "settings": {
-            "column": "left",
-            "heading_text": "In women",
-            "heading_accent": "",
-            "heading_tag": "h3",
-            "text_align": "left",
-            "font_size_mobile": 1.5,
-            "font_size_desktop": 2,
-            "line_height": 1.2,
-            "use_custom_color": false,
-            "heading_color": "#000000",
-            "margin_top": 0,
-            "margin_bottom": 15
-          }
-        },
-        "left_list": {
-          "type": "bullet_list",
-          "settings": {
-            "column": "left",
-            "list_items": "Your part is getting wider every time you look|Your ponytail feels thinner in your hand|Thinning spreads across the top instead of receding|More hair in the brush, the drain, the pillow|Scalp showing through under bright light",
-            "font_size": 15,
-            "icon_size": 18,
-            "use_custom_color": false,
-            "text_color": "#333333",
-            "icon_color": "#fb7948",
-            "item_spacing": 12,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "right_heading": {
-          "type": "heading",
-          "settings": {
-            "column": "right",
-            "heading_text": "In men",
-            "heading_accent": "",
-            "heading_tag": "h3",
-            "text_align": "left",
-            "font_size_mobile": 1.5,
-            "font_size_desktop": 2,
-            "line_height": 1.2,
-            "use_custom_color": false,
-            "heading_color": "#000000",
-            "margin_top": 0,
-            "margin_bottom": 15
-          }
-        },
-        "right_list": {
-          "type": "bullet_list",
-          "settings": {
-            "column": "right",
-            "list_items": "Your hairline is creeping back at the temples|The crown is thinning where you can’t easily see it|Scalp visible in photos taken from behind|More hair in the shower every single morning|Styling no longer hides what it used to",
-            "font_size": 15,
-            "icon_size": 18,
-            "use_custom_color": false,
-            "text_color": "#333333",
-            "icon_color": "#fb7948",
-            "item_spacing": 12,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "left_heading",
-        "left_list",
-        "right_heading",
-        "right_list"
-      ],
-      "settings": {
-        "show_section_header": true,
-        "section_heading": "Hair loss doesn’t look the same",
-        "section_heading_accent": "for everyone",
-        "section_heading_tag": "h2",
-        "section_heading_size_desktop": 2.6,
-        "section_heading_size_mobile": 1.8,
-        "section_heading_line_height": 1.2,
-        "section_heading_color": "#000000",
-        "section_heading_margin_bottom": 16,
-        "section_subheading": "DHT is the hormone behind both patterns. That’s why one formula works for men and women alike — it targets the cause, not the symptom.",
-        "section_subheading_size_desktop": 1.1,
-        "section_subheading_size_mobile": 1,
-        "section_subheading_color": "#666666",
-        "section_header_align": "center",
-        "section_header_margin_bottom_desktop": 48,
-        "section_header_margin_bottom_mobile": 32,
-        "use_theme_colors": true,
-        "background_color": "#ffffff",
-        "text_color": "#000000",
-        "heading_color": "#000000",
-        "accent_color": "#e63946",
-        "override_global_accent": false,
-        "use_accent_gradient": false,
-        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
-        "accent_font_family": "assistant_n4",
-        "accent_font_style": "italic",
-        "accent_font_weight": "inherit",
-        "accent_text_margin_left": 0,
-        "max_width": 1200,
-        "left_column_width": 50,
-        "right_column_width": 50,
-        "column_order": "left_first",
-        "mobile_column_order": "left_first",
-        "vertical_alignment": "center",
-        "column_gap_desktop": 40,
-        "column_gap_mobile": 30,
-        "show_column_divider": false,
-        "divider_color": "#e0e0e0",
-        "divider_width": 1,
-        "divider_height": 60,
-        "show_divider_mobile": false,
-        "left_column_text_align": "left",
-        "right_column_text_align": "left",
-        "mobile_text_align": "left",
-        "left_column_padding": 0,
-        "right_column_padding": 0,
-        "padding_top_mobile": 40,
-        "padding_bottom_mobile": 40,
-        "padding_horizontal_mobile": 20,
-        "padding_top_desktop": 60,
-        "padding_bottom_desktop": 60,
-        "padding_horizontal_desktop": 40,
-        "button_bg_color": "#000000",
-        "button_text_color": "#ffffff",
-        "button_padding_vertical": 12,
-        "button_padding_horizontal": 24,
-        "button_border_radius": 4,
-        "image_border_radius": 8
-      }
-    },
-    "who_its_for_serum": {
-      "type": "two-column-content",
-      "blocks": {
-        "left_heading": {
-          "type": "heading",
-          "settings": {
-            "column": "left",
-            "heading_text": "This is for you if…",
-            "heading_accent": "",
-            "heading_tag": "h3",
-            "text_align": "left",
-            "font_size_mobile": 1.5,
-            "font_size_desktop": 2,
-            "line_height": 1.2,
-            "use_custom_color": false,
-            "heading_color": "#000000",
-            "margin_top": 0,
-            "margin_bottom": 15
-          }
-        },
-        "left_list": {
-          "type": "bullet_list",
-          "settings": {
-            "column": "left",
-            "list_items": "You’re shedding noticeably more than you used to|Your part is widening or your hairline is moving back|There’s still fine, wispy hair where it’s thinning|You’d rather act early than wait and see|You ruled out finasteride because of the side effects",
-            "font_size": 15,
-            "icon_size": 18,
-            "use_custom_color": false,
-            "text_color": "#333333",
-            "icon_color": "#fb7948",
-            "item_spacing": 12,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        },
-        "right_heading": {
-          "type": "heading",
-          "settings": {
-            "column": "right",
-            "heading_text": "This isn’t for you if…",
-            "heading_accent": "",
-            "heading_tag": "h3",
-            "text_align": "left",
-            "font_size_mobile": 1.5,
-            "font_size_desktop": 2,
-            "line_height": 1.2,
-            "use_custom_color": false,
-            "heading_color": "#000000",
-            "margin_top": 0,
-            "margin_bottom": 15
-          }
-        },
-        "right_list": {
-          "type": "bullet_list",
-          "settings": {
-            "column": "right",
-            "list_items": "An area has been completely bald for years — dormant follicles can wake up, dead ones can’t|You want results in two weeks — this needs 90 days of daily use|Your hair fell out suddenly in round patches — see a doctor about alopecia areata|You’re pregnant, breastfeeding, or taking blood thinners|You’re after a one-off fix rather than a daily habit",
-            "font_size": 15,
-            "icon_size": 18,
-            "use_custom_color": false,
-            "text_color": "#333333",
-            "icon_color": "#8a8a8a",
-            "item_spacing": 12,
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
-        }
-      },
-      "block_order": [
-        "left_heading",
-        "left_list",
-        "right_heading",
-        "right_list"
-      ],
-      "settings": {
-        "show_section_header": true,
-        "section_heading": "Who this works for",
-        "section_heading_accent": "— and who it doesn’t",
-        "section_heading_tag": "h2",
-        "section_heading_size_desktop": 2.6,
-        "section_heading_size_mobile": 1.8,
-        "section_heading_line_height": 1.2,
-        "section_heading_color": "#000000",
-        "section_heading_margin_bottom": 16,
-        "section_subheading": "We’d rather lose the sale than take your money for something that won’t help. Read the right-hand column honestly before you order.",
-        "section_subheading_size_desktop": 1.1,
-        "section_subheading_size_mobile": 1,
-        "section_subheading_color": "#666666",
-        "section_header_align": "center",
-        "section_header_margin_bottom_desktop": 48,
-        "section_header_margin_bottom_mobile": 32,
-        "use_theme_colors": true,
-        "background_color": "#ffffff",
-        "text_color": "#000000",
-        "heading_color": "#000000",
-        "accent_color": "#e63946",
-        "override_global_accent": false,
-        "use_accent_gradient": false,
-        "accent_text_gradient": "linear-gradient(45deg, #EF4A65, #FF6B9D)",
-        "accent_font_family": "assistant_n4",
-        "accent_font_style": "italic",
-        "accent_font_weight": "inherit",
-        "accent_text_margin_left": 0,
-        "max_width": 1200,
-        "left_column_width": 50,
-        "right_column_width": 50,
-        "column_order": "left_first",
-        "mobile_column_order": "left_first",
-        "vertical_alignment": "center",
-        "column_gap_desktop": 40,
-        "column_gap_mobile": 30,
-        "show_column_divider": false,
-        "divider_color": "#e0e0e0",
-        "divider_width": 1,
-        "divider_height": 60,
-        "show_divider_mobile": false,
-        "left_column_text_align": "left",
-        "right_column_text_align": "left",
-        "mobile_text_align": "left",
-        "left_column_padding": 0,
-        "right_column_padding": 0,
-        "padding_top_mobile": 40,
-        "padding_bottom_mobile": 40,
-        "padding_horizontal_mobile": 20,
-        "padding_top_desktop": 60,
-        "padding_bottom_desktop": 60,
-        "padding_horizontal_desktop": 40,
-        "button_bg_color": "#000000",
-        "button_text_color": "#ffffff",
-        "button_padding_vertical": 12,
-        "button_padding_horizontal": 24,
-        "button_border_radius": 4,
-        "image_border_radius": 8
       }
     }
   },
