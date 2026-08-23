@@ -365,6 +365,17 @@
             "button_border_radius": 10
           }
         },
+        "payment_icons_6bWLc3": {
+          "type": "payment_icons",
+          "settings": {
+            "custom_payment_icons": "mastercard, american_express, apple_pay, google_pay, shopify_pay, discover, visa",
+            "alignment": "center",
+            "icon_height": 22,
+            "icon_spacing": 6,
+            "margin_top": -6,
+            "margin_bottom": 8
+          }
+        },
         "guarantee_badges_HAWQYD": {
           "type": "guarantee_badges",
           "settings": {
@@ -390,17 +401,6 @@
             "gap": 6,
             "align_center": true,
             "mobile_stack": false
-          }
-        },
-        "payment_icons_6bWLc3": {
-          "type": "payment_icons",
-          "settings": {
-            "custom_payment_icons": "mastercard, american_express, apple_pay, google_pay, shopify_pay, discover, visa",
-            "alignment": "center",
-            "icon_height": 22,
-            "icon_spacing": 6,
-            "margin_top": -6,
-            "margin_bottom": 8
           }
         },
         "divider_DttfTp": {
@@ -600,8 +600,8 @@
         "shipping_notice_ycmz4B",
         "quantity_selector_qJAYDN",
         "add_to_cart_7nhY9K",
-        "guarantee_badges_HAWQYD",
         "payment_icons_6bWLc3",
+        "guarantee_badges_HAWQYD",
         "divider_DttfTp",
         "custom_money_back_FNGwrh",
         "product_faq_4yXjYU",
@@ -2977,7 +2977,7 @@
         "product_border_color": "#eeeeee",
         "product_border_width": 1,
         "product_border_style": "solid",
-        "summary_star_color": "#FFFFFF",
+        "summary_star_color": "#ffffff",
         "summary_text_color": "#ffffff",
         "rating_summary_text": "<p>Rated 4.8/5 based on +43 Total Ratings</p>",
         "rating_summary_font_size": 12,
