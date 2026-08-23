@@ -2977,7 +2977,7 @@
         "product_border_color": "#eeeeee",
         "product_border_width": 1,
         "product_border_style": "solid",
-        "summary_star_color": "#ffffff",
+        "summary_star_color": "#FFFFFF",
         "summary_text_color": "#ffffff",
         "rating_summary_text": "<p>Rated 4.7/5 based on +22 Total Ratings</p>",
         "rating_summary_font_size": 12,
