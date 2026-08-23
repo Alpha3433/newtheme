@@ -3346,15 +3346,15 @@
     "1787461899b7b1b6f7": {
       "type": "apps",
       "blocks": {
-        "cwilltrustoo_reviews_review_widget_zMEwNM": {
+        "cwilltrustoo_reviews_review_widget_XVjR7V": {
           "type": "shopify://apps/cwilltrustoo-reviews/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
           "settings": {
-            "product": "elaren-pumpkin-seed-oil-regrowth-serum"
+            "product": ""
           }
         }
       },
       "block_order": [
-        "cwilltrustoo_reviews_review_widget_zMEwNM"
+        "cwilltrustoo_reviews_review_widget_XVjR7V"
       ],
       "settings": {
         "include_margins": true
