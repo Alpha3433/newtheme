@@ -457,7 +457,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".sticky-add-to-cart .btn,.sticky-add-to-cart button[type=\"submit\"] {background: #000000 !important; color: #ffffff !important; background-image: none !important;}"
+      ".sticky-add-to-cart .btn,.sticky-add-to-cart button[type=\"submit\"] {background: #000000 !important; color: #ffffff !important; background-image: none !important;}",
+      "div.product-option:has(dt) {display: none !important; }"
     ]
   },
   "presets": {
