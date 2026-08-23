@@ -372,7 +372,7 @@
               "upsell_border_style": "none",
               "upsell_border_width": 3,
               "upsell_border_color": "#000000",
-              "upsell_remove_container_border": true,
+              "upsell_remove_container_border": false,
               "upsell_image_border_radius": 0,
               "upsell_title_font_size": 16,
               "upsell_description_font_size": 12,
