@@ -381,7 +381,7 @@
           "settings": {
             "use_theme_colors": true,
             "badge_1_show": true,
-            "badge_1_text": "90-Day Money-Back Guarantee |",
+            "badge_1_text": "90-Day Money-Back Guarantee",
             "badge_1_icon": "custom",
             "badge_1_dot_color": "#4caf50",
             "badge_1_custom_icon": "",
