@@ -1219,82 +1219,6 @@
         "mobile_padding_left": 20
       }
     },
-    "as_seen_in_logos_hpfJT6": {
-      "type": "as-seen-in-logos",
-      "blocks": {
-        "logo_7XKwQ6": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/buzzfeed-logo-black-transparent.png",
-            "logo_alt": "BuzzFeed",
-            "size_adjustment": 100,
-            "mobile_size_adjustment": 100,
-            "logo_link": "",
-            "open_in_new_tab": true
-          }
-        },
-        "logo_VcJnmr": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/today-show-seeklogo.png",
-            "logo_alt": "TODAY Show",
-            "size_adjustment": 100,
-            "mobile_size_adjustment": 100,
-            "logo_link": "",
-            "open_in_new_tab": true
-          }
-        },
-        "logo_jCzRpU": {
-          "type": "logo",
-          "settings": {
-            "logo_image": "shopify://shop_images/TikTok_logo_svg.png",
-            "logo_alt": "TikTok",
-            "size_adjustment": 100,
-            "mobile_size_adjustment": 100,
-            "logo_link": "",
-            "open_in_new_tab": true
-          }
-        }
-      },
-      "block_order": [
-        "logo_7XKwQ6",
-        "logo_VcJnmr",
-        "logo_jCzRpU"
-      ],
-      "name": "As Seen In Logos",
-      "settings": {
-        "use_theme_colors": false,
-        "section_title": "As seen in",
-        "background_type": "solid",
-        "background": "linear-gradient(90deg, rgba(255, 249, 236, 1), rgba(255, 207, 215, 1) 100%)",
-        "background_color": "#fcfcfc",
-        "text_color": "#000000",
-        "logo_max_width": 150,
-        "desktop_gap": 20,
-        "logo_height": 80,
-        "logo_padding": 10,
-        "desktop_padding_top": 40,
-        "desktop_padding_bottom": 40,
-        "enable_top_border": true,
-        "top_border_width": 1,
-        "top_border_color": "#000000",
-        "enable_bottom_border": true,
-        "bottom_border_width": 1,
-        "bottom_border_color": "#000000",
-        "mobile_background_type": "same",
-        "mobile_background": "linear-gradient(90deg, rgba(255, 249, 236, 1), rgba(255, 207, 215, 1) 100%)",
-        "mobile_background_color": "#fff9ec",
-        "mobile_heading_size": 16,
-        "desktop_heading_size": 25,
-        "heading_tag": "h2",
-        "mobile_heading_margin": 15,
-        "mobile_padding_top": 20,
-        "mobile_padding_bottom": 20,
-        "mobile_logo_max_width": 100,
-        "mobile_logo_height": 40,
-        "mobile_gap": 15
-      }
-    },
     "pattern_by_gender_serum": {
       "type": "two-column-content",
       "blocks": {
@@ -1429,6 +1353,106 @@
         "button_padding_horizontal": 24,
         "button_border_radius": 4,
         "image_border_radius": 8
+      }
+    },
+    "4_cards_WYHJLQ": {
+      "type": "4-cards",
+      "blocks": {
+        "card_myUf8L": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/hf_20260321_052159_a8b4df1e-2991-4891-ba03-f91f0e515f26.png",
+            "card_title": "Pumpkin Seed Oil 2,000mg",
+            "card_description": "The highest studied dose of cold-pressed virgin pumpkin seed oil available. Beta-sitosterol in PSO directly inhibits 5-alpha reductase, cutting off DHT production at the source and stopping follicle miniaturization.",
+            "show_bullets": true,
+            "bullet_icon": "",
+            "bullet_points": "2000mg therapeutic dose, Blocks DHT at the enzyme level, Clinically studied for hair regrowth",
+            "bullet_icon_color": "#333333",
+            "bullet_text_color": "#666666",
+            "bullet_container": false,
+            "bullet_container_bg": "#f8f9fa",
+            "bullet_container_border_color": "#e9ecef",
+            "bullet_container_border_style": "solid",
+            "bullet_container_border_width": 1,
+            "bullet_container_border_radius": 4
+          }
+        },
+        "card_axRAzA": {
+          "type": "card",
+          "settings": {
+            "card_image": "shopify://shop_images/1.webp",
+            "card_title": "Caffeine Complex",
+            "card_description": "Caffeine penetrates the scalp within 2 minutes of application, directly counteracting DHT activity at the follicle level and extending the active hair growth phase. Works from the outside in while pumpkin seed oil works from the inside out.",
+            "show_bullets": true,
+            "bullet_icon": "",
+            "bullet_points": "Penetrates scalp in 2 minutes, \nExtends active hair growth phase, \nCounteracts DHT at follicle level",
+            "bullet_icon_color": "#333333",
+            "bullet_text_color": "#666666",
+            "bullet_container": false,
+            "bullet_container_bg": "#f8f9fa",
+            "bullet_container_border_color": "#e9ecef",
+            "bullet_container_border_style": "solid",
+            "bullet_container_border_width": 1,
+            "bullet_container_border_radius": 4
+          }
+        }
+      },
+      "block_order": [
+        "card_myUf8L",
+        "card_axRAzA"
+      ],
+      "custom_css": [
+        ".card-item_image {width: 200px !important; min-width: 200px !important; height: 200px !important; max-width: 200px !important; max-height: 200px !important;}",
+        "@media screen and (max-width: 749px) {.card-item_image {width: 150px !important; min-width: 150px !important; height: 150px !important; max-width: 150px !important; max-height: 150px !important; }}"
+      ],
+      "name": "Cards",
+      "settings": {
+        "heading": "Two Clinically Studied",
+        "accent_text": "DHT Blockers",
+        "subtitle": "",
+        "horizontal_layout": true,
+        "pyramid_layout": false,
+        "hide_description": false,
+        "heading_alignment": "center",
+        "heading_size": 32,
+        "heading_size_mobile": 32,
+        "heading_color": "#000000",
+        "subtitle_color": "#666666",
+        "title_size": 18,
+        "title_size_mobile": 15,
+        "title_color": "#000000",
+        "description_size": 14,
+        "description_size_mobile": 13,
+        "description_color": "#564b4b",
+        "bullet_size": 13,
+        "bullet_size_mobile": 12,
+        "accent_color": "#ef4a65",
+        "use_accent_gradient": false,
+        "accent_text_gradient": "linear-gradient(45deg, rgba(239, 74, 101, 1), rgba(255, 107, 157, 1) 100%)",
+        "accent_left_margin": 0,
+        "override_global_accent": false,
+        "accent_font_family": "inherit",
+        "accent_font_style": "normal",
+        "accent_font_weight": "inherit",
+        "card_background_gradient": "#ffffff",
+        "card_border_color": "#f0f0f0",
+        "card_border_style": "solid",
+        "card_border_width": 1,
+        "card_border_radius": 12,
+        "card_image_object_fit": "cover",
+        "image_inside_padding": false,
+        "image_padding": 16,
+        "image_border_radius": 8,
+        "card_image_height_desktop": 240,
+        "card_image_height_mobile": 180,
+        "card_image_height_horizontal_desktop": 150,
+        "card_image_height_horizontal_mobile": 100,
+        "card_min_height_desktop": 0,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_left": 20,
+        "padding_right": 20,
+        "section_background_gradient": "#ffffff"
       }
     },
     "4_benefits_jtwY6M": {
@@ -1580,106 +1604,6 @@
         "padding_bottom_desktop": 60,
         "padding_left_desktop": 20,
         "padding_right_desktop": 20
-      }
-    },
-    "4_cards_WYHJLQ": {
-      "type": "4-cards",
-      "blocks": {
-        "card_myUf8L": {
-          "type": "card",
-          "settings": {
-            "card_image": "shopify://shop_images/hf_20260321_052159_a8b4df1e-2991-4891-ba03-f91f0e515f26.png",
-            "card_title": "Pumpkin Seed Oil 2,000mg",
-            "card_description": "The highest studied dose of cold-pressed virgin pumpkin seed oil available. Beta-sitosterol in PSO directly inhibits 5-alpha reductase, cutting off DHT production at the source and stopping follicle miniaturization.",
-            "show_bullets": true,
-            "bullet_icon": "",
-            "bullet_points": "2000mg therapeutic dose, Blocks DHT at the enzyme level, Clinically studied for hair regrowth",
-            "bullet_icon_color": "#333333",
-            "bullet_text_color": "#666666",
-            "bullet_container": false,
-            "bullet_container_bg": "#f8f9fa",
-            "bullet_container_border_color": "#e9ecef",
-            "bullet_container_border_style": "solid",
-            "bullet_container_border_width": 1,
-            "bullet_container_border_radius": 4
-          }
-        },
-        "card_axRAzA": {
-          "type": "card",
-          "settings": {
-            "card_image": "shopify://shop_images/1.webp",
-            "card_title": "Caffeine Complex",
-            "card_description": "Caffeine penetrates the scalp within 2 minutes of application, directly counteracting DHT activity at the follicle level and extending the active hair growth phase. Works from the outside in while pumpkin seed oil works from the inside out.",
-            "show_bullets": true,
-            "bullet_icon": "",
-            "bullet_points": "Penetrates scalp in 2 minutes, \nExtends active hair growth phase, \nCounteracts DHT at follicle level",
-            "bullet_icon_color": "#333333",
-            "bullet_text_color": "#666666",
-            "bullet_container": false,
-            "bullet_container_bg": "#f8f9fa",
-            "bullet_container_border_color": "#e9ecef",
-            "bullet_container_border_style": "solid",
-            "bullet_container_border_width": 1,
-            "bullet_container_border_radius": 4
-          }
-        }
-      },
-      "block_order": [
-        "card_myUf8L",
-        "card_axRAzA"
-      ],
-      "custom_css": [
-        ".card-item_image {width: 200px !important; min-width: 200px !important; height: 200px !important; max-width: 200px !important; max-height: 200px !important;}",
-        "@media screen and (max-width: 749px) {.card-item_image {width: 150px !important; min-width: 150px !important; height: 150px !important; max-width: 150px !important; max-height: 150px !important; }}"
-      ],
-      "name": "Cards",
-      "settings": {
-        "heading": "Two Clinically Studied",
-        "accent_text": "DHT Blockers",
-        "subtitle": "",
-        "horizontal_layout": true,
-        "pyramid_layout": false,
-        "hide_description": false,
-        "heading_alignment": "center",
-        "heading_size": 32,
-        "heading_size_mobile": 32,
-        "heading_color": "#000000",
-        "subtitle_color": "#666666",
-        "title_size": 18,
-        "title_size_mobile": 15,
-        "title_color": "#000000",
-        "description_size": 14,
-        "description_size_mobile": 13,
-        "description_color": "#564b4b",
-        "bullet_size": 13,
-        "bullet_size_mobile": 12,
-        "accent_color": "#ef4a65",
-        "use_accent_gradient": false,
-        "accent_text_gradient": "linear-gradient(45deg, rgba(239, 74, 101, 1), rgba(255, 107, 157, 1) 100%)",
-        "accent_left_margin": 0,
-        "override_global_accent": false,
-        "accent_font_family": "inherit",
-        "accent_font_style": "normal",
-        "accent_font_weight": "inherit",
-        "card_background_gradient": "#ffffff",
-        "card_border_color": "#f0f0f0",
-        "card_border_style": "solid",
-        "card_border_width": 1,
-        "card_border_radius": 12,
-        "card_image_object_fit": "cover",
-        "image_inside_padding": false,
-        "image_padding": 16,
-        "image_border_radius": 8,
-        "card_image_height_desktop": 240,
-        "card_image_height_mobile": 180,
-        "card_image_height_horizontal_desktop": 150,
-        "card_image_height_horizontal_mobile": 100,
-        "card_min_height_desktop": 0,
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "padding_left": 20,
-        "padding_right": 20,
-        "section_background_gradient": "#ffffff"
       }
     },
     "roadmap_GEaDNe": {
@@ -2625,7 +2549,7 @@
         "slider_direction": "left",
         "scrolling_velocity": 25,
         "pause_on_hover": false,
-        "background_color": "#ef4a65",
+        "background_color": "#FFA617",
         "text_color": "#ffffff",
         "icon_color": "#ffffff",
         "use_gradient_background": true,
@@ -3466,10 +3390,9 @@
     "divider_cH7pyC",
     "before_after_KeXf6z",
     "statistics_grid_pXC34G",
-    "as_seen_in_logos_hpfJT6",
     "pattern_by_gender_serum",
-    "4_benefits_jtwY6M",
     "4_cards_WYHJLQ",
+    "4_benefits_jtwY6M",
     "roadmap_GEaDNe",
     "steps_XmnA8k",
     "image_with_text_xJRmMd",
