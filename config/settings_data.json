@@ -340,64 +340,6 @@
               "timer_border_style": "solid"
             }
           },
-          "upsell_header_VgMAJc": {
-            "type": "upsell_header",
-            "settings": {
-              "header_text": "<p>Customers also add ...</p>",
-              "header_text_color": "#333333",
-              "header_font_size": 14,
-              "header_alignment": "center",
-              "header_margin_top": 8,
-              "header_margin_bottom": 8,
-              "show_divider": false,
-              "divider_color": "#e0e0e0",
-              "divider_height": 1,
-              "divider_spacing": 12,
-              "divider_style": "solid"
-            }
-          },
-          "cart_upsell_KfiL6T": {
-            "type": "cart_upsell",
-            "settings": {
-              "upsell_product_1": "",
-              "show_upsell_description": false,
-              "upsell_description_text": "Short product description here",
-              "upsell_description_color": "#333333",
-              "upsell_show_price": true,
-              "upsell_button_text": "Add +",
-              "upsell_button_success_text": "Added!",
-              "show_upsell_best_seller_tag": true,
-              "upsell_best_seller_text": "BEST SELLER",
-              "upsell_best_seller_tag_color": "#e18942",
-              "upsell_best_seller_tag_text_color": "#ffffff",
-              "upsell_custom_bestseller_svg": "",
-              "upsell_card_background_color": "#ffffff",
-              "upsell_product_image_background_color": "#fcf9e6",
-              "upsell_title_color": "#111111",
-              "upsell_price_color": "#111111",
-              "upsell_variant_text_color": "#000000",
-              "upsell_variant_background_color": "#ffffff",
-              "upsell_variant_border_color": "#e0e0e0",
-              "upsell_variant_border_radius": 3,
-              "upsell_button_bg_color": "#181818",
-              "upsell_button_text_color": "#ffffff",
-              "upsell_button_border_radius": 2,
-              "upsell_card_border_radius": 10,
-              "upsell_margin_top": 4,
-              "upsell_margin_bottom": 4,
-              "upsell_border_style": "none",
-              "upsell_border_width": 0,
-              "upsell_border_color": "#000000",
-              "upsell_remove_container_border": false,
-              "upsell_image_border_radius": 4,
-              "upsell_title_font_size": 15,
-              "upsell_description_font_size": 11,
-              "upsell_price_font_size": 11,
-              "upsell_variant_font_size": 9,
-              "upsell_button_font_size": 12,
-              "upsell_tag_font_size": 11
-            }
-          },
           "cart_payment_icon_rFGhiC": {
             "type": "cart_payment_icon",
             "settings": {
@@ -412,8 +354,6 @@
         },
         "block_order": [
           "cart_timer_bar_FMDBm3",
-          "upsell_header_VgMAJc",
-          "cart_upsell_KfiL6T",
           "cart_payment_icon_rFGhiC"
         ],
         "custom_css": [
