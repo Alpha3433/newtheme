@@ -3343,10 +3343,10 @@
         "section_bottom_border_color": "#1b1b1b"
       }
     },
-    "17740590596d2788d8": {
+    "1787461899b7b1b6f7": {
       "type": "apps",
       "blocks": {
-        "trustwill_trustoo_review_widget_hQmgDq": {
+        "cwilltrustoo_reviews_review_widget_zMEwNM": {
           "type": "shopify://apps/cwilltrustoo-reviews/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
           "settings": {
             "product": "elaren-pumpkin-seed-oil-regrowth-serum"
@@ -3354,8 +3354,14 @@
         }
       },
       "block_order": [
-        "trustwill_trustoo_review_widget_hQmgDq"
+        "cwilltrustoo_reviews_review_widget_zMEwNM"
       ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "17740590596d2788d8": {
+      "type": "apps",
       "settings": {
         "include_margins": true
       }
@@ -3404,6 +3410,7 @@
     "who_its_for_serum",
     "satisfaction_guarantee_J4ypTy",
     "store_faq_hidFcc",
+    "1787461899b7b1b6f7",
     "17740590596d2788d8",
     "1773652095685ba445",
     "17738904936c54e966"
