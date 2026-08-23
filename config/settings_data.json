@@ -342,11 +342,10 @@
           },
           "cart_upsell_eyHTKA": {
             "type": "cart_upsell",
-            "disabled": true,
             "settings": {
-              "upsell_product_1": "pumpkin-seed-oil-capsules",
-              "show_upsell_description": false,
-              "upsell_description_text": "Short product description here",
+              "upsell_product_1": "elaren-microstamp-pro",
+              "show_upsell_description": true,
+              "upsell_description_text": "Promotes regrowth by stimulating \nscalp blood flow",
               "upsell_description_color": "#333333",
               "upsell_show_price": true,
               "upsell_button_text": "Add +",
@@ -371,7 +370,7 @@
               "upsell_margin_top": 4,
               "upsell_margin_bottom": 4,
               "upsell_border_style": "none",
-              "upsell_border_width": 0,
+              "upsell_border_width": 3,
               "upsell_border_color": "#000000",
               "upsell_remove_container_border": true,
               "upsell_image_border_radius": 4,
@@ -381,22 +380,6 @@
               "upsell_variant_font_size": 9,
               "upsell_button_font_size": 12,
               "upsell_tag_font_size": 12
-            }
-          },
-          "upsell_header_wWpwLV": {
-            "type": "upsell_header",
-            "settings": {
-              "header_text": "<p><strong>87% of customers</strong> also add...</p>",
-              "header_text_color": "#282828",
-              "header_font_size": 14,
-              "header_alignment": "center",
-              "header_margin_top": 8,
-              "header_margin_bottom": 8,
-              "show_divider": true,
-              "divider_color": "#e0e0e0",
-              "divider_height": 1,
-              "divider_spacing": 12,
-              "divider_style": "solid"
             }
           },
           "cart_payment_icon_rFGhiC": {
@@ -414,7 +397,6 @@
         "block_order": [
           "cart_timer_bar_FMDBm3",
           "cart_upsell_eyHTKA",
-          "upsell_header_wWpwLV",
           "cart_payment_icon_rFGhiC"
         ],
         "custom_css": [
@@ -426,7 +408,7 @@
         "settings": {
           "cart_customization_mode": true,
           "use_theme_colors_cart_drawer": true,
-          "upsell_carousel_mode": false,
+          "upsell_carousel_mode": true,
           "drawer_heading_font_size_desktop": 20,
           "drawer_heading_font_size_mobile": 20,
           "empty_cart_redirect_url": "shopify://products/elaren-pumpkin-seed-oil-regrowth-serum",
