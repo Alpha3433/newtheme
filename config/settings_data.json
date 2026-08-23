@@ -340,48 +340,6 @@
               "timer_border_style": "solid"
             }
           },
-          "cart_upsell_eyHTKA": {
-            "type": "cart_upsell",
-            "settings": {
-              "upsell_product_1": "elaren-microstamp-pro",
-              "show_upsell_description": true,
-              "upsell_description_text": "Promotes regrowth by stimulating \nscalp blood flow",
-              "upsell_description_color": "#333333",
-              "upsell_show_price": true,
-              "upsell_button_text": "Add +",
-              "upsell_button_success_text": "Added!",
-              "show_upsell_best_seller_tag": true,
-              "upsell_best_seller_text": "BEST SELLER",
-              "upsell_best_seller_tag_color": "#e18942",
-              "upsell_best_seller_tag_text_color": "#ffffff",
-              "upsell_custom_bestseller_svg": "",
-              "upsell_card_background_color": "#ffffff",
-              "upsell_product_image_background_color": "#fcf9e6",
-              "upsell_title_color": "#111111",
-              "upsell_price_color": "#111111",
-              "upsell_variant_text_color": "#000000",
-              "upsell_variant_background_color": "#ffffff",
-              "upsell_variant_border_color": "#e0e0e0",
-              "upsell_variant_border_radius": 3,
-              "upsell_button_bg_color": "#181818",
-              "upsell_button_text_color": "#ffffff",
-              "upsell_button_border_radius": 2,
-              "upsell_card_border_radius": 10,
-              "upsell_margin_top": 4,
-              "upsell_margin_bottom": 4,
-              "upsell_border_style": "none",
-              "upsell_border_width": 3,
-              "upsell_border_color": "#000000",
-              "upsell_remove_container_border": false,
-              "upsell_image_border_radius": 0,
-              "upsell_title_font_size": 16,
-              "upsell_description_font_size": 12,
-              "upsell_price_font_size": 11,
-              "upsell_variant_font_size": 9,
-              "upsell_button_font_size": 12,
-              "upsell_tag_font_size": 12
-            }
-          },
           "cart_payment_icon_rFGhiC": {
             "type": "cart_payment_icon",
             "settings": {
@@ -396,7 +354,6 @@
         },
         "block_order": [
           "cart_timer_bar_FMDBm3",
-          "cart_upsell_eyHTKA",
           "cart_payment_icon_rFGhiC"
         ],
         "custom_css": [
