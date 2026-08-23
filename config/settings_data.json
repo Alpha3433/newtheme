@@ -375,7 +375,7 @@
               "upsell_remove_container_border": true,
               "upsell_image_border_radius": 0,
               "upsell_title_font_size": 16,
-              "upsell_description_font_size": 11,
+              "upsell_description_font_size": 12,
               "upsell_price_font_size": 11,
               "upsell_variant_font_size": 9,
               "upsell_button_font_size": 12,
