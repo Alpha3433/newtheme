@@ -339,22 +339,10 @@
               "timer_border_color": "#ffffff",
               "timer_border_style": "solid"
             }
-          },
-          "cart_payment_icon_rFGhiC": {
-            "type": "cart_payment_icon",
-            "settings": {
-              "custom_payment_icons": "visa, mastercard,american_express,apple_pay,google_pay,",
-              "icon_height": 22,
-              "icon_spacing": 6,
-              "alignment": "center",
-              "margin_top": 8,
-              "margin_bottom": 8
-            }
           }
         },
         "block_order": [
-          "cart_timer_bar_FMDBm3",
-          "cart_payment_icon_rFGhiC"
+          "cart_timer_bar_FMDBm3"
         ],
         "custom_css": [
           ".cart-drawer__footer .gb-totals {justify-content: center !important;}",
