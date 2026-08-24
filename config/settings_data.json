@@ -450,7 +450,7 @@
       },
       "2567389343055140935": {
         "type": "shopify://apps/microsoft-clarity/blocks/clarity_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     }
@@ -458,7 +458,7 @@
   "platform_customizations": {
     "custom_css": [
       ".sticky-add-to-cart .btn,.sticky-add-to-cart button[type=\"submit\"] {background: #000000 !important; color: #ffffff !important; background-image: none !important;}",
-      "div.product-option:has(dt) {display: none !important; }"
+      "div.product-option:has(dt) {display: none !important;}"
     ]
   },
   "presets": {
