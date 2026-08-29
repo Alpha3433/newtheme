@@ -20,11 +20,11 @@
       "settings": {
         "use_theme_colors": true,
         "sticky_with_header": true,
-        "announcement_text": "TONIGHT ONLY: BUY 1 GET 1 FREE",
+        "announcement_text": "60% OFF SUMMER SALE",
         "show_days": false,
         "custom_date": false,
         "end_date": "2026-5-26 23:59:59",
-        "timezone": "Europe/Paris",
+        "timezone": "America/New_York",
         "days_label": "DAYS",
         "hours_label": "HRS",
         "minutes_label": "MIN",
