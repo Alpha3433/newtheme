@@ -149,7 +149,7 @@
         "custom_text_CtXXXE": {
           "type": "custom_text",
           "settings": {
-            "text": "<p>Our cold-pressed pumpkin seed oil and caffeine formula absorbs directly into the scalp, blocking DHT at the follicle level while reactivating dormant roots from the outside in. DHT shrinks your follicles from the inside. Caffeine reactivates them from the outside. Clinically inspired. Third-party tested. 90 days to visibly fuller hair.</p>",
+            "text": "<p>Our cold-pressed pumpkin seed oil and caffeine formula absorbs directly into the scalp, blocking DHT at the follicle level while reactivating dormant roots from the outside in. DHT shrinks your follicles from the inside. Caffeine reactivates them from the outside. </p>",
             "show_description": false,
             "description": "<p>Add additional descriptive text here</p>",
             "description_font_size": 14,
