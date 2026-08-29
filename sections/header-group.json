@@ -14,13 +14,13 @@
     "announcement_bar_HdjCdC": {
       "type": "announcement-bar",
       "custom_css": [
-        ".announcement-text {font-size: 13px;}"
+        ".announcement-text {font-size: 15px;}"
       ],
       "name": "Countdown Banner",
       "settings": {
         "use_theme_colors": true,
         "sticky_with_header": true,
-        "announcement_text": "60% OFF SUMMER SALE ENDS TONIGHT",
+        "announcement_text": "60% OFF SALE ENDS TONIGHT:",
         "show_days": false,
         "custom_date": false,
         "end_date": "2026-5-26 23:59:59",
