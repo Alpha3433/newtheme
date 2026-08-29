@@ -548,44 +548,6 @@
             "margin_top": 0,
             "margin_bottom": 0
           }
-        },
-        "video_carousel_standalone_hhQGBJ": {
-          "type": "video_carousel_standalone",
-          "settings": {
-            "heading": "See it in action",
-            "heading_size": 24,
-            "heading_color": "#333333",
-            "heading_letter_spacing": "var(--letter-spacing-heading)",
-            "scrollbar_color": "#333030",
-            "disable_sound_controls": false,
-            "enable_autoplay": true,
-            "show_sound_controls_autoplay": true,
-            "play_button_size": 24,
-            "sound_button_size": 24,
-            "play_button_bg_color": "#333030",
-            "play_button_bg_opacity": 55,
-            "sound_button_bg_color": "#333030",
-            "sound_button_bg_opacity": 55,
-            "hide_scrollbar": true,
-            "video_size": 110,
-            "show_social_badge": true,
-            "social_platform": "tiktok",
-            "view_count": 1,
-            "badge_text": "Over",
-            "badge_suffix": "M Views On TikTok",
-            "use_gradient_text": false,
-            "badge_background_color": "#f8f9fa",
-            "badge_text_color": "#262626",
-            "remove_badge_background": true,
-            "show_divider_above_views": true,
-            "divider_color": "#e0e0e0",
-            "divider_width": 25,
-            "divider_thickness": 1,
-            "divider_margin": 10,
-            "custom_badge_text": "",
-            "margin_top": 0,
-            "margin_bottom": 0
-          }
         }
       },
       "block_order": [
@@ -608,8 +570,7 @@
         "customer_review_4FYVwJ",
         "carousel_default_video_Myp4Dj",
         "carousel_default_video_Dhh9ke",
-        "carousel_default_video_KAaPQx",
-        "video_carousel_standalone_hhQGBJ"
+        "carousel_default_video_KAaPQx"
       ],
       "custom_css": [],
       "name": "Product Details",
