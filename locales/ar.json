@@ -1244,6 +1244,108 @@
         },
         "return_to_store": "العودة إلى {{shopName}}",
         "return_to_store_simple": "العودة إلى المتجر"
+      },
+      "thank_you": {
+        "thank_you_payments_app_pending_payment_description_default_with_phone": "ستتلقى رسالة نصية لتأكيد الطلب مع رقم طلبك بعد قليل.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_payment": "ستتلقى رسالة نصية لتأكيد الطلب مع رقم طلبك بعد قليل.",
+        "thank_you_payments_app_pending_payment_description_default_with_phone_pick_up": "ستتلقى رسالة نصية لتأكيد الطلب مع رقم طلبك بعد قليل.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing": "تواصل معنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "تواصل معنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "تواصل معنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تتضمن رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تتضمن رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تتضمن رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تتضمن رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تتضمن رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني تتضمن رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد نصية تحتوي على رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد نصية تحتوي على رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد نصية تحتوي على رقم طلبك.",
+        "thank_you_payments_app_pending_payment_description_provider_action_required_default": "ستتلقى رسالة بريد إلكتروني عند تأكيد دفعتك.",
+        "track_your_order_link_text": "تتبع طلبك",
+        "checkout_again": "تسجيل الخروج مرة أخرى",
+        "checkout_on_remote_shop_link_text": "تحقق من %{remoteShopName}",
+        "checkout_on_another_store": "اطلع على متجر آخر",
+        "order_status_confirmed_order_with_email": "ستتلقى بريدًا إلكترونيًا عندما يكون طلبك جاهزًا.",
+        "order_status_confirmed_order_with_phone": "قد تتلقى رسالة نصية عندما يكون طلبك جاهزًا.",
+        "order_status_confirmed_order_with_email_and_phone": "ستتلقى بريدًا إلكترونيًا عندما يكون طلبك جاهزًا.",
+        "order_status_confirmed_order_with_email_payment": "لقد سددت دفعة لطلبك بتاريخ %{date}.",
+        "order_status_confirmed_order_with_phone_payment": "لقد سددت دفعة لطلبك بتاريخ %{date}.",
+        "order_status_confirmed_order_with_email_and_phone_payment": "لقد سددت دفعة لطلبك بتاريخ %{date}.",
+        "order_status_confirmed_order_with_email_pick_up": "سوف تتلقى رسالة بريد إلكتروني عندما يكون طلبك جاهزًا للاستلام.",
+        "order_status_confirmed_order_with_phone_pick_up": "سوف تتلقى رسالة نصية عندما يصبح طلبك جاهزًا للاستلام.",
+        "order_status_confirmed_order_with_email_and_phone_pick_up": "ستتلقى رسالة بريد إلكتروني ورسالة نصية عندما يصبح طلبك جاهزاً للاستلام.",
+        "order_status_payments_app_pending_payment_description_default_with_missing": "تواصل معنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "order_status_payments_app_pending_payment_description_default_with_missing_payment": "تواصل معنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "order_status_payments_app_pending_payment_description_default_with_missing_pick_up": "تواصل معنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone": "ستتلقى رسالة تأكيد عبر البريد الإلكتروني قريبًا. تتبّع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone_payment": "ستتلقى رسالة تأكيد عبر البريد الإلكتروني قريبًا. تتبّع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email_and_phone_pick_up": "ستتلقى رسالة تأكيد عبر البريد الإلكتروني قريبًا. تتبّع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email": "ستتلقى رسالة تأكيد عبر البريد الإلكتروني قريبًا. تتبّع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email_payment": "ستتلقى رسالة تأكيد عبر البريد الإلكتروني قريبًا. تتبّع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_email_pick_up": "ستتلقى رسالة تأكيد عبر البريد الإلكتروني قريبًا. تتبّع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone": "ستتلقى رسالة تأكيد نصية قريبًا. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone_payment": "ستتلقى رسالة تأكيد نصية قريبًا. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_default_with_phone_pick_up": "ستتلقى رسالة تأكيد نصية قريبًا. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing": "تواصل معنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing_payment": "تواصل معنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_missing_pick_up": "تواصل معنا عبر البريد الإلكتروني أو الهاتف لتلقي تأكيد الطلب.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_payment": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_and_phone_pick_up": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_payment": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_email_pick_up": "بعد إتمام عملية الدفع، ستتلقى رسالة تأكيد عبر البريد الإلكتروني. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone": "بعد إتمام عملية الدفع، ستصلك رسالة تأكيد نصية. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_payment": "بعد إتمام عملية الدفع، ستصلك رسالة تأكيد نصية. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_pending_payment_description_buyer_action_required_with_phone_pick_up": "بعد إتمام عملية الدفع، ستصلك رسالة تأكيد نصية. تتبع طلبك باستخدام تطبيق Shop.",
+        "order_status_payments_app_failed_pending_payment": "لم يتم محاسبتك على طلبك. ارجع إلى سلة التسوق الخاصة بك لمراجعة طلبك وإعادة الدفع.",
+        "order_status_payments_app_failed_pending_payment_payment": "لم يتم محاسبتك على طلبك. ارجع إلى سلة التسوق الخاصة بك لمراجعة طلبك وإعادة الدفع.",
+        "order_status_payments_app_failed_pending_payment_pick_up": "لم يتم محاسبتك على طلبك. ارجع إلى سلة التسوق الخاصة بك لمراجعة طلبك وإعادة الدفع.",
+        "order_status_confirmed_order_local": "نحن نجهز طلبك للتسليم.",
+        "order_status_confirmed_order_local_pick_up": "نحن نجهز طلبك.",
+        "order_status_confirmed_order_local_payment": "نحن نُجهز طلبك.",
+        "order_status_updates_with_email": "ستتلقى تحديثات الشحن والتسليم عبر البريد الإلكتروني.",
+        "order_status_updates_with_phone": "يمكنك الحصول على تحديثات الشحن والتسليم عبر الرسائل النصية.",
+        "order_status_updates_with_email_and_phone": "ستتلقى تحديثات الشحن والتسليم عبر البريد الإلكتروني.",
+        "order_status_updates_with_missing": "اختر الطريقة التي تريد تلقي تحديثات الشحن بها.",
+        "order_status_confirmed_with_installments_payment_return": "أعد انتباهك إلى موظف المبيعات.",
+        "order_status_confirmed_with_installments_payment_confirm": "ستتلقى رسالة تأكيد عبر البريد الإلكتروني تحتوي على رقم طلبك وتفاصيل جدول أقساطك قريبًا.",
+        "confirmed_title": "تم تأكيد طلبك",
+        "confirmed_description": "لقد قبلنا طلبك، ونحن نعمل على تجهيزه. يُرجى العودة إلى هذه الصفحة للحصول على تحديثات حول حالة شحنتك.",
+        "confirmed_orders_title": "تم تأكيد طلباتك.",
+        "ready_for_pickup_title": "طلبك جاهز للاستلام",
+        "ready_for_pickup_description": "طلبك جاهز للاستلام. يرجى إحضار تأكيد الطلب عند الاستلام.",
+        "ready_for_delivery_title": "طلبك جاهز للتسليم",
+        "ready_for_delivery_description": "لقد قمنا بتجهيز طلبك.",
+        "order_updates_title": "تحديثات الطلب",
+        "shop_phone_description": "ستتلقى رسالة نصية تتضمن رابطًا لتطبيق Shop للمساعدة في تتبع طلبك.",
+        "order_updates_description_html": "سيتم إرسال التحديثات إلى %{customer_contact}",
+        "order_updates_current_step_prefix": "الخطوة الحالية:",
+        "order_updates_past_step_prefix": "الخطوة السابقة:",
+        "order_updates_upcoming_step_prefix": "الخطوة القادمة:",
+        "in_transit": "في طريقها",
+        "in_transit_title": "طلبك في الطريق",
+        "in_transit_description": "ستصلك تحديثات حول تقدمها.",
+        "in_transit_description_days": "يجب أن تستلم طلبك خلال %{number} أيام القادمة.",
+        "in_transit_description_today": "يجب أن تستلم طلبك اليوم.",
+        "in_transit_description_tomorrow": "يجب أن تستلم طلبك في اليوم التالي.",
+        "no_tracking_number": "لا يوجد رقم تتبع لهذا الطلب.",
+        "out_for_delivery": "خارج للتسليم",
+        "out_for_delivery_title": "طلبك في طريقه للتسليم",
+        "out_for_delivery_description_html": "طلبك في الطريق ويجب أن يصل اليوم. إذا لم يتم تسليمه خلال اليومين القادمين، %{contact_us}.",
+        "out_for_delivery_local_title": "طلبك في طريقه للتسليم",
+        "out_for_delivery_local_description_html": "طلبك سيصل قريباً.",
+        "attempted_delivery": "محاولة تسليم",
+        "attempted_delivery_title": "تمت محاولة لتسليم طلبك",
+        "attempted_delivery_description_html": "تمت محاولة توصيل طلبك ولكنها لم تنجح. %{contact_us} لترتيب محاولة توصيل أخرى.",
+        "attempted_delivery_local_title": "فات التسليم",
+        "attempted_delivery_local_description_html": "لم نتمكن من توصيل طلبك. لجدولة موعد تسليم آخر، %{contact_us}.",
+        "delivered": "تم التسليم",
+        "delivered_title": "تم تسليم طلبك",
+        "delivered_description_html": "تم تسليم طلبك إلى العنوان الذي زودتنا به. إذا لم تستلمه أو كانت لديك أي مشاكل أخرى، فيرجى %{contact_us}.",
+        "delivered_local_title": "تم تسليم طلبك",
+        "delivered_local_description_html": "ألم تستلم طلبك؟ %{let_us_know}."
       }
     },
     "pagination": {
@@ -2134,11 +2236,13 @@
         "loading": "جارٍ تحميل Apple Pay",
         "errors": {
           "generic": "حدثت مشكلة في Apple Pay. يُرجى إعادة المحاولة أو استخدام طريقة دفع مختلفة.",
-          "not_available": "Apple Pay غير متوفر على هذا الجهاز."
+          "not_available": "Apple Pay غير متوفر على هذا الجهاز.",
+          "missing_billing_address": "يتطلب Apple Pay عنوان فوترة. يرجى إضافته إلى حسابك."
         }
       },
       "update_success": {
-        "done_button": "مواصلة التسوق"
+        "done_button": "مواصلة التسوق",
+        "title": "تم تحديث طريقة الدفع"
       },
       "add_success": {
         "title": "تمت إضافة طريقة الدفع",
@@ -2242,6 +2346,122 @@
       "three_d_secure": {
         "title": "التحقق الثلاثي الأبعاد",
         "verification_failed": "تعذر التحقق من دفعتك. يرجى إعادة المحاولة أو استخدام طريقة دفع أخرى."
+      },
+      "store_credit": {
+        "label": "رصيد المتجر",
+        "accessibility_label": "رصيد المتجر - {{formattedBalance}}",
+        "expirable_amounts_button": "عرض المبالغ القابلة للانتهاء",
+        "expirable_amounts_label": "المبالغ التي توشك على الانتهاء",
+        "details_modal": {
+          "load_error": "تعذر تحميل رصيد المتجر.",
+          "title": "رصيد متجر ينتهي مفعوله",
+          "balance_label": "الرصيد",
+          "expiration_date_label": "تاريخ انتهاء الصلاحية",
+          "amount_label": "المبلغ",
+          "date_label": "تاريخ",
+          "event_label": "حدث",
+          "events": {
+            "adjustment": "تعديل",
+            "order_payment": "الدفع مقابل الطلب",
+            "order_refund": "استرداد طلب",
+            "payment_failure": "فشل الدفع",
+            "payment_returned": "تم إرجاع الدفعة",
+            "order_cancellation": "إلغاء الطلب",
+            "tax_finalization": "تسوية ضريبية"
+          },
+          "expirable_balance_info": "جزء من رصيدك سينتهي في تاريخ لاحق",
+          "expirable_amount_label": "إجمالي المبلغ القابل للانتهاء",
+          "expirable_amounts_info": "المبالغ التي تنتهي صلاحيتها في وقت أقرب يتم تطبيقها أولاً عند الدفع",
+          "expirable_amounts_button": "عرض",
+          "expired_amounts_button": "عرض المبالغ المنتهية الصلاحية",
+          "pagination": {
+            "expirable_transactions_loading": "جاري تحميل المزيد من الكميات القابلة للانتهاء",
+            "transactions_loading": "جارٍ تحميل المزيد من المعاملات",
+            "load_more_label": "أظهر المزيد",
+            "load_more_accessibility_label": "إظهار المزيد من المبالغ القابلة للانتهاء",
+            "load_more_transactions_accessibility_label": "إظهار المزيد من المعاملات",
+            "expirable_transactions_loaded": "تم تحميل كميات أكبر قابلة للانتهاء",
+            "transactions_loaded": "تم تحميل المزيد من المعاملات"
+          },
+          "expirable_indicator": "{{formattedAmount}} ستنتهي صلاحيته",
+          "expirable_indicator_accessibility_label": "{{formattedAmount}} ستنتهي صلاحيته. عرض المبالغ القابلة للانتهاء.",
+          "expirable_indicator_with_date_accessibility_label": "{{formattedAmount}} تنتهي صلاحيتها في {{date}}. عرض المبالغ القابلة للانتهاء.",
+          "expires_at": "ينتهي في {{date}}",
+          "expirable_transactions_list_accessibility_label": "معاملات رصيد المتجر القابلة للانتهاء",
+          "loading_accessibility_message": "جارٍ تحميل تفاصيل رصيد المتجر",
+          "transactions_list_accessibility_label": "معاملات رصيد المتجر",
+          "transaction_types": {
+            "credit": "تمت الإضافة",
+            "debit": "أنفقت",
+            "debit_revert": "تم رد الأموال",
+            "expiration": "انتهت صلاحيته"
+          }
+        }
+      },
+      "payment_details": {
+        "title": "تفاصيل طريقة الدفع",
+        "credit_card_details_accessibility_label": "ينتهي بـ {{lastDigits}}",
+        "billing_title": "عنوان الفواتير",
+        "card_info_title": "معلومات البطاقة",
+        "payment_method_expiring_on": "ينتهي في {{expiryDate}}",
+        "payment_method_expired_on": "انتهت صلاحيته في {{expiryDate}}",
+        "preauthorized_payments": "المدفوعات المفوضة مسبقًا",
+        "close_payment_modal": "إغلاق",
+        "close_payment_modal_accessibility_label": "إغلاق نافذة تفاصيل طريقة الدفع المنبثقة",
+        "payment_method_not_found_error": "تعذر العثور على طريقة دفع",
+        "payment_details_loading": "جارٍ تحميل تفاصيل طريقة الدفع",
+        "pre_authorized_payments": "المدفوعات المفوترة مسبقًا",
+        "total_amount_of_subscription_line_items_left": "و {{total}} أخرى",
+        "total_amount_of_subscription_line_items_left_accessibility_label": "{{totalItems}} إجمالي عدد العناصر، يتم عرض {{totalItemsToDisplay}} عنصرًا.",
+        "next_payment_due": "تاريخ الاستحقاق التالي للدفع {{dueDateInMonthDayYear}}",
+        "edit_payment_method_button": "تعديل",
+        "edit_payment_method_button_accessibility_label": "تعديل طريقة الدفع المنتهية بـ {{lastDigits}}",
+        "loading_shop_pay": "جارٍ تحميل Shop Pay",
+        "invalid_payment_method": "وسيلة دفع غير صالحة",
+        "invalid_payment_method_message": "استخدم بطاقة ائتمان جديدة لمواصلة تلقي الطلبات القادمة.",
+        "replace_payment_method": "استبدال طريقة الدفع",
+        "checkout_card_banner": "لا يمكن استخدام طريقة الدفع هذه إلا للمدفوعات المفوترَة مسبقًا. ولن تظهر عند الدفع إذا كنت مسجلاً دخولك إلى هذا المتجر.",
+        "default_checkbox": "تعيين كإعداد افتراضي",
+        "default_checkbox_accessibility_label": "تعيين طريقة الدفع هذه كخيار افتراضي",
+        "replace_payment_method_button": "استبدال"
+      },
+      "edit_payment_method": {
+        "title": "تعديل طريقة الدفع",
+        "save_payment_method_button": "حفظ",
+        "cancel_edit_payment_method_button": "إلغاء",
+        "payment_method_updated_toast": "تم تحديث طريقة الدفع",
+        "billing_address": "عنوان الفواتير",
+        "billing_address_add_new": "إضافة جديد",
+        "billing_address_choose_from_list": "اختر من القائمة",
+        "future_purchases_notice": "سيتم حفظ طريقة الدفع هذه للمشتريات المستقبلية.",
+        "generic_error": "حدثت مشكلة أثناء التحديث. الرجاء المحاولة مرة أخرى."
+      },
+      "update_payment_method": {
+        "title": "تحديث طريقة الدفع",
+        "button_title": "تحديث",
+        "billing_address": "عنوان الفواتير",
+        "disclaimer": "سيتم حفظ طريقة الدفع هذه للمشتريات المستقبلية، وقد تُستخدم لأي عملية شراء متكررة أو مؤجلة.",
+        "error_message": "تعذر تحديث طريقة الدفع",
+        "current": "الحالي",
+        "subscriptions_title": "الاشتراكات",
+        "subscriptions_list_accessibility_label": "قائمة المنتجات المشمولة بالاشتراك",
+        "pre_orders_title": "القادم",
+        "pre_orders_list_accessibility_label": "قائمة المنتجات تحت الطلب",
+        "resources_list_accessibility_label": "منتجات الاشتراك ومنتجات الطلبات المعلقة باستخدام طريقة الدفع هذه",
+        "resources_card_scroll": "مرر للمزيد من العناصر",
+        "resources_card_show_more": "أظهر المزيد",
+        "resources_card_show_less": "عرض أقل",
+        "loading_form_accessibility_message": "جارٍ تحميل نموذج تحديث طريقة الدفع",
+        "loading_current_payment_method": "جارٍ تحميل طريقة الدفع الحالية",
+        "loading_digital_wallets": "جارٍ تحميل خيارات المحفظة الرقمية",
+        "loading_card_fields": "جارٍ تحميل حقول بطاقة الائتمان",
+        "loading_resources": "جارٍ تحميل الاشتراكات والطلبات القادمة"
+      },
+      "link_expired": {
+        "message": "انتهت صلاحية رابط تحديث طريقة الدفع هذه.",
+        "update_message": "انتهت صلاحية رابط تحديث طريقة الدفع هذه.",
+        "add_message": "لقد انتهت صلاحية هذا الرابط الخاص بإضافة طريقة الدفع الخاصة بك.",
+        "return_home_button": "العودة إلى الصفحة الرئيسية"
       }
     },
     "shop_ads": {
@@ -2389,7 +2609,153 @@
       "onboarding_content": "زود عملاءك بملخص لمنشور مدونتك"
     },
     "featured_collection": {
+      "view_all": "عرض الكل",
+      "view_all_label": "عرض جميع المنتجات في مجموعة {{ collection_name }}"
+    },
+    "collection_list": {
       "view_all": "عرض الكل"
+    },
+    "collection_template": {
+      "empty": "لم يتم العثور على منتجات",
+      "title": "مجموعة",
+      "use_fewer_filters_html": "استخدم عددًا أقل من الفلاتر أو <a class=\"&lt;span class='notranslate'&gt;{{ class }}&lt;/span&gt;\" href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;/span&gt;\">قم بإزالة الكل</a>"
+    },
+    "collection_grid": {
+      "shop_all": "تسوق الكل",
+      "view_product": "عرض المنتج",
+      "sort_by": "ترتيب حسب:",
+      "color": "اللون",
+      "size": "الحجم",
+      "brand": "العلامة التجارية",
+      "collections": "المجموعات",
+      "control_area": "منطقة التحكم",
+      "compression": "الضغط"
+    },
+    "video": {
+      "load_video": "تحميل الفيديو: {{ description }}"
+    },
+    "slideshow": {
+      "load_slide": "تحميل الشريحة",
+      "previous_slideshow": "الشريحة السابقة",
+      "next_slideshow": "الشريحة التالية",
+      "pause_slideshow": "إيقاف عرض الشرائح مؤقتًا",
+      "play_slideshow": "تشغيل عرض الشرائح",
+      "carousel": "دائري",
+      "slide": "شريحة"
+    },
+    "page": {
+      "title": "عنوان الصفحة"
+    },
+    "quick_order_list": {
+      "product_total": "المجموع الفرعي للمنتجات",
+      "view_cart": "عرض سلة التسوق",
+      "each": "{{ money }}/لكل",
+      "product": "المنتج",
+      "variant": "متغير",
+      "variant_total": "إجمالي المتغير",
+      "items_added": {
+        "one": "{{ quantity }} صنف أضيف",
+        "other": "{{ quantity }} عناصر مضافة"
+      },
+      "items_removed": {
+        "one": "{{ quantity }} صنف تمت إزالته",
+        "other": "{{ quantity }} عناصر تمت إزالتها"
+      },
+      "product_variants": "متغيرات المنتج",
+      "total_items": "إجمالي العناصر",
+      "remove_all_single_item_confirmation": "إزالة عنصر واحد من سلة التسوق؟",
+      "remove_all_items_confirmation": "إزالة جميع المنتجات {{ quantity }} من سلة التسوق الخاصة بك؟",
+      "remove_all": "إزالة الكل",
+      "cancel": "إلغاء",
+      "min_error": "هذه السلعة لها حد أدنى {{ min }}",
+      "max_error": "هذا العنصر لديه حد أقصى يبلغ {{ max }}",
+      "step_error": "يمكنك إضافة هذا العنصر بزيادات قدرها {{ step }}"
     }
+  },
+  "SAVE": "حفظ",
+  "general": {
+    "password_page": {
+      "login_form_heading": "أدخل المتجر باستخدام كلمة المرور:",
+      "login_password_button": "ادخل باستخدام كلمة المرور",
+      "login_form_password_label": "كلمة المرور",
+      "login_form_password_placeholder": "كلمة المرور الخاصة بك",
+      "login_form_error": "كلمة المرور خاطئة!",
+      "login_form_submit": "إدخال",
+      "admin_link_html": "هل أنت مالك المتجر؟ <a href=\"/admin\" class=\"link underlined-link\">سجّل الدخول هنا</a>",
+      "powered_by_shopify_html": "سيتم تشغيل هذا المتجر بواسطة {{ shopify }}"
+    },
+    "social": {
+      "alt_text": {
+        "share_on_facebook": "مشاركة عبر الفيسبوك",
+        "share_on_twitter": "شارك على X",
+        "share_on_pinterest": "تثبيت في بنترست"
+      },
+      "links": {
+        "twitter": "X (تويتر)",
+        "facebook": "فيسبوك",
+        "pinterest": "بينترست",
+        "instagram": "انستغرام",
+        "tumblr": "تامبلر",
+        "snapchat": "سناب شات",
+        "youtube": "يوتيوب",
+        "vimeo": "فيميو",
+        "tiktok": "تيك توك"
+      }
+    },
+    "continue_shopping": "مواصلة التسوق",
+    "pagination": {
+      "label": "ترقيم الصفحات",
+      "page": "صفحة {{ number }}",
+      "next": "الصفحة التالية",
+      "previous": "الصفحة السابقة"
+    },
+    "search": {
+      "search": "بحث",
+      "reset": "مسح مصطلح البحث"
+    },
+    "cart": {
+      "view": "عرض سلة التسوق ({{ count }})",
+      "item_added": "تم إضافة العنصر إلى سلة التسوق الخاصة بك",
+      "view_empty_cart": "عرض سلة التسوق",
+      "free": "مجاني",
+      "free_gift": {
+        "one": "هدية مجانية",
+        "other": "{{ count }} هدايا مجانية"
+      }
+    },
+    "share": {
+      "close": "إغلاق المشاركة",
+      "copy_to_clipboard": "نسخ الرابط",
+      "share_url": "الرابط",
+      "success_message": "تم نسخ الرابط إلى الحافظة"
+    },
+    "slider": {
+      "of": "من",
+      "next_slide": "اسحب لليمين",
+      "previous_slide": "اسحب لليسار",
+      "name": "شريط التمرير"
+    },
+    "sale_badge": {
+      "save": "حفظ",
+      "save_amount": "وفر {{ amount }}",
+      "save_percentage": "وفّر {{ percentage }}%",
+      "SAVE": "حفظ",
+      "off": "إيقاف تشغيل"
+    }
+  },
+  "newsletter": {
+    "label": "بريد إلكتروني",
+    "success": "شكرا لاشتراكك",
+    "button_label": "اشترك",
+    "placeholder": "أدخل بريدك الإلكتروني",
+    "tag_value": "نشرة إخبارية"
+  },
+  "accessibility": {
+    "skip_to_text": "تجاوز إلى المحتوى",
+    "skip_to_product_info": "تجاوز إلى معلومات المنتج",
+    "close": "إغلاق",
+    "unit_price_separator": "لكل",
+    "vendor": "البائع:",
+    "error": "خطأ"
   }
 }
