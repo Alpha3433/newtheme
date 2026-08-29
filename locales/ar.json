@@ -1584,6 +1584,310 @@
       "vaulted": {
         "change_button": "تغيير",
         "loading_section": "تحميل {{section}}…"
+      },
+      "payment_errors": {
+        "transient_error": "حدثت مشكلة في معالجة دفعتك. حاول تحديث هذه الصفحة أو تحقق من اتصالك بالإنترنت.",
+        "missing_shipping_address": "تعذر معالجة دفعتك لأن عنوان الشحن مفقود. يُرجى إضافة عنوان الشحن والمحاولة مرة أخرى.",
+        "invalid_shipping_address": "لا يمكننا معالجة دفعتك لأنه لم يتسنّ لنا العثور على عنوان الشحن الخاص بك. يرجى التحقق من عنوان الشحن الخاص بك والمحاولة مرة أخرى.",
+        "successful_offsite_with_gift_card_error": "حدث خطأ أثناء معالجة دفع بطاقة الهدايا الخاصة بك. يرجى إعادة المحاولة أو استخدام طريقة دفع مختلفة.",
+        "development_store_order_limit_reached": "لقد وصلت إلى الحد المسموح به لطلبات متاجر التطوير باستخدام معالج الدفع هذا. لتقديم طلب آخر، ستحتاج إلى استخدام بوابة دفع اختبارية. تعرّف على المزيد حول %{development_store_order_testing_docs_link}.",
+        "development_store_with_order_limit": "لتقديم طلب اختبار، ستحتاج إلى استخدام بوابة دفع تجريبية. تعرَّف على المزيد حول %{development_store_order_testing_docs_link}.",
+        "development_store_order_testing_docs_link": "اختبار الطلبات في المتاجر التجريبية",
+        "payment_above_threshold": "مبلغ الدفع يتجاوز الحد المالي لهذه المنطقة. يُرجى تقليل الإجمالي والمحاولة مرة أخرى",
+        "risky": "حدثت مشكلة أثناء معالجة دفعتك. يرجى إعادة المحاولة أو استخدام طريقة دفع مختلفة.",
+        "expired_buyer_action": "انتهت مهلة طريقة الدفع. حاول مرة أخرى.",
+        "name_mismatch": "تحقق من تفاصيل بطاقتك. لا يتطابق الاسم الموجود على بطاقتك وعنوان الفواتير.",
+        "shop_pay_wallet_not_available": "Shop Pay غير متاح لعملية الدفع هذه.",
+        "market_manager_blocks_wallet_payments": "طريقة الدفع غير مدعومة في بلدك.",
+        "paypal_over_capture": "تم تحديث إجمالي طلبك. ادفع باستخدام {{walletName}} لإكمال طلبك.",
+        "captcha_required": "أدخل معلومات الدفع وحل اختبار الكابتشا لإتمام عملية الشراء.",
+        "captcha_required_without_payment_information": "حل اختبار الكابتشا لإتمام عملية الشراء.",
+        "payment_credential_delegation_error": "حدثت مشكلة أثناء معالجة دفعتك. يُرجى اختيار طريقة دفع جديدة."
+      },
+      "shipping_errors": {
+        "shipping_method": "لقد تغيرت خيارات الشحن لطلبك. يرجى مراجعة اختيارك.",
+        "shipping_method_not_available": "لقد تم تحديث عربة التسوق الخاصة بك ولا يمكن شحن المنتجات التي أضفتها إلى عنوانك. يُرجى إزالة المنتجات لإتمام طلبك.",
+        "shipping_method_not_available_generic": {
+          "one": "لا يمكن شحن طلبك إلى العنوان المحدد. يُرجى مراجعة عنوانك للتأكد من صحته ثم المحاولة مرة أخرى، أو تحديد عنوان مختلف.",
+          "other": "لا يمكن شحن بعض المنتجات في سلة التسوق إلى العنوان الذي أدخلته. يُرجى مراجعة عنوانك للتأكد من صحته والمحاولة مرة أخرى، أو تحديد عنوان مختلف."
+        },
+        "shipping_method_not_available_due_to_unsatisfied_conditions": "العناصر الموجودة في سلة التسوق لا تستوفي متطلبات السعر أو الوزن للتأهل للشحن. يُرجى تحديث سلة التسوق والمحاولة مرة أخرى.",
+        "shipping_method_not_available_updated": {
+          "one": "المنتج الذي أضفته لا يتم شحنه إلى موقعك. قم بإزالته لإتمام الشراء، أو اتصل بالمتجر.",
+          "other": "لا تشحن سلعة واحدة أو أكثر من السلع التي أضفتها إلى موقعك. قم بإزالتها لإتمام عملية الدفع، أو اتصل بالمتجر."
+        },
+        "payment_method_not_supported": "لا يمكنك استخدام طريقة الدفع هذه لـ %{country}. استخدم طريقة دفع مختلفة للشحن إلى هذا البلد.",
+        "empty_state": "أدخل عنوان الشحن الخاص بك لعرض طرق الشحن المتاحة.",
+        "title": "الشحن غير متاح",
+        "invalid_selected_address": "عنوان الشحن المحدد غير صالح",
+        "invalid_selected_address_with_update_link": "عنوان الشحن المحدد غير صالح. %{update_address_link} أو اختر عنوانًا مختلفًا",
+        "unavailable_addresses_only_countries": "لا يمكن شحن طلبك إلا إلى {{countriesList}}. أضف عنوانًا جديدًا للمتابعة.",
+        "unavailable_address_country": "الشحن غير متوفر في البلد الذي اخترته. استخدم عنوانًا مختلفًا للمتابعة",
+        "unavailable_selected_address": "الشحن غير متاح للعنوان المحدد",
+        "unavailable_selected_address_for_region": "الشحن غير متاح لـ {{region}}. يرجى اختيار عنوان مختلف للمتابعة"
+      },
+      "alternative_payment_method_banner": {
+        "express_checkout": "الدفع السريع",
+        "or": "أو",
+        "or_pay_another_way": "أو ادفع بطريقة أخرى",
+        "or_check_out_another_way": "أو يمكنك تجربة طريقة أخرى",
+        "or_pay_with_credit_card": "أو الدفع ببطاقة الائتمان",
+        "show_more_options": "أظهِر المزيد من الخيارات",
+        "hide_more_options": "إخفاء المزيد من الخيارات"
+      },
+      "post_purchase": {
+        "page_title": "ما بعد الشراء",
+        "title": "ما بعد الشراء",
+        "escape_confirmation": "لقد دفعتَ ثمن طلبك.",
+        "escape_action": "عرض تفاصيل الطلب ›",
+        "components": {
+          "close": "إغلاق",
+          "expand": "عرض المزيد",
+          "processing": "جارٍ المعالجة…",
+          "submit": "إرسال"
+        }
+      },
+      "processing": {
+        "redirecting_page_title": "جارٍ إعادة التوجيه...",
+        "redirecting_title": "جارٍ إعادة التوجيه...",
+        "redirecting_notice": "الرجاء الانتظار ريثما تتم إعادة توجيهك.",
+        "redirecting_to_bank": "جارٍ إعادة التوجيه إلى {{bank}}",
+        "complete_your_purchase_title": "أكمل عملية الشراء",
+        "continue_to_payment_gateway_notice": "للمتابعة إلى الدفع، يرجى إضافة معلومات الدفع الخاصة بك.",
+        "continue_to_payment_gateway_button_label": "متابعة الدفع",
+        "complete_your_purchase_title_error": "صحّح معلومات الدفع الخاصة بك",
+        "continue_to_payment_gateway_notice_error": "تعذر التحقق من معلومات الدفع الخاصة بك.",
+        "continue_to_payment_gateway_button_label_error": "تحديث معلومات الدفع",
+        "page_title": "جاري معالجة الطلب",
+        "title": "جاري معالجة الطلب",
+        "your_order_has_been_received_title": "شكراً لطلبك",
+        "you_will_receive_confirmation": "نتلقى الكثير من الطلبات في الوقت الحالي. من المفترض أن تتلقى تأكيدًا عبر البريد الإلكتروني أو الرسائل النصية قريبًا. إذا لم تستلمه خلال الساعة القادمة، يرجى إبلاغنا.",
+        "you_will_not_be_charged": "لن يتم محاسبتك بعد.",
+        "wait": {
+          "short": "جارٍ معالجة طلبك.",
+          "medium": {
+            "one": "جارٍ معالجة طلبك. وقت الانتظار المتوقع هو %{count} دقيقة.",
+            "other": "يجري العمل على طلبك. مدة الانتظار المتوقعة هي %{count} دقيقة."
+          },
+          "long": "ستتلقى رسالة بريد إلكتروني بمجرد معالجة طلبك. يوجد حاليًا عدد كبير من الطلبات.",
+          "no_auto_refresh_html": "إذا لم تتم إعادة توجيهك تلقائيًا، %{link}.",
+          "refresh_this_page": "حدِّث هذه الصفحة"
+        },
+        "remote_shops_payments_processing": "معالجة المدفوعات",
+        "action_required": "الإجراء المطلوب",
+        "modal_notice": "نحن نتواصل مع {{paymentMethod}}",
+        "remote_checkout_count": "%{current} من %{total}"
+      },
+      "payment_challenge_modal": {
+        "instructions": "أكمل عملية الشراء باستخدام الرمز الخاص بك {{paymentMethod}}",
+        "timer_message": "لديك {{timeLeft}} للدفع",
+        "copy_text": "انسخ رمز {{paymentMethod}}",
+        "open_app_text": "افتح تطبيق {{paymentMethod}}",
+        "header": "ادفع باستخدام {{paymentMethod}}",
+        "qr_code": {
+          "instructions": "أكمل عملية الشراء باستخدام الرمز الخاص بك {{paymentMethod}}",
+          "wechat_instructions": "امسح رمز الاستجابة السريعة هذا باستخدام تطبيق WeChat على هاتفك لإتمام عملية الشراء",
+          "wechat_instructions_mobile": "امسح رمز الاستجابة السريعة (QR) هذا باستخدام تطبيق WeChat على جهاز آخر لإتمام عملية الشراء"
+        },
+        "external": {
+          "instructions": "أكد الدفع على تطبيقك لإتمام عملية الشراء هذه"
+        },
+        "close": "أغلِق التحدي"
+      },
+      "failed_payment": {
+        "page_title": "تعذر إتمام عملية الدفع",
+        "title": "تعذر إتمام عملية الدفع",
+        "payment_not_processed_title": "تعذر إتمام عملية الدفع الخاصة بك",
+        "payment_not_processed_text": "لم يتم تحصيل المبلغ منك. عُد إلى سلة التسوق لإتمام عملية الشراء.",
+        "return_to_cart_button_label": "العودة إلى عربة التسوق"
+      },
+      "payment_gateway": {
+        "credit_card_label": "بطاقة ائتمان",
+        "bogus_label": "بوابة دفع تجريبية",
+        "bank_deposit_label": "إيداع بنكي",
+        "bank_account_label": "الحساب المصرفي",
+        "cash_on_delivery_label": "الدفع عند الاستلام",
+        "money_order_label": "حوالة بريدية",
+        "debit_card_label": "بطاقة المدين",
+        "credit_or_debit_card_label": "بطاقة ائتمان/خصم",
+        "deferred_payment_label": "اختر طريقة الدفع لاحقًا",
+        "fixed_payment_label": "سيصبح دفعك مستحقاً في {{dueDate}}.",
+        "generic_payment_terms": "أنت على شروط {{translatedName}}. سيكون موعد استحقاق الدفع في {{dueDate}}.",
+        "login_prompt": {
+          "no_access": {
+            "message": "{{logIn}} إلى حساب لديه صلاحية الوصول إلى هذا الموقع لإضافة طرق دفع محفوظة أو استخدامها."
+          }
+        }
+      },
+      "remote_merchandise_only": {
+        "single_shop_transition": "جارٍ إعادة توجيهك إلى %{advertiser} لإكمال عملية الشراء."
+      },
+      "stock": {
+        "page_title": "مشكلات المخزون",
+        "title": "نفد المخزون",
+        "items_unavailable_notice": "بعض المنتجات غير متوفرة حالياً.",
+        "product_column_header": "المنتجات",
+        "quantity_column_header": "الكمية",
+        "price_column_header": "السعر",
+        "status_column_header": "الحالة",
+        "removed_from_cart_notice": "تمت إزالته من السلة",
+        "sold_out_label": "نفد المخزون",
+        "reduced_label": "مُخفَّض",
+        "reduced_with_quantity_label": "تبقى %{quantity_available} فقط",
+        "remove_from_cart_button_label": "إزالة من سلة التسوق",
+        "continue_shopping_button_label": "استمر/استمروا",
+        "go_back_to_cart_button_label": "العودة إلى سلة التسوق الخاصة بي",
+        "remove": "إزالة",
+        "return_to_store_label": "العودة إلى المتجر",
+        "continue_cta_label": "متابعة الدفع",
+        "item_label": {
+          "one": "{{count}} عنصر",
+          "other": "{{count}} عناصر"
+        },
+        "empty_cart_label": "سلة التسوق فارغة",
+        "quantity_update": {
+          "page_title": "تحديث الكمية",
+          "title": "تحديث الكمية",
+          "description": "تغيرت الكميات المتوفرة لهذه الأصناف وتم تحديثها في سلة التسوق الخاصة بك."
+        },
+        "unpurchasable_product": {
+          "title": "منتج غير قابل للشراء",
+          "header": "تمت إزالة بعض العناصر من سلة التسوق الخاصة بك",
+          "message": "هذه المنتجات غير متاحة لطلبات الشركات.",
+          "status_column_header": "غير متاح"
+        },
+        "unpurchasable_product_generic": {
+          "title": "منتج غير قابل للشراء",
+          "header": "تمت إزالة بعض العناصر من سلة التسوق الخاصة بك",
+          "message": "هذه العناصر غير متوفرة.",
+          "status_column_header": "غير متاح"
+        },
+        "unfulfillable_product": {
+          "title": "التوصيل غير متاح",
+          "message": {
+            "one": "طريقة التسليم هذه (%{delivery_method}) غير متاحة لهذا المنتج.",
+            "other": "لم تعد %{delivery_method} متاحة لهذه العناصر."
+          },
+          "default_message": {
+            "one": "طريقة التسليم المختارة غير متوفرة لهذا المنتج.",
+            "other": "طريقة التسليم المختارة لم تعد متوفرة لهذه العناصر."
+          }
+        },
+        "unshippable_product": {
+          "title": "لا يوجد توصيل متاح",
+          "header": {
+            "one": "لا يتوفر توصيل لـ %{count} من الأصناف",
+            "other": "لا تتوفر خدمة توصيل لـ %{count} من الأصناف"
+          },
+          "message": {
+            "one": "سيتم إزالة هذا المنتج من سلة التسوق الخاصة بك لأنه لا توجد طرق توصيل متاحة لعنوانك.",
+            "other": "ستتم إزالة هذه المنتجات من سلة التسوق الخاصة بك نظرًا لعدم توفر طرق توصيل لعنوانك."
+          },
+          "status_column_header": "لم يتم التسليم"
+        },
+        "price_update": {
+          "title": "تحديث السعر",
+          "description": "لقد تغيرت أسعار هذه السلع وتم تحديثها في سلة التسوق الخاصة بك.",
+          "updated_price": "السعر المحدث"
+        },
+        "price_and_quantity_update": {
+          "title": "تحديث السعر والكمية",
+          "description": "تغيرت أسعار وكميات هذه المنتجات المتاحة وتم تحديثها في سلة التسوق الخاصة بك."
+        },
+        "out_of_stock": {
+          "description": "هذه المنتجات لم تعد متوفرة وستتم إزالتها من سلة التسوق الخاصة بك.",
+          "items_unavailable": "بعض المنتجات لم تعد متوفرة وسيتم حذفها من سلة التسوق الخاصة بك.",
+          "missing_items": {
+            "title": {
+              "one": "{{count}} منتجًا لم يعد متوفرًا",
+              "other": "{{count}} عناصر لم تعد متوفرة"
+            },
+            "some_available_notice": {
+              "one": "لا تزال العناصر المتبقية متاحة للدفع. ستتم إزالة العنصر غير المتاح من سلة التسوق.",
+              "other": "العناصر المتبقية لا تزال متاحة للدفع. سيتم إزالة العناصر غير المتاحة من سلة التسوق."
+            },
+            "none_available_notice": {
+              "one": "هذا المنتج لم يعد متوفراً وقد تم حذفه من سلة مشترياتك.",
+              "other": "هذه المنتجات لم تعد متوفرة وتمت إزالتها من سلة التسوق الخاصة بك."
+            },
+            "mixed_issues_title": "بعض العناصر لم تعد متوفرة"
+          }
+        },
+        "out_of_stock_in_context_label": "هذا المنتج غير متوفر في بلدك/منطقتك."
+      },
+      "contextual_availability": {
+        "title": {
+          "one": "منتج غير متوفر",
+          "other": "منتجات غير متوفرة"
+        },
+        "products_not_available": {
+          "one": "ستتم إزالة هذا المنتج من سلة التسوق الخاصة بك لأنه غير متوفر في بلدك/منطقتك.",
+          "other": "ستُزال هذه المنتجات من سلة التسوق الخاصة بك لأنها غير متوفرة في بلدك/منطقتك."
+        },
+        "all_products_in_cart_unavailable": {
+          "one": "هذا المنتج غير متوفر في بلدك/منطقتك.",
+          "other": "هذه المنتجات غير متوفرة في بلدك/منطقتك."
+        },
+        "unavailable_label": "غير متاح"
+      },
+      "merchandise_unavailable_in_buyer_location": {
+        "banner_title": {
+          "some_products_one": "هذا المنتج غير متاح للتوصيل إلى %{location_name}.",
+          "some_products_other": "هذه المنتجات غير متاحة للتوصيل إلى %{location_name}.",
+          "all_products_one": "المنتج في سلة التسوق الخاصة بك غير متوفر للتسليم إلى %{location_name}.",
+          "all_products_other": "المنتجات الموجودة في سلة التسوق الخاصة بك غير متاحة للتسليم إلى %{location_name}."
+        },
+        "missing_country_fallback": "بلدك",
+        "indeterminate_location_fallback": "موقعك",
+        "cart_updated": "تم تحديث عربة التسوق الخاصة بك.",
+        "change_address_only": "غيّر عنوان التسليم للمتابعة.",
+        "change_address_or_remove": "تغيير عنوان التوصيل أو %{remove_action}.",
+        "remove_items_action": {
+          "one": "إزالة المنتج غير المتوفر",
+          "other": "إزالة العناصر غير المتوفرة"
+        },
+        "empty_cart_action": "إفراغ السلة والعودة إلى المتجر",
+        "unavailable_line_item": "%{product_name} / %{variant_label}"
+      },
+      "deliverability": {
+        "not_deliverable": {
+          "title": {
+            "one": "لا يتوفر توصيل لـ %{count} من الأصناف",
+            "other": "لا تتوفر خدمة توصيل لـ %{count} من الأصناف"
+          },
+          "message": {
+            "one": "سيتم إزالة هذا المنتج من سلة التسوق الخاصة بك لأنه لا توجد طرق توصيل متاحة لعنوانك.",
+            "other": "ستتم إزالة هذه المنتجات من سلة التسوق الخاصة بك نظرًا لعدم توفر طرق توصيل لعنوانك."
+          },
+          "label": "لم يتم التسليم"
+        }
+      },
+      "order_summary": {
+        "title": "ملخص الطلب",
+        "product_disclosures": {
+          "title": "إفصاحات المنتج"
+        },
+        "group_title_label": "جزء من \"%{group_title}\"",
+        "for_add_on": "لـ: %{group_title}",
+        "from_shop_heading": "من %{shop_name}",
+        "from_other_stores_heading": "من متاجر أخرى",
+        "from_multiple_stores_heading": "من متاجر متعددة",
+        "number_items": {
+          "one": "%{count} بند",
+          "other": "%{count} بند"
+        },
+        "view_all_items": {
+          "one": "عرض %{count} عنصر",
+          "other": "عرض جميع العناصر (%{count})"
+        },
+        "more_items_modal": {
+          "search_item": "بحث",
+          "clear_search": "مسح البحث",
+          "empty_results": "لم يتم العثور على نتائج لـ \"%{searchText}\". يرجى التحقق من الهجاء أو استخدام كلمة أو عبارة مختلفة.",
+          "number_items_shown": "%{shownNumber} من %{totalNumber} عنصرًا"
+        },
+        "order_name_label": "اطلب %{name}",
+        "shopping_cart_label": "عربة التسوق"
       }
     },
     "pagination": {
