@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin language editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "SAVE": "AHORRA",
   "ahorra": "Ahorra",
@@ -80,7 +89,9 @@
   "newsletter": {
     "label": "Correo electrónico",
     "success": "Gracias por suscribirse",
-    "button_label": "Suscribirse"
+    "button_label": "Suscribirse",
+    "placeholder": "Introduce tu correo electrónico",
+    "tag_value": "boletín"
   },
   "blogs": {
     "article": {
@@ -206,7 +217,8 @@
       "sku": "SKU",
       "taxes_included": "Taxes included.",
       "duties_included": "Duties included.",
-      "duties_and_taxes_included": "Duties and taxes included."
+      "duties_and_taxes_included": "Duties and taxes included.",
+      "view_product": "Ver producto"
     },
     "modal": {
       "label": "Galería de medios"
@@ -246,7 +258,17 @@
       "sort_button": "Ordenar",
       "sort_by_label": "Ordenar por:",
       "to": "Hasta",
-      "clear_filter": "Eliminar filtro"
+      "clear_filter": "Eliminar filtro",
+      "apply_filters": "Aplicar filtros",
+      "sort_options": {
+        "best_selling": "Más vendido",
+        "price_ascending": "Precio: de menor a mayor",
+        "price_descending": "Precio: de Mayor a Menor",
+        "title_ascending": "Alfabéticamente: A-Z",
+        "title_descending": "Alfabéticamente: Z-A",
+        "created_descending": "Fecha: de más reciente a más antiguo",
+        "created_ascending": "Fecha: de la más antigua a la más reciente"
+      }
     }
   },
   "templates": {
@@ -346,7 +368,8 @@
       "login": {
         "title": "¿Tiene una cuenta?",
         "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Inicie sesión</a> para finalizar la compra más rápido."
-      }
+      },
+      "discounts": "Descuentos"
     },
     "footer": {
       "payment": "Métodos de pago"
@@ -407,6 +430,30 @@
       "min_error": "Este artículo tiene un mínimo de {{ min }}",
       "max_error": "Este artículo tiene un máximo de {{ max }}",
       "step_error": "Solo puede agregar este artículo en incrementos de {{ step }}"
+    },
+    "placeholder": {
+      "add_features": "Agregue bloques de características para rellenar esta sección."
+    },
+    "new_hero": {
+      "name": "Héroe personalizado"
+    },
+    "breadcrumb": {
+      "home": "Inicio",
+      "collections": "Colecciones",
+      "products": "Productos",
+      "pages": "Páginas",
+      "blog": "Blog"
+    },
+    "collection_grid": {
+      "shop_all": "Comprar todo",
+      "view_product": "Ver producto",
+      "sort_by": "ORDENAR POR:",
+      "color": "Color",
+      "size": "Tamaño",
+      "brand": "Marca",
+      "collections": "Colecciones",
+      "control_area": "Área de control",
+      "compression": "Compresión"
     }
   },
   "localization": {
