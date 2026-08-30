@@ -34,7 +34,7 @@
     aria-describedby="{{ localPosition }}Label"
   >
     <span class="localization-current">
-      {{ localization.country | image_url: width: 18 | image_tag }}
+      {{ localization.country | image_url: width: 18 | image_tag: loading: 'eager', decoding: 'async' }}
       <span class="localization-iso">{{ localization.country.iso_code | upcase }}</span>
     </span>
     {{ 'icon-caret.svg' | inline_asset_content }}

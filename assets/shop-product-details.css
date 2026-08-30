@@ -1620,5 +1620,5 @@
 }
 .rating-component { cursor: pointer; }
 .rating-component:hover .rating-text-content { text-decoration: underline; text-underline-offset: 2px; }
-.rating-component:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 4px; }
-#vstar-reviews { scroll-margin-top: 100px; }
+.rating-component:focus-within { outline: 2px solid currentColor; outline-offset: 3px; border-radius: 4px; }
+#vstar-reviews, #reviews { scroll-margin-top: 100px; }

@@ -23,7 +23,7 @@
       {{- 'icon-checkmark.svg' | inline_asset_content -}}
     </span>
     <span class="country">
-      {{ country | image_url: width: 18 | image_tag }}
+      {{ country | image_url: width: 18 | image_tag: loading: 'lazy', decoding: 'async' }}
       <span class="country-name">{{- country.name -}}</span>
     </span>
     <span class="localization-form__currency motion-reduce{% unless show_currencies %} hidden{% endunless %}">
