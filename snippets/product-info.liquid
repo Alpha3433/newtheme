@@ -182,7 +182,7 @@
         <a
           href="#reviews"
           class="rating-text-content"
-          style="font-size: {{ block.settings.rating_text_size | default: 12 }}px; font-weight: 500; color: {% if block.settings.use_theme_colors %}{{ settings.global_section_text_color }}{% else %}{{ block.settings.rating_text_color }}{% endif %}; letter-spacing: -0.3px; line-height: 1.3; text-decoration: none;"
+          style="font-size: {{ block.settings.rating_text_size | default: 12 }}px; font-weight: 500; color: {% if block.settings.use_theme_colors %}{{ settings.global_section_text_color }}{% else %}{{ block.settings.rating_text_color }}{% endif %}; letter-spacing: -0.3px; line-height: 1.3;"
         >
           {{ rating_text_content }}
         </a>
@@ -3644,4 +3644,4 @@
       {% render 'bundle-and-save', block: block %}
   {% endcase %}
 {% endfor %}
-<script>(function(){function s(e){var t=document.querySelector('#vstar-reviews')||document.querySelector('#reviews');if(!t)return;e.preventDefault();var c=t.closest('.shopify-section');if(c)c.classList.remove('scroll-trigger--offscreen');var m=parseInt(getComputedStyle(t).scrollMarginTop)||0;window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-m,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}function i(){document.querySelectorAll('.rating-component').forEach(function(el){if(el.getAttribute('data-reviews-linked'))return;el.setAttribute('data-reviews-linked','1');el.addEventListener('click',s);});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',i);}else{i();}document.addEventListener('shopify:section:load',i);})();</script>
+<script>(function(){function s(e){var t=document.querySelector('#vstar-reviews')||document.querySelector('#reviews');if(!t)return;e.preventDefault();e.stopPropagation();var c=t.closest('.shopify-section');if(c)c.classList.remove('scroll-trigger--offscreen');var m=parseInt(getComputedStyle(t).scrollMarginTop)||0;window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-m,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}function i(){document.querySelectorAll('.rating-component').forEach(function(el){if(el.getAttribute('data-reviews-linked'))return;el.setAttribute('data-reviews-linked','1');el.addEventListener('click',s);});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',i);}else{i();}document.addEventListener('shopify:section:load',i);})();</script>
