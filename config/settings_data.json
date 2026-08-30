@@ -344,7 +344,11 @@
         "block_order": [
           "cart_timer_bar_FMDBm3"
         ],
-        "custom_css": [],
+        "custom_css": [
+          "shop-pay-wallet-button,shopify-paypal-button,shopify-google-pay-button,shopify-amazon-pay-button{display:none!important}",
+          ".cart__dynamic-checkout-buttons:not(:has(shopify-apple-pay-button)){display:none!important}",
+          ".cart__ctas,.totals_total{text-align:center!important}"
+        ],
         "settings": {
           "cart_customization_mode": false,
           "use_theme_colors_cart_drawer": true,
