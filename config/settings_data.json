@@ -345,11 +345,12 @@
           "cart_timer_bar_FMDBm3"
         ],
         "custom_css": [
-          "shop-pay-wallet-button,shopify-paypal-button,shopify-google-pay-button,shopify-amazon-pay-button {display: none !important;}",
-          ".cart__dynamic-checkout-buttons:not(:has(shopify-apple-pay-button)) {display: none !important;}",
-          "#dynamic-checkout-cart,shopify-accelerated-checkout-cart {min-height: 0 !important; height: auto !important;}",
-          ".cart__dynamic-checkout-buttons {margin-top: 10px !important;}",
-          ".cart__ctas,.totals_total {text-align: center !important;}"
+          "shop-pay-wallet-button,shopify-paypal-button,shopify-google-pay-button,shopify-amazon-pay-button{display:none!important}",
+          ".cart__dynamic-checkout-buttons:not(:has(shopify-apple-pay-button)){display:none!important}",
+          "#dynamic-checkout-cart,shopify-accelerated-checkout-cart{min-height:0!important;height:auto!important}",
+          ".cart__dynamic-checkout-buttons{margin-top:10px!important}",
+          ".drawer__footer{margin-top:auto!important}",
+          ".cart__ctas,.totals_total{text-align:center!important}"
         ],
         "settings": {
           "cart_customization_mode": false,
