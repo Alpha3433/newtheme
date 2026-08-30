@@ -576,3 +576,55 @@ tr.cart-row-divider {
 .is-empty .drawer__footer {
   display: none;
 }
+
+/* ==========================================================================
+   Cart drawer: pin the footer to the bottom of the drawer
+
+   The drawer is a percentage-height chain:
+     cart-drawer.drawer > #CartDrawer.cart-drawer > .drawer__inner > .drawer__footer
+
+   .drawer__inner already declares height: 100% + flex column, but the
+   intermediate #CartDrawer container only gets an explicit height inside
+   the max-width: 749px block above. Above that breakpoint it has no height
+   of its own, so .drawer__inner's height: 100% has no definite parent box
+   to resolve against and collapses to content height — leaving the footer
+   mid-drawer with dead space beneath it.
+
+   Give every link in the chain an explicit height and flex role so the
+   items area absorbs the slack and the footer always sits on the bottom.
+   Scoped to :not(.is-empty) so the empty-cart grid centering above still
+   applies.
+   ========================================================================== */
+cart-drawer.drawer {
+  display: flex;
+  height: 100%;
+}
+
+cart-drawer:not(.is-empty) > #CartDrawer.cart-drawer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
+  min-height: 0;
+}
+
+cart-drawer:not(.is-empty) > #CartDrawer > .drawer__inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+/* Items area takes the slack; min-height: 0 lets it shrink so it scrolls
+   instead of pushing the footer off the bottom. */
+cart-drawer:not(.is-empty) > #CartDrawer > .drawer__inner > cart-drawer-items {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+}
+
+/* Footer keeps its natural height and is pushed to the bottom. */
+cart-drawer:not(.is-empty) > #CartDrawer > .drawer__inner > .drawer__footer {
+  flex: 0 0 auto;
+  margin-top: auto;
+}
