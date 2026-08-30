@@ -164,7 +164,7 @@
                       {{ media | img_url: '530x' }} 1x,
                       {{ media | img_url: '1060x' }} 2x"
                     alt="{{ media.alt | escape }}"
-                    loading="lazy"
+                    {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
                     data-src="{{ media | img_url: '530x' }}"
                     data-zoom-src="{{ media | img_url: '1200x' }}"
                     data-media-id="{{ media.id }}"
@@ -255,7 +255,7 @@
                   data-position="{{ forloop.index0 }}"
                   data-image-gallery-type="product"
                 >
-                  <img src="{{ media | img_url: '530x' }}" alt="{{ media.alt | escape }}" width="" height="">
+                  <img src="{{ media | img_url: '530x' }}" alt="{{ media.alt | escape }}" loading="lazy" width="" height="">
                 </div>
             {% endcase %}
           {% endfor %}
