@@ -344,12 +344,7 @@
         "block_order": [
           "cart_timer_bar_FMDBm3"
         ],
-        "custom_css": [
-          ".cart-drawer__footer .gb-totals {justify-content: center !important;}",
-          ".totals_total {text-align: center !important;}",
-          ".gb-totals-total-value {text-align: center !important;}",
-          ".cart-ctas {text-align: center !important;}"
-        ],
+        "custom_css": [],
         "settings": {
           "cart_customization_mode": false,
           "use_theme_colors_cart_drawer": true,
