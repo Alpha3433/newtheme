@@ -896,8 +896,39 @@
                   });
                 });
               };
-              removePayPal();
-              new MutationObserver(removePayPal).observe(root, { childList: true, subtree: true });
+              /* The accelerated-checkout component builds one shadow-DOM grid row per
+                 entry in its wallet-configs attribute, regardless of its children —
+                 so PayPal must be filtered out of that JSON before hydration or its
+                 empty row keeps reserving space. */
+              var stripPayPalFromWalletConfigs = function () {
+                root.querySelectorAll('[wallet-configs]').forEach(function (el) {
+                  var raw = el.getAttribute('wallet-configs');
+                  if (!raw || raw.toLowerCase().indexOf('paypal') === -1) return;
+                  try {
+                    var configs = JSON.parse(raw);
+                    if (!Array.isArray(configs)) return;
+                    var kept = configs.filter(function (config) {
+                      return JSON.stringify(config).toLowerCase().indexOf('paypal') === -1;
+                    });
+                    if (kept.length && kept.length !== configs.length) {
+                      el.setAttribute('wallet-configs', JSON.stringify(kept));
+                    }
+                  } catch (e) {
+                    /* attribute isn't JSON we understand — leave it alone */
+                  }
+                });
+              };
+              var cleanUpPayPal = function () {
+                stripPayPalFromWalletConfigs();
+                removePayPal();
+              };
+              cleanUpPayPal();
+              new MutationObserver(cleanUpPayPal).observe(root, {
+                childList: true,
+                subtree: true,
+                attributes: true,
+                attributeFilter: ['wallet-configs'],
+              });
             })();
           </script>
         {%- endif -%}
