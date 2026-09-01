@@ -855,82 +855,6 @@
               {{ content_for_additional_checkout_buttons }}
             </div>
           </form>
-          <script>
-            /* Remove (not just hide) the PayPal express wallet from the drawer:
-               the accelerated-checkout component reserves a grid row per wallet
-               inside its shadow DOM, so a display:none button still leaves a gap.
-               PayPal stays untouched as a payment method at checkout. */
-            (function () {
-              var root = document.getElementById('CartDrawer-ExpressCheckoutForm');
-              if (!root || !('MutationObserver' in window)) return;
-              var otherWallets = 'shopify-shop-pay-button, shopify-apple-pay-button, shopify-google-pay-button';
-              var paypalSelectors = [
-                'shopify-paypal-button',
-                '.additional-checkout-button--paypal',
-                '[class*="paypal" i]',
-                '[data-testid*="paypal" i]',
-                '[id*="paypal" i]',
-                'iframe[src*="paypal" i]',
-              ];
-              var removePayPal = function () {
-                paypalSelectors.forEach(function (selector) {
-                  var nodes;
-                  try {
-                    nodes = root.querySelectorAll(selector);
-                  } catch (e) {
-                    return;
-                  }
-                  nodes.forEach(function (el) {
-                    if (!root.contains(el)) return;
-                    var target = el;
-                    // climb to the outermost wrapper holding nothing but this wallet
-                    while (
-                      target.parentElement &&
-                      target.parentElement !== root &&
-                      /^(li|div|span|ul)$/i.test(target.parentElement.tagName) &&
-                      !target.parentElement.querySelector(otherWallets)
-                    ) {
-                      target = target.parentElement;
-                    }
-                    target.remove();
-                  });
-                });
-              };
-              /* The accelerated-checkout component builds one shadow-DOM grid row per
-                 entry in its wallet-configs attribute, regardless of its children —
-                 so PayPal must be filtered out of that JSON before hydration or its
-                 empty row keeps reserving space. */
-              var stripPayPalFromWalletConfigs = function () {
-                root.querySelectorAll('[wallet-configs]').forEach(function (el) {
-                  var raw = el.getAttribute('wallet-configs');
-                  if (!raw || raw.toLowerCase().indexOf('paypal') === -1) return;
-                  try {
-                    var configs = JSON.parse(raw);
-                    if (!Array.isArray(configs)) return;
-                    var kept = configs.filter(function (config) {
-                      return JSON.stringify(config).toLowerCase().indexOf('paypal') === -1;
-                    });
-                    if (kept.length && kept.length !== configs.length) {
-                      el.setAttribute('wallet-configs', JSON.stringify(kept));
-                    }
-                  } catch (e) {
-                    /* attribute isn't JSON we understand — leave it alone */
-                  }
-                });
-              };
-              var cleanUpPayPal = function () {
-                stripPayPalFromWalletConfigs();
-                removePayPal();
-              };
-              cleanUpPayPal();
-              new MutationObserver(cleanUpPayPal).observe(root, {
-                childList: true,
-                subtree: true,
-                attributes: true,
-                attributeFilter: ['wallet-configs'],
-              });
-            })();
-          </script>
         {%- endif -%}
         {% for block in section.blocks %}
           {% case block.type %}
@@ -954,6 +878,107 @@
     </div>
   </div>
 </cart-drawer>
+
+{%- if additional_checkout_buttons -%}
+  <script>
+    /* Keep the PayPal express wallet out of the cart drawer. This script must
+       live OUTSIDE the drawer__inner markup: cart.js/cart-drawer.js replace
+       that subtree's innerHTML on every cart update, so a script inside it
+       runs once at page load and never again, and each refresh would bring
+       the PayPal markup back unfiltered. PayPal itself stays untouched as a
+       payment method at the normal checkout. */
+    (function () {
+      if (!('MutationObserver' in window)) return;
+      var otherWallets = 'shopify-shop-pay-button, shopify-apple-pay-button, shopify-google-pay-button';
+      var paypalSelectors = [
+        'shopify-paypal-button',
+        '.additional-checkout-button--paypal',
+        '[class*="paypal" i]',
+        '[data-testid*="paypal" i]',
+        '[id*="paypal" i]',
+        'iframe[src*="paypal" i]',
+      ];
+      var recycled = 'WeakSet' in window ? new WeakSet() : null;
+      /* the accelerated-checkout component lays out one shadow-DOM grid row per
+         wallet-configs entry, so PayPal must leave the JSON, not just the DOM */
+      var stripWalletConfigs = function (root) {
+        var changed = [];
+        root.querySelectorAll('[wallet-configs]').forEach(function (el) {
+          var raw = el.getAttribute('wallet-configs');
+          if (!raw || raw.toLowerCase().indexOf('paypal') === -1) return;
+          try {
+            var configs = JSON.parse(raw);
+            if (!Array.isArray(configs)) return;
+            var kept = configs.filter(function (config) {
+              return JSON.stringify(config).toLowerCase().indexOf('paypal') === -1;
+            });
+            if (kept.length && kept.length !== configs.length) {
+              el.setAttribute('wallet-configs', JSON.stringify(kept));
+              changed.push(el);
+            }
+          } catch (e) {
+            /* attribute isn't JSON we understand — leave it alone */
+          }
+        });
+        return changed;
+      };
+      var removePayPalNodes = function (root) {
+        paypalSelectors.forEach(function (selector) {
+          var nodes;
+          try {
+            nodes = root.querySelectorAll(selector);
+          } catch (e) {
+            return;
+          }
+          nodes.forEach(function (el) {
+            if (!root.contains(el)) return;
+            var target = el;
+            // climb to the outermost wrapper holding nothing but this wallet
+            while (
+              target.parentElement &&
+              target.parentElement !== root &&
+              /^(li|div|span|ul)$/i.test(target.parentElement.tagName) &&
+              !target.parentElement.querySelector(otherWallets)
+            ) {
+              target = target.parentElement;
+            }
+            target.remove();
+          });
+        });
+      };
+      var cleanUp = function () {
+        var root = document.getElementById('CartDrawer-ExpressCheckoutForm');
+        if (!root) return;
+        var changed = stripWalletConfigs(root);
+        removePayPalNodes(root);
+        /* a component upgraded during a drawer refresh has already rendered
+           from the unfiltered configs — reconnect it so it rebuilds cleanly */
+        changed.forEach(function (el) {
+          if (!el.isConnected || (recycled && recycled.has(el))) return;
+          var clone = el.cloneNode(true);
+          if (recycled) recycled.add(clone);
+          el.replaceWith(clone);
+        });
+      };
+      var start = function () {
+        var host = document.querySelector('cart-drawer') || document.body;
+        if (host.getAttribute('data-paypal-cleanup') === 'on') return;
+        host.setAttribute('data-paypal-cleanup', 'on');
+        cleanUp();
+        new MutationObserver(cleanUp).observe(host, {
+          childList: true,
+          subtree: true,
+          attributes: true,
+          attributeFilter: ['wallet-configs'],
+        });
+      };
+      start();
+      document.addEventListener('shopify:section:load', function () {
+        start();
+      });
+    })();
+  </script>
+{%- endif -%}
 
 {% render 'cart-drawer_style',
   enabled_upsell_block: enabled_upsell_block,
