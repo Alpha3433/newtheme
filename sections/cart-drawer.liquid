@@ -855,6 +855,51 @@
               {{ content_for_additional_checkout_buttons }}
             </div>
           </form>
+          <script>
+            /* Remove (not just hide) the PayPal express wallet from the drawer:
+               the accelerated-checkout component reserves a grid row per wallet
+               inside its shadow DOM, so a display:none button still leaves a gap.
+               PayPal stays untouched as a payment method at checkout. */
+            (function () {
+              var root = document.getElementById('CartDrawer-ExpressCheckoutForm');
+              if (!root || !('MutationObserver' in window)) return;
+              var otherWallets = 'shopify-shop-pay-button, shopify-apple-pay-button, shopify-google-pay-button';
+              var paypalSelectors = [
+                'shopify-paypal-button',
+                '.additional-checkout-button--paypal',
+                '[class*="paypal" i]',
+                '[data-testid*="paypal" i]',
+                '[id*="paypal" i]',
+                'iframe[src*="paypal" i]',
+              ];
+              var removePayPal = function () {
+                paypalSelectors.forEach(function (selector) {
+                  var nodes;
+                  try {
+                    nodes = root.querySelectorAll(selector);
+                  } catch (e) {
+                    return;
+                  }
+                  nodes.forEach(function (el) {
+                    if (!root.contains(el)) return;
+                    var target = el;
+                    // climb to the outermost wrapper holding nothing but this wallet
+                    while (
+                      target.parentElement &&
+                      target.parentElement !== root &&
+                      /^(li|div|span|ul)$/i.test(target.parentElement.tagName) &&
+                      !target.parentElement.querySelector(otherWallets)
+                    ) {
+                      target = target.parentElement;
+                    }
+                    target.remove();
+                  });
+                });
+              };
+              removePayPal();
+              new MutationObserver(removePayPal).observe(root, { childList: true, subtree: true });
+            })();
+          </script>
         {%- endif -%}
         {% for block in section.blocks %}
           {% case block.type %}
