@@ -845,9 +845,16 @@
           </button>
         </div>
         {%- if additional_checkout_buttons -%}
-          <div class="cart__dynamic-checkout-buttons additional-checkout-buttons additional-checkout-buttons--vertical">
-            {{ content_for_additional_checkout_buttons }}
-          </div>
+          {%- comment -%}
+            content_for_additional_checkout_buttons must sit inside a form posting to
+            routes.cart_url to render; #CartDrawer-Form closes inside the scrollable
+            items area above, so the wallets get their own cart form here.
+          {%- endcomment -%}
+          <form action="{{ routes.cart_url }}" id="CartDrawer-ExpressCheckoutForm" method="post">
+            <div class="cart-drawer__express-buttons cart__dynamic-checkout-buttons additional-checkout-buttons additional-checkout-buttons--vertical">
+              {{ content_for_additional_checkout_buttons }}
+            </div>
+          </form>
         {%- endif -%}
         {% for block in section.blocks %}
           {% case block.type %}

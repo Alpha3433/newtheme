@@ -444,6 +444,43 @@ cart-drawer-items {
     flex-basis: calc(50% - 0.5rem) !important;
   }
 }
+/* Express checkout wallets (Shop Pay / Apple Pay / Google Pay) under the checkout button */
+.drawer__footer .cart-drawer__express-buttons {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* Wallet button internals live in a closed shadow DOM — size/shape them only
+   through Shopify's public custom properties (radius/shadow already themed in base.css) */
+.cart-drawer__express-buttons shopify-accelerated-checkout-cart {
+  width: 100%;
+  --shopify-accelerated-checkout-button-block-size: 48px;
+  --shopify-accelerated-checkout-button-inline-size: 100%;
+  --shopify-accelerated-checkout-row-gap: 8px;
+  --shopify-accelerated-checkout-column-gap: 8px;
+}
+/* Hide ONLY the PayPal express wallet in the drawer; PayPal stays enabled as a
+   payment method and still appears at the normal checkout */
+.cart-drawer__express-buttons shopify-paypal-button,
+.cart-drawer__express-buttons .additional-checkout-button--paypal,
+.cart-drawer__express-buttons [data-testid="grid-cell-paypal"] {
+  display: none !important;
+}
+/* Kept as a separate rule: a browser without :has() drops the whole selector list */
+.cart-drawer__express-buttons li[data-shopify-buttoncontainer]:has([aria-label*="PayPal" i]),
+.cart-drawer__express-buttons li[data-shopify-buttoncontainer] > *:has([aria-label*="PayPal" i]) {
+  display: none !important;
+}
+/* The theme-settings Custom CSS (settings_data.json platform_customizations) hides
+   shopify-apple-pay-button in all cart contexts; win it back inside the drawer only.
+   :not([hidden]) keeps Shopify's own device-availability hiding intact. */
+.cart-drawer__express-buttons shopify-apple-pay-button:not([hidden]) {
+  display: block !important;
+}
+
 cart-drawer-items::-webkit-scrollbar {
   width: 3px;
 }
