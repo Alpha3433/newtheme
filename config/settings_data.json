@@ -453,7 +453,8 @@
   "platform_customizations": {
     "custom_css": [
       ".sticky-add-to-cart .btn,.sticky-add-to-cart button[type=\"submit\"] {background: #000000 !important; color: #ffffff !important; background-image: none !important;}",
-      "div.product-option:has(dt) {display: none !important;}"
+      "div.product-option:has(dt) {display: none !important;}",
+      "/* Hide Apple Pay in cart drawer + cart page only */#dynamic-checkout-cart shopify-apple-pay-button,shopify-accelerated-checkout-cart shopify-apple-pay-button {display: none !important;}"
     ]
   },
   "presets": {
