@@ -1,0 +1,677 @@
+{% comment %}
+  About Us
+  A transparency-first "About" layout for a single-product store.
+
+  Parts (controlled by the "Which parts to show" setting so the section can be
+  split around another section, e.g. an image carousel):
+    intro   -> hero + story
+    details -> values, straight answers, expectations, promises, CTA
+    full    -> everything
+
+  Blocks:
+    value    -> "What we stand for" cards
+    fact     -> "Straight answers" rows
+    expect   -> "What to expect" checklist
+    caution  -> "It's probably not for you if" list
+    promise  -> guarantee / shipping / support cards
+{% endcomment %}
+
+{%- liquid
+  assign s = section.settings
+  assign show_intro = true
+  assign show_details = true
+  if s.parts == 'intro'
+    assign show_details = false
+  elsif s.parts == 'details'
+    assign show_intro = false
+  endif
+
+  if s.use_theme_colors
+    assign text_color = settings.global_section_text_color
+    assign accent_color = settings.global_section_accent_1_color
+    assign bg_color = settings.global_section_background_color
+  else
+    assign text_color = s.text_color
+    assign accent_color = s.accent_color
+    assign bg_color = s.background_color
+  endif
+
+  assign heading = s.hero_heading | default: page.title
+  assign values = section.blocks | where: 'type', 'value'
+  assign facts = section.blocks | where: 'type', 'fact'
+  assign expects = section.blocks | where: 'type', 'expect'
+  assign cautions = section.blocks | where: 'type', 'caution'
+  assign promises = section.blocks | where: 'type', 'promise'
+-%}
+
+{%- style -%}
+  #about-{{ section.id }} {
+    --about-text: {{ text_color }};
+    --about-muted: {{ text_color | color_mix: bg_color, 62 }};
+    --about-accent: {{ accent_color }};
+    --about-accent-soft: {{ accent_color | color_mix: bg_color, 10 }};
+    --about-bg: {{ bg_color }};
+    --about-card: {{ s.card_color }};
+    --about-line: {{ text_color | color_mix: bg_color, 12 }};
+    --about-radius: {{ s.card_radius }}px;
+    --about-max: 1080px;
+    background: var(--about-bg);
+    color: var(--about-text);
+    font-family: var(--font-body-family);
+    -webkit-font-smoothing: antialiased;
+    padding: {{ s.padding_top | times: 0.7 | round }}px 0 {{ s.padding_bottom | times: 0.7 | round }}px;
+  }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} {
+      padding: {{ s.padding_top }}px 0 {{ s.padding_bottom }}px;
+    }
+  }
+
+  #about-{{ section.id }} .about__inner {
+    max-width: var(--about-max);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  #about-{{ section.id }} .about__part + .about__part {
+    margin-top: 56px;
+  }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} .about__inner { padding: 0 32px; }
+    #about-{{ section.id }} .about__part + .about__part { margin-top: 88px; }
+  }
+
+  /* Type */
+  #about-{{ section.id }} h1,
+  #about-{{ section.id }} h2,
+  #about-{{ section.id }} h3 {
+    font-family: var(--font-heading-family);
+    color: var(--about-text);
+    margin: 0;
+    letter-spacing: -0.015em;
+  }
+  #about-{{ section.id }} p,
+  #about-{{ section.id }} dl,
+  #about-{{ section.id }} dd { margin: 0; }
+  #about-{{ section.id }} .about__eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--about-accent);
+    margin-bottom: 14px;
+  }
+  #about-{{ section.id }} .about__h1 {
+    font-size: 34px;
+    line-height: 1.08;
+    font-weight: 700;
+    max-width: 14ch;
+  }
+  #about-{{ section.id }} .about__h2 {
+    font-size: 26px;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+  #about-{{ section.id }} .about__lead p { margin: 0; }
+  #about-{{ section.id }} .about__lead p + p { margin-top: 0.8em; }
+  #about-{{ section.id }} .about__lead {
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--about-muted);
+    margin-top: 18px;
+    max-width: 52ch;
+  }
+  #about-{{ section.id }} .about__rte {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--about-text);
+    max-width: 62ch;
+  }
+  #about-{{ section.id }} .about__rte p + p { margin-top: 1em; }
+  #about-{{ section.id }} .about__rte a { color: var(--about-accent); text-underline-offset: 2px; }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} .about__h1 { font-size: 52px; }
+    #about-{{ section.id }} .about__h2 { font-size: 34px; margin-bottom: 22px; }
+    #about-{{ section.id }} .about__lead { font-size: 19px; }
+    #about-{{ section.id }} .about__rte { font-size: 17px; }
+  }
+
+  /* Hero */
+  #about-{{ section.id }} .about__hero {
+    display: grid;
+    gap: 28px;
+  }
+  #about-{{ section.id }} .about__hero-media {
+    border-radius: var(--about-radius);
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    background: var(--about-accent-soft);
+  }
+  #about-{{ section.id }} .about__hero-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} .about__hero {
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 56px;
+    }
+    #about-{{ section.id }} .about__hero-media { aspect-ratio: 4 / 4.6; }
+  }
+
+  /* Story */
+  #about-{{ section.id }} .about__story {
+    display: grid;
+    gap: 8px;
+  }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} .about__story {
+      grid-template-columns: 1fr 2fr;
+      gap: 48px;
+    }
+  }
+
+  /* Values */
+  #about-{{ section.id }} .about__grid {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr;
+  }
+  #about-{{ section.id }} .about__card {
+    background: var(--about-card);
+    border: 1px solid var(--about-line);
+    border-radius: var(--about-radius);
+    padding: 22px 20px;
+  }
+  #about-{{ section.id }} .about__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    background: var(--about-accent-soft);
+    color: var(--about-accent);
+    display: grid;
+    place-items: center;
+    margin-bottom: 14px;
+  }
+  #about-{{ section.id }} .about__icon svg { width: 22px; height: 22px; }
+  #about-{{ section.id }} .about__card--value {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 14px;
+    align-items: start;
+  }
+  #about-{{ section.id }} .about__card--value .about__icon { grid-row: 1 / span 2; margin-bottom: 0; }
+  #about-{{ section.id }} .about__card--value h3 { margin-bottom: 4px; }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} .about__card--value { display: block; }
+    #about-{{ section.id }} .about__card--value .about__icon { margin-bottom: 14px; }
+    #about-{{ section.id }} .about__card--value h3 { margin-bottom: 8px; }
+  }
+  #about-{{ section.id }} .about__card h3 {
+    font-size: 17px;
+    line-height: 1.25;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  #about-{{ section.id }} .about__card p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--about-muted);
+  }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} .about__grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  }
+  @media (min-width: 990px) {
+    #about-{{ section.id }} .about__grid--4 { grid-template-columns: repeat(4, 1fr); }
+    #about-{{ section.id }} .about__grid--3 { grid-template-columns: repeat(3, 1fr); }
+  }
+
+  /* Straight answers */
+  #about-{{ section.id }} .about__facts {
+    border: 1px solid var(--about-line);
+    border-radius: var(--about-radius);
+    background: var(--about-card);
+    overflow: hidden;
+  }
+  #about-{{ section.id }} .about__fact {
+    display: grid;
+    gap: 6px;
+    padding: 18px 20px;
+  }
+  #about-{{ section.id }} .about__fact + .about__fact { border-top: 1px solid var(--about-line); }
+  #about-{{ section.id }} .about__fact-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--about-muted);
+  }
+  #about-{{ section.id }} .about__fact-value {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  #about-{{ section.id }} .about__fact-value a { color: var(--about-accent); text-underline-offset: 2px; }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} .about__fact {
+      grid-template-columns: 220px 1fr;
+      gap: 24px;
+      padding: 22px 28px;
+      align-items: baseline;
+    }
+    #about-{{ section.id }} .about__fact-value { font-size: 17px; }
+  }
+
+  /* Expectations */
+  #about-{{ section.id }} .about__split {
+    display: grid;
+    gap: 12px;
+  }
+  #about-{{ section.id }} .about__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 14px;
+  }
+  #about-{{ section.id }} .about__list li {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    gap: 12px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  #about-{{ section.id }} .about__list svg {
+    width: 22px;
+    height: 22px;
+    flex: none;
+    margin-top: 1px;
+  }
+  #about-{{ section.id }} .about__list--yes svg { color: #1f9d55; }
+  #about-{{ section.id }} .about__list--no svg { color: var(--about-accent); }
+  #about-{{ section.id }} .about__card--tinted {
+    background: var(--about-accent-soft);
+    border-color: transparent;
+  }
+  #about-{{ section.id }} .about__split h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} .about__split { grid-template-columns: 1fr 1fr; gap: 16px; }
+    #about-{{ section.id }} .about__split .about__card { padding: 28px; }
+  }
+
+  /* Promise cards */
+  #about-{{ section.id }} .about__promise a {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--about-accent);
+    text-decoration: none;
+    border-bottom: 2px solid var(--about-accent-soft);
+    padding-bottom: 2px;
+  }
+  #about-{{ section.id }} .about__promise a:hover { border-color: var(--about-accent); }
+
+  /* CTA */
+  #about-{{ section.id }} .about__cta {
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: var(--about-radius);
+    background: var(--about-card);
+    border: 1px solid var(--about-line);
+  }
+  #about-{{ section.id }} .about__cta .about__h2 { margin-bottom: 10px; }
+  #about-{{ section.id }} .about__cta p {
+    color: var(--about-muted);
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 44ch;
+    margin: 0 auto;
+  }
+  #about-{{ section.id }} .about__cta-button {
+    display: inline-flex;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    text-decoration: none;
+  }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} .about__cta-button { width: auto; min-width: 320px; }
+  }
+  #about-{{ section.id }} .about__cta-secondary {
+    display: block;
+    margin-top: 16px;
+    font-size: 14px;
+    color: var(--about-muted);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  @media (min-width: 750px) {
+    #about-{{ section.id }} .about__cta { padding: 56px 32px; }
+  }
+{%- endstyle -%}
+
+{%- capture icon_check -%}
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" opacity=".25"/><path d="m8 12.5 2.6 2.6L16 9.5"/></svg>
+{%- endcapture -%}
+{%- capture icon_cross -%}
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10" opacity=".25"/><path d="m9 9 6 6M15 9l-6 6"/></svg>
+{%- endcapture -%}
+
+<section id="about-{{ section.id }}" class="about-us" data-section-id="{{ section.id }}">
+  <div class="about__inner">
+
+    {%- if show_intro -%}
+      {%- comment -%} Hero {%- endcomment -%}
+      <div class="about__part about__hero">
+        <div>
+          {%- if s.hero_eyebrow != blank -%}
+            <span class="about__eyebrow">{{ s.hero_eyebrow | escape }}</span>
+          {%- endif -%}
+          {%- if request.page_type == 'page' -%}
+            <h1 class="about__h1">{{ heading | escape }}</h1>
+          {%- else -%}
+            <h2 class="about__h1">{{ heading | escape }}</h2>
+          {%- endif -%}
+          {%- if s.hero_lead != blank -%}
+            <div class="about__lead">{{ s.hero_lead }}</div>
+          {%- endif -%}
+        </div>
+        {%- if s.hero_image != blank -%}
+          {%- assign hero_alt = s.hero_image.alt | default: heading -%}
+          <div class="about__hero-media">
+            {{
+              s.hero_image
+              | image_url: width: 1200
+              | image_tag:
+                widths: '480, 720, 960, 1200',
+                sizes: '(min-width: 750px) 45vw, 100vw',
+                alt: hero_alt,
+                loading: 'eager',
+                fetchpriority: 'high'
+            }}
+          </div>
+        {%- endif -%}
+      </div>
+
+      {%- comment -%} Story {%- endcomment -%}
+      {%- if s.story_text != blank -%}
+        <div class="about__part about__story">
+          <h2 class="about__h2">{{ s.story_heading | escape }}</h2>
+          <div class="about__rte">{{ s.story_text }}</div>
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if show_details -%}
+      {%- comment -%} Values {%- endcomment -%}
+      {%- if values.size > 0 -%}
+        <div class="about__part">
+          {%- if s.values_heading != blank -%}
+            <h2 class="about__h2">{{ s.values_heading | escape }}</h2>
+          {%- endif -%}
+          <div class="about__grid about__grid--4">
+            {%- for block in values -%}
+              <div class="about__card about__card--value" {{ block.shopify_attributes }}>
+                <div class="about__icon">
+                  {%- case block.settings.icon -%}
+                    {%- when 'leaf' -%}
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20c0-8 4-14 16-16-1 10-6 15-14 15"/><path d="M4 20c3-5 6-8 10-10"/></svg>
+                    {%- when 'shield' -%}
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v6c0 4.5 3 7.5 7 9 4-1.5 7-4.5 7-9V6z"/><path d="m9 12 2 2 4-4"/></svg>
+                    {%- when 'clock' -%}
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                    {%- when 'flask' -%}
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v6l-5.5 9A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7.5 15h9"/></svg>
+                    {%- when 'chat' -%}
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>
+                    {%- when 'truck' -%}
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h11v9H3zM14 9h4l3 3v3h-7z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                    {%- else -%}
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.5A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"/></svg>
+                  {%- endcase -%}
+                </div>
+                <h3>{{ block.settings.title | escape }}</h3>
+                <p>{{ block.settings.text | escape }}</p>
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- comment -%} Straight answers {%- endcomment -%}
+      {%- if facts.size > 0 -%}
+        <div class="about__part">
+          {%- if s.facts_heading != blank -%}
+            <h2 class="about__h2">{{ s.facts_heading | escape }}</h2>
+          {%- endif -%}
+          <dl class="about__facts">
+            {%- for block in facts -%}
+              <div class="about__fact" {{ block.shopify_attributes }}>
+                <dt class="about__fact-label">{{ block.settings.label | escape }}</dt>
+                <dd class="about__fact-value">{{ block.settings.value }}</dd>
+              </div>
+            {%- endfor -%}
+          </dl>
+        </div>
+      {%- endif -%}
+
+      {%- comment -%} What to expect / not for you {%- endcomment -%}
+      {%- if expects.size > 0 or cautions.size > 0 -%}
+        <div class="about__part">
+          {%- if s.expect_heading != blank -%}
+            <h2 class="about__h2">{{ s.expect_heading | escape }}</h2>
+          {%- endif -%}
+          <div class="about__split">
+            {%- if expects.size > 0 -%}
+              <div class="about__card">
+                <h3>{{ s.expect_yes_title | escape }}</h3>
+                <ul class="about__list about__list--yes">
+                  {%- for block in expects -%}
+                    <li {{ block.shopify_attributes }}>{{ icon_check }}<span>{{ block.settings.text | escape }}</span></li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {%- endif -%}
+            {%- if cautions.size > 0 -%}
+              <div class="about__card about__card--tinted">
+                <h3>{{ s.expect_no_title | escape }}</h3>
+                <ul class="about__list about__list--no">
+                  {%- for block in cautions -%}
+                    <li {{ block.shopify_attributes }}>{{ icon_cross }}<span>{{ block.settings.text | escape }}</span></li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- comment -%} Promises {%- endcomment -%}
+      {%- if promises.size > 0 -%}
+        <div class="about__part">
+          {%- if s.promise_heading != blank -%}
+            <h2 class="about__h2">{{ s.promise_heading | escape }}</h2>
+          {%- endif -%}
+          <div class="about__grid about__grid--3">
+            {%- for block in promises -%}
+              <div class="about__card about__promise" {{ block.shopify_attributes }}>
+                <h3>{{ block.settings.title | escape }}</h3>
+                <p>{{ block.settings.text | escape }}</p>
+                {%- if block.settings.link_text != blank and block.settings.link_url != blank -%}
+                  <a href="{{ block.settings.link_url }}">{{ block.settings.link_text | escape }}</a>
+                {%- endif -%}
+              </div>
+            {%- endfor -%}
+          </div>
+        </div>
+      {%- endif -%}
+
+      {%- comment -%} CTA {%- endcomment -%}
+      {%- if s.cta_button_text != blank -%}
+        <div class="about__part about__cta">
+          {%- if s.cta_heading != blank -%}
+            <h2 class="about__h2">{{ s.cta_heading | escape }}</h2>
+          {%- endif -%}
+          {%- if s.cta_text != blank -%}
+            <p>{{ s.cta_text | escape }}</p>
+          {%- endif -%}
+          <a href="{{ s.cta_button_link | default: '/products/elaren-pumpkin-seed-oil-regrowth-serum' }}" class="about__cta-button theme-button">
+            {{ s.cta_button_text | escape }}
+          </a>
+          {%- if s.cta_secondary_text != blank and s.cta_secondary_link != blank -%}
+            <a href="{{ s.cta_secondary_link }}" class="about__cta-secondary">{{ s.cta_secondary_text | escape }}</a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "About Us",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "parts",
+      "label": "Which parts to show",
+      "info": "Split the page around another section (e.g. an image carousel) by adding this section twice.",
+      "options": [
+        { "value": "full", "label": "Everything" },
+        { "value": "intro", "label": "Intro only (hero + story)" },
+        { "value": "details", "label": "Details only (values, answers, expectations, promises, CTA)" }
+      ],
+      "default": "full"
+    },
+    { "type": "header", "content": "Hero" },
+    { "type": "text", "id": "hero_eyebrow", "label": "Eyebrow", "default": "About Elaren" },
+    { "type": "text", "id": "hero_heading", "label": "Heading", "info": "Leave blank to use the page title.", "default": "Honest hair care. No miracle promises." },
+    { "type": "richtext", "id": "hero_lead", "label": "Intro paragraph", "default": "<p>Elaren makes a pumpkin seed oil scalp serum for people dealing with thinning hair. This page is everything we think you should know before you buy: what's in it, what it does, how long it takes, and what happens if it doesn't work for you.</p>" },
+    { "type": "image_picker", "id": "hero_image", "label": "Image" },
+    { "type": "header", "content": "Story" },
+    { "type": "text", "id": "story_heading", "label": "Heading", "default": "Why we started" },
+    { "type": "richtext", "id": "story_text", "label": "Text", "default": "<p>Hair thinning is stressful, and the industry that sells solutions for it is full of exaggerated before-and-afters and fine print. We built Elaren around one ingredient with published research behind it, a routine that takes two minutes a night, and a guarantee that puts the risk on us instead of you.</p><p>We would rather tell you upfront who this won't work for than take your money and hope you don't ask for it back.</p>" },
+    { "type": "header", "content": "Section headings" },
+    { "type": "text", "id": "values_heading", "label": "Values heading", "default": "What we stand for" },
+    { "type": "text", "id": "facts_heading", "label": "Straight answers heading", "default": "Straight answers" },
+    { "type": "text", "id": "expect_heading", "label": "Expectations heading", "default": "What to expect" },
+    { "type": "text", "id": "expect_yes_title", "label": "\"Expect\" list title", "default": "With daily use, most customers see" },
+    { "type": "text", "id": "expect_no_title", "label": "\"Not for you\" list title", "default": "It's probably not for you if" },
+    { "type": "text", "id": "promise_heading", "label": "Promises heading", "default": "Our promises to you" },
+    { "type": "header", "content": "Call to action" },
+    { "type": "text", "id": "cta_heading", "label": "Heading", "default": "Ready when you are" },
+    { "type": "text", "id": "cta_text", "label": "Text", "default": "Start with the serum. You have 30 days to decide whether it's working." },
+    { "type": "text", "id": "cta_button_text", "label": "Button text", "default": "Shop the serum" },
+    { "type": "url", "id": "cta_button_link", "label": "Button link", "info": "Defaults to the serum product page when blank." },
+    { "type": "text", "id": "cta_secondary_text", "label": "Secondary link text", "default": "Or ask us a question first" },
+    { "type": "url", "id": "cta_secondary_link", "label": "Secondary link" },
+    { "type": "header", "content": "Colours" },
+    { "type": "checkbox", "id": "use_theme_colors", "label": "Use theme colours", "default": true },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#282828" },
+    { "type": "color", "id": "accent_color", "label": "Accent", "default": "#d93c55" },
+    { "type": "color", "id": "background_color", "label": "Background", "default": "#ffffff" },
+    { "type": "color", "id": "card_color", "label": "Card background", "default": "#ffffff" },
+    { "type": "range", "id": "card_radius", "label": "Card corner radius", "min": 0, "max": 32, "step": 2, "unit": "px", "default": 16 },
+    { "type": "header", "content": "Spacing" },
+    { "type": "range", "id": "padding_top", "label": "Top padding", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "label": "Bottom padding", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 80 }
+  ],
+  "blocks": [
+    {
+      "type": "value",
+      "name": "Value card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            { "value": "leaf", "label": "Leaf" },
+            { "value": "flask", "label": "Flask" },
+            { "value": "clock", "label": "Clock" },
+            { "value": "shield", "label": "Shield" },
+            { "value": "truck", "label": "Truck" },
+            { "value": "chat", "label": "Chat" },
+            { "value": "heart", "label": "Heart" }
+          ],
+          "default": "leaf"
+        },
+        { "type": "text", "id": "title", "label": "Title", "default": "One hero ingredient" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Pumpkin seed oil, chosen because it has been studied for hair loss, not because it's trending." }
+      ]
+    },
+    {
+      "type": "fact",
+      "name": "Straight answer",
+      "settings": [
+        { "type": "text", "id": "label", "label": "Label", "default": "Active ingredient" },
+        { "type": "richtext", "id": "value", "label": "Answer", "default": "<p>Pumpkin seed oil.</p>" }
+      ]
+    },
+    {
+      "type": "expect",
+      "name": "Expectation",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Text", "default": "Less shedding within the first two weeks" }
+      ]
+    },
+    {
+      "type": "caution",
+      "name": "Not for you if",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Text", "default": "You want results in two weeks. This needs 90 days of daily use." }
+      ]
+    },
+    {
+      "type": "promise",
+      "name": "Promise card",
+      "settings": [
+        { "type": "text", "id": "title", "label": "Title", "default": "30-day money-back guarantee" },
+        { "type": "textarea", "id": "text", "label": "Text", "default": "Use it every night for 30 days. Not happy with your results? Contact us for a full refund." },
+        { "type": "text", "id": "link_text", "label": "Link text", "default": "Read the refund policy" },
+        { "type": "url", "id": "link_url", "label": "Link" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "About Us",
+      "blocks": [
+        { "type": "value", "settings": { "icon": "leaf", "title": "One hero ingredient", "text": "Pumpkin seed oil, chosen because it has been studied for hair loss, not because it's trending." } },
+        { "type": "value", "settings": { "icon": "flask", "title": "All-natural formula", "text": "No prescription actives and no harsh synthetics. The full ingredient list is on the product page." } },
+        { "type": "value", "settings": { "icon": "clock", "title": "Realistic timelines", "text": "We say 90 days because that's what it takes. Anyone promising two weeks is selling something else." } },
+        { "type": "value", "settings": { "icon": "shield", "title": "The risk is on us", "text": "A 30-day money-back guarantee. If it doesn't work for you, you get a full refund." } },
+        { "type": "fact", "settings": { "label": "Active ingredient", "value": "<p>Pumpkin seed oil.</p>" } },
+        { "type": "fact", "settings": { "label": "How you use it", "value": "<p>Massage 1–2ml into a dry or towel-dried scalp every evening. Leave it on, don't rinse.</p>" } },
+        { "type": "fact", "settings": { "label": "When you'll notice", "value": "<p>Less shedding around week two, fine new growth around day 30, full results at day 90 with daily use.</p>" } },
+        { "type": "fact", "settings": { "label": "Shipping", "value": "<p>Free on every order. 3–7 business days.</p>" } },
+        { "type": "fact", "settings": { "label": "Guarantee", "value": "<p>30 days. Full refund if you're not happy. No forms, no hassle.</p>" } },
+        { "type": "expect", "settings": { "text": "Less shedding within the first two weeks" } },
+        { "type": "expect", "settings": { "text": "Fine new hairs along the hairline and part around day 30" } },
+        { "type": "expect", "settings": { "text": "Visibly thicker, denser hair by day 90 of consistent nightly use" } },
+        { "type": "caution", "settings": { "text": "An area has been completely bald for years. Dormant follicles can wake up; dead ones can't." } },
+        { "type": "caution", "settings": { "text": "You want results in two weeks. This needs 90 days of daily use." } },
+        { "type": "caution", "settings": { "text": "Your hair fell out suddenly in round patches. See a doctor about alopecia areata first." } },
+        { "type": "promise", "settings": { "title": "30-day money-back guarantee", "text": "Use it every night for 30 days. Not happy with your results? Contact us for a full refund.", "link_text": "Read the refund policy" } },
+        { "type": "promise", "settings": { "title": "Free shipping, every order", "text": "No minimums and no surprise fees at checkout. Orders arrive in 3–7 business days.", "link_text": "Shipping details" } },
+        { "type": "promise", "settings": { "title": "Talk to a human", "text": "Questions before or after you buy? A real person answers them.", "link_text": "Contact us" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

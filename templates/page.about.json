@@ -1,0 +1,117 @@
+{
+  "sections": {
+    "about_intro": {
+      "type": "about-us",
+      "name": "About: intro",
+      "settings": {
+        "parts": "intro",
+        "hero_eyebrow": "About Elaren",
+        "hero_heading": "Honest hair care. No miracle promises.",
+        "hero_lead": "<p>Elaren makes a pumpkin seed oil scalp serum for people dealing with thinning hair. This page is everything we think you should know before you buy: what's in it, what it does, how long it takes, and what happens if it doesn't work for you.</p>",
+        "hero_image": "shopify://shop_images/hf_20260321_060558_2d57318b-8188-4146-af66-ca17fbb63e73.jpg",
+        "story_heading": "Why we started",
+        "story_text": "<p>Hair thinning is stressful, and the industry that sells solutions for it is full of exaggerated before-and-afters and fine print. We built Elaren around one ingredient with published research behind it, a routine that takes two minutes a night, and a guarantee that puts the risk on us instead of you.</p><p>We would rather tell you upfront who this won't work for than take your money and hope you don't ask for it back.</p>",
+        "use_theme_colors": true,
+        "card_radius": 16,
+        "padding_top": 48,
+        "padding_bottom": 0
+      }
+    },
+    "about_images": {
+      "type": "scrolling-images-carousel",
+      "name": "About: photos",
+      "blocks": {
+        "top_images": {
+          "type": "top_images",
+          "settings": {
+            "image_1": "shopify://shop_images/hf_20260321_060558_2d57318b-8188-4146-af66-ca17fbb63e73.jpg",
+            "image_2": "shopify://shop_images/hf_20260321_060940_fea6be23-8636-4dce-b3a4-5ef89538cb7e.jpg",
+            "image_3": "shopify://shop_images/hf_20260321_062203_d08db107-7f68-4a76-978f-512be3d1cdda.jpg"
+          }
+        }
+      },
+      "block_order": ["top_images"],
+      "settings": {
+        "section_padding_top": 56,
+        "section_padding_bottom": 24,
+        "section_background": "#ffffff",
+        "heading": "",
+        "subheading": "",
+        "header_margin_bottom": 0,
+        "heading_color": "#000000",
+        "heading_size": 36,
+        "heading_size_mobile": 28,
+        "heading_weight": "700",
+        "heading_margin_bottom": 16,
+        "subheading_color": "#666666",
+        "subheading_size": 18,
+        "subheading_weight": "400",
+        "image_ratio": "4:3",
+        "image_height": 220,
+        "mobile_image_height": 150,
+        "image_gap": 16,
+        "row_gap": 20,
+        "image_border_radius": 16,
+        "hover_scale": 1,
+        "top_scroll_direction": "left",
+        "top_scroll_speed": 130,
+        "bottom_scroll_direction": "right",
+        "bottom_scroll_speed": 35,
+        "pause_on_hover": "paused",
+        "scroll_duplicates": 4
+      }
+    },
+    "about_details": {
+      "type": "about-us",
+      "name": "About: details",
+      "blocks": {
+        "value_1": { "type": "value", "settings": { "icon": "leaf", "title": "One hero ingredient", "text": "Pumpkin seed oil, chosen because it has been studied for hair loss, not because it's trending." } },
+        "value_2": { "type": "value", "settings": { "icon": "flask", "title": "All-natural formula", "text": "No prescription actives and no harsh synthetics. The full ingredient list is on the product page." } },
+        "value_3": { "type": "value", "settings": { "icon": "clock", "title": "Realistic timelines", "text": "We say 90 days because that's what it takes. Anyone promising two weeks is selling something else." } },
+        "value_4": { "type": "value", "settings": { "icon": "shield", "title": "The risk is on us", "text": "A 30-day money-back guarantee. If it doesn't work for you, you get a full refund." } },
+        "fact_1": { "type": "fact", "settings": { "label": "Active ingredient", "value": "<p>Pumpkin seed oil.</p>" } },
+        "fact_2": { "type": "fact", "settings": { "label": "How you use it", "value": "<p>Massage 1–2ml into a dry or towel-dried scalp every evening. Leave it on, don't rinse.</p>" } },
+        "fact_3": { "type": "fact", "settings": { "label": "When you'll notice", "value": "<p>Less shedding around week two, fine new growth around day 30, full results at day 90 with daily use.</p>" } },
+        "fact_4": { "type": "fact", "settings": { "label": "Shipping", "value": "<p>Free on every order. 3–7 business days.</p>" } },
+        "fact_5": { "type": "fact", "settings": { "label": "Guarantee", "value": "<p>30 days. Full refund if you're not happy. No forms, no hassle.</p>" } },
+        "fact_6": { "type": "fact", "settings": { "label": "Questions", "value": "<p>A real person answers every message through the <a href=\"/pages/contact\">contact page</a>.</p>" } },
+        "expect_1": { "type": "expect", "settings": { "text": "Less shedding within the first two weeks" } },
+        "expect_2": { "type": "expect", "settings": { "text": "Fine new hairs along the hairline and part around day 30" } },
+        "expect_3": { "type": "expect", "settings": { "text": "Visibly thicker, denser hair by day 90 of consistent nightly use" } },
+        "caution_1": { "type": "caution", "settings": { "text": "An area has been completely bald for years. Dormant follicles can wake up; dead ones can't." } },
+        "caution_2": { "type": "caution", "settings": { "text": "You want results in two weeks. This needs 90 days of daily use." } },
+        "caution_3": { "type": "caution", "settings": { "text": "Your hair fell out suddenly in round patches. See a doctor about alopecia areata first." } },
+        "promise_1": { "type": "promise", "settings": { "title": "30-day money-back guarantee", "text": "Use it every night for 30 days. Not happy with your results? Contact us for a full refund.", "link_text": "Read the refund policy", "link_url": "/pages/returns" } },
+        "promise_2": { "type": "promise", "settings": { "title": "Free shipping, every order", "text": "No minimums and no surprise fees at checkout. Orders arrive in 3–7 business days.", "link_text": "Shipping details", "link_url": "/pages/shipping" } },
+        "promise_3": { "type": "promise", "settings": { "title": "Talk to a human", "text": "Questions before or after you buy? A real person answers them.", "link_text": "Contact us", "link_url": "/pages/contact" } }
+      },
+      "block_order": [
+        "value_1", "value_2", "value_3", "value_4",
+        "fact_1", "fact_2", "fact_3", "fact_4", "fact_5", "fact_6",
+        "expect_1", "expect_2", "expect_3",
+        "caution_1", "caution_2", "caution_3",
+        "promise_1", "promise_2", "promise_3"
+      ],
+      "settings": {
+        "parts": "details",
+        "values_heading": "What we stand for",
+        "facts_heading": "Straight answers",
+        "expect_heading": "What to expect",
+        "expect_yes_title": "With daily use, most customers see",
+        "expect_no_title": "It's probably not for you if",
+        "promise_heading": "Our promises to you",
+        "cta_heading": "Ready when you are",
+        "cta_text": "Start with the serum. You have 30 days to decide whether it's working.",
+        "cta_button_text": "Shop the serum",
+        "cta_button_link": "/products/elaren-pumpkin-seed-oil-regrowth-serum",
+        "cta_secondary_text": "Or ask us a question first",
+        "cta_secondary_link": "/pages/contact",
+        "use_theme_colors": true,
+        "card_radius": 16,
+        "padding_top": 24,
+        "padding_bottom": 80
+      }
+    }
+  },
+  "order": ["about_intro", "about_images", "about_details"]
+}

@@ -190,8 +190,8 @@
         "listicle_item_GYrWYp": {
           "type": "listicle-item",
           "settings": {
-            "title": "10. It comes with a risk-free 90-day money-back guarantee",
-            "content": "<p>We're so confident that the Eye Glow Kit will transform your under-eye area that we offer an industry-leading 90-day guarantee. <strong>If you don't see dramatic improvements in puffiness, dark circles, and fine lines, simply return it for a full refund.</strong> We've seen thousands of incredible transformations, and we know you'll love your results. With absolutely zero risk, there's never been a better time to experience the future of under-eye care!</p>",
+            "title": "10. It comes with a risk-free 30-day money-back guarantee",
+            "content": "<p>We're so confident that the Eye Glow Kit will transform your under-eye area that we offer an industry-leading 30-day guarantee. <strong>If you don't see dramatic improvements in puffiness, dark circles, and fine lines, simply return it for a full refund.</strong> We've seen thousands of incredible transformations, and we know you'll love your results. With absolutely zero risk, there's never been a better time to experience the future of under-eye care!</p>",
             "highlight_text": "If you don't see dramatic improvements in puffiness, dark circles, and fine lines, simply return it for a full refund.",
             "enable_container": false,
             "enable_highlight": true,
@@ -281,7 +281,7 @@
             "limited_time_sale_tGGhdR_guarantee": {
               "type": "lts-guarantee",
               "settings": {
-                "text": "90-Day Money-Back Guarantee",
+                "text": "30-Day Money-Back Guarantee",
                 "font_size": 12,
                 "font_size_mobile": 11,
                 "text_color": "#25282a"
@@ -854,7 +854,7 @@
             "competitor_5": "cross",
             "feature_6": "No Downtime",
             "competitor_6": "cross",
-            "feature_7": "90-Day Guarantee",
+            "feature_7": "30-Day Guarantee",
             "competitor_7": "cross",
             "feature_8": "Medical-Grade Power",
             "competitor_8": "cross",
@@ -913,7 +913,7 @@
         "icon_bullet_list_ygxh4r": {
           "type": "icon_bullet_list",
           "settings": {
-            "list_content": "<ul><li>FREE protective storage case ($39 value)</li><li>FREE shipping anywhere in the US</li><li>Complete user guide with treatment protocols</li><li>90-day money-back guarantee</li><li>2-year manufacturer warranty</li></ul>",
+            "list_content": "<ul><li>FREE protective storage case ($39 value)</li><li>FREE shipping anywhere in the US</li><li>Complete user guide with treatment protocols</li><li>30-day money-back guarantee</li><li>2-year manufacturer warranty</li></ul>",
             "icon_size": 20,
             "list_font_size": 16,
             "list_text_color": "#333333",
@@ -963,7 +963,7 @@
         "article_heading_nMMdKh": {
           "type": "article_heading",
           "settings": {
-            "heading_text": "<p><strong>You Get 90 Days to Try It Risk-Free</strong></p>",
+            "heading_text": "<p><strong>You Get 30 Days to Try It Risk-Free</strong></p>",
             "highlight_text": "",
             "heading_font_size": 36,
             "heading_line_height": 1.2,
@@ -977,12 +977,12 @@
         "text_block_XwJUte": {
           "type": "text_block",
           "settings": {
-            "text_content": "<p>Use Luvea for a full 90 days. If you don't see visible improvement in your skin—fewer wrinkles, clearer complexion, better texture, more radiance—return it for a complete refund.</p><p>No questions asked. No restocking fees. No hassle.</p><p>We can make this guarantee because we know the technology works. Thousands of women (and men) have transformed their skin with this device. The science is solid. The results are real.</p><p>But we also know you've been burned by products that promised miracles before. So we're putting our money where our mouth is.</p><p>Either this becomes your favorite skincare tool and you wonder how you ever lived without it, or you get every penny back. That's what a true risk-free guarantee looks like.</p>",
+            "text_content": "<p>Use Luvea for a full 30 days. If you don't see visible improvement in your skin—fewer wrinkles, clearer complexion, better texture, more radiance—return it for a complete refund.</p><p>No questions asked. No restocking fees. No hassle.</p><p>We can make this guarantee because we know the technology works. Thousands of women (and men) have transformed their skin with this device. The science is solid. The results are real.</p><p>But we also know you've been burned by products that promised miracles before. So we're putting our money where our mouth is.</p><p>Either this becomes your favorite skincare tool and you wonder how you ever lived without it, or you get every penny back. That's what a true risk-free guarantee looks like.</p>",
             "text_font_size": 16,
             "text_color": "#000000",
             "text_alignment": "left",
             "line_height": 1.6,
-            "highlight_words": "90 days,complete refund",
+            "highlight_words": "30 days,complete refund",
             "highlight_background_color": "#f5f5f5",
             "highlight_text_color": "#000000",
             "highlight_padding": 2,
