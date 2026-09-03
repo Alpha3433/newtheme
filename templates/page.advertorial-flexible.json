@@ -189,8 +189,8 @@
         "listicle_item_GYrWYp": {
           "type": "listicle-item",
           "settings": {
-            "title": "10. It comes with a risk-free 90-day money-back guarantee",
-            "content": "<p>We're so confident that the Eye Glow Kit will transform your under-eye area that we offer an industry-leading 90-day guarantee. <strong>If you don't see dramatic improvements in puffiness, dark circles, and fine lines, simply return it for a full refund.</strong> We've seen thousands of incredible transformations, and we know you'll love your results. With absolutely zero risk, there's never been a better time to experience the future of under-eye care!</p>",
+            "title": "10. It comes with a risk-free 30-day money-back guarantee",
+            "content": "<p>We're so confident that the Eye Glow Kit will transform your under-eye area that we offer an industry-leading 30-day guarantee. <strong>If you don't see dramatic improvements in puffiness, dark circles, and fine lines, simply return it for a full refund.</strong> We've seen thousands of incredible transformations, and we know you'll love your results. With absolutely zero risk, there's never been a better time to experience the future of under-eye care!</p>",
             "highlight_text": "If you don't see dramatic improvements in puffiness, dark circles, and fine lines, simply return it for a full refund.",
             "enable_container": false,
             "enable_highlight": true,
@@ -274,7 +274,7 @@
             "limited_time_sale_tGGhdR_guarantee": {
               "type": "lts-guarantee",
               "settings": {
-                "text": "90-Day Money-Back Guarantee",
+                "text": "30-Day Money-Back Guarantee",
                 "font_size": 12,
                 "font_size_mobile": 11,
                 "text_color": "#25282A"
