@@ -20,11 +20,25 @@
   {% endif %}
 >
   <head>
+    {%- comment -%}
+      Homepage redirect: the store is single-product, so the index template sends
+      visitors straight to the serum PDP. Kept out of the theme editor
+      (request.design_mode) so templates/index.json remains editable.
+      Must stay the very first thing in <head> so the browser bails before
+      loading any CSS/JS.
+    {%- endcomment -%}
+    {% if template.name == 'index' and request.design_mode != true %}
+    <script>window.location.replace('/products/elaren-pumpkin-seed-oil-regrowth-serum' + window.location.search + window.location.hash);</script>
+    <meta http-equiv="refresh" content="0; url=/products/elaren-pumpkin-seed-oil-regrowth-serum">
+    <link rel="canonical" href="https://shopelaren.com/products/elaren-pumpkin-seed-oil-regrowth-serum">
+    {% endif %}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="theme-color" content="">
+    {% unless template.name == 'index' and request.design_mode != true %}
     <link rel="canonical" href="{{ canonical_url }}">
+    {% endunless %}
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
