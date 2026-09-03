@@ -3614,7 +3614,7 @@
       "type": "apps",
       "blocks": {
         "trustwill_trustoo_review_widget_hQmgDq": {
-          "type": "shopify://apps/trustwill-trustoo/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "type": "shopify://apps/cwilltrustoo-reviews/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
           "settings": {
             "product": "elaren-pumpkin-seed-oil-regrowth-serum"
           }
@@ -3637,7 +3637,7 @@
       "type": "apps",
       "blocks": {
         "trustwill_trustoo_review_widget_TADjT7": {
-          "type": "shopify://apps/trustwill-trustoo/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
+          "type": "shopify://apps/cwilltrustoo-reviews/blocks/review-widget/c8f15077-6475-4e86-ad06-b66038d5ba2c",
           "settings": {
             "product": "pumpkin-seed-oil-capsules"
           }

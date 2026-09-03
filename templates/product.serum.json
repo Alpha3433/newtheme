@@ -1394,6 +1394,7 @@
         "image_border_radius": 8,
         "card_image_height_desktop": 240,
         "card_image_height_mobile": 180,
+        "card_image_fill_height": true,
         "card_image_height_horizontal_desktop": 150,
         "card_image_height_horizontal_mobile": 100,
         "card_min_height_desktop": 0,

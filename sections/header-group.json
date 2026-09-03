@@ -92,7 +92,7 @@
         "rating_text": "",
         "satc_toggle_variant": false,
         "turn_off_delivery_date": false,
-        "delivery_days": 4,
+        "delivery_days": 5,
         "delivery_text_prefix": "Arrives by",
         "delivery_date_display_format": "weekday_month_day",
         "use_theme_colors": true,
