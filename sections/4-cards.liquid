@@ -60,12 +60,21 @@
   }
   
   /* Apply card image size for horizontal layout - Desktop */
+  {%- assign h_size_desktop = section.settings.card_image_height_horizontal_desktop | default: section.settings.card_image_height_horizontal | default: 150 -%}
   #cards-{{ section.id }} .cards-grid__items[data-layout="horizontal"] .card-item__image {
-    width: {{ section.settings.card_image_height_horizontal_desktop | default: section.settings.card_image_height_horizontal | default: 150 }}px !important;
-    min-width: {{ section.settings.card_image_height_horizontal_desktop | default: section.settings.card_image_height_horizontal | default: 150 }}px !important;
-    height: {{ section.settings.card_image_height_horizontal_desktop | default: section.settings.card_image_height_horizontal | default: 150 }}px !important;
-    max-width: {{ section.settings.card_image_height_horizontal_desktop | default: section.settings.card_image_height_horizontal | default: 150 }}px !important;
-    max-height: {{ section.settings.card_image_height_horizontal_desktop | default: section.settings.card_image_height_horizontal | default: 150 }}px !important;
+    width: {{ h_size_desktop }}px !important;
+    min-width: {{ h_size_desktop }}px !important;
+    max-width: {{ h_size_desktop }}px !important;
+    {%- if section.settings.card_image_fill_height %}
+      /* Fill the full card height: size setting controls width and minimum height only */
+      align-self: stretch !important;
+      height: auto !important;
+      min-height: {{ h_size_desktop }}px !important;
+      max-height: none !important;
+    {%- else %}
+      height: {{ h_size_desktop }}px !important;
+      max-height: {{ h_size_desktop }}px !important;
+    {%- endif %}
   }
   
   /* Apply card image height for vertical layout - Mobile */
@@ -75,12 +84,20 @@
     }
     
     /* Apply card image size for horizontal layout - Mobile */
+    {%- assign h_size_mobile = section.settings.card_image_height_horizontal_mobile | default: 100 -%}
     #cards-{{ section.id }} .cards-grid__items[data-layout="horizontal"] .card-item__image {
-      width: {{ section.settings.card_image_height_horizontal_mobile | default: 100 }}px !important;
-      min-width: {{ section.settings.card_image_height_horizontal_mobile | default: 100 }}px !important;
-      height: {{ section.settings.card_image_height_horizontal_mobile | default: 100 }}px !important;
-      max-width: {{ section.settings.card_image_height_horizontal_mobile | default: 100 }}px !important;
-      max-height: {{ section.settings.card_image_height_horizontal_mobile | default: 100 }}px !important;
+      width: {{ h_size_mobile }}px !important;
+      min-width: {{ h_size_mobile }}px !important;
+      max-width: {{ h_size_mobile }}px !important;
+      {%- if section.settings.card_image_fill_height %}
+        align-self: stretch !important;
+        height: auto !important;
+        min-height: {{ h_size_mobile }}px !important;
+        max-height: none !important;
+      {%- else %}
+        height: {{ h_size_mobile }}px !important;
+        max-height: {{ h_size_mobile }}px !important;
+      {%- endif %}
     }
   }
   
@@ -695,6 +712,13 @@
       "info": "Set the height of card images in vertical layout on mobile"
     },
     {
+      "type": "checkbox",
+      "id": "card_image_fill_height",
+      "label": "Fill card height with image (Horizontal Layout)",
+      "default": true,
+      "info": "Stretches the image to cover the full height of the card so no white space shows below it. The size settings below then control the image width and its minimum height."
+    },
+    {
       "type": "range",
       "id": "card_image_height_horizontal_desktop",
       "min": 80,
@@ -703,7 +727,7 @@
       "unit": "px",
       "label": "Card Image Size - Desktop (Horizontal Layout)",
       "default": 150,
-      "info": "Set the width and height of card images in horizontal layout on desktop"
+      "info": "Width of card images in horizontal layout on desktop (also the height unless \"Fill card height\" is on)"
     },
     {
       "type": "range",
@@ -714,7 +738,7 @@
       "unit": "px",
       "label": "Card Image Size - Mobile (Horizontal Layout)",
       "default": 100,
-      "info": "Set the width and height of card images in horizontal layout on mobile"
+      "info": "Width of card images in horizontal layout on mobile (also the height unless \"Fill card height\" is on)"
     },
     {
       "type": "range",
