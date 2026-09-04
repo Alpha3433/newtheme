@@ -444,7 +444,8 @@ cart-drawer-items {
     flex-basis: calc(50% - 0.5rem) !important;
   }
 }
-/* Express checkout wallets (Shop Pay / Apple Pay / Google Pay) under the checkout button */
+/* Express checkout wallets (Apple Pay / Google Pay) under the checkout button.
+   PayPal and Shop Pay are hidden here (see below); both stay enabled at checkout. */
 .drawer__footer .cart-drawer__express-buttons {
   width: 100%;
   max-width: 100%;
@@ -462,24 +463,34 @@ cart-drawer-items {
   --shopify-accelerated-checkout-row-gap: 8px;
   --shopify-accelerated-checkout-column-gap: 8px;
 }
-/* Hide ONLY the PayPal express wallet in the drawer; PayPal stays enabled as a
-   payment method and still appears at the normal checkout */
+/* Hide ONLY the PayPal and Shop Pay express wallets in the drawer; both stay
+   enabled as payment methods and still appear at the normal checkout.
+   NOTE: Shopify's current renderer puts the wallet buttons inside a CLOSED
+   shadow root on <shopify-accelerated-checkout-cart>, which CSS cannot reach;
+   the script at the end of sections/cart-drawer.liquid strips those wallets
+   from the component's wallet-configs instead. These rules cover any
+   light-DOM rendering of the same wallets. */
 .cart-drawer__express-buttons shopify-paypal-button,
 .cart-drawer__express-buttons .additional-checkout-button--paypal,
 .cart-drawer__express-buttons [class*="paypal" i],
 .cart-drawer__express-buttons [data-testid*="paypal" i],
 .cart-drawer__express-buttons [id*="paypal" i],
 .cart-drawer__express-buttons iframe[src*="paypal" i],
-.cart-drawer__express-buttons iframe[title*="paypal" i] {
+.cart-drawer__express-buttons iframe[title*="paypal" i],
+.cart-drawer__express-buttons shop-pay-wallet-button,
+.cart-drawer__express-buttons shopify-shop-pay-button,
+.cart-drawer__express-buttons [class*="shop-pay" i],
+.cart-drawer__express-buttons [class*="shop_pay" i],
+.cart-drawer__express-buttons [data-testid*="shop-pay" i] {
   display: none !important;
 }
-/* Collapse the wrapper/grid cell around the hidden PayPal button so it stops
+/* Collapse the wrapper/grid cell around a hidden wallet button so it stops
    reserving vertical space. The :not(:has(...)) guards ensure a wrapper that
-   also contains any other wallet is never hidden. Kept as a separate rule:
-   a browser without :has() drops the whole selector list it appears in. */
-.cart-drawer__express-buttons *:has(> shopify-paypal-button):not(:has(shopify-shop-pay-button, shopify-apple-pay-button, shopify-google-pay-button)),
-.cart-drawer__express-buttons *:has(> [class*="paypal" i]):not(:has(shopify-shop-pay-button, shopify-apple-pay-button, shopify-google-pay-button, [class*="shop-pay" i], [class*="shop_pay" i], [class*="apple" i], [class*="google" i])),
-.cart-drawer__express-buttons li:has(shopify-paypal-button, [class*="paypal" i], [aria-label*="PayPal" i], iframe[src*="paypal" i]) {
+   also contains Apple Pay or Google Pay is never hidden. Kept as a separate
+   rule: a browser without :has() drops the whole selector list it appears in. */
+.cart-drawer__express-buttons *:has(> shopify-paypal-button, > shop-pay-wallet-button, > shopify-shop-pay-button):not(:has(shopify-apple-pay-button, shopify-google-pay-button)),
+.cart-drawer__express-buttons *:has(> [class*="paypal" i], > [class*="shop-pay" i], > [class*="shop_pay" i]):not(:has(shopify-apple-pay-button, shopify-google-pay-button, [class*="apple" i], [class*="google" i])),
+.cart-drawer__express-buttons li:has(shopify-paypal-button, [class*="paypal" i], [aria-label*="PayPal" i], iframe[src*="paypal" i], shop-pay-wallet-button, shopify-shop-pay-button, [class*="shop-pay" i], [aria-label*="Shop Pay" i]) {
   display: none !important;
 }
 /* The theme-settings Custom CSS (settings_data.json platform_customizations) hides

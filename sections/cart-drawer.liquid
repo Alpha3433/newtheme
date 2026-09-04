@@ -881,36 +881,57 @@
 
 {%- if additional_checkout_buttons -%}
   <script>
-    /* Keep the PayPal express wallet out of the cart drawer. This script must
-       live OUTSIDE the drawer__inner markup: cart.js/cart-drawer.js replace
-       that subtree's innerHTML on every cart update, so a script inside it
-       runs once at page load and never again, and each refresh would bring
-       the PayPal markup back unfiltered. PayPal itself stays untouched as a
-       payment method at the normal checkout. */
+    /* Keep the PayPal and Shop Pay express wallets out of the cart drawer.
+       Both stay enabled as payment methods at the normal checkout; only the
+       wallet buttons under the checkout button are affected. Apple Pay and
+       Google Pay are never removed or re-ordered.
+       Shopify renders the wallet buttons inside a CLOSED shadow root on
+       <shopify-accelerated-checkout-cart>, so neither theme CSS nor
+       element.shadowRoot can reach <shop-pay-wallet-button>. The component
+       builds its buttons from its wallet-configs attribute, so the reliable
+       hook is to drop the unwanted entries from that JSON before it renders.
+       This script must live OUTSIDE the drawer__inner markup: cart.js /
+       cart-drawer.js replace that subtree's innerHTML on every cart update, so
+       a script inside it runs once at page load and never again, and each
+       refresh would bring the unfiltered wallet markup back. */
     (function () {
       if (!('MutationObserver' in window)) return;
-      var otherWallets = 'shopify-shop-pay-button, shopify-apple-pay-button, shopify-google-pay-button';
-      var paypalSelectors = [
+      /* wallet-configs "name" values of the wallets to hide (paypal, shop_pay) */
+      var hiddenWalletPattern = /paypal|shop[_-]?pay/i;
+      /* wallets that must keep rendering: never remove a wrapper holding one */
+      var keptWallets = 'shopify-apple-pay-button, shopify-google-pay-button';
+      var hiddenSelectors = [
         'shopify-paypal-button',
         '.additional-checkout-button--paypal',
         '[class*="paypal" i]',
         '[data-testid*="paypal" i]',
         '[id*="paypal" i]',
         'iframe[src*="paypal" i]',
+        'shop-pay-wallet-button',
+        'shopify-shop-pay-button',
+        '[class*="shop-pay" i]',
+        '[class*="shop_pay" i]',
+        '[data-testid*="shop-pay" i]',
       ];
       var recycled = 'WeakSet' in window ? new WeakSet() : null;
+      var isHiddenConfig = function (config) {
+        if (config && typeof config === 'object' && typeof config.name === 'string') {
+          return hiddenWalletPattern.test(config.name);
+        }
+        return hiddenWalletPattern.test(JSON.stringify(config));
+      };
       /* the accelerated-checkout component lays out one shadow-DOM grid row per
-         wallet-configs entry, so PayPal must leave the JSON, not just the DOM */
+         wallet-configs entry, so a hidden wallet must leave the JSON, not just the DOM */
       var stripWalletConfigs = function (root) {
         var changed = [];
         root.querySelectorAll('[wallet-configs]').forEach(function (el) {
           var raw = el.getAttribute('wallet-configs');
-          if (!raw || raw.toLowerCase().indexOf('paypal') === -1) return;
+          if (!raw || !hiddenWalletPattern.test(raw)) return;
           try {
             var configs = JSON.parse(raw);
             if (!Array.isArray(configs)) return;
             var kept = configs.filter(function (config) {
-              return JSON.stringify(config).toLowerCase().indexOf('paypal') === -1;
+              return !isHiddenConfig(config);
             });
             if (kept.length && kept.length !== configs.length) {
               el.setAttribute('wallet-configs', JSON.stringify(kept));
@@ -922,8 +943,8 @@
         });
         return changed;
       };
-      var removePayPalNodes = function (root) {
-        paypalSelectors.forEach(function (selector) {
+      var removeHiddenWalletNodes = function (root) {
+        hiddenSelectors.forEach(function (selector) {
           var nodes;
           try {
             nodes = root.querySelectorAll(selector);
@@ -933,12 +954,12 @@
           nodes.forEach(function (el) {
             if (!root.contains(el)) return;
             var target = el;
-            // climb to the outermost wrapper holding nothing but this wallet
+            // climb to the outermost wrapper holding nothing but hidden wallets
             while (
               target.parentElement &&
               target.parentElement !== root &&
               /^(li|div|span|ul)$/i.test(target.parentElement.tagName) &&
-              !target.parentElement.querySelector(otherWallets)
+              !target.parentElement.querySelector(keptWallets)
             ) {
               target = target.parentElement;
             }
@@ -950,7 +971,7 @@
         var root = document.getElementById('CartDrawer-ExpressCheckoutForm');
         if (!root) return;
         var changed = stripWalletConfigs(root);
-        removePayPalNodes(root);
+        removeHiddenWalletNodes(root);
         /* a component upgraded during a drawer refresh has already rendered
            from the unfiltered configs — reconnect it so it rebuilds cleanly */
         changed.forEach(function (el) {
@@ -962,8 +983,8 @@
       };
       var start = function () {
         var host = document.querySelector('cart-drawer') || document.body;
-        if (host.getAttribute('data-paypal-cleanup') === 'on') return;
-        host.setAttribute('data-paypal-cleanup', 'on');
+        if (host.getAttribute('data-express-wallet-cleanup') === 'on') return;
+        host.setAttribute('data-express-wallet-cleanup', 'on');
         cleanUp();
         new MutationObserver(cleanUp).observe(host, {
           childList: true,
