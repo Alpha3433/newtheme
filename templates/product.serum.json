@@ -151,7 +151,7 @@
         "custom_text_CtXXXE": {
           "type": "custom_text",
           "settings": {
-            "text": "<p>Our cold-pressed pumpkin seed oil and caffeine formula absorbs directly into the scalp, blocking DHT at the follicle level while reactivating dormant roots from the outside in. DHT shrinks your follicles from the inside. Caffeine reactivates them from the outside. </p>",
+            "text": "<p>Our cold-pressed pumpkin seed oil and 1% caffeine formula absorbs into the scalp, helping support the follicle against DHT while supporting the natural growth cycle. Lightweight, non-greasy, and applied nightly.</p>",
             "show_description": false,
             "description": "<p>Add additional descriptive text here</p>",
             "description_font_size": 14,
@@ -467,7 +467,7 @@
             "question_3": "",
             "answer_3": "",
             "question_4": "Does it really work?",
-            "answer_4": "<p>Yes — pumpkin seed oil has been clinically studied for hair loss. A double-blind placebo-controlled trial found men taking pumpkin seed oil experienced significantly more hair growth than the placebo group over 24 weeks. Our formula delivers the same active compound at a therapeutic dose.</p>",
+            "answer_4": "<p>Pumpkin seed oil is a clinically studied ingredient for thinning hair. Most customers notice less shedding in the first 2 weeks and visibly fuller hair by day 90 with nightly use, and every order is covered by our 90-day money-back guarantee.</p>",
             "question_5": "What's the 90-day guarantee?",
             "answer_5": "<p>90-Day Money-Back Guarantee — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
             "question_6": "",
@@ -1017,14 +1017,14 @@
           "type": "faq_item",
           "settings": {
             "question": "Does it work for both women and men?",
-            "answer": "<p>Yes. DHT-related hair loss affects both women and men and pumpkin seed oil works on the same hormonal pathway regardless of gender.</p>"
+            "answer": "<p>Yes. DHT-related thinning affects both women and men, and the serum is applied the same way for both.</p>"
           }
         },
         "faq_item_U4fWGe": {
           "type": "faq_item",
           "settings": {
             "question": "Are there any side effects?",
-            "answer": "<p>None reported. Pumpkin seed oil and caffeine are both well-studied natural compounds with no known side effects when applied topically. If you have a sensitive scalp do a small patch test before full application.</p>"
+            "answer": "<p>Pumpkin seed oil and caffeine are well-studied natural ingredients and are generally well tolerated on the scalp. If you have a sensitive scalp, do a small patch test before full application.</p>"
           }
         },
         "faq_item_wYAhz7": {
