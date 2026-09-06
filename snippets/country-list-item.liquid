@@ -1,29 +1,39 @@
 {%- comment -%}
   Renders a single country list item
 
+  Page-weight note: no per-country flag image and no per-country inline SVG.
+  Only the currently selected country renders a checkmark; other rows get an
+  empty placeholder span so the grid columns stay aligned.
+
   Accepts:
     - country: country object
     - show_currencies: boolean to show/hide currency
     - current_country: the currently selected country object
 {%- endcomment -%}
 
+{%- liquid
+  assign is_current = false
+  if country.iso_code == current_country.iso_code
+    assign is_current = true
+  endif
+-%}
 <li class="disclosure__item" tabindex="-1">
   <a
     class="link link--text disclosure__link caption-large focus-inset"
     href="#"
-    {% if country.iso_code == current_country.iso_code %}
+    role="button"
+    {% if is_current %}
       aria-current="true"
     {% endif %}
     data-value="{{ country.iso_code }}"
-    id="{{ country.name }}"
+    id="{{ country.name | handleize }}-{{ country.iso_code }}"
   >
-    <span
-      class="localization-check{% if country.iso_code != current_country.iso_code %} visibility-hidden{% endif %}"
-    >
-      {{- 'icon-checkmark.svg' | inline_asset_content -}}
+    <span class="localization-check{% unless is_current %} visibility-hidden{% endunless %}" aria-hidden="true">
+      {%- if is_current -%}
+        {{- 'icon-checkmark.svg' | inline_asset_content -}}
+      {%- endif -%}
     </span>
     <span class="country">
-      {{ country | image_url: width: 18 | image_tag: loading: 'lazy', decoding: 'async' }}
       <span class="country-name">{{- country.name -}}</span>
     </span>
     <span class="localization-form__currency motion-reduce{% unless show_currencies %} hidden{% endunless %}">

@@ -44,6 +44,12 @@
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
 
+    {% comment %} Early connections: every theme asset comes from the Shopify CDN {% endcomment %}
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+
     {% comment %} Core Scripts {% endcomment %}
     <script src="{{ 'product-form-controller.js' | asset_url }}"></script>  <!-- Not deferred because it's used immediately -->
     <script src="{{ 'constants.js' | asset_url }}" defer="defer"></script>
@@ -66,11 +72,6 @@
 
     {% comment %} Loaders: jQuery/Swiper on demand – no defer so sections can call before body parses {% endcomment %}
     <script src="{{ 'theme-loaders.js' | asset_url }}"></script>
-
-    {% comment %} Font Loading {% endcomment %}
-    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
-    {%- endunless -%}
 
     <!-- Custom font CSS -->
     <link rel="stylesheet" href="{{ 'custom-font.css' | asset_url }}" type="text/css">

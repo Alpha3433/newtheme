@@ -107,7 +107,16 @@ if (!customElements.get("localization-form")) {
         if (form) form.submit();
       }
 
+      hydrateCountryList() {
+        const template = this.querySelector("template[data-country-list]");
+        if (!template) return;
+        const fragment = template.content.cloneNode(true);
+        fragment.querySelectorAll("a").forEach((item) => item.addEventListener("click", this.onItemClick.bind(this)));
+        template.replaceWith(fragment);
+      }
+
       openSelector() {
+        this.hydrateCountryList();
         this.elements.button.focus();
 
         // Check current state - panel is open if it doesn't have hidden attribute

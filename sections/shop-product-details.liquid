@@ -1,6 +1,25 @@
 {{ 'shop-product-details.css' | asset_url | stylesheet_tag }}
 {{ 'variant-selector.css' | asset_url | stylesheet_tag }}
 
+{%- liquid
+  comment
+    LCP preload for the first gallery image. The URLs must be byte-identical to the
+    src/srcset written by snippets/product-gallery.liquid (img_url '530x' / '1060x'),
+    otherwise the browser would download the image twice.
+  endcomment
+  assign lcp_product = section.settings.current_product | default: product
+  assign lcp_media = lcp_product.media | where: 'media_type', 'image' | first
+-%}
+{%- if section.settings.show_product_gallery and lcp_media != blank -%}
+  <link
+    rel="preload"
+    as="image"
+    href="{{ lcp_media | img_url: '530x' }}"
+    imagesrcset="{{ lcp_media | img_url: '530x' }} 1x, {{ lcp_media | img_url: '1060x' }} 2x"
+    fetchpriority="high"
+  >
+{%- endif -%}
+
 {% liquid
   assign show_price_in_button = section.settings.show_price_in_button
 %}
@@ -3970,6 +3989,97 @@
           "step": 1,
           "unit": "px",
           "label": "Bottom margin",
+          "default": 8
+        }
+      ]
+    },
+    {
+      "name": "Proof strip",
+      "type": "proof_strip",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "Single-line proof strip for above the fold: rating (links to the reviews anchor), a claim and a shipping line. Wraps to two lines on mobile only when needed."
+        },
+        {
+          "type": "checkbox",
+          "id": "show_rating",
+          "label": "Show rating item",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "rating_value",
+          "label": "Rating",
+          "default": "4.8",
+          "info": "Falls back to the product's reviews.rating metafield when empty."
+        },
+        {
+          "type": "text",
+          "id": "rating_count",
+          "label": "Review count",
+          "default": "43",
+          "info": "Falls back to the product's reviews.rating_count metafield when empty."
+        },
+        {
+          "type": "text",
+          "id": "rating_link",
+          "label": "Rating link (anchor)",
+          "default": "#reviews",
+          "info": "Add a 'Reviews anchor' section just above your reviews widget so this anchor exists."
+        },
+        {
+          "type": "text",
+          "id": "item_2_text",
+          "label": "Second item",
+          "default": "Clinically studied ingredient"
+        },
+        {
+          "type": "text",
+          "id": "item_3_text",
+          "label": "Third item",
+          "default": "Free express shipping"
+        },
+        {
+          "type": "range",
+          "id": "font_size",
+          "min": 11,
+          "max": 16,
+          "step": 1,
+          "unit": "px",
+          "label": "Font size",
+          "default": 13
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color",
+          "default": "#333030"
+        },
+        {
+          "type": "color",
+          "id": "star_color",
+          "label": "Star color",
+          "default": "#ef4a65"
+        },
+        {
+          "type": "range",
+          "id": "margin_top",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Margin top",
+          "default": 4
+        },
+        {
+          "type": "range",
+          "id": "margin_bottom",
+          "min": 0,
+          "max": 40,
+          "step": 1,
+          "unit": "px",
+          "label": "Margin bottom",
           "default": 8
         }
       ]

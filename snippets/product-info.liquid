@@ -100,6 +100,90 @@
         {% endif %}
       </div>
 
+    {% when 'proof_strip' %}
+      {%- liquid
+        assign ps_rating = block.settings.rating_value | strip
+        assign ps_count = block.settings.rating_count | strip
+        if ps_rating == blank and product.metafields.reviews.rating.value.rating != blank
+          assign ps_rating = product.metafields.reviews.rating.value.rating | round: 1
+        endif
+        if ps_count == blank and product.metafields.reviews.rating_count.value != blank
+          assign ps_count = product.metafields.reviews.rating_count.value
+        endif
+        assign ps_link = block.settings.rating_link | strip | default: '#reviews'
+        assign ps_item_2 = block.settings.item_2_text | strip
+        assign ps_item_3 = block.settings.item_3_text | strip
+        assign ps_rendered = 0
+      -%}
+      <div
+        class="proof-strip"
+        id="block-{{ block.id }}"
+        style="--proof-strip-size: {{ block.settings.font_size | default: 13 }}px; --proof-strip-color: {{ block.settings.text_color | default: '#333030' }}; --proof-strip-star: {{ block.settings.star_color | default: '#ef4a65' }}; margin-top: {{ block.settings.margin_top | default: 4 }}px; margin-bottom: {{ block.settings.margin_bottom | default: 8 }}px;"
+        {{ block.shopify_attributes }}
+      >
+        {%- if block.settings.show_rating and ps_rating != blank -%}
+          <a class="proof-strip__item proof-strip__rating" href="{{ ps_link }}" data-scroll-to-reviews>
+            <span class="proof-strip__star" aria-hidden="true">&#9733;</span>
+            <span class="visually-hidden">Rated </span><strong>{{ ps_rating }}</strong>
+            {%- if ps_count != blank %} <span class="proof-strip__count">({{ ps_count }})</span>{% endif -%}
+            <span class="visually-hidden"> – read reviews</span>
+          </a>
+          {%- assign ps_rendered = ps_rendered | plus: 1 -%}
+        {%- endif -%}
+        {%- if ps_item_2 != blank -%}
+          {%- if ps_rendered > 0 %}<span class="proof-strip__dot" aria-hidden="true">&middot;</span>{% endif -%}
+          <span class="proof-strip__item">{{ ps_item_2 | escape }}</span>
+          {%- assign ps_rendered = ps_rendered | plus: 1 -%}
+        {%- endif -%}
+        {%- if ps_item_3 != blank -%}
+          {%- if ps_rendered > 0 %}<span class="proof-strip__dot" aria-hidden="true">&middot;</span>{% endif -%}
+          <span class="proof-strip__item">{{ ps_item_3 | escape }}</span>
+        {%- endif -%}
+      </div>
+      {% style %}
+        #block-{{ block.id }}.proof-strip {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          row-gap: 2px;
+          column-gap: 8px;
+          font-size: var(--proof-strip-size);
+          line-height: 1.3;
+          color: var(--proof-strip-color);
+          letter-spacing: var(--letter-spacing-body, -0.3px);
+        }
+        #block-{{ block.id }} .proof-strip__item {
+          white-space: nowrap;
+        }
+        #block-{{ block.id }} .proof-strip__rating {
+          color: inherit;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 3px;
+        }
+        #block-{{ block.id }} .proof-strip__rating:hover strong {
+          text-decoration: underline;
+        }
+        #block-{{ block.id }} .proof-strip__rating strong {
+          font-weight: var(--font-weight-bold, 700);
+        }
+        #block-{{ block.id }} .proof-strip__star {
+          color: var(--proof-strip-star);
+          font-size: 1.1em;
+          line-height: 1;
+        }
+        #block-{{ block.id }} .proof-strip__count,
+        #block-{{ block.id }} .proof-strip__dot {
+          opacity: 0.7;
+        }
+        @media screen and (min-width: 750px) {
+          #block-{{ block.id }}.proof-strip {
+            flex-wrap: nowrap;
+          }
+        }
+      {% endstyle %}
+
     {% when 'reviews' %}
       {% if block.settings.rating_text_content != blank %}
         {% assign rating_text_content = block.settings.rating_text_content %}
@@ -3644,4 +3728,4 @@
       {% render 'bundle-and-save', block: block %}
   {% endcase %}
 {% endfor %}
-<script>(function(){function s(e){var t=document.querySelector('#vstar-reviews')||document.querySelector('#reviews');if(!t)return;e.preventDefault();e.stopPropagation();var c=t.closest('.shopify-section');if(c)c.classList.remove('scroll-trigger--offscreen');var m=parseInt(getComputedStyle(t).scrollMarginTop)||0;window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-m,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}function i(){document.querySelectorAll('.rating-component').forEach(function(el){if(el.getAttribute('data-reviews-linked'))return;el.setAttribute('data-reviews-linked','1');el.addEventListener('click',s);});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',i);}else{i();}document.addEventListener('shopify:section:load',i);})();</script>
+<script>(function(){function f(){if(document.querySelector('#vstar-reviews, #reviews'))return;var w=document.querySelector('[id*="trustoo" i], [class*="trustoo" i], [id^="tt-review"], [class*="tt-review"], .tt-widget, [id*="vstar" i]');if(!w)return;var c=w.closest('.shopify-section')||w;if(!document.getElementById('reviews'))c.id='reviews';}function s(e){f();var t=document.querySelector('#vstar-reviews')||document.querySelector('#reviews');if(!t)return;e.preventDefault();e.stopPropagation();var c=t.closest('.shopify-section');if(c)c.classList.remove('scroll-trigger--offscreen');var m=parseInt(getComputedStyle(t).scrollMarginTop)||0;window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-m,behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});}function i(){document.querySelectorAll('.rating-component, [data-scroll-to-reviews]').forEach(function(el){if(el.getAttribute('data-reviews-linked'))return;el.setAttribute('data-reviews-linked','1');el.addEventListener('click',s);});}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',i);}else{i();}document.addEventListener('shopify:section:load',i);})();</script>

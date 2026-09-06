@@ -83,6 +83,13 @@
       class="disclosure__list country-selector__list{% if show_currencies %} country-selector__list--with-multiple-currencies{% endif %}"
       id="{{ localPosition }}-country-results"
     >
+      {%- comment -%}
+        The country list lives in an inert <template> so the browser does not
+        build DOM, layout or image requests for it on initial render.
+        localization-form.js moves it into the list the first time the
+        dropdown is opened (see hydrateCountryList).
+      {%- endcomment -%}
+      <template data-country-list>
       {% if show_popular_countries %}
         <ul
           role="list"
@@ -109,6 +116,7 @@
           {%- endunless -%}
         {%- endfor -%}
       </ul>
+      </template>
     </div>
   </div>
   <div class="country-selector__overlay"></div>
