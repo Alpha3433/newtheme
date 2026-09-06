@@ -119,7 +119,7 @@
       {%- endif -%}
 
       {%- comment -%} ───────────────── PURCHASE ───────────────── {%- endcomment -%}
-      <div class="lp-hero__purchase" id="plan-selector" style="scroll-margin-top: 90px;">
+      <div class="lp-hero__purchase" id="{{ s.anchor_id | default: 'plan-selector' | escape }}" style="scroll-margin-top: 90px;">
         {%- if s.bundle_heading != blank and use_theme_plans -%}<h3 class="lp-hero__bundle-h">{{ s.bundle_heading | escape }}</h3>{%- endif -%}
 
         <product-form class="product-form" data-section-id="{{ section.id }}">
@@ -717,6 +717,7 @@
   "settings": [
     { "type": "header", "content": "Layout" },
     { "type": "checkbox", "id": "gallery_left", "label": "Gallery on the left (desktop)", "default": false },
+    { "type": "text", "id": "anchor_id", "label": "Buy box anchor id", "default": "plan-selector", "info": "Buttons across the page scroll to #plan-selector. Give a second buy box a different id." },
     { "type": "checkbox", "id": "show_thumbnails", "label": "Show thumbnails", "default": true },
     { "type": "select", "id": "image_ratio", "label": "Image ratio", "options": [ { "value": "1/1", "label": "Square" }, { "value": "4/5", "label": "Portrait 4:5" }, { "value": "3/4", "label": "Portrait 3:4" } ], "default": "1/1" },
     { "type": "range", "id": "max_width", "min": 960, "max": 1400, "step": 20, "unit": "px", "label": "Max width (desktop)", "default": 1200 },

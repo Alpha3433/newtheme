@@ -1,0 +1,277 @@
+{%- render 'lp-tokens' -%}
+{%- liquid
+  assign s = section.settings
+  assign questions = section.blocks | where: 'type', 'question'
+  assign has_code = false
+  if s.discount_code != blank
+    assign has_code = true
+  endif
+-%}
+{%- if questions.size > 0 -%}
+<section class="lp lp-quiz" id="lp-quiz-{{ section.id }}" data-lp-quiz data-code="{{ s.discount_code | escape }}">
+  <div class="lp-quiz__wrap">
+    <div class="lp-quiz__head">
+      {%- if s.pill != blank -%}<div class="lp-quiz__pill"><span class="lp-quiz__pill-dot" aria-hidden="true"></span>{{ s.pill | escape }}</div>{%- endif -%}
+      {%- if s.heading != blank -%}<h2 class="lp-quiz__h2">{{ s.heading | escape }}</h2>{%- endif -%}
+      {%- if s.subheading != blank -%}<div class="lp-quiz__sub">{{ s.subheading }}</div>{%- endif -%}
+    </div>
+    <div class="lp-quiz__card" data-lp-quiz-card>
+      <div class="lp-quiz__progress">
+        <div class="lp-quiz__step">{{ s.step_label | default: 'Question' | escape }} <strong data-lp-quiz-n>1</strong> {{ s.of_label | default: 'of' | escape }} {{ questions.size }}</div>
+        <div class="lp-quiz__dots" data-lp-quiz-dots>{%- for q in questions -%}<span class="lp-quiz__dot{% if forloop.first %} is-on{% endif %}"></span>{%- endfor -%}</div>
+      </div>
+      <div class="lp-quiz__stage">
+        {%- for block in questions -%}
+          <div class="lp-quiz__q{% if forloop.first %} is-active{% endif %}" data-lp-quiz-q="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+            {%- if block.settings.eyebrow != blank -%}<div class="lp-quiz__eyebrow">{{ block.settings.eyebrow | escape }}</div>{%- endif -%}
+            <h3 class="lp-quiz__question">{{ block.settings.question | escape }}</h3>
+            <div class="lp-quiz__opts">
+              {%- for i in (1..4) -%}
+                {%- assign okey = 'opt_' | append: i -%}
+                {%- assign nkey = 'note_' | append: i -%}
+                {%- assign tkey = 'title_' | append: i -%}
+                {%- assign opt = block.settings[okey] -%}
+                {%- if opt != blank -%}
+                  <button type="button" class="lp-quiz__opt" data-lp-quiz-opt data-title="{{ block.settings[tkey] | default: opt | escape }}" data-tag="{{ block.settings.tag | default: block.settings.question | escape }}" data-note="{{ block.settings[nkey] | strip_html | escape }}">
+                    <span class="lp-quiz__opt-label">{{ opt | escape }}</span>
+                    <span class="lp-quiz__opt-arrow" aria-hidden="true">→</span>
+                  </button>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+            {%- unless forloop.first -%}<button type="button" class="lp-quiz__back" data-lp-quiz-back>← {{ s.back_label | default: 'Back' | escape }}</button>{%- endunless -%}
+          </div>
+        {%- endfor -%}
+
+        <div class="lp-quiz__results" data-lp-quiz-results hidden>
+          {%- if s.results_pill != blank -%}<div class="lp-quiz__results-pill">{{ s.results_pill | escape }}</div>{%- endif -%}
+          <h3 class="lp-quiz__results-h">{{ s.results_heading | escape }} {%- if s.results_em != blank %} <span class="lp-quiz__results-em">{{ s.results_em | escape }}</span>{% endif -%}</h3>
+          {%- if s.results_intro != blank -%}<div class="lp-quiz__results-intro">{{ s.results_intro }}</div>{%- endif -%}
+          <div class="lp-quiz__blocks" data-lp-quiz-blocks></div>
+          {%- if s.results_bottom != blank -%}<div class="lp-quiz__bottom">{{ s.results_bottom }}</div>{%- endif -%}
+          {%- if has_code -%}
+            <div class="lp-quiz__claim" data-lp-quiz-claim>
+              <div class="lp-quiz__claim-form" data-lp-quiz-claim-form>
+                {%- if s.claim_eyebrow != blank -%}<div class="lp-quiz__claim-eyebrow">{{ s.claim_eyebrow | escape }}</div>{%- endif -%}
+                <h4 class="lp-quiz__claim-h">{{ s.claim_heading | escape }}</h4>
+                {%- if s.claim_sub != blank -%}<p class="lp-quiz__claim-sub">{{ s.claim_sub | escape }}</p>{%- endif -%}
+                {%- assign quiz_form_id = 'lp-quiz-form-' | append: section.id -%}
+                {%- form 'customer', class: 'lp-quiz__form', id: quiz_form_id -%}
+                  <input type="hidden" name="contact[tags]" value="quiz,lp-serum">
+                  <div class="lp-quiz__form-row">
+                    <input type="email" name="contact[email]" class="lp-quiz__input" placeholder="{{ s.claim_placeholder | default: 'Your email' | escape }}" required aria-label="Email">
+                    <button type="submit" class="lp-quiz__claim-btn disable-global-button-styling">{{ s.claim_button | escape }}</button>
+                  </div>
+                {%- endform -%}
+                {%- if s.claim_trust != blank -%}<p class="lp-quiz__claim-trust">{{ s.claim_trust | escape }}</p>{%- endif -%}
+              </div>
+              <div class="lp-quiz__applied" data-lp-quiz-applied hidden>
+                <span class="lp-quiz__applied-check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                <div class="lp-quiz__applied-h"><strong>{{ s.discount_code | escape }}</strong> {{ s.applied_label | default: 'applied' | escape }}</div>
+                {%- if s.applied_sub != blank -%}<div class="lp-quiz__applied-sub">{{ s.applied_sub | escape }}</div>{%- endif -%}
+                <a class="lp-cta lp-quiz__applied-cta" href="{{ s.cta_link | default: '#plan-selector' }}" data-lp-quiz-cta>{{ s.cta_label | escape }}</a>
+              </div>
+            </div>
+          {%- else -%}
+            <div class="lp-quiz__cta-wrap"><a class="lp-cta" href="{{ s.cta_link | default: '#plan-selector' }}" data-lp-quiz-cta>{{ s.cta_label | escape }}</a></div>
+          {%- endif -%}
+          <div class="lp-quiz__trust">
+            {%- if s.trust_1 != blank -%}<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{{ s.trust_1 | escape }}</span>{%- endif -%}
+            {%- if s.trust_2 != blank -%}<span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{{ s.trust_2 | escape }}</span>{%- endif -%}
+          </div>
+          <button type="button" class="lp-quiz__restart" data-lp-quiz-restart>{{ s.restart_label | default: 'Start over' | escape }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{%- if s.show_float_tab -%}
+  <button type="button" class="lp lp-quiz-tab" data-lp-quiz-tab aria-label="{{ s.float_label | escape }}">
+    <span class="lp-quiz-tab__icon" aria-hidden="true">{{ s.float_icon | default: '✨' }}</span>
+    <span data-lp-quiz-tab-text>{{ s.float_label | escape }}</span>
+  </button>
+{%- endif -%}
+{% style %}
+  #lp-quiz-{{ section.id }} { padding: 48px 16px 56px; background: var(--lp-bg); border-top: 1px solid var(--lp-line); }
+  #lp-quiz-{{ section.id }} .lp-quiz__wrap { max-width: 680px; margin: 0 auto; display: grid; gap: 28px; align-items: start; }
+  #lp-quiz-{{ section.id }} .lp-quiz__head { text-align: center; }
+  #lp-quiz-{{ section.id }} .lp-quiz__pill { display: inline-flex; align-items: center; gap: 7px; padding: 7px 14px 7px 11px; background: rgba(var(--lp-accent-rgb), .10); border: 1px solid rgba(var(--lp-accent-rgb), .35); border-radius: 999px; color: var(--lp-accent-dark); font-size: 11px; font-weight: 800; letter-spacing: 1.3px; text-transform: uppercase; margin: 0 0 18px; line-height: 1; }
+  #lp-quiz-{{ section.id }} .lp-quiz__pill-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--lp-accent); animation: lp-pulse 1.6s ease-in-out infinite; }
+  @keyframes lp-pulse { 0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(var(--lp-accent-rgb), .5); } 50% { opacity: .6; box-shadow: 0 0 0 6px rgba(var(--lp-accent-rgb), 0); } }
+  #lp-quiz-{{ section.id }} .lp-quiz__h2 { font-size: 24px; font-weight: 800; color: var(--lp-ink); line-height: 1.25; letter-spacing: -.02em; margin: 0 0 14px; text-wrap: balance; text-transform: none; }
+  #lp-quiz-{{ section.id }} .lp-quiz__sub { font-size: 14.5px; color: var(--lp-ink-2); line-height: 1.65; }
+  #lp-quiz-{{ section.id }} .lp-quiz__sub strong { font-weight: 700; color: var(--lp-ink); }
+  #lp-quiz-{{ section.id }} .lp-quiz__card { max-width: 580px; margin: 0 auto; width: 100%; background: #fff; border: 1px solid var(--lp-line); border-radius: 16px; padding: 22px 20px 24px; box-shadow: 0 8px 32px rgba(var(--lp-ink-rgb), .08); }
+  #lp-quiz-{{ section.id }} .lp-quiz__progress { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 0 18px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__step { font-size: 11px; font-weight: 700; color: var(--lp-muted); letter-spacing: .8px; text-transform: uppercase; }
+  #lp-quiz-{{ section.id }} .lp-quiz__step strong { color: var(--lp-ink); }
+  #lp-quiz-{{ section.id }} .lp-quiz__dots { display: flex; gap: 6px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__dot { width: 22px; height: 5px; border-radius: 3px; background: var(--lp-line); transition: background .2s ease; }
+  #lp-quiz-{{ section.id }} .lp-quiz__dot.is-on, #lp-quiz-{{ section.id }} .lp-quiz__dot.is-done { background: var(--lp-accent); }
+  #lp-quiz-{{ section.id }} .lp-quiz__q { display: none; }
+  #lp-quiz-{{ section.id }} .lp-quiz__q.is-active { display: block; }
+  #lp-quiz-{{ section.id }} .lp-quiz__eyebrow { font-size: 10.5px; font-weight: 800; color: var(--lp-accent-dark); letter-spacing: 1.4px; text-transform: uppercase; margin: 0 0 8px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__question { font-size: 19px; font-weight: 800; color: var(--lp-ink); line-height: 1.3; letter-spacing: -.015em; margin: 0 0 16px; text-transform: none; }
+  #lp-quiz-{{ section.id }} .lp-quiz__opts { display: flex; flex-direction: column; gap: 9px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__opt { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; padding: 14px 16px; background: #fff; border: 1.5px solid var(--lp-line); border-radius: 12px; cursor: pointer; text-align: left; font-size: 14px; font-weight: 700; color: var(--lp-ink); line-height: 1.3; transition: border-color .15s ease, background .15s ease, transform .1s ease; }
+  #lp-quiz-{{ section.id }} .lp-quiz__opt:hover { border-color: var(--lp-accent); background: var(--lp-tint-4); }
+  #lp-quiz-{{ section.id }} .lp-quiz__opt:active { transform: scale(.99); }
+  #lp-quiz-{{ section.id }} .lp-quiz__opt-arrow { color: var(--lp-accent-dark); font-weight: 800; flex-shrink: 0; }
+  #lp-quiz-{{ section.id }} .lp-quiz__back { margin: 14px 0 0; background: transparent; border: 0; padding: 4px 0; cursor: pointer; font-size: 12.5px; font-weight: 700; color: var(--lp-muted); }
+  #lp-quiz-{{ section.id }} .lp-quiz__results[hidden] { display: none; }
+  #lp-quiz-{{ section.id }} .lp-quiz__results-pill { display: inline-block; font-size: 10.5px; font-weight: 800; color: var(--lp-accent-dark); letter-spacing: 1.4px; text-transform: uppercase; padding: 6px 12px; background: rgba(var(--lp-accent-rgb), .10); border: 1px solid rgba(var(--lp-accent-rgb), .3); border-radius: 999px; margin: 0 0 12px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__results-h { font-size: 22px; font-weight: 800; color: var(--lp-ink); line-height: 1.25; letter-spacing: -.02em; margin: 0 0 10px; text-transform: none; }
+  #lp-quiz-{{ section.id }} .lp-quiz__results-em { color: var(--lp-accent-dark); }
+  #lp-quiz-{{ section.id }} .lp-quiz__results-intro { font-size: 13.5px; color: var(--lp-ink-2); line-height: 1.6; margin: 0 0 16px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__blocks { display: flex; flex-direction: column; gap: 10px; margin: 0 0 16px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__block { padding: 14px 16px; background: var(--lp-bg-warm); border: 1px solid var(--lp-line); border-radius: 12px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__block-tag { font-size: 10px; font-weight: 800; color: var(--lp-accent-dark); letter-spacing: 1.3px; text-transform: uppercase; margin: 0 0 4px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__block-title { font-size: 14.5px; font-weight: 800; color: var(--lp-ink); margin: 0 0 6px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__block-body { font-size: 13px; color: var(--lp-ink-2); line-height: 1.6; }
+  #lp-quiz-{{ section.id }} .lp-quiz__bottom { font-size: 13.5px; color: var(--lp-ink-2); line-height: 1.6; margin: 0 0 18px; padding: 14px 16px; background: var(--lp-tint-4); border: 1px solid var(--lp-tint-line); border-radius: 12px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__bottom strong { font-weight: 700; color: var(--lp-ink); }
+  #lp-quiz-{{ section.id }} .lp-quiz__claim { padding: 18px 16px; background: var(--lp-ink); color: #fff; border-radius: 14px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__claim-eyebrow { font-size: 10.5px; font-weight: 800; letter-spacing: 1.4px; text-transform: uppercase; opacity: .7; margin: 0 0 6px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__claim-h { font-size: 18px; font-weight: 800; line-height: 1.25; margin: 0 0 6px; color: #fff; text-transform: none; }
+  #lp-quiz-{{ section.id }} .lp-quiz__claim-sub { font-size: 12.5px; line-height: 1.5; opacity: .8; margin: 0 0 12px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__form-row { display: flex; gap: 8px; flex-wrap: wrap; }
+  #lp-quiz-{{ section.id }} .lp-quiz__input { flex: 1 1 180px; padding: 12px 14px; border: 1px solid rgba(255,255,255,.3); border-radius: 9px; background: rgba(255,255,255,.08); color: #fff; font-size: 14px; font-family: inherit; }
+  #lp-quiz-{{ section.id }} .lp-quiz__input::placeholder { color: rgba(255,255,255,.6); }
+  #lp-quiz-{{ section.id }} .lp-quiz__claim-btn[type="submit"] { flex: 0 0 auto; padding: 12px 18px !important; background: var(--lp-accent) !important; color: #fff !important; border: 0 !important; border-radius: 9px !important; font-family: inherit !important; font-size: 13px !important; font-weight: 800 !important; letter-spacing: .6px !important; text-transform: uppercase !important; cursor: pointer; box-shadow: none !important; }
+  #lp-quiz-{{ section.id }} .lp-quiz__claim-trust { font-size: 11px; opacity: .6; margin: 10px 0 0; }
+  #lp-quiz-{{ section.id }} .lp-quiz__applied[hidden] { display: none; }
+  #lp-quiz-{{ section.id }} .lp-quiz__applied { text-align: center; }
+  #lp-quiz-{{ section.id }} .lp-quiz__applied-check { display: inline-flex; width: 36px; height: 36px; border-radius: 50%; background: var(--lp-accent); color: #fff; align-items: center; justify-content: center; margin: 0 0 8px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__applied-check svg { width: 16px; height: 16px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__applied-h { font-size: 16px; margin: 0 0 4px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__applied-sub { font-size: 12.5px; opacity: .8; margin: 0 0 14px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__applied-cta { background: var(--lp-accent); }
+  #lp-quiz-{{ section.id }} .lp-quiz__cta-wrap { text-align: center; }
+  #lp-quiz-{{ section.id }} .lp-quiz__trust { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px 16px; margin: 14px 0 0; font-size: 11.5px; font-weight: 600; color: var(--lp-muted); }
+  #lp-quiz-{{ section.id }} .lp-quiz__trust span { display: inline-flex; align-items: center; gap: 5px; }
+  #lp-quiz-{{ section.id }} .lp-quiz__trust svg { width: 13px; height: 13px; color: var(--lp-accent-dark); }
+  #lp-quiz-{{ section.id }} .lp-quiz__restart { display: block; margin: 12px auto 0; background: transparent; border: 0; cursor: pointer; font-size: 12px; font-weight: 700; color: var(--lp-muted); text-decoration: underline; }
+  .lp-quiz-tab { position: fixed; left: 50%; bottom: 14px; transform: translateX(-50%); z-index: 9800; display: inline-flex; align-items: center; gap: 8px; padding: 11px 16px; background: var(--lp-ink); color: #fff; border: 0; border-radius: 999px; font-size: 12px; font-weight: 800; letter-spacing: .3px; box-shadow: 0 8px 24px rgba(var(--lp-ink-rgb), .3); cursor: pointer; animation: lp-tab-in .4s ease both; }
+  .lp-quiz-tab[hidden] { display: none; }
+  .lp-quiz-tab.is-claimed { background: var(--lp-accent); }
+  @keyframes lp-tab-in { from { transform: translate(-50%, 10px) scale(.9); opacity: 0; } to { transform: translate(-50%, 0) scale(1); opacity: 1; } }
+  @media (min-width: 640px) { #lp-quiz-{{ section.id }} { padding: 64px 16px 72px; } #lp-quiz-{{ section.id }} .lp-quiz__h2 { font-size: 28px; } #lp-quiz-{{ section.id }} .lp-quiz__card { padding: 26px 24px 28px; } }
+  @media (min-width: 980px) { #lp-quiz-{{ section.id }} { padding: 72px 24px 80px; } #lp-quiz-{{ section.id }} .lp-quiz__wrap { max-width: 1200px; grid-template-columns: minmax(0, 580px) minmax(0, 1fr); column-gap: 64px; } #lp-quiz-{{ section.id }} .lp-quiz__head { order: 2; text-align: left; position: sticky; top: 96px; padding-left: 16px; } #lp-quiz-{{ section.id }} .lp-quiz__h2 { font-size: 34px; } #lp-quiz-{{ section.id }} .lp-quiz__sub { font-size: 15.5px; } #lp-quiz-{{ section.id }} .lp-quiz__card { margin: 0; } .lp-quiz-tab { left: auto; right: 20px; transform: none; bottom: 20px; } @keyframes lp-tab-in { from { transform: translateY(10px) scale(.9); opacity: 0; } to { transform: none; opacity: 1; } } }
+{% endstyle %}
+<script>
+(function () {
+  var root = document.getElementById('lp-quiz-{{ section.id }}');
+  if (!root || root.dataset.lpInit) return; root.dataset.lpInit = '1';
+  var qs = root.querySelectorAll('[data-lp-quiz-q]'), dots = root.querySelectorAll('.lp-quiz__dot'), n = root.querySelector('[data-lp-quiz-n]');
+  var results = root.querySelector('[data-lp-quiz-results]'), blocks = root.querySelector('[data-lp-quiz-blocks]');
+  var answers = [], idx = 0;
+  var show = function (i) {
+    idx = i;
+    qs.forEach(function (q, j) { q.classList.toggle('is-active', j === i); });
+    dots.forEach(function (d, j) { d.classList.toggle('is-on', j === i); d.classList.toggle('is-done', j < i); });
+    if (n) n.textContent = i + 1;
+    results.hidden = true;
+  };
+  var finish = function () {
+    qs.forEach(function (q) { q.classList.remove('is-active'); });
+    dots.forEach(function (d) { d.classList.add('is-done'); });
+    blocks.innerHTML = '';
+    answers.forEach(function (a) {
+      if (!a.note && !a.title) return;
+      var b = document.createElement('div'); b.className = 'lp-quiz__block';
+      b.innerHTML = '<div class="lp-quiz__block-tag"></div><div class="lp-quiz__block-title"></div><div class="lp-quiz__block-body"></div>';
+      b.children[0].textContent = a.tag; b.children[1].textContent = a.title; b.children[2].textContent = a.note;
+      if (!a.note) b.children[2].remove();
+      blocks.appendChild(b);
+    });
+    results.hidden = false;
+    root.querySelector('[data-lp-quiz-card]').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+  qs.forEach(function (q, i) {
+    q.querySelectorAll('[data-lp-quiz-opt]').forEach(function (o) {
+      o.addEventListener('click', function () {
+        answers[i] = { tag: o.dataset.tag, title: o.dataset.title, note: o.dataset.note };
+        if (i + 1 < qs.length) show(i + 1); else finish();
+      });
+    });
+    var back = q.querySelector('[data-lp-quiz-back]');
+    if (back) back.addEventListener('click', function () { show(Math.max(0, i - 1)); });
+  });
+  var restart = root.querySelector('[data-lp-quiz-restart]');
+  if (restart) restart.addEventListener('click', function () { answers = []; show(0); });
+  root.querySelectorAll('[data-lp-quiz-cta]').forEach(function (c) {
+    c.addEventListener('click', function (e) { var h = c.getAttribute('href'); if (h && h.charAt(0) === '#') { var t = document.querySelector(h); if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); } } });
+  });
+  /* claim: submit the customer form in the background, then reveal the code */
+  var form = root.querySelector('.lp-quiz__form'), applied = root.querySelector('[data-lp-quiz-applied]'), claimForm = root.querySelector('[data-lp-quiz-claim-form]');
+  var tab = document.querySelector('[data-lp-quiz-tab]');
+  var code = root.dataset.code;
+  var reveal = function () {
+    if (claimForm) claimForm.hidden = true;
+    if (applied) applied.hidden = false;
+    if (tab && code) { tab.classList.add('is-claimed'); tab.querySelector('[data-lp-quiz-tab-text]').textContent = '{{ s.float_claimed_label | default: "Discount unlocked" | escape }}'; }
+    try { localStorage.setItem('lp-quiz-claimed', code); } catch (e) {}
+  };
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('[type="submit"]'); if (btn) btn.disabled = true;
+      fetch(form.action, { method: 'POST', body: new FormData(form), credentials: 'same-origin' }).catch(function () {}).then(function () { reveal(); if (btn) btn.disabled = false; });
+    });
+  }
+  try { if (code && localStorage.getItem('lp-quiz-claimed') === code && tab) { tab.classList.add('is-claimed'); tab.querySelector('[data-lp-quiz-tab-text]').textContent = '{{ s.float_claimed_label | default: "Discount unlocked" | escape }}'; } } catch (e) {}
+  if (tab) tab.addEventListener('click', function () { root.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+})();
+</script>
+{%- endif -%}
+{% schema %}
+{
+  "name": "LP · Quiz",
+  "tag": "section",
+  "class": "lp-section",
+  "settings": [
+    { "type": "text", "id": "pill", "label": "Pill", "default": "Find your match" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Find Out Which Pattern You're In" },
+    { "type": "richtext", "id": "subheading", "label": "Subheading", "default": "<p>Answer four quick questions and we'll show you what to expect from the serum for your pattern.</p>" },
+    { "type": "text", "id": "step_label", "label": "'Question' label", "default": "Question" },
+    { "type": "text", "id": "of_label", "label": "'of' label", "default": "of" },
+    { "type": "text", "id": "back_label", "label": "Back label", "default": "Back" },
+    { "type": "header", "content": "Results" },
+    { "type": "text", "id": "results_pill", "label": "Results pill", "default": "Your match" },
+    { "type": "text", "id": "results_heading", "label": "Results heading", "default": "Here's what fits" },
+    { "type": "text", "id": "results_em", "label": "Results heading accent", "default": "your pattern" },
+    { "type": "richtext", "id": "results_intro", "label": "Results intro" },
+    { "type": "richtext", "id": "results_bottom", "label": "Bottom line", "default": "<p><strong>Whatever your pattern, the routine is the same:</strong> 1–2 ml massaged into the scalp nightly. Less shedding in 2 weeks, fuller in 90 — or your money back.</p>" },
+    { "type": "text", "id": "cta_label", "label": "Button label", "default": "Choose My Plan" },
+    { "type": "text", "id": "cta_link", "label": "Button link", "default": "#plan-selector" },
+    { "type": "text", "id": "trust_1", "label": "Trust line 1", "default": "Free Shipping" },
+    { "type": "text", "id": "trust_2", "label": "Trust line 2", "default": "90-Day Money-Back Guarantee" },
+    { "type": "text", "id": "restart_label", "label": "Restart label", "default": "Start over" },
+    { "type": "header", "content": "Discount claim (optional)" },
+    { "type": "text", "id": "discount_code", "label": "Discount code", "info": "Create the code under Discounts first. Leave blank to hide the email claim box and the floating tab." },
+    { "type": "text", "id": "claim_eyebrow", "label": "Claim eyebrow", "default": "Your reward" },
+    { "type": "text", "id": "claim_heading", "label": "Claim heading", "default": "Claim your discount" },
+    { "type": "text", "id": "claim_sub", "label": "Claim sub", "default": "Drop your email and we'll show your code." },
+    { "type": "text", "id": "claim_placeholder", "label": "Email placeholder", "default": "Your email" },
+    { "type": "text", "id": "claim_button", "label": "Claim button", "default": "Show my code" },
+    { "type": "text", "id": "claim_trust", "label": "Claim trust line", "default": "No spam. Unsubscribe anytime." },
+    { "type": "text", "id": "applied_label", "label": "'applied' word", "default": "unlocked" },
+    { "type": "text", "id": "applied_sub", "label": "After-claim sub", "default": "Use this code at checkout." },
+    { "type": "checkbox", "id": "show_float_tab", "label": "Show floating tab", "default": true },
+    { "type": "text", "id": "float_icon", "label": "Floating tab icon", "default": "✨" },
+    { "type": "text", "id": "float_label", "label": "Floating tab label", "default": "Find your match" },
+    { "type": "text", "id": "float_claimed_label", "label": "Floating tab label after claim", "default": "Discount unlocked" }
+  ],
+  "blocks": [
+    { "type": "question", "name": "Question", "settings": [
+      { "type": "text", "id": "eyebrow", "label": "Eyebrow" },
+      { "type": "text", "id": "question", "label": "Question" },
+      { "type": "text", "id": "tag", "label": "Result tag", "info": "Small label on the result card, e.g. 'Concern match'" },
+      { "type": "text", "id": "opt_1", "label": "Option 1" }, { "type": "text", "id": "title_1", "label": "Result title 1" }, { "type": "richtext", "id": "note_1", "label": "Result note 1" },
+      { "type": "text", "id": "opt_2", "label": "Option 2" }, { "type": "text", "id": "title_2", "label": "Result title 2" }, { "type": "richtext", "id": "note_2", "label": "Result note 2" },
+      { "type": "text", "id": "opt_3", "label": "Option 3" }, { "type": "text", "id": "title_3", "label": "Result title 3" }, { "type": "richtext", "id": "note_3", "label": "Result note 3" },
+      { "type": "text", "id": "opt_4", "label": "Option 4" }, { "type": "text", "id": "title_4", "label": "Result title 4" }, { "type": "richtext", "id": "note_4", "label": "Result note 4" } ] }
+  ],
+  "presets": [ { "name": "LP · Quiz", "blocks": [ { "type": "question" }, { "type": "question" }, { "type": "question" }, { "type": "question" } ] } ]
+}
+{% endschema %}

@@ -1,0 +1,45 @@
+{%- render 'lp-tokens' -%}
+{%- if section.blocks.size > 0 -%}
+<section class="lp lp-research" id="lp-research-{{ section.id }}">
+  <div class="lp-research__inner">
+    {%- if section.settings.label != blank -%}<div class="lp-research__label">{{ section.settings.label | escape }}</div>{%- endif -%}
+    <div class="lp-research__logos">
+      {%- for block in section.blocks -%}
+        {%- unless forloop.first -%}<span class="lp-research__sep" aria-hidden="true"></span>{%- endunless -%}
+        {%- if block.settings.image != blank -%}
+          {{ block.settings.image | image_url: width: 300 | image_tag: class: 'lp-research__logo', loading: 'lazy', alt: block.settings.text }}
+        {%- else -%}
+          <span class="lp-research__text" {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</span>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% style %}
+  #lp-research-{{ section.id }} { width: 100%; background: linear-gradient(160deg, var(--lp-tint-3) 0%, var(--lp-tint-1) 100%); border-top: 1px solid var(--lp-tint-line); border-bottom: 1px solid var(--lp-tint-line); padding: 14px 16px; }
+  #lp-research-{{ section.id }} .lp-research__inner { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  #lp-research-{{ section.id }} .lp-research__label { font-size: 10px; font-weight: 600; color: var(--lp-muted); letter-spacing: 1.8px; text-transform: uppercase; line-height: 1; opacity: .8; text-align: center; }
+  #lp-research-{{ section.id }} .lp-research__logos { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; }
+  #lp-research-{{ section.id }} .lp-research__logo { height: 22px; width: auto; max-width: 100px; display: block; opacity: .6; object-fit: contain; {% if section.settings.grayscale %}filter: grayscale(100%);{% endif %} }
+  #lp-research-{{ section.id }} .lp-research__text { font-size: 11.5px; font-weight: 800; color: var(--lp-ink); letter-spacing: 1.2px; text-transform: uppercase; opacity: .7; }
+  #lp-research-{{ section.id }} .lp-research__sep { width: 1px; height: 18px; background: rgba(var(--lp-ink-rgb), .18); flex-shrink: 0; margin: 0 18px; }
+  @media (max-width: 480px) { #lp-research-{{ section.id }} .lp-research__sep { margin: 0 11px; height: 14px; } #lp-research-{{ section.id }} .lp-research__logo { height: 18px; max-width: 78px; } #lp-research-{{ section.id }} .lp-research__text { font-size: 10px; } }
+{% endstyle %}
+{%- endif -%}
+{% schema %}
+{
+  "name": "LP · Research strip",
+  "tag": "section",
+  "class": "lp-section",
+  "settings": [
+    { "type": "text", "id": "label", "label": "Label", "default": "Clinically studied ingredients" },
+    { "type": "checkbox", "id": "grayscale", "label": "Grayscale logos", "default": true }
+  ],
+  "blocks": [
+    { "type": "item", "name": "Item", "settings": [
+      { "type": "image_picker", "id": "image", "label": "Logo (optional)" },
+      { "type": "text", "id": "text", "label": "Text (shown if no logo)" } ] }
+  ],
+  "presets": [ { "name": "LP · Research strip", "blocks": [ { "type": "item" }, { "type": "item" } ] } ]
+}
+{% endschema %}

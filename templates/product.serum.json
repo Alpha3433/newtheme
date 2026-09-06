@@ -828,23 +828,378 @@
         "ratio": "1/1",
         "disclaimer": "Individual results vary."
       }
+    },
+    "lp_quiz": {
+      "type": "lp-quiz",
+      "blocks": {
+        "q1": {
+          "type": "question",
+          "settings": {
+            "eyebrow": "Where",
+            "question": "Where are you noticing it most?",
+            "tag": "Concern match",
+            "opt_1": "A widening part",
+            "title_1": "Widening part",
+            "note_1": "<p>Apply along the part line each night and massage it in. The part is where fine new hairs are usually noticed first, around weeks 6–8.</p>",
+            "opt_2": "Thinning at the temples",
+            "title_2": "Temples",
+            "note_2": "<p>Work the serum into both temples nightly. Judge it at day 90 — that's the point the guarantee covers.</p>",
+            "opt_3": "A thinner ponytail",
+            "title_3": "Thinner ponytail",
+            "note_3": "<p>Overall density takes the full 90 days. Less shedding in the first 2 weeks is the early sign it's working.</p>",
+            "opt_4": "More hair in the shower or on the pillow",
+            "title_4": "Shedding",
+            "note_4": "<p>Shedding is usually the first thing to change — most customers notice less hair in the shower within 2 weeks of nightly use.</p>"
+          }
+        },
+        "q2": {
+          "type": "question",
+          "settings": {
+            "eyebrow": "Stage",
+            "question": "Which best describes you?",
+            "tag": "Stage match",
+            "opt_1": "Under 35",
+            "title_1": "Under 35",
+            "note_1": "<p>Starting early means you're judging results against thinning that hasn't progressed far. Apply nightly and check in at 2 weeks, 6–8 weeks and day 90.</p>",
+            "opt_2": "Perimenopause",
+            "title_2": "Perimenopause",
+            "note_2": "<p>Shedding during perimenopause is one of the most common patterns we hear about. The routine is the same: 1–2 ml nightly, massaged into the scalp.</p>",
+            "opt_3": "Post-menopause",
+            "title_3": "Post-menopause",
+            "note_3": "<p>Give it the full 90 days before judging. If you're not seeing fuller hair by then, email us for a full refund.</p>",
+            "opt_4": "After pregnancy",
+            "title_4": "After pregnancy",
+            "note_4": "<p>Post-partum shedding is common. If you're breastfeeding, check with your doctor or pharmacist before starting any new scalp product.</p>"
+          }
+        },
+        "q3": {
+          "type": "question",
+          "settings": {
+            "eyebrow": "Timing",
+            "question": "When did you first notice it?",
+            "tag": "Timing match",
+            "opt_1": "In the last 6 months",
+            "title_1": "Recent",
+            "note_1": "<p>Start nightly now and judge it at day 90. Less shedding in 2 weeks is the first checkpoint.</p>",
+            "opt_2": "6–12 months ago",
+            "title_2": "This year",
+            "note_2": "<p>Consistency matters more than anything: nightly, on a dry scalp, no rinse. Judge it at day 90.</p>",
+            "opt_3": "1–3 years ago",
+            "title_3": "A few years",
+            "note_3": "<p>Take a photo of your part before you start so you can compare at weeks 6–8 and day 90.</p>",
+            "opt_4": "Longer than that",
+            "title_4": "Long-standing",
+            "note_4": "<p>Take before photos and give it the full 90 days. If it hasn't helped, the guarantee refunds you in full — no return needed.</p>"
+          }
+        },
+        "q4": {
+          "type": "question",
+          "settings": {
+            "eyebrow": "History",
+            "question": "What have you tried so far?",
+            "tag": "Routine match",
+            "opt_1": "Nothing yet",
+            "title_1": "First try",
+            "note_1": "<p>Good place to start: one serum, 60 seconds a night. No prescription, no appointments.</p>",
+            "opt_2": "Supplements",
+            "title_2": "Supplements",
+            "note_2": "<p>The serum is topical — apply it to the scalp rather than taking anything. You can keep your usual routine alongside it.</p>",
+            "opt_3": "Minoxidil or a prescription",
+            "title_3": "Prescription",
+            "note_3": "<p>If you're on prescription medication, check with your doctor before adding a new scalp product. Apply the serum to a clean, dry scalp at night.</p>",
+            "opt_4": "Shampoos and oils",
+            "title_4": "Shampoos & oils",
+            "note_4": "<p>Keep your shampoo and conditioner. Apply the serum at night to a dry or towel-dried scalp so it absorbs without interference.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "q1",
+        "q2",
+        "q3",
+        "q4"
+      ],
+      "settings": {
+        "pill": "Find your match",
+        "heading": "Find Out Which Pattern You're In",
+        "subheading": "<p>Answer four quick questions and we'll show you what to expect from the serum for your pattern.</p>",
+        "step_label": "Question",
+        "of_label": "of",
+        "back_label": "Back",
+        "results_pill": "Your match",
+        "results_heading": "Here's what fits",
+        "results_em": "your pattern",
+        "results_intro": "",
+        "results_bottom": "<p><strong>Whatever your pattern, the routine is the same:</strong> 1–2 ml massaged into the scalp nightly. Less shedding in 2 weeks, fuller in 90 — or your money back.</p>",
+        "cta_label": "Choose My Plan",
+        "cta_link": "#plan-selector",
+        "trust_1": "Free Shipping",
+        "trust_2": "90-Day Money-Back Guarantee",
+        "restart_label": "Start over",
+        "discount_code": "",
+        "claim_eyebrow": "Your reward",
+        "claim_heading": "Claim your discount",
+        "claim_sub": "Drop your email and we'll show your code.",
+        "claim_placeholder": "Your email",
+        "claim_button": "Show my code",
+        "claim_trust": "No spam. Unsubscribe anytime.",
+        "applied_label": "unlocked",
+        "applied_sub": "Use this code at checkout.",
+        "show_float_tab": true,
+        "float_icon": "✨",
+        "float_label": "Find your match",
+        "float_claimed_label": "Discount unlocked"
+      }
+    },
+    "lp_research": {
+      "type": "lp-research",
+      "blocks": {
+        "i1": {
+          "type": "item",
+          "settings": {
+            "text": "Cold-pressed pumpkin seed oil"
+          }
+        },
+        "i2": {
+          "type": "item",
+          "settings": {
+            "text": "1% caffeine"
+          }
+        },
+        "i3": {
+          "type": "item",
+          "settings": {
+            "text": "Clinically studied ingredient"
+          }
+        }
+      },
+      "block_order": [
+        "i1",
+        "i2",
+        "i3"
+      ],
+      "settings": {
+        "label": "What's in the serum",
+        "grayscale": true
+      }
+    },
+    "lp_hero_2": {
+      "type": "lp-product-hero",
+      "blocks": {
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "rating": "4.8",
+            "count": "43 reviews",
+            "link": "#reviews"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "title": "",
+            "second_line": "Less shedding in 2 weeks. Fuller in 90."
+          }
+        },
+        "desc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cold-pressed pumpkin seed oil and <strong>1% caffeine</strong> in a lightweight, non-greasy scalp serum. Apply 1–2 ml to the scalp nightly, massage in and leave on overnight. It absorbs in minutes.</p>"
+          }
+        },
+        "bullet_1": {
+          "type": "bullet",
+          "settings": {
+            "lead": "Less shedding",
+            "text": "in the first 2 weeks"
+          }
+        },
+        "bullet_2": {
+          "type": "bullet",
+          "settings": {
+            "lead": "Fine new hairs",
+            "text": "at the part and temples by weeks 6–8"
+          }
+        },
+        "bullet_3": {
+          "type": "bullet",
+          "settings": {
+            "lead": "Visibly fuller",
+            "text": "by day 90 — or your money back"
+          }
+        },
+        "plan_monthly": {
+          "type": "plan_card",
+          "settings": {
+            "variant_index": 1,
+            "plan_match": "every month",
+            "banner": "Ships every month",
+            "title": "Monthly",
+            "subtitle": "1 bottle delivered every month",
+            "pills": "1× Serum",
+            "style": "default",
+            "selected": true
+          }
+        },
+        "plan_quarterly": {
+          "type": "plan_card",
+          "settings": {
+            "variant_index": 2,
+            "plan_match": "every 3 months",
+            "banner": "Ships every 3 months",
+            "title": "Every 3 Months",
+            "subtitle": "1 bottle delivered every 3 months",
+            "pills": "1× Serum",
+            "style": "popular",
+            "selected": false
+          }
+        },
+        "plan_biannual": {
+          "type": "plan_card",
+          "settings": {
+            "variant_index": 3,
+            "plan_match": "every 6 months",
+            "banner": "Ships every 6 months",
+            "title": "Every 6 Months",
+            "subtitle": "1 bottle delivered every 6 months",
+            "pills": "1× Serum",
+            "style": "best",
+            "selected": false
+          }
+        },
+        "pill_shipping": {
+          "type": "trust_pill",
+          "settings": {
+            "icon": "truck",
+            "text": "Free Shipping"
+          }
+        },
+        "pill_delivery": {
+          "type": "trust_pill",
+          "settings": {
+            "icon": "clock",
+            "text": "3–7 Day Delivery"
+          }
+        },
+        "pill_guarantee": {
+          "type": "trust_pill",
+          "settings": {
+            "icon": "shield",
+            "text": "90-Day Guarantee"
+          }
+        },
+        "pill_studied": {
+          "type": "trust_pill",
+          "settings": {
+            "icon": "leaf",
+            "text": "Clinically Studied Ingredient"
+          }
+        },
+        "acc_what": {
+          "type": "accordion",
+          "settings": {
+            "title": "What is it?",
+            "content": "<p>A lightweight scalp serum with cold-pressed pumpkin seed oil and 1% caffeine. Pumpkin seed oil is a clinically studied ingredient that helps support the follicle against DHT, the hormone linked to thinning. Caffeine absorbs in minutes and supports the natural growth cycle.</p><p>Non-greasy, no residue, no prescription. Made for women noticing a widening part, a thinner ponytail or more hair in the shower, and suitable for men too.</p>",
+            "open": false
+          }
+        },
+        "acc_apply": {
+          "type": "accordion",
+          "settings": {
+            "title": "How do I apply it?",
+            "content": "<p>Apply 1–2 ml to a dry or towel-dried scalp each night, focusing on the part and temples. Massage for 3–5 minutes, leave on overnight, don't rinse. <strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller. Apply it nightly for the full 90 days.</p>",
+            "open": false
+          }
+        },
+        "acc_shipping": {
+          "type": "accordion",
+          "settings": {
+            "title": "Shipping & guarantee",
+            "content": "<p><strong>Free shipping</strong> on every order. Delivery takes 3–7 business days.</p><p>90-Day Money-Back Guarantee — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
+            "open": false
+          }
+        },
+        "acc_work": {
+          "type": "accordion",
+          "settings": {
+            "title": "Does it really work?",
+            "content": "<p>Pumpkin seed oil is a clinically studied ingredient for thinning hair. Most customers notice less shedding in the first 2 weeks and visibly fuller hair by day 90 with nightly use, and every order is covered by our 90-day money-back guarantee.</p>",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "rating",
+        "title",
+        "desc",
+        "bullet_1",
+        "bullet_2",
+        "bullet_3",
+        "plan_monthly",
+        "plan_quarterly",
+        "plan_biannual",
+        "pill_shipping",
+        "pill_delivery",
+        "pill_guarantee",
+        "pill_studied",
+        "acc_what",
+        "acc_apply",
+        "acc_shipping",
+        "acc_work"
+      ],
+      "settings": {
+        "gallery_left": true,
+        "show_thumbnails": true,
+        "image_ratio": "1/1",
+        "max_width": 1200,
+        "background_color": "#ffffff",
+        "plan_mode": "app",
+        "bundle_heading": "",
+        "show_autoship": true,
+        "autoship_default": true,
+        "one_time_single_card": true,
+        "autoship_label": "Subscribe & Save + Free Shipping",
+        "frequency_heading": "Subscription details",
+        "subscription_notes": "Free shipping on every order\nCancel or pause anytime",
+        "offer_line": "",
+        "cta_label": "Add to cart",
+        "cta_sublabel": "90-Day Money-Back Guarantee",
+        "promise_text": "<p>Your order is protected by a <strong>90-Day Money-Back Guarantee</strong> — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
+        "expert_more_label": "Know More",
+        "cta_style": "ink",
+        "cta_radius": 10,
+        "anchor_id": "plan-selector-2"
+      }
+    },
+    "lp_footer": {
+      "type": "lp-footer",
+      "settings": {
+        "logo_height": 32,
+        "invert_logo": true,
+        "tagline": "A lightweight scalp serum for thinning hair.",
+        "rights": "All rights reserved."
+      }
     }
   },
   "order": [
     "lp_announce",
     "lp_hero",
     "lp_logos",
+    "lp_quiz",
     "lp_guarantee",
     "lp_routine",
     "lp_trust_1",
     "lp_community",
     "reviews_anchor",
     "1787461899b7b1b6f7",
+    "lp_research",
     "lp_study",
     "lp_results",
     "lp_trust_2",
     "lp_comparison",
+    "lp_hero_2",
     "lp_faq",
-    "lp_founder"
+    "lp_founder",
+    "lp_footer"
   ]
 }
