@@ -150,12 +150,24 @@
         {%- endif %}
 
         {% unless hide_delivery_date %}
-          {% comment %}
-            Server-rendered business-day range from theme settings
-            (delivery_min_days / delivery_max_days). No JS, so it never renders empty.
-          {% endcomment %}
-          <span class="free-shipping-date">
-            {%- render 'delivery-estimate' -%}
+          {% assign custom_date_format = settings.free_shipping_notice_date_format | default: '' %}
+          {% assign today_timestamp = 'now' | date: '%s' | plus: 0 %}
+          {% assign offset_days = days_ahead | default: 2 %}
+          {% assign offset_seconds = offset_days | times: 86400 %}
+          {% assign delivery_timestamp = today_timestamp | plus: offset_seconds %}
+
+          <span
+            class="free-shipping-date"
+            {% if custom_date_format == '' %}
+              data-timestamp="{{ delivery_timestamp }}"
+              data-locale="{{ request.locale.iso_code }}"
+            {% endif %}
+          >
+            {%- if custom_date_format != '' -%}
+              {{- delivery_timestamp | date: custom_date_format -}}
+            {%- else -%}
+              {% comment %} Placeholder - JS will format this based on locale {% endcomment %}
+            {%- endif -%}
           </span>
         {% endunless %}
 
@@ -167,3 +179,24 @@
   </div>
 </div>
 
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const dateElement = document.querySelector('.free-shipping-date[data-timestamp]'); // Target only elements needing JS formatting
+    if (dateElement) {
+      try {
+        const timestamp = parseInt(dateElement.dataset.timestamp, 10) * 1000; // Convert Liquid seconds to JS milliseconds
+        const locale = dateElement.dataset.locale || 'en'; // Default to English if locale somehow missing
+        const jsDate = new Date(timestamp);
+
+        // Define formatting options (you could make these settings too, but starting simple)
+        const options = { month: 'long', day: 'numeric' };
+
+        const formatter = new Intl.DateTimeFormat(locale, options);
+        dateElement.textContent = formatter.format(jsDate);
+      } catch (error) {
+        console.error('Error formatting free shipping notice date:', error);
+        // Optionally display a fallback or leave the placeholder
+      }
+    }
+  });
+</script>

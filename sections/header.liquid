@@ -715,22 +715,7 @@
       {%- endif -%}
     {%- endif -%}
 
-    {%- liquid
-      assign hdr_current_template = template.name
-      if template.suffix != blank
-        assign hdr_current_template = template.name | append: '.' | append: template.suffix
-      endif
-      assign hdr_hide_icons = false
-      assign hdr_hidden_list = section.settings.hide_icons_on_templates | default: '' | split: ','
-      for hdr_item in hdr_hidden_list
-        assign hdr_item_clean = hdr_item | strip | downcase
-        if hdr_item_clean != blank and hdr_item_clean == hdr_current_template
-          assign hdr_hide_icons = true
-        endif
-      endfor
-    -%}
-    {%- if hdr_hide_icons -%}<style>.header__icons { display: none !important; }</style>{%- endif -%}
-    <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}{% if hdr_hide_icons %} header__icons--hidden{% endif %}">
+    <div class="header__icons{% if section.settings.enable_country_selector or section.settings.enable_language_selector %} header__icons--localization header-localization{% endif %}">
       <div class="desktop-localization-wrapper">
         {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
           <localization-form class="small-hide medium-hide" data-prevent-hide>
@@ -1012,12 +997,6 @@
   "class": "section-header",
   "max_blocks": 3,
   "settings": [
-    {
-      "type": "text",
-      "id": "hide_icons_on_templates",
-      "label": "Hide account / cart icons on templates",
-      "info": "Comma-separated template names, e.g. product.serum"
-    },
     {
       "type": "select",
       "id": "logo_position",

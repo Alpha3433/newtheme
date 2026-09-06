@@ -224,18 +224,3 @@ function scrollToSection(btn, event) {
   }
 }
 window.scrollToSection = scrollToSection;
-
-function scrollToPlanSelector(event) {
-  if (event) event.preventDefault();
-  var target =
-    document.getElementById('plan-selector') ||
-    document.querySelector('.shop-add-to-cart-wrapper') ||
-    document.querySelector('form[action*="/cart/add"]');
-  if (!target) return;
-  var headerWrapper = document.querySelector('.header-wrapper');
-  var headerOffset = headerWrapper ? headerWrapper.offsetHeight : 0;
-  var top = target.getBoundingClientRect().top + window.pageYOffset - headerOffset - 16;
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  window.scrollTo({ top: top < 0 ? 0 : top, behavior: reduce ? 'auto' : 'smooth' });
-}
-window.scrollToPlanSelector = scrollToPlanSelector;
