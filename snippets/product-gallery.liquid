@@ -49,8 +49,9 @@
                       src="{{ media | img_url: '200x', scale: 2 }}"
                       alt="{{ media.alt | escape }}"
                       loading="lazy"
+                      decoding="async"
                       draggable="false"
-                      data-media-id="{{ media.id }}" width="" height=""
+                      data-media-id="{{ media.id }}" width="200" height="200"
                     >
 
                     {% if media.media_type == 'video' or media.media_type == 'external_video' %}
@@ -154,6 +155,13 @@
             {% case media.media_type %}
               {% when 'image' %}
                 <div class="shop-image-zoom-wrapper {% if enable_image_zoom %}image-zoom-enabled{% endif %}{% if forloop.first and novariant_matches %} active{% endif %}" data-media-id="{{ media.id }}" data-image-gallery-type="product">
+                  {%- liquid
+                    assign main_w = 530
+                    assign main_h = 530
+                    if media.preview_image.width > 0 and media.preview_image.height > 0
+                      assign main_h = main_w | times: media.preview_image.height | divided_by: media.preview_image.width
+                    endif
+                  -%}
                   <img
                     class="shop-main-image {% if forloop.first and novariant_matches %}active{% endif %}"
                     src="{{ media | img_url: '530x' }}"
@@ -164,12 +172,12 @@
                       {{ media | img_url: '530x' }} 1x,
                       {{ media | img_url: '1060x' }} 2x"
                     alt="{{ media.alt | escape }}"
-                    {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+                    {% if forloop.first %}loading="eager" fetchpriority="high" decoding="sync"{% else %}loading="lazy" decoding="async" fetchpriority="low"{% endif %}
                     data-src="{{ media | img_url: '530x' }}"
                     data-zoom-src="{{ media | img_url: '1200x' }}"
                     data-media-id="{{ media.id }}"
                     data-image-gallery-type="product"
-                    width="" height=""
+                    width="{{ main_w }}" height="{{ main_h }}"
                   >
                   {% if enable_image_zoom %}
                     <div class="image-zoom-overlay"></div>
@@ -190,17 +198,24 @@
                       assign show_controls = false
                     endif
                     
+                    comment
+                      Poster-first: the video element always renders with its poster and
+                      preload="none", so no video bytes download during initial page load.
+                      When autoplay is enabled, product-gallery.js (handleVideoAutoplay)
+                      calls play() on the active slide; the element stays muted/inline/loop
+                      so that programmatic play is allowed on mobile.
+                    endcomment
                     if enable_autoplay_video
                       if enable_video_loop
-                        echo media | video_tag: controls: show_controls, autoplay: true, muted: true, playsinline: true, loop: true, class: 'shop-video'
+                        echo media | video_tag: controls: show_controls, autoplay: false, muted: true, playsinline: true, loop: true, preload: 'none', class: 'shop-video'
                       else
-                        echo media | video_tag: controls: show_controls, autoplay: true, muted: true, playsinline: true, class: 'shop-video'
+                        echo media | video_tag: controls: show_controls, autoplay: false, muted: true, playsinline: true, preload: 'none', class: 'shop-video'
                       endif
                     else
                       if enable_video_loop
-                        echo media | video_tag: controls: show_controls, loop: true, class: 'shop-video'
+                        echo media | video_tag: controls: show_controls, loop: true, preload: 'none', class: 'shop-video'
                       else
-                        echo media | video_tag: controls: show_controls, class: 'shop-video'
+                        echo media | video_tag: controls: show_controls, preload: 'none', class: 'shop-video'
                       endif
                     endif
                   %}
@@ -255,7 +270,7 @@
                   data-position="{{ forloop.index0 }}"
                   data-image-gallery-type="product"
                 >
-                  <img src="{{ media | img_url: '530x' }}" alt="{{ media.alt | escape }}" loading="lazy" width="" height="">
+                  <img src="{{ media | img_url: '530x' }}" alt="{{ media.alt | escape }}" loading="lazy" decoding="async" width="530" height="530">
                 </div>
             {% endcase %}
           {% endfor %}
@@ -358,8 +373,9 @@
                     src="{{ media | img_url: '200x', scale: 2 }}"
                     alt="{{ media.alt | escape }}"
                     loading="lazy"
+                    decoding="async"
                     draggable="false"
-                    data-media-id="{{ media.id }}" width="" height=""
+                    data-media-id="{{ media.id }}" width="200" height="200"
                   >
 
                   {% if media.media_type == 'video' or media.media_type == 'external_video' %}

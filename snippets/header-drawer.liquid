@@ -209,9 +209,15 @@
                 -%}
               </a>
             {%- endif -%}
-            {%- if localization.available_countries or localization.available_languages -%}
+            {%- comment -%}
+              Only render the mobile country/language pickers when the header setting
+              enables them. Previously this rendered every Shopify Markets country
+              (flag image + checkmark SVG each) on every page load, even with the
+              header selector switched off.
+            {%- endcomment -%}
+            {%- if section.settings.enable_country_selector or section.settings.enable_language_selector -%}
               <div class="menu-drawer__localization header-localization">
-                {%- if localization.available_countries and localization.available_countries.size > 1 -%}
+                {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
                   <localization-form>
                     {%- form 'localization', id: 'HeaderCountryMobileForm', class: 'localization-form' -%}
                       <div>
@@ -224,7 +230,7 @@
                   </localization-form>
                 {% endif %}
 
-                {%- if localization.available_languages and localization.available_languages.size > 1 -%}
+                {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
                   <localization-form>
                     {%- form 'localization', id: 'HeaderLanguageMobileForm', class: 'localization-form' -%}
                       <div>

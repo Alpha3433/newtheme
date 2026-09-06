@@ -1,6 +1,25 @@
 {{ 'shop-product-details.css' | asset_url | stylesheet_tag }}
 {{ 'variant-selector.css' | asset_url | stylesheet_tag }}
 
+{%- liquid
+  comment
+    LCP preload for the first gallery image. The URLs must be byte-identical to the
+    src/srcset written by snippets/product-gallery.liquid (img_url '530x' / '1060x'),
+    otherwise the browser would download the image twice.
+  endcomment
+  assign lcp_product = section.settings.current_product | default: product
+  assign lcp_media = lcp_product.media | where: 'media_type', 'image' | first
+-%}
+{%- if section.settings.show_product_gallery and lcp_media != blank -%}
+  <link
+    rel="preload"
+    as="image"
+    href="{{ lcp_media | img_url: '530x' }}"
+    imagesrcset="{{ lcp_media | img_url: '530x' }} 1x, {{ lcp_media | img_url: '1060x' }} 2x"
+    fetchpriority="high"
+  >
+{%- endif -%}
+
 {% liquid
   assign show_price_in_button = section.settings.show_price_in_button
 %}
