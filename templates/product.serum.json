@@ -306,7 +306,7 @@
         "shipping_notice_ycmz4B": {
           "type": "shipping_notice",
           "settings": {
-            "notice_text_before": "Order Today And Receive By",
+            "notice_text_before": "Order today, arrives",
             "notice_text_after": "",
             "days_ahead": 4,
             "show_suffix": true,
@@ -539,6 +539,26 @@
             "margin_top": 0,
             "margin_bottom": 0
           }
+        },
+        "bogo_offer_line": {
+          "type": "custom_text",
+          "settings": {
+            "text": "<p><strong>Buy 1, Get 1 Free</strong> on the 2-month plan</p>",
+            "show_description": false,
+            "show_accent_text": false,
+            "show_icon": false,
+            "show_after_icon": false,
+            "text_align": "left",
+            "font_size": 13,
+            "text_color": "#282828",
+            "margin_top": 0,
+            "margin_bottom": 6,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "use_container": false,
+            "show_border": false,
+            "show_divider": false
+          }
         }
       },
       "block_order": [
@@ -552,6 +572,7 @@
         "benefits_grid_TYPpNT",
         "shipping_notice_ycmz4B",
         "quantity_selector_qJAYDN",
+        "bogo_offer_line",
         "add_to_cart_7nhY9K",
         "guarantee_badges_HAWQYD",
         "divider_DttfTp",

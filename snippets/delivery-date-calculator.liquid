@@ -53,7 +53,8 @@
   {% assign date_format_string = '%A, %b %-d' %}
 {% endif %}
 
-{% assign formatted_delivery_date = delivery_date_seconds | date: date_format_string %}
+{% capture formatted_delivery_date %}{% render 'delivery-estimate' %}{% endcapture %}
+{% assign formatted_delivery_date = formatted_delivery_date | strip %}
 
 {% if output_format == 'text_only' %}
   {{ formatted_delivery_date }}

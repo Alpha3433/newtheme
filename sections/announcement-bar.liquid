@@ -1,3 +1,20 @@
+{%- liquid
+  # Hide this banner (markup and countdown JS) on the templates listed in the
+  # "Hide on templates" setting, e.g. "product.serum" or "index".
+  assign ab_current_template = template.name
+  if template.suffix != blank
+    assign ab_current_template = template.name | append: '.' | append: template.suffix
+  endif
+  assign ab_hide = false
+  assign ab_hidden_list = section.settings.hide_on_templates | default: '' | split: ','
+  for ab_item in ab_hidden_list
+    assign ab_item_clean = ab_item | strip | downcase
+    if ab_item_clean != blank and ab_item_clean == ab_current_template
+      assign ab_hide = true
+    endif
+  endfor
+-%}
+{%- unless ab_hide -%}
 {{ 'announcement-bar.css' | asset_url | stylesheet_tag }}
 
 <style>
@@ -123,6 +140,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+{%- endunless -%}
 
 {% schema %}
 {
@@ -135,6 +153,12 @@ document.addEventListener('DOMContentLoaded', function() {
       "label": "Use Theme Colors",
       "default": true,
       "info": "Apply the global theme colors to this section"
+    },
+    {
+      "type": "text",
+      "id": "hide_on_templates",
+      "label": "Hide on templates",
+      "info": "Comma-separated template names where this banner and its timer must not render, e.g. product.serum, index"
     },
     {
       "type": "checkbox",

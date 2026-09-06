@@ -40,7 +40,8 @@
         "gradient_color_1": "#cc6d00",
         "gradient_color_2": "#ff0000",
         "gradient_color_3": "#fd7a00",
-        "gradient_color_4": "#ff0000"
+        "gradient_color_4": "#ff0000",
+        "hide_on_templates": "product.serum"
       }
     },
     "header": {
@@ -82,18 +83,18 @@
       "settings": {
         "trigger_behavior": "atc_button",
         "scroll_percentage_trigger": 25,
-        "select_button_behavior": "atc",
+        "select_button_behavior": "scroll_to_plan_selector",
         "show_section_numbers": false,
         "scroll_offset": 100,
         "scroll_to_percentage": 50,
         "button_link": "",
         "fallback_title": "",
-        "button_text": "CLAIM LIMITED OFFER",
+        "button_text": "Add to cart",
         "rating_text": "",
         "satc_toggle_variant": false,
         "turn_off_delivery_date": false,
         "delivery_days": 5,
-        "delivery_text_prefix": "Arrives by",
+        "delivery_text_prefix": "Arrives",
         "delivery_date_display_format": "weekday_month_day",
         "use_theme_colors": true,
         "background_color": "#ffffff",

@@ -1,0 +1,52 @@
+{%- comment -%}
+  Delivery estimate
+
+  Outputs a server-rendered delivery date range such as "Tue 9 Sep – Fri 12 Sep",
+  computed in business days (Saturday and Sunday are skipped) from today.
+
+  Parameters (all optional):
+  - min_days: earliest delivery in business days (default: settings.delivery_min_days, then 3)
+  - max_days: latest delivery in business days (default: settings.delivery_max_days, then 7)
+  - date_format: locale key under date_formats (default: 'delivery_day' -> "%a %-d %b")
+  - separator: text between the two dates (default: " – ")
+
+  No JavaScript involved, so the text is present in the initial HTML and is
+  localised by the storefront locale via the date_formats translation key.
+{%- endcomment -%}
+{%- liquid
+  assign min_days = min_days | default: settings.delivery_min_days | default: 3 | plus: 0
+  assign max_days = max_days | default: settings.delivery_max_days | default: 7 | plus: 0
+  if min_days < 1
+    assign min_days = 1
+  endif
+  if max_days < min_days
+    assign max_days = min_days
+  endif
+  assign date_format = date_format | default: 'delivery_day'
+  assign separator = separator | default: ' – '
+
+  assign cursor = 'now' | date: '%s' | plus: 0
+  assign start_ts = cursor
+  assign end_ts = cursor
+  assign counted = 0
+
+  for i in (1..60)
+    assign cursor = cursor | plus: 86400
+    assign weekday = cursor | date: '%u' | plus: 0
+    if weekday > 5
+      continue
+    endif
+    assign counted = counted | plus: 1
+    if counted == min_days
+      assign start_ts = cursor
+    endif
+    if counted == max_days
+      assign end_ts = cursor
+      break
+    endif
+  endfor
+
+  assign start_text = start_ts | date: format: date_format
+  assign end_text = end_ts | date: format: date_format
+-%}
+{%- if start_text == end_text -%}{{ start_text }}{%- else -%}{{ start_text }}{{ separator }}{{ end_text }}{%- endif -%}
