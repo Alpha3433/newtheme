@@ -812,6 +812,52 @@
           </div>
           <p class="gb-totals-total-value" style="display:none;">{{ cart.total_price }}</p>
         </div>
+        {%- comment -%}
+          Trust block: aggregate rating + one customer quote + shipping line, directly
+          above the checkout button. No external calls; copy comes from theme
+          settings (Theme settings > Cart > Cart drawer trust block). When the first
+          line item's product carries the standard reviews.rating / reviews.rating_count
+          metafields (Trustoo syncs to these), those win over the settings.
+        {%- endcomment -%}
+        {%- if settings.cart_show_trust_block and cart != empty -%}
+          {%- liquid
+            assign trust_rating = settings.cart_review_rating | default: '4.8'
+            assign trust_count = settings.cart_review_count | default: '43'
+            assign trust_product = cart.items.first.product
+            if trust_product.metafields.reviews.rating.value.rating != blank
+              assign trust_rating = trust_product.metafields.reviews.rating.value.rating | round: 1
+            endif
+            if trust_product.metafields.reviews.rating_count.value != blank
+              assign trust_count = trust_product.metafields.reviews.rating_count.value
+            endif
+            assign trust_quote = settings.cart_review_quote | strip
+            assign trust_author = settings.cart_review_author | strip
+            assign trust_ship = settings.cart_trust_shipping_text | strip
+          -%}
+          <div class="cart-drawer-trust" data-cart-drawer-trust>
+            <div class="cart-drawer-trust__row">
+              <span class="cart-drawer-trust__rating">
+                <span class="cart-drawer-trust__stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                <span class="visually-hidden">Rated</span>
+                <strong>{{ trust_rating }}</strong>
+                <span class="cart-drawer-trust__sep" aria-hidden="true">&middot;</span>
+                <span class="cart-drawer-trust__count">{{ trust_count }} reviews</span>
+              </span>
+              {%- if trust_ship != blank -%}
+                <span class="cart-drawer-trust__ship">
+                  <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                  {{ trust_ship | escape }}
+                </span>
+              {%- endif -%}
+            </div>
+            {%- if trust_quote != blank -%}
+              <p class="cart-drawer-trust__quote">
+                &ldquo;{{ trust_quote | escape }}&rdquo;
+                {%- if trust_author != blank %} <span class="cart-drawer-trust__author">&ndash; {{ trust_author | escape }}</span>{% endif -%}
+              </p>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
         <div class="cart__ctas" {{ block.shopify_attributes }}>
           <button
             type="submit"
