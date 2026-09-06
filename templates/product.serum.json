@@ -308,7 +308,7 @@
           "settings": {
             "notice_text_before": "Order Today And Receive By",
             "notice_text_after": "",
-            "days_ahead": 4,
+            "days_ahead": 5,
             "show_suffix": true,
             "custom_shipping_text": "#333030",
             "custom_date_color": "#333030",
@@ -370,7 +370,7 @@
           "settings": {
             "use_theme_colors": true,
             "badge_1_show": true,
-            "badge_1_text": "90-Day Money-Back Guarantee",
+            "badge_1_text": "30-Day Money-Back Guarantee",
             "badge_1_icon": "custom",
             "badge_1_dot_color": "#4caf50",
             "badge_1_custom_icon": "",
@@ -410,7 +410,7 @@
           "settings": {
             "use_theme_colors": true,
             "title_text": "Less than 1%",
-            "description_text": "of customers claim our 90-Day Money-Back Guarantee",
+            "description_text": "of customers claim our 30-Day Money-Back Guarantee",
             "badge_svg": "",
             "use_svg_badge": false,
             "badge_size": 90,
@@ -462,9 +462,9 @@
             "question_3": "Ingredients",
             "answer_3": "<p>Cold-pressed virgin pumpkin seed oil and 1% caffeine in a lightweight, fast-absorbing base. No fillers or artificial additives. The full ingredient list is on the label.</p>",
             "question_4": "Does it really work?",
-            "answer_4": "<p>Pumpkin seed oil is a clinically studied ingredient for thinning hair. Most customers notice less shedding in the first 2 weeks and visibly fuller hair by day 90 with nightly use, and every order is covered by our 90-day money-back guarantee.</p>",
-            "question_5": "What's the 90-day guarantee?",
-            "answer_5": "<p>90-Day Money-Back Guarantee — no return needed. Apply it nightly for 90 days. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
+            "answer_4": "<p>Pumpkin seed oil is a clinically studied ingredient for thinning hair. Most customers notice less shedding in the first 2 weeks and visibly fuller hair by day 90 with nightly use, and every order is covered by our 30-day risk-free trial.</p>",
+            "question_5": "What's the 30-day risk-free trial?",
+            "answer_5": "<p>30-Day Risk-Free Trial. Apply it nightly. If you don't see noticeable improvement within 30 days — most customers notice less shedding in the first 2 weeks — return your order for a full refund. No questions asked.</p>",
             "question_6": "",
             "answer_6": "",
             "question_7": "",
@@ -1069,7 +1069,7 @@
           "settings": {
             "percentage": 89,
             "title": "Reduction in Hair Shedding",
-            "description": "3 in 4 customers report noticeably less shedding within the first 2 weeks."
+            "description": "89% of customers report noticeably less shedding within the first 2 weeks."
           }
         },
         "statistic_k4mcQt": {
@@ -1077,7 +1077,7 @@
           "settings": {
             "percentage": 82,
             "title": "Saw Fine New Hairs",
-            "description": "Over 4 in 5 customers noticed fine new hairs at the part and temples within 90 days of nightly use."
+            "description": "82% of customers noticed fine new hairs at the part and temples within 90 days of nightly use."
           }
         },
         "statistic_bLf9xr": {
@@ -1085,7 +1085,7 @@
           "settings": {
             "percentage": 85,
             "title": "Reported Thicker Hair",
-            "description": "More than two thirds of customers said their hair looked and felt fuller after 90 days of nightly use."
+            "description": "85% of customers said their hair looked and felt fuller after 90 days of nightly use."
           }
         },
         "statistic_m9tA4T": {
@@ -1457,7 +1457,7 @@
           "type": "benefit",
           "settings": {
             "title": "Fuller-Looking Hair By Day 90",
-            "description": "With nightly use for 90 days, your part looks fuller and shedding stays low. If not, our 90-day money-back guarantee has you covered.",
+            "description": "With nightly use for 90 days, your part looks fuller and shedding stays low. Every order starts with a 30-day risk-free trial.",
             "preset_icon": "check",
             "use_custom_icon": true,
             "custom_icon_svg": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M14 62 Q40 54 66 62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <line x1=\"20\" y1=\"60\" x2=\"17\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"29\" y1=\"58\" x2=\"27\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"56\" x2=\"40\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"51\" y1=\"58\" x2=\"53\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"60\" y1=\"60\" x2=\"63\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
@@ -2222,7 +2222,7 @@
             "list_item_1_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_2": "No prescriptions",
             "list_item_2_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_3": "90-Day money-back guarantee, no return needed",
+            "list_item_3": "30-Day risk-free trial",
             "list_item_3_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_4": "Non-GMO, gluten-free, no additives",
             "list_item_4_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
@@ -3092,7 +3092,7 @@
         "icon_margin_bottom": 10,
         "accent_text": "RISK-FREE",
         "heading_text": "Guarantee",
-        "description_text": "We back every order with a 90-Day Money-Back Guarantee — no return needed. Apply the serum nightly for 90 days. If you're not seeing fuller hair by day 90, email us for a full refund. No forms. No hassle. No questions asked.",
+        "description_text": "We back every order with a 30-Day Risk-Free Trial. Apply the serum nightly. If you don't see noticeable improvement within 30 days, return your order for a full refund. No forms. No hassle. No questions asked.",
         "product_name": "Pumpkin Seed Oil Serum",
         "heading_text_color": "#ffffff",
         "description_color": "#ffffff",
@@ -3128,7 +3128,7 @@
         "button_padding_horizontal": 20,
         "benefit_1": "100% Satisfaction",
         "benefit_2": "Fast Shipping",
-        "benefit_3": "No Return Needed",
+        "benefit_3": "Easy Returns",
         "polaroid_size_desktop": 180,
         "polaroid_size_mobile": 100,
         "image_extension": 80,
