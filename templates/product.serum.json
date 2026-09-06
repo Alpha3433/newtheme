@@ -370,7 +370,7 @@
           "settings": {
             "use_theme_colors": true,
             "badge_1_show": true,
-            "badge_1_text": "30-Day Money-Back Guarantee",
+            "badge_1_text": "90-Day Money-Back Guarantee — no return needed",
             "badge_1_icon": "custom",
             "badge_1_dot_color": "#4caf50",
             "badge_1_custom_icon": "",
@@ -430,7 +430,8 @@
             "padding_right": 10,
             "padding_bottom": 3,
             "padding_left": 10
-          }
+          },
+          "disabled": true
         },
         "product_faq_4yXjYU": {
           "type": "product_faq",
@@ -463,8 +464,8 @@
             "answer_3": "",
             "question_4": "Does it really work?",
             "answer_4": "<p>Yes — pumpkin seed oil has been clinically studied for hair loss. A double-blind placebo-controlled trial found men taking pumpkin seed oil experienced significantly more hair growth than the placebo group over 24 weeks. Our formula delivers the same active compound at a therapeutic dose.</p>",
-            "question_5": "What's the 100% results guarantee?",
-            "answer_5": "<p>If you don't see visibly thicker, fuller hair within 30 days, we'll refund your order in full — no questions asked. Simply contact our support team and we'll process your refund immediately. Zero risk to you.</p>",
+            "question_5": "What's the 90-day guarantee?",
+            "answer_5": "<p>90-Day Money-Back Guarantee — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
             "question_6": "",
             "answer_6": "",
             "question_7": "",
@@ -2223,7 +2224,7 @@
             "list_item_1_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_2": "No prescriptions",
             "list_item_2_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_3": "30-Day money-back guarantee",
+            "list_item_3": "90-Day money-back guarantee",
             "list_item_3_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_4": "Lightweight, non-greasy, absorbs in minutes",
             "list_item_4_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
@@ -2909,7 +2910,7 @@
         "icon_margin_bottom": 10,
         "accent_text": "RISK-FREE",
         "heading_text": "Guarantee",
-        "description_text": "We're so confident you'll see thicker, fuller hair that we back every order with a full 30-day money-back guarantee. Take it every day for 30 days. If you don't see visible results, contact us for a complete refund. No forms. No hassle. No questions asked.",
+        "description_text": "We back every order with a 90-Day Money-Back Guarantee — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund. Apply it nightly for 90 days. No forms. No hassle. No questions asked.",
         "product_name": "Elaren Pumpkin Seed Oil Serum",
         "heading_text_color": "#ffffff",
         "description_color": "#ffffff",
@@ -2945,7 +2946,7 @@
         "button_padding_horizontal": 20,
         "benefit_1": "100% Satisfaction",
         "benefit_2": "Fast Shipping",
-        "benefit_3": "Easy Returns",
+        "benefit_3": "",
         "polaroid_size_desktop": 180,
         "polaroid_size_mobile": 100,
         "image_extension": 80,
