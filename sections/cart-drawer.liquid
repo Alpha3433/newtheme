@@ -813,7 +813,7 @@
           <p class="gb-totals-total-value" style="display:none;">{{ cart.total_price }}</p>
         </div>
         {%- comment -%}
-          Trust block: aggregate rating + one customer quote + shipping line, directly
+          Trust block: aggregate rating + shipping line, directly
           above the checkout button. No external calls; copy comes from theme
           settings (Theme settings > Cart > Cart drawer trust block). When the first
           line item's product carries the standard reviews.rating / reviews.rating_count
@@ -830,8 +830,6 @@
             if trust_product.metafields.reviews.rating_count.value != blank
               assign trust_count = trust_product.metafields.reviews.rating_count.value
             endif
-            assign trust_quote = settings.cart_review_quote | strip
-            assign trust_author = settings.cart_review_author | strip
             assign trust_ship = settings.cart_trust_shipping_text | strip
           -%}
           <div class="cart-drawer-trust" data-cart-drawer-trust>
@@ -850,12 +848,6 @@
                 </span>
               {%- endif -%}
             </div>
-            {%- if trust_quote != blank -%}
-              <p class="cart-drawer-trust__quote">
-                &ldquo;{{ trust_quote | escape }}&rdquo;
-                {%- if trust_author != blank %} <span class="cart-drawer-trust__author">&ndash; {{ trust_author | escape }}</span>{% endif -%}
-              </p>
-            {%- endif -%}
           </div>
         {%- endif -%}
         <div class="cart__ctas" {{ block.shopify_attributes }}>

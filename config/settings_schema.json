@@ -2355,19 +2355,6 @@
         "default": "43"
       },
       {
-        "type": "textarea",
-        "id": "cart_review_quote",
-        "label": "Customer quote",
-        "default": "Less shedding after two weeks and my part already looks fuller.",
-        "info": "Placeholder copy. Replace with a real Trustoo review. Kept to two lines on mobile."
-      },
-      {
-        "type": "text",
-        "id": "cart_review_author",
-        "label": "Reviewer first name",
-        "default": "Sarah"
-      },
-      {
         "type": "text",
         "id": "cart_trust_shipping_text",
         "label": "Shipping line",
