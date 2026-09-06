@@ -74,7 +74,7 @@
         "headline_promise": {
           "type": "custom_text",
           "settings": {
-            "text": "<p><strong>Less Shedding in 14 Days</strong></p>",
+            "text": "<p><strong>Less shedding in 2 weeks. Fuller in 90.</strong></p>",
             "show_description": false,
             "description": "<p>Add additional descriptive text here</p>",
             "description_font_size": 8,
@@ -149,7 +149,7 @@
         "custom_text_CtXXXE": {
           "type": "custom_text",
           "settings": {
-            "text": "<p>Our cold-pressed pumpkin seed oil and caffeine formula absorbs directly into the scalp, blocking DHT at the follicle level while reactivating dormant roots from the outside in. DHT shrinks your follicles from the inside. Caffeine reactivates them from the outside. </p>",
+            "text": "<p>Cold-pressed pumpkin seed oil and 1% caffeine in a lightweight, non-greasy scalp serum. Apply 1–2 ml to the scalp nightly, massage in and leave on overnight. It absorbs in minutes and helps support the follicle against DHT, the hormone linked to thinning.</p>",
             "show_description": false,
             "description": "<p>Add additional descriptive text here</p>",
             "description_font_size": 14,
@@ -211,7 +211,7 @@
         "custom_text_6gdF7K": {
           "type": "custom_text",
           "settings": {
-            "text": "<p><strong>After 6 weeks, visibly see:</strong></p>",
+            "text": "<p><strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller</p>",
             "show_description": false,
             "description": "<p>Add additional descriptive text here</p>",
             "description_font_size": 12,
@@ -273,22 +273,22 @@
         "benefits_grid_TYPpNT": {
           "type": "benefits_grid",
           "settings": {
-            "benefit_1_text": "Reduced Shedding",
+            "benefit_1_text": "Less Shedding",
             "benefit_1_use_image": true,
             "benefit_1_use_custom_icon": true,
             "benefit_1_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"32\" y1=\"18\" x2=\"30\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"16\" x2=\"40\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"48\" y1=\"18\" x2=\"50\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <path d=\"M30 52 L40 62 L50 52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
-            "benefit_2_text": "Thicker Hair Density",
+            "benefit_2_text": "Fuller-Looking Hair",
             "benefit_2_use_image": true,
             "benefit_2_use_custom_icon": true,
             "benefit_2_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M16 58 Q40 50 64 58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <line x1=\"22\" y1=\"56\" x2=\"19\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"31\" y1=\"54\" x2=\"29\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"52\" x2=\"40\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"49\" y1=\"54\" x2=\"51\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"58\" y1=\"56\" x2=\"61\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
-            "benefit_3_text": "Blocked DHT",
+            "benefit_3_text": "Fuller-Looking Part",
             "benefit_3_use_image": true,
             "benefit_3_use_custom_icon": true,
-            "benefit_3_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M40 12 L62 24 L62 44 Q62 60 40 68 Q18 60 18 44 L18 24 Z\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></path>\n  <line x1=\"22\" y1=\"58\" x2=\"58\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
-            "benefit_4_text": "Stronger Follicles",
+            "benefit_3_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M16 58 Q40 50 64 58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <line x1=\"22\" y1=\"56\" x2=\"19\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"31\" y1=\"54\" x2=\"29\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"52\" x2=\"40\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"49\" y1=\"54\" x2=\"51\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"58\" y1=\"56\" x2=\"61\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
+            "benefit_4_text": "Less Hair In The Shower",
             "benefit_4_use_image": true,
             "benefit_4_use_custom_icon": true,
-            "benefit_4_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <ellipse cx=\"40\" cy=\"62\" rx=\"10\" ry=\"8\" stroke=\"currentColor\" stroke-width=\"3\"></ellipse>\n  <path d=\"M40 54 Q36 40 38 18\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <path d=\"M34 58 Q24 42 22 24\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"></path>\n  <path d=\"M46 58 Q56 42 58 24\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"></path>\n</svg>",
+            "benefit_4_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"32\" y1=\"18\" x2=\"30\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"16\" x2=\"40\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"48\" y1=\"18\" x2=\"50\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <path d=\"M30 52 L40 62 L50 52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
             "icon_bg_color": "#ffffff",
             "enable_icon_circle_stroke": true,
             "icon_circle_stroke_color": "#282828",
@@ -370,7 +370,7 @@
           "settings": {
             "use_theme_colors": true,
             "badge_1_show": true,
-            "badge_1_text": "30-Day Money-Back Guarantee",
+            "badge_1_text": "90-Day Money-Back Guarantee",
             "badge_1_icon": "custom",
             "badge_1_dot_color": "#4caf50",
             "badge_1_custom_icon": "",
@@ -410,7 +410,7 @@
           "settings": {
             "use_theme_colors": true,
             "title_text": "Less than 1%",
-            "description_text": "of customers claim our Money Back Guarantee",
+            "description_text": "of customers claim our 90-Day Money-Back Guarantee",
             "badge_svg": "",
             "use_svg_badge": false,
             "badge_size": 90,
@@ -456,15 +456,15 @@
             "accordion_mode": true,
             "question_1": "What is it?",
             "use_product_description_for_question_1": false,
-            "answer_1": "<p>Our cold-pressed pumpkin seed oil and caffeine formula absorbs directly into the scalp, blocking DHT at the follicle level while reactivating dormant roots from the outside in. DHT shrinks your follicles from the inside. </p><p>Caffeine reactivates them from the outside. Together they address hair loss from both directions simultaneously</p>",
-            "question_2": "How do I take it?",
-            "answer_2": "<p>Apply 1-2ml directly to dry or towel-dried scalp focusing on thinning areas. Massage in circular motions for 3-5 minutes to stimulate circulation and maximise absorption. </p><p>Leave on and do not rinse. Use every evening before bed. Follicles repair while you sleep. Consistent daily use for 90 days minimum for visible results.</p>",
+            "answer_1": "<p>A lightweight scalp serum with cold-pressed pumpkin seed oil and 1% caffeine. Pumpkin seed oil is a clinically studied ingredient that helps support the follicle against DHT, the hormone linked to thinning. Caffeine absorbs in minutes and supports the natural growth cycle.</p><p>Non-greasy, no residue, no prescription. Made for women noticing a widening part, a thinner ponytail or more hair in the shower, and suitable for men too.</p>",
+            "question_2": "How do I apply it?",
+            "answer_2": "<p>Apply 1–2 ml to a dry or towel-dried scalp each night, focusing on the part and temples. Massage in circular motions for 3–5 minutes. Leave on overnight and do not rinse.</p><p><strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller. Apply it nightly for the full 90 days.</p>",
             "question_3": "Ingredients",
-            "answer_3": "<p>Cold-Pressed Virgin Pumpkin Seed Oil (20g), Caffeine Complex (1%) Gelatin, Glycerin, Water. Non-GMO. Gluten-Free. No fillers, artificial additives or preservatives.</p>",
+            "answer_3": "<p>Cold-pressed virgin pumpkin seed oil and 1% caffeine in a lightweight, fast-absorbing base. No fillers or artificial additives. The full ingredient list is on the label.</p>",
             "question_4": "Does it really work?",
-            "answer_4": "<p>Yes — pumpkin seed oil has been clinically studied for hair loss. A double-blind placebo-controlled trial found men taking pumpkin seed oil experienced significantly more hair growth than the placebo group over 24 weeks. Our formula delivers the same active compound at a therapeutic dose.</p>",
-            "question_5": "What's the 100% results guarantee?",
-            "answer_5": "<p>If you don't see visibly thicker, fuller hair within 30 days, we'll refund your order in full — no questions asked. Simply contact our support team and we'll process your refund immediately. Zero risk to you.</p>",
+            "answer_4": "<p>Pumpkin seed oil is a clinically studied ingredient for thinning hair. Most customers notice less shedding in the first 2 weeks and visibly fuller hair by day 90 with nightly use, and every order is covered by our 90-day money-back guarantee.</p>",
+            "question_5": "What's the 90-day guarantee?",
+            "answer_5": "<p>90-Day Money-Back Guarantee — no return needed. Apply it nightly for 90 days. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
             "question_6": "",
             "answer_6": "",
             "question_7": "",
@@ -647,7 +647,7 @@
         "paragraph_yPKnfn": {
           "type": "paragraph",
           "settings": {
-            "paragraph_text": "<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+            "paragraph_text": "<p>Heat extraction destroys much of the beta-sitosterol that makes pumpkin seed oil worth using. Ours is cold-pressed and virgin, then paired with 1% caffeine in a lightweight serum that absorbs into the scalp in minutes and leaves no greasy film.</p>",
             "font_size_mobile": 1,
             "font_size_desktop": 1.1,
             "margin_top": -10,
@@ -660,7 +660,7 @@
           "settings": {
             "two_columns": true,
             "list_title": "",
-            "list_item_1": "Clinically studied DHT-blocking compounds",
+            "list_item_1": "Clinically studied ingredients",
             "list_item_1_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_2": "Works for women and men",
             "list_item_2_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
@@ -668,9 +668,9 @@
             "list_item_3_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_4": "Third-party tested for purity",
             "list_item_4_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_5": "Non-GMO, gluten-free, no fillers",
+            "list_item_5": "Lightweight, non-greasy, absorbs in minutes",
             "list_item_5_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_6": "2,000mg therapeutic dose",
+            "list_item_6": "1% caffeine",
             "list_item_6_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_color": "#333333",
             "list_title_color": "#333333",
@@ -745,7 +745,7 @@
         "border_color": "#e5e7eb",
         "border_radius": 8,
         "enable_shadow": false,
-        "heading": "Why the dose and the press matter",
+        "heading": "Why cold-pressed matters",
         "heading_accent": "",
         "enable_image_fade_mask": false,
         "video_autoplay": true,
@@ -1069,15 +1069,15 @@
           "settings": {
             "percentage": 89,
             "title": "Reduction in Hair Shedding",
-            "description": "3 in 4 customers report noticeably less shedding within the first 30 days."
+            "description": "3 in 4 customers report noticeably less shedding within the first 2 weeks."
           }
         },
         "statistic_k4mcQt": {
           "type": "statistic",
           "settings": {
             "percentage": 82,
-            "title": "Saw Visible Regrowth",
-            "description": "Over 4 in 5 customers noticed new hair growth within 90 days of consistent use."
+            "title": "Saw Fine New Hairs",
+            "description": "Over 4 in 5 customers noticed fine new hairs at the part and temples within 90 days of nightly use."
           }
         },
         "statistic_bLf9xr": {
@@ -1085,7 +1085,7 @@
           "settings": {
             "percentage": 85,
             "title": "Reported Thicker Hair",
-            "description": "More than two thirds of customers said their hair felt denser and fuller after completing a full cycle."
+            "description": "More than two thirds of customers said their hair looked and felt fuller after 90 days of nightly use."
           }
         },
         "statistic_m9tA4T": {
@@ -1108,7 +1108,7 @@
         "use_theme_colors": false,
         "heading_part_1": "The Numbers Don't",
         "heading_part_2": "Lie",
-        "subheading": "Backed by clinical research and validated by thousands of real customers who've seen the results firsthand.",
+        "subheading": "Clinically studied ingredients, and what our customers tell us after 90 days of nightly use.",
         "header_bottom_margin": 10,
         "stats_grid_margin_top": 30,
         "mobile_columns": "1",
@@ -1192,7 +1192,7 @@
           "type": "bullet_list",
           "settings": {
             "column": "left",
-            "list_items": "Your part is getting wider every time you look|Your ponytail feels thinner in your hand|Thinning spreads across the top instead of receding|More hair in the brush, the drain, the pillow|Scalp showing through under bright light",
+            "list_items": "Your part is getting wider every time you look|Your ponytail feels thinner in your hand|Your temples are thinning or the edges look sparse|More hair in the brush, the drain, the pillow|Shedding after pregnancy or during perimenopause",
             "font_size": 15,
             "icon_size": 18,
             "use_custom_color": false,
@@ -1253,7 +1253,7 @@
         "section_heading_line_height": 1.2,
         "section_heading_color": "#000000",
         "section_heading_margin_bottom": 16,
-        "section_subheading": "DHT is the hormone behind both patterns. That’s why one formula works for men and women alike — it targets the cause, not the symptom.",
+        "section_subheading": "DHT is the hormone linked to both patterns. The serum goes on the scalp the same way for women and men — nightly, focusing on where it's thinning.",
         "section_subheading_size_desktop": 1.1,
         "section_subheading_size_mobile": 1,
         "section_subheading_color": "#666666",
@@ -1311,11 +1311,11 @@
           "type": "card",
           "settings": {
             "card_image": "shopify://shop_images/hf_20260321_052159_a8b4df1e-2991-4891-ba03-f91f0e515f26.png",
-            "card_title": "Pumpkin Seed Oil 2,000mg",
-            "card_description": "The highest studied dose of cold-pressed virgin pumpkin seed oil available. Beta-sitosterol in PSO directly inhibits 5-alpha reductase, cutting off DHT production at the source and stopping follicle miniaturization.",
+            "card_title": "Cold-Pressed Pumpkin Seed Oil",
+            "card_description": "Cold-pressed, virgin pumpkin seed oil is a clinically studied ingredient. Its beta-sitosterol helps support the follicle against DHT, the hormone linked to thinning, and it absorbs into the scalp without leaving a greasy film.",
             "show_bullets": true,
             "bullet_icon": "",
-            "bullet_points": "2000mg therapeutic dose, Blocks DHT at the enzyme level, Clinically studied for hair regrowth",
+            "bullet_points": "Cold-pressed and virgin, Helps support the follicle against DHT, Clinically studied ingredient",
             "bullet_icon_color": "#333333",
             "bullet_text_color": "#666666",
             "bullet_container": false,
@@ -1330,11 +1330,11 @@
           "type": "card",
           "settings": {
             "card_image": "shopify://shop_images/1.webp",
-            "card_title": "Caffeine Complex",
-            "card_description": "Caffeine penetrates the scalp within 2 minutes of application, directly counteracting DHT activity at the follicle level and extending the active hair growth phase. Works from the outside in while pumpkin seed oil works from the inside out.",
+            "card_title": "1% Caffeine Complex",
+            "card_description": "1% caffeine absorbs into the scalp within minutes of application. It supports the natural growth cycle from the outside in, so fine new hairs can appear at the part and temples.",
             "show_bullets": true,
             "bullet_icon": "",
-            "bullet_points": "Penetrates scalp in 2 minutes, \nExtends active hair growth phase, \nCounteracts DHT at follicle level",
+            "bullet_points": "1% caffeine, \nAbsorbs in minutes, \nSupports the natural growth cycle",
             "bullet_icon_color": "#333333",
             "bullet_text_color": "#666666",
             "bullet_container": false,
@@ -1357,7 +1357,7 @@
       "name": "Cards",
       "settings": {
         "heading": "Two Clinically Studied",
-        "accent_text": "DHT Blockers",
+        "accent_text": "Ingredients",
         "subtitle": "",
         "horizontal_layout": true,
         "pyramid_layout": false,
@@ -1411,8 +1411,8 @@
         "benefit_H8p8zk": {
           "type": "benefit",
           "settings": {
-            "title": "Blocks DHT at the Root",
-            "description": "Pumpkin seed oil naturally inhibits the enzyme that converts testosterone into DHT, the hormone responsible for shrinking follicles and causing hair loss.",
+            "title": "Helps Support The Follicle",
+            "description": "Pumpkin seed oil is a clinically studied ingredient that helps support the follicle against DHT, the hormone linked to thinning.",
             "preset_icon": "shield",
             "use_custom_icon": false,
             "custom_icon_svg": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M40 8 L66 22 L66 46 Q66 64 40 72 Q14 64 14 46 L14 22 Z\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></path>\n  <line x1=\"22\" y1=\"60\" x2=\"58\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
@@ -1426,8 +1426,8 @@
         "benefit_3rbtFR": {
           "type": "benefit",
           "settings": {
-            "title": "Reduces Shedding Fast",
-            "description": "Most customers notice significantly less hair in the shower and on their pillow within the first 2 weeks of daily use.",
+            "title": "Less Shedding In 2 Weeks",
+            "description": "Most customers notice less hair in the shower and on their pillow within the first 2 weeks of nightly use.",
             "preset_icon": "shield",
             "use_custom_icon": true,
             "custom_icon_svg": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"28\" y1=\"14\" x2=\"26\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"12\" x2=\"40\" y2=\"42\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"52\" y1=\"14\" x2=\"54\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <path d=\"M26 50 L40 62 L54 50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <line x1=\"18\" y1=\"70\" x2=\"62\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
@@ -1441,8 +1441,8 @@
         "benefit_8A6aee": {
           "type": "benefit",
           "settings": {
-            "title": "Reactivates Dormant Follicles",
-            "description": "Nutrients in cold-pressed pumpkin seed oil penetrate the scalp to wake up follicles that have stopped producing hair, triggering new growth cycles.",
+            "title": "Supports The Growth Cycle",
+            "description": "Caffeine absorbs into the scalp in minutes and supports the natural growth cycle, so fine new hairs can appear at the part and temples by weeks 6–8.",
             "preset_icon": "refresh",
             "use_custom_icon": false,
             "custom_icon_svg": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <ellipse cx=\"40\" cy=\"62\" rx=\"10\" ry=\"8\" stroke=\"currentColor\" stroke-width=\"3\"></ellipse>\n  <path d=\"M40 54 Q36 38 38 16\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <path d=\"M33 58 Q22 42 20 24\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"></path>\n  <path d=\"M47 58 Q58 42 60 24\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"></path>\n  <path d=\"M54 18 Q62 14 66 22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"></path>\n  <line x1=\"66\" y1=\"22\" x2=\"60\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"></line>\n</svg>",
@@ -1456,8 +1456,8 @@
         "benefit_cGBHWY": {
           "type": "benefit",
           "settings": {
-            "title": "Builds Thicker, Denser Hair",
-            "description": "With consistent use over 90 days, hair strands grow back stronger, fuller, and more resistant to future shedding.",
+            "title": "Fuller-Looking Hair By Day 90",
+            "description": "With nightly use for 90 days, your part looks fuller and shedding stays low. If not, our 90-day money-back guarantee has you covered.",
             "preset_icon": "check",
             "use_custom_icon": true,
             "custom_icon_svg": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M14 62 Q40 54 66 62\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <line x1=\"20\" y1=\"60\" x2=\"17\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"29\" y1=\"58\" x2=\"27\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"56\" x2=\"40\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"51\" y1=\"58\" x2=\"53\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"60\" y1=\"60\" x2=\"63\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
@@ -1563,8 +1563,8 @@
           "type": "roadmap_step",
           "settings": {
             "badge_text": "Phase 1",
-            "title": "DHT Blocking Begins",
-            "description": "<p>From day one, pumpkin seed oil starts inhibiting the 5-alpha reductase enzyme, cutting off the DHT supply that's been shrinking your follicles.</p>",
+            "title": "Nightly Application Begins",
+            "description": "<p>Apply 1–2 ml to the scalp each night. Massage in, leave on overnight, no rinse. It absorbs in minutes and is non-greasy.</p>",
             "custom_icon": "",
             "bullet_icon_size": 16
           }
@@ -1573,8 +1573,8 @@
           "type": "roadmap_step",
           "settings": {
             "badge_text": "Phase 2",
-            "title": "Shedding Slows Down",
-            "description": "<p>By week 2, most customers notice less hair in the shower and on their pillow. Your follicles are stabilising and the loss cycle is breaking.</p>",
+            "title": "Weeks 1–2: Less Shedding",
+            "description": "<p>Most customers notice less hair in the shower and on their pillow within the first 2 weeks.</p>",
             "custom_icon": "",
             "bullet_icon_size": 16
           }
@@ -1583,8 +1583,8 @@
           "type": "roadmap_step",
           "settings": {
             "badge_text": "Phase 3",
-            "title": "New Growth Appears",
-            "description": "<p>Around day 30, baby hairs begin emerging along your hairline and parting. This is your dormant follicles waking back up.</p>",
+            "title": "Weeks 6–8: Fine New Hairs",
+            "description": "<p>Fine new hairs at the part and temples as the natural growth cycle is supported.</p>",
             "custom_icon": "",
             "bullet_icon_size": 16
           }
@@ -1593,8 +1593,8 @@
           "type": "roadmap_step",
           "settings": {
             "badge_text": "Phase 4",
-            "title": "Thicker, Fuller Hair",
-            "description": "<p>By day 90 you'll see measurable density improvement. Hair grows back stronger, your part looks fuller, and shedding stays low with continued use.</p>",
+            "title": "Day 90: Visibly Fuller",
+            "description": "<p>By day 90 your part looks fuller and shedding stays low with continued nightly use.</p>",
             "custom_icon": "",
             "bullet_icon_size": 16
           }
@@ -1623,7 +1623,7 @@
         "background_overlay_color": "#000000",
         "background_overlay_opacity": 50,
         "heading": "Your Hair Growth",
-        "subheading": "<p>What to expect week by week when you take Pumpkin Seed Oil daily.</p>",
+        "subheading": "<p>What to expect when you apply the serum nightly.</p>",
         "heading_size": 54,
         "heading_line_height": 1,
         "heading_size_mobile": 46,
@@ -1692,7 +1692,7 @@
         "badge_text_color": "#282828",
         "show_button": true,
         "button_text": "Start My Journey",
-        "button_action_type": "scroll_top",
+        "button_action_type": "scroll_to_plan_selector",
         "redirect_product": "elaren-pumpkin-seed-oil-regrowth-serum",
         "custom_url": "",
         "use_global_button_style": true,
@@ -1722,8 +1722,8 @@
           "settings": {
             "step_image": "shopify://shop_images/hf_20260320_125925_ce519e88-c916-4c34-8117-5c2712e3c27f.jpg",
             "image_background_color": "#f5f5f5",
-            "step_title": "DHT Gets Blocked",
-            "step_description": "Pumpkin seed oil inhibits the enzyme that converts testosterone into DHT, the hormone responsible for shrinking your hair follicles over time.",
+            "step_title": "It Absorbs In Minutes",
+            "step_description": "Pumpkin seed oil and 1% caffeine absorb into the scalp, helping support the follicle against DHT, the hormone linked to thinning. No grease, no residue.",
             "content_background_color": "#ffffff",
             "card_background_color": ""
           }
@@ -1733,8 +1733,8 @@
           "settings": {
             "step_image": "shopify://shop_images/hf_20260317_131932_2d0b2645-ad66-40b0-9d41-30059f38351b.png",
             "image_background_color": "#f5f5f5",
-            "step_title": "Watch Your Hair Transform",
-            "step_description": "Stay consistent for 90 days and watch shedding reduce, new growth emerge, and your hair become visibly thicker, fuller, and stronger.",
+            "step_title": "Watch The Change Over 90 Days",
+            "step_description": "Stay consistent for 90 days: less shedding by week 2, fine new hairs at the part and temples by weeks 6–8, and a visibly fuller part by day 90.",
             "content_background_color": "#ffffff",
             "card_background_color": ""
           }
@@ -1851,7 +1851,7 @@
           "type": "heading",
           "settings": {
             "heading_text": "One Serum,",
-            "heading_accent": "Total Hair Recovery",
+            "heading_accent": "Every Stage Of Thinning",
             "override_global_accent": false,
             "font_size_mobile": 4.5,
             "font_size_desktop": 5.8,
@@ -1866,7 +1866,7 @@
         "subtitle_6KDViJ": {
           "type": "subtitle",
           "settings": {
-            "subtitle_text": "Pumpkin seed oil tackles every stage of hair loss from the inside out.",
+            "subtitle_text": "Pumpkin seed oil and caffeine, applied to the scalp nightly, for every stage of thinning.",
             "subtitle_size": 1.3,
             "subtitle_size_desktop": 1.6,
             "subtitle_line_height": 1.4,
@@ -1939,13 +1939,13 @@
             "icon_border_radius": 4,
             "item_1_title": "Excessive Shedding",
             "item_1_svg": "",
-            "item_1_content": "<p>Signs this is affecting you</p><ul><li>Hair falling out in the shower or on your pillow</li><li>Thinning at the crown or parting line</li><li>Noticeably less volume over time</li><li>DHT overproduction shrinking your follicles</li></ul>",
+            "item_1_content": "<p>Signs this is affecting you:</p><ul><li>A widening part</li><li>A thinner ponytail</li><li>More hair on the pillow and in the shower</li><li>Temples thinning</li><li>Shedding after pregnancy or during perimenopause</li><li>Hair that isn't what it used to be</li></ul>",
             "item_2_title": "Thinning & Low Density",
             "item_2_svg": "",
-            "item_2_content": "<p>Signs this is affecting you:</p><ul><li>Fine, limp hair that lacks body</li><li>Wider parting line becoming visible</li><li>Ponytail noticeably thinner in circumference</li><li>Follicles producing weaker, shorter strands</li></ul>",
+            "item_2_content": "<p>Signs this is affecting you:</p><ul><li>Fine, limp hair that lacks body</li><li>Scalp showing through under bright light</li><li>Ponytail noticeably thinner in circumference</li><li>Weaker, shorter strands where it used to be thick</li></ul>",
             "item_3_title": "Slow or Stalled Growth",
             "item_3_svg": "",
-            "item_3_content": "<p>Signs this is affecting you:</p><ul><li>Hair not growing past a certain length</li><li>Bald patches that haven't recovered</li><li>Hairline recession with no regrowth</li><li>Dormant follicles no longer producing hair</li></ul>",
+            "item_3_content": "<p>Signs this is affecting you:</p><ul><li>Hair not growing past a certain length</li><li>Sparse patches that haven't recovered</li><li>Thinning at the temples with no new growth</li><li>Fine, wispy hair where it used to be fuller</li></ul>",
             "item_4_title": "",
             "item_4_svg": "",
             "item_4_content": "",
@@ -1986,9 +1986,9 @@
         "button_CYtTHX": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Now",
-            "button_redirect_type": "scroll_to_top",
-            "button_link": "#shopify-section-template--24253224911205__shop_product_details_JbqzwH",
+            "button_label": "Choose My Plan",
+            "button_redirect_type": "scroll_to_plan_selector",
+            "button_link": "#plan-selector",
             "redirect_product": "",
             "redirect_collection": "",
             "redirect_page": "",
@@ -2061,7 +2061,7 @@
         "border_color": "#e5e7eb",
         "border_radius": 8,
         "enable_shadow": false,
-        "heading": "One serum, total hair recovery",
+        "heading": "One serum, every stage of thinning",
         "heading_accent": "",
         "image": "shopify://shop_images/hf_20260514_101827_4ee3613a-c64c-42da-b1d5-31d0188ae135.png",
         "enable_image_fade_mask": true,
@@ -2222,7 +2222,7 @@
             "list_item_1_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_2": "No prescriptions",
             "list_item_2_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_3": "30-Day money-back guarantee",
+            "list_item_3": "90-Day money-back guarantee, no return needed",
             "list_item_3_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_4": "Non-GMO, gluten-free, no additives",
             "list_item_4_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
@@ -2369,7 +2369,7 @@
           "type": "feature",
           "settings": {
             "title": "Cold-Pressed for Maximum Potency",
-            "description": "Most pumpkin seed oil supplements use heat extraction which destroys active compounds. Ours is cold-pressed and virgin, preserving 100% of the beta-sitosterol that makes it effective."
+            "description": "Most pumpkin seed oils use heat extraction which destroys active compounds. Ours is cold-pressed and virgin, preserving the beta-sitosterol that makes it worth using."
           }
         },
         "feature_nCcA3J": {
@@ -2382,8 +2382,8 @@
         "feature_9jC7wj": {
           "type": "feature",
           "settings": {
-            "title": "Zero Side Effects vs Prescriptions",
-            "description": "Unlike finasteride and minoxidil which carry hormonal and cardiovascular side effects, pumpkin seed oil works with your body's natural processes, no prescriptions, no dependency, no downsides."
+            "title": "A Gentler Alternative To Prescriptions",
+            "description": "Finasteride and minoxidil can carry side effects and need a prescription. The serum is a topical, non-prescription routine: no prescriptions, no dependency, applied to the scalp in 60 seconds a night."
           }
         }
       },
@@ -2674,7 +2674,7 @@
         "title_part_2": "The Competition",
         "title_part_1_color": "#161616",
         "title_part_2_color": "#211a28",
-        "subheading": "<p>Why serious hair loss sufferers choose us over everything else.</p>",
+        "subheading": "<p>Why women dealing with thinning hair choose us over everything else.</p>",
         "desktop_description": "",
         "show_description_on_mobile": false,
         "heading_size_mobile": 28,
@@ -2769,12 +2769,12 @@
             "image_position": "center center",
             "wrap_image": false,
             "rating": 5,
-            "review_text": "My dermatologist actually told me about pumpkin seed oil as a natural DHT blocker. Found this brand and the 2000mg dose is the highest I've seen anywhere. Results speak for themselves.",
+            "review_text": "My dermatologist mentioned pumpkin seed oil for thinning at the part. I wanted something I could put on the scalp rather than another pill, and this one absorbs fast with no greasy feel. My part looks fuller three months in.",
             "reviewer_name": "Sarah",
             "reviewer_age": "64",
             "show_verified_badge": true,
             "show_purchased_product": false,
-            "product_reference": "pumpkin-seed-oil-capsules",
+            "product_reference": "elaren-pumpkin-seed-oil-regrowth-serum",
             "product_title": "Product Name",
             "product_price": "$29.99",
             "product_compare_price": "$39.99",
@@ -2789,12 +2789,12 @@
             "image_position": "center center",
             "wrap_image": false,
             "rating": 4,
-            "review_text": "I looked into prescription options but the side effects put me off completely. These are completely natural and I've had zero issues taking them. Hair is noticeably thicker at the 10 week mark and I feel like I'm not constantly losing hair anymore. Will keep taking these indefinitely.",
+            "review_text": "I looked into prescription options but the side effects put me off completely. This goes on my scalp at night and I've had no issues. Hair is noticeably fuller at the 10-week mark and I'm not finding clumps in the shower anymore.",
             "reviewer_name": "Jessica",
             "reviewer_age": "42",
             "show_verified_badge": true,
             "show_purchased_product": false,
-            "product_reference": "pumpkin-seed-oil-capsules",
+            "product_reference": "elaren-pumpkin-seed-oil-regrowth-serum",
             "product_title": "Product Name",
             "product_price": "$29.99",
             "product_compare_price": "$39.99",
@@ -2809,12 +2809,12 @@
             "image_position": "center center",
             "wrap_image": false,
             "rating": 5,
-            "review_text": "My crown was the problem area. Not fully bald but noticeably thin when photos were taken from behind. 90 days on these and there's clear regrowth in that area. My barber noticed before I even mentioned it which was the best confirmation I could get.",
+            "review_text": "My temples and the top of my head were the problem, noticeably thin in photos. 90 days of applying it nightly and there's fine new hair coming through. My hairdresser noticed before I even mentioned it.",
             "reviewer_name": "Michael",
             "reviewer_age": "35",
             "show_verified_badge": true,
             "show_purchased_product": false,
-            "product_reference": "pumpkin-seed-oil-capsules",
+            "product_reference": "elaren-pumpkin-seed-oil-regrowth-serum",
             "product_title": "Product Name",
             "product_price": "$29.99",
             "product_compare_price": "$39.99",
@@ -2829,7 +2829,7 @@
             "image_position": "center center",
             "wrap_image": false,
             "rating": 5,
-            "review_text": "Started noticing thinning at 28 which was pretty alarming. Friend recommended pumpkin seed oil so I tried this brand because of the results others had experienced. 3 months later my hair feels thicker and the thinning has genuinely slowed.",
+            "review_text": "Started noticing my ponytail getting thinner after my second baby, which was pretty alarming. A friend recommended pumpkin seed oil so I tried this serum. 3 months later my hair feels fuller and the shedding has genuinely slowed.",
             "reviewer_name": "Tom",
             "reviewer_age": "40",
             "show_verified_badge": true,
@@ -2874,7 +2874,7 @@
         "heading_line_height": 1.2,
         "header_margin_bottom": 10,
         "show_description": true,
-        "description_text": "Real results from real people who were losing their hair.",
+        "description_text": "Real results from real women who were tired of finding hair in the shower.",
         "description_color": "#000000",
         "description_font_size": 16,
         "description_bottom_margin": 24,
@@ -2968,7 +2968,7 @@
           "type": "bullet_list",
           "settings": {
             "column": "left",
-            "list_items": "You’re shedding noticeably more than you used to|Your part is widening or your hairline is moving back|There’s still fine, wispy hair where it’s thinning|You’d rather act early than wait and see|You ruled out finasteride because of the side effects",
+            "list_items": "You're shedding noticeably more than you used to|Your part is widening or your temples are thinning|There's still fine, wispy hair where it's thinning|You'd rather act early than wait and see|You ruled out prescriptions because of the side effects",
             "font_size": 15,
             "icon_size": 18,
             "use_custom_color": false,
@@ -3000,7 +3000,7 @@
           "type": "bullet_list",
           "settings": {
             "column": "right",
-            "list_items": "An area has been completely bald for years — dormant follicles can wake up, dead ones can’t|You want results in two weeks — this needs 90 days of daily use|Your hair fell out suddenly in round patches — see a doctor about alopecia areata|You’re pregnant, breastfeeding, or taking blood thinners|You’re after a one-off fix rather than a daily habit",
+            "list_items": "An area has had no hair at all for years — the serum is for thinning, not for skin with no follicles left|You want results in two weeks — this needs 90 days of nightly use|Your hair fell out suddenly in round patches — see a doctor about alopecia areata|You're pregnant, breastfeeding, or taking blood thinners — check with your doctor first|You're after a one-off fix rather than a nightly habit",
             "font_size": 15,
             "icon_size": 18,
             "use_custom_color": false,
@@ -3092,8 +3092,8 @@
         "icon_margin_bottom": 10,
         "accent_text": "RISK-FREE",
         "heading_text": "Guarantee",
-        "description_text": "We're so confident you'll see thicker, fuller hair that we back every order with a full 30-day money-back guarantee. Take it every day for 30 days. If you don't see visible results, contact us for a complete refund. No forms. No hassle. No questions asked.",
-        "product_name": "Pumpkin Seed Oil Capsules",
+        "description_text": "We back every order with a 90-Day Money-Back Guarantee — no return needed. Apply the serum nightly for 90 days. If you're not seeing fuller hair by day 90, email us for a full refund. No forms. No hassle. No questions asked.",
+        "product_name": "Pumpkin Seed Oil Serum",
         "heading_text_color": "#ffffff",
         "description_color": "#ffffff",
         "benefit_text_color": "#ffffff",
@@ -3115,7 +3115,7 @@
         "accent_font_style": "normal",
         "accent_font_weight": "300",
         "button_text": "Try It Risk-Free Today",
-        "button_action_type": "product",
+        "button_action_type": "scroll_to_plan_selector",
         "redirect_product": "elaren-pumpkin-seed-oil-regrowth-serum",
         "custom_url": "",
         "use_global_button_style": true,
@@ -3128,7 +3128,7 @@
         "button_padding_horizontal": 20,
         "benefit_1": "100% Satisfaction",
         "benefit_2": "Fast Shipping",
-        "benefit_3": "Easy Returns",
+        "benefit_3": "No Return Needed",
         "polaroid_size_desktop": 180,
         "polaroid_size_mobile": 100,
         "image_extension": 80,
@@ -3181,28 +3181,28 @@
           "type": "faq_item",
           "settings": {
             "question": "How long until I see results?",
-            "answer": "<p>Most customers notice reduced shedding within the first 2 weeks. Visible new growth typically appears around day 30. Full results, thicker, denser hair are seen at the 90-day mark with consistent daily use.</p>"
+            "answer": "<p>Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller. Apply it nightly for the full 90 days.</p>"
           }
         },
         "faq_item_yT7tBh": {
           "type": "faq_item",
           "settings": {
-            "question": "How do I take it?",
-            "answer": "<p>Apply 1-2ml to your dry scalp nightly focusing on thinning areas. Massage in circular motions for 3-5 minutes. Leave on overnight, do not rinse. That's it.</p>"
+            "question": "How do I apply it?",
+            "answer": "<p>Apply 1–2 ml to a dry scalp nightly, focusing on the part and temples. Massage in circular motions for 3–5 minutes. Leave on overnight, do not rinse.</p><p><strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller.</p>"
           }
         },
         "faq_item_zJpqH3": {
           "type": "faq_item",
           "settings": {
             "question": "Does it work for both women and men?",
-            "answer": "<p>Yes. DHT-related hair loss affects both women and men and pumpkin seed oil works on the same hormonal pathway regardless of gender.</p>"
+            "answer": "<p>Yes. DHT-related thinning affects both women and men, and the serum is applied the same way for both. Most of our customers are women noticing a widening part, a thinner ponytail or shedding after pregnancy or during perimenopause.</p>"
           }
         },
         "faq_item_U4fWGe": {
           "type": "faq_item",
           "settings": {
             "question": "Are there any side effects?",
-            "answer": "<p>None reported. Pumpkin seed oil and caffeine are both well-studied natural compounds with no known side effects when applied topically. If you have a sensitive scalp do a small patch test before full application.</p>"
+            "answer": "<p>Pumpkin seed oil and caffeine are well-studied natural ingredients and are generally well tolerated on the scalp. If you have a sensitive scalp, do a small patch test before full application.</p>"
           }
         },
         "faq_item_wYAhz7": {
@@ -3215,8 +3215,36 @@
         "faq_item_Qa4aF3": {
           "type": "faq_item",
           "settings": {
-            "question": "Can I take it with other supplements?",
-            "answer": "<p>Yes. If you are on prescription medication, consult your doctor before adding any new supplement.</p>"
+            "question": "Can I use it with my other hair products?",
+            "answer": "<p>Yes. Shampoo, conditioner and styling products are all fine. Apply the serum to a clean, dry scalp at night so it absorbs without anything in the way. If you're using a prescription scalp treatment, check with your doctor first.</p>"
+          }
+        },
+        "faq_item_greasy": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Will it make my hair greasy or smell?",
+            "answer": "<p>No. It's a lightweight serum that absorbs into the scalp in minutes and leaves no greasy film or residue, so you can apply it at night and style as normal in the morning. It has a light, natural scent that fades as it absorbs.</p>"
+          }
+        },
+        "faq_item_colour": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Is it safe for colour-treated hair?",
+            "answer": "<p>Yes. The serum goes on the scalp, not the lengths, and contains no peroxide or colour-stripping ingredients, so it won't affect your colour. If you've just had colour done, wait 48 hours before your first application.</p>"
+          }
+        },
+        "faq_item_pregnancy": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Can I use it while pregnant or breastfeeding?",
+            "answer": "<p>Please check with your doctor or pharmacist before using any new scalp product during pregnancy or while breastfeeding.</p>"
+          }
+        },
+        "faq_item_pillow": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Will it stain my pillow?",
+            "answer": "<p>It absorbs within minutes, so by the time you lie down there's nothing left on the surface to transfer. Give it 10 minutes after applying, or lay a towel over your pillow for the first few nights if you'd rather be safe.</p>"
           }
         }
       },
@@ -3225,6 +3253,10 @@
         "faq_item_yT7tBh",
         "faq_item_zJpqH3",
         "faq_item_U4fWGe",
+        "faq_item_greasy",
+        "faq_item_colour",
+        "faq_item_pregnancy",
+        "faq_item_pillow",
         "faq_item_wYAhz7",
         "faq_item_Qa4aF3"
       ],
