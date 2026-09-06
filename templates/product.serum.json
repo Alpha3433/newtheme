@@ -457,10 +457,10 @@
             "question_1": "What is it?",
             "use_product_description_for_question_1": false,
             "answer_1": "<p>Our cold-pressed pumpkin seed oil and caffeine formula absorbs directly into the scalp, blocking DHT at the follicle level while reactivating dormant roots from the outside in. DHT shrinks your follicles from the inside. </p><p>Caffeine reactivates them from the outside. Together they address hair loss from both directions simultaneously</p>",
-            "question_2": "How do I take it?",
+            "question_2": "How do I apply it?",
             "answer_2": "<p>Apply 1-2ml directly to dry or towel-dried scalp focusing on thinning areas. Massage in circular motions for 3-5 minutes to stimulate circulation and maximise absorption. </p><p>Leave on and do not rinse. Use every evening before bed. Follicles repair while you sleep. Consistent daily use for 90 days minimum for visible results.</p>",
-            "question_3": "Ingredients",
-            "answer_3": "<p>Cold-Pressed Virgin Pumpkin Seed Oil (20g), Caffeine Complex (1%) Gelatin, Glycerin, Water. Non-GMO. Gluten-Free. No fillers, artificial additives or preservatives.</p>",
+            "question_3": "",
+            "answer_3": "",
             "question_4": "Does it really work?",
             "answer_4": "<p>Yes — pumpkin seed oil has been clinically studied for hair loss. A double-blind placebo-controlled trial found men taking pumpkin seed oil experienced significantly more hair growth than the placebo group over 24 weeks. Our formula delivers the same active compound at a therapeutic dose.</p>",
             "question_5": "What's the 100% results guarantee?",
@@ -474,7 +474,8 @@
             "question_9": "",
             "answer_9": "",
             "question_10": "",
-            "answer_10": ""
+            "answer_10": "",
+            "hide_question_3": true
           }
         },
         "customer_review_4FYVwJ": {
@@ -668,9 +669,9 @@
             "list_item_3_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_4": "Third-party tested for purity",
             "list_item_4_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_5": "Non-GMO, gluten-free, no fillers",
+            "list_item_5": "Lightweight, non-greasy, absorbs in minutes",
             "list_item_5_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_6": "2,000mg therapeutic dose",
+            "list_item_6": "1% caffeine",
             "list_item_6_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_color": "#333333",
             "list_title_color": "#333333",
@@ -745,7 +746,7 @@
         "border_color": "#e5e7eb",
         "border_radius": 8,
         "enable_shadow": false,
-        "heading": "Why the dose and the press matter",
+        "heading": "Why cold-pressed matters",
         "heading_accent": "",
         "enable_image_fade_mask": false,
         "video_autoplay": true,
@@ -1311,11 +1312,11 @@
           "type": "card",
           "settings": {
             "card_image": "shopify://shop_images/hf_20260321_052159_a8b4df1e-2991-4891-ba03-f91f0e515f26.png",
-            "card_title": "Pumpkin Seed Oil 2,000mg",
-            "card_description": "The highest studied dose of cold-pressed virgin pumpkin seed oil available. Beta-sitosterol in PSO directly inhibits 5-alpha reductase, cutting off DHT production at the source and stopping follicle miniaturization.",
+            "card_title": "Cold-Pressed Pumpkin Seed Oil",
+            "card_description": "Cold-pressed, virgin pumpkin seed oil is a clinically studied ingredient. Its beta-sitosterol helps support the follicle against DHT, the hormone linked to follicle miniaturisation, and it absorbs into the scalp without leaving a greasy film.",
             "show_bullets": true,
             "bullet_icon": "",
-            "bullet_points": "2000mg therapeutic dose, Blocks DHT at the enzyme level, Clinically studied for hair regrowth",
+            "bullet_points": "Cold-pressed and virgin, Helps support the follicle against DHT, Clinically studied ingredient",
             "bullet_icon_color": "#333333",
             "bullet_text_color": "#666666",
             "bullet_container": false,
@@ -1330,11 +1331,11 @@
           "type": "card",
           "settings": {
             "card_image": "shopify://shop_images/1.webp",
-            "card_title": "Caffeine Complex",
-            "card_description": "Caffeine penetrates the scalp within 2 minutes of application, directly counteracting DHT activity at the follicle level and extending the active hair growth phase. Works from the outside in while pumpkin seed oil works from the inside out.",
+            "card_title": "1% Caffeine Complex",
+            "card_description": "1% caffeine absorbs into the scalp within minutes of application. It helps support the follicle against DHT and supports the natural growth cycle from the outside in.",
             "show_bullets": true,
             "bullet_icon": "",
-            "bullet_points": "Penetrates scalp in 2 minutes, \nExtends active hair growth phase, \nCounteracts DHT at follicle level",
+            "bullet_points": "1% caffeine, \nAbsorbs in minutes, \nSupports the natural growth cycle",
             "bullet_icon_color": "#333333",
             "bullet_text_color": "#666666",
             "bullet_container": false,
@@ -1623,7 +1624,7 @@
         "background_overlay_color": "#000000",
         "background_overlay_opacity": 50,
         "heading": "Your Hair Growth",
-        "subheading": "<p>What to expect week by week when you take Pumpkin Seed Oil daily.</p>",
+        "subheading": "<p>What to expect when you apply the serum nightly.</p>",
         "heading_size": 54,
         "heading_line_height": 1,
         "heading_size_mobile": 46,
@@ -2224,7 +2225,7 @@
             "list_item_2_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_3": "30-Day money-back guarantee",
             "list_item_3_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
-            "list_item_4": "Non-GMO, gluten-free, no additives",
+            "list_item_4": "Lightweight, non-greasy, absorbs in minutes",
             "list_item_4_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
             "list_item_5": "All natural ingredients",
             "list_item_5_svg": "<svg viewbox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\" fill=\"currentColor\" opacity=\"0.1\"></circle><path d=\"M9 12l2 2 4-4\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"none\"></path></svg>",
@@ -2369,7 +2370,7 @@
           "type": "feature",
           "settings": {
             "title": "Cold-Pressed for Maximum Potency",
-            "description": "Most pumpkin seed oil supplements use heat extraction which destroys active compounds. Ours is cold-pressed and virgin, preserving 100% of the beta-sitosterol that makes it effective."
+            "description": "Most pumpkin seed oils use heat extraction which destroys active compounds. Ours is cold-pressed and virgin, preserving 100% of the beta-sitosterol that makes it effective."
           }
         },
         "feature_nCcA3J": {
@@ -2605,7 +2606,8 @@
             "text_value_2": "No",
             "value_3": "no",
             "text_value_3": "No"
-          }
+          },
+          "disabled": true
         },
         "feature_row_AHX3Kz": {
           "type": "feature_row",
@@ -2759,191 +2761,6 @@
         "section_bottom_border_color": "#282828"
       }
     },
-    "customer_reviews_carousel_GEVJYY": {
-      "type": "customer-reviews-carousel",
-      "blocks": {
-        "review_pgiAYL": {
-          "type": "review",
-          "settings": {
-            "review_image": "shopify://shop_images/Screenshot_2026-03-21_163604.png",
-            "image_position": "center center",
-            "wrap_image": false,
-            "rating": 5,
-            "review_text": "My dermatologist actually told me about pumpkin seed oil as a natural DHT blocker. Found this brand and the 2000mg dose is the highest I've seen anywhere. Results speak for themselves.",
-            "reviewer_name": "Sarah",
-            "reviewer_age": "64",
-            "show_verified_badge": true,
-            "show_purchased_product": false,
-            "product_reference": "pumpkin-seed-oil-capsules",
-            "product_title": "Product Name",
-            "product_price": "$29.99",
-            "product_compare_price": "$39.99",
-            "show_purchase_date": true,
-            "purchase_date": "March 14th, 2025"
-          }
-        },
-        "review_mwrxnG": {
-          "type": "review",
-          "settings": {
-            "review_image": "shopify://shop_images/Screenshot_2026-03-21_164743.png",
-            "image_position": "center center",
-            "wrap_image": false,
-            "rating": 4,
-            "review_text": "I looked into prescription options but the side effects put me off completely. These are completely natural and I've had zero issues taking them. Hair is noticeably thicker at the 10 week mark and I feel like I'm not constantly losing hair anymore. Will keep taking these indefinitely.",
-            "reviewer_name": "Jessica",
-            "reviewer_age": "42",
-            "show_verified_badge": true,
-            "show_purchased_product": false,
-            "product_reference": "pumpkin-seed-oil-capsules",
-            "product_title": "Product Name",
-            "product_price": "$29.99",
-            "product_compare_price": "$39.99",
-            "show_purchase_date": true,
-            "purchase_date": "March 14th, 2025"
-          }
-        },
-        "review_wzdDnY": {
-          "type": "review",
-          "settings": {
-            "review_image": "shopify://shop_images/hf_20260321_053957_ea54f901-6772-4ce9-952a-09491bd2c65b.jpg",
-            "image_position": "center center",
-            "wrap_image": false,
-            "rating": 5,
-            "review_text": "My crown was the problem area. Not fully bald but noticeably thin when photos were taken from behind. 90 days on these and there's clear regrowth in that area. My barber noticed before I even mentioned it which was the best confirmation I could get.",
-            "reviewer_name": "Michael",
-            "reviewer_age": "35",
-            "show_verified_badge": true,
-            "show_purchased_product": false,
-            "product_reference": "pumpkin-seed-oil-capsules",
-            "product_title": "Product Name",
-            "product_price": "$29.99",
-            "product_compare_price": "$39.99",
-            "show_purchase_date": true,
-            "purchase_date": "March 14th, 2025"
-          }
-        },
-        "review_bDiUCe": {
-          "type": "review",
-          "settings": {
-            "review_image": "shopify://shop_images/hf_20260321_054949_0911b780-9b9d-4da3-a56c-727f0205926c.jpg",
-            "image_position": "center center",
-            "wrap_image": false,
-            "rating": 5,
-            "review_text": "Started noticing thinning at 28 which was pretty alarming. Friend recommended pumpkin seed oil so I tried this brand because of the results others had experienced. 3 months later my hair feels thicker and the thinning has genuinely slowed.",
-            "reviewer_name": "Tom",
-            "reviewer_age": "40",
-            "show_verified_badge": true,
-            "show_purchased_product": false,
-            "product_reference": "",
-            "product_title": "Product Name",
-            "product_price": "$29.99",
-            "product_compare_price": "$39.99",
-            "show_purchase_date": true,
-            "purchase_date": "March 14th, 2025"
-          }
-        }
-      },
-      "block_order": [
-        "review_pgiAYL",
-        "review_mwrxnG",
-        "review_wzdDnY",
-        "review_bDiUCe"
-      ],
-      "name": "Customer Reviews",
-      "settings": {
-        "use_theme_colors": true,
-        "anchor_id": "reviews",
-        "section_width": 1200,
-        "center_cards_desktop": true,
-        "center_cards_mobile": false,
-        "section_background": "#ffffff",
-        "title_text": "Don't Just",
-        "accent_text": "Trust Us.",
-        "title_color": "#ef4a65",
-        "accent_color": "#000000",
-        "override_global_accent": false,
-        "accent_text_margin_left": 0,
-        "use_accent_gradient": false,
-        "accent_text_gradient": "linear-gradient(45deg, rgba(239, 74, 101, 1), rgba(255, 107, 157, 1) 100%)",
-        "accent_font_family": "inherit",
-        "accent_font_style": "normal",
-        "accent_font_weight": "inherit",
-        "custom_heading_styling": false,
-        "heading_font_size": 56,
-        "heading_font_size_mobile": 48,
-        "heading_line_height": 1.2,
-        "header_margin_bottom": 10,
-        "show_description": true,
-        "description_text": "Real results from real people who were losing their hair.",
-        "description_color": "#000000",
-        "description_font_size": 16,
-        "description_bottom_margin": 24,
-        "use_global_nav_buttons": true,
-        "prev_button_bg": "#ffffff",
-        "prev_button_color": "#000000",
-        "prev_button_border": "#e0e0e0",
-        "next_button_bg": "#ef4a65",
-        "next_button_color": "#ffffff",
-        "next_button_border": "#ef4a65",
-        "button_horizontal_padding": 12,
-        "scroll_amount": 360,
-        "navigation_margin_top": 5,
-        "card_width": 390,
-        "card_width_tablet": 300,
-        "card_width_mobile": 280,
-        "card_border_radius": 10,
-        "card_border_color": "#e0e0e0",
-        "card_background": "#ffffff",
-        "card_margin_top": 0,
-        "card_margin_right": 0,
-        "card_margin_bottom": 0,
-        "card_margin_left": 0,
-        "star_filled_color": "#ffc107",
-        "star_empty_color": "#e0e0e0",
-        "carousel_review_star_size": 16,
-        "review_text_color": "#000000",
-        "review_text_size": 14,
-        "review_text_size_mobile": 12,
-        "reviewer_info_color": "#000000",
-        "reviewer_info_bg_color": "#f5f5f5",
-        "reviewer_info_font_size": 12,
-        "verified_badge_text": "Verified Buyer",
-        "verified_badge_color": "#ef4a65",
-        "verified_icon_color": "#ef4a65",
-        "verified_badge_font_size": 10,
-        "enable_reviewer_info_border": false,
-        "reviewer_info_border_width": 1,
-        "reviewer_info_border_style": "solid",
-        "reviewer_info_border_color": "#e0e0e0",
-        "reviewer_info_border_radius": 8,
-        "product_title_color": "#000000",
-        "product_price_color": "#ef4a65",
-        "product_bg_color": "#f9f9f9",
-        "product_title_font_size": 12,
-        "product_price_font_size": 12,
-        "product_compare_price_font_size": 10,
-        "product_compare_price_color": "#9b9b9b",
-        "purchase_date_font_size": 10,
-        "product_border_color": "#eeeeee",
-        "product_border_width": 1,
-        "product_border_style": "solid",
-        "summary_star_color": "#ffffff",
-        "summary_text_color": "#ffffff",
-        "rating_summary_text": "<p>Rated 4.8/5 based on +43 Total Ratings</p>",
-        "rating_summary_font_size": 12,
-        "rating_summary_bg_color": "#ffffff",
-        "rating_summary_margin_bottom": 0,
-        "purchase_date_prefix": "Purchased on",
-        "purchase_date_color": "#000000",
-        "purchase_date_icon_color": "#000000",
-        "rating_summary_gradient": "",
-        "enable_rating_summary_border": false,
-        "rating_summary_border_width": 1,
-        "rating_summary_border_style": "solid",
-        "rating_summary_border_color": "#ffbf00",
-        "rating_summary_border_radius": 50
-      }
-    },
     "who_its_for_serum": {
       "type": "two-column-content",
       "blocks": {
@@ -3093,7 +2910,7 @@
         "accent_text": "RISK-FREE",
         "heading_text": "Guarantee",
         "description_text": "We're so confident you'll see thicker, fuller hair that we back every order with a full 30-day money-back guarantee. Take it every day for 30 days. If you don't see visible results, contact us for a complete refund. No forms. No hassle. No questions asked.",
-        "product_name": "Pumpkin Seed Oil Capsules",
+        "product_name": "Elaren Pumpkin Seed Oil Serum",
         "heading_text_color": "#ffffff",
         "description_color": "#ffffff",
         "benefit_text_color": "#ffffff",
@@ -3187,7 +3004,7 @@
         "faq_item_yT7tBh": {
           "type": "faq_item",
           "settings": {
-            "question": "How do I take it?",
+            "question": "How do I apply it?",
             "answer": "<p>Apply 1-2ml to your dry scalp nightly focusing on thinning areas. Massage in circular motions for 3-5 minutes. Leave on overnight, do not rinse. That's it.</p>"
           }
         },
@@ -3211,13 +3028,6 @@
             "question": "How long does shipping take?",
             "answer": "<p>3-7 business days. Free on all orders.</p>"
           }
-        },
-        "faq_item_Qa4aF3": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Can I take it with other supplements?",
-            "answer": "<p>Yes. If you are on prescription medication, consult your doctor before adding any new supplement.</p>"
-          }
         }
       },
       "block_order": [
@@ -3225,8 +3035,7 @@
         "faq_item_yT7tBh",
         "faq_item_zJpqH3",
         "faq_item_U4fWGe",
-        "faq_item_wYAhz7",
-        "faq_item_Qa4aF3"
+        "faq_item_wYAhz7"
       ],
       "name": "Store FAQ",
       "settings": {
@@ -3363,7 +3172,6 @@
     "alternating_features_VLaNd9",
     "scrolling_features_bar_xXQrtb",
     "product_comparison_ahRqAP",
-    "customer_reviews_carousel_GEVJYY",
     "who_its_for_serum",
     "satisfaction_guarantee_J4ypTy",
     "store_faq_hidFcc",

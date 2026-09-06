@@ -14710,6 +14710,13 @@
           "info": "This will be used only if 'Use product description' is disabled above"
         },
         {
+          "type": "checkbox",
+          "id": "hide_question_1",
+          "label": "Hide question 1",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion."
+        },
+        {
           "type": "image_picker",
           "id": "question_1_image",
           "label": "Question 1 image (optional)"
@@ -14726,6 +14733,14 @@
           "id": "answer_2",
           "label": "Answer 2",
           "default": "<p>Application instructions go here.</p>",
+          "visible_if": "{{ block.settings.items_limit >= 2 }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_question_2",
+          "label": "Hide question 2",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
           "visible_if": "{{ block.settings.items_limit >= 2 }}"
         },
         {
@@ -14749,6 +14764,14 @@
           "visible_if": "{{ block.settings.items_limit >= 3 }}"
         },
         {
+          "type": "checkbox",
+          "id": "hide_question_3",
+          "label": "Hide question 3",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
+          "visible_if": "{{ block.settings.items_limit >= 3 }}"
+        },
+        {
           "type": "image_picker",
           "id": "question_3_image",
           "label": "Question 3 image (optional)",
@@ -14766,6 +14789,14 @@
           "id": "answer_4",
           "label": "Answer 4",
           "default": "<p>Information about efficacy goes here.</p>",
+          "visible_if": "{{ block.settings.items_limit >= 4 }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_question_4",
+          "label": "Hide question 4",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
           "visible_if": "{{ block.settings.items_limit >= 4 }}"
         },
         {
@@ -14789,6 +14820,14 @@
           "visible_if": "{{ block.settings.items_limit >= 5 }}"
         },
         {
+          "type": "checkbox",
+          "id": "hide_question_5",
+          "label": "Hide question 5",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
+          "visible_if": "{{ block.settings.items_limit >= 5 }}"
+        },
+        {
           "type": "image_picker",
           "id": "question_5_image",
           "label": "Question 5 image (optional)",
@@ -14804,6 +14843,14 @@
           "type": "richtext",
           "id": "answer_6",
           "label": "Answer 6",
+          "visible_if": "{{ block.settings.items_limit >= 6 }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_question_6",
+          "label": "Hide question 6",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
           "visible_if": "{{ block.settings.items_limit >= 6 }}"
         },
         {
@@ -14825,6 +14872,14 @@
           "visible_if": "{{ block.settings.items_limit >= 7 }}"
         },
         {
+          "type": "checkbox",
+          "id": "hide_question_7",
+          "label": "Hide question 7",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
+          "visible_if": "{{ block.settings.items_limit >= 7 }}"
+        },
+        {
           "type": "image_picker",
           "id": "question_7_image",
           "label": "Question 7 image (optional)",
@@ -14840,6 +14895,14 @@
           "type": "richtext",
           "id": "answer_8",
           "label": "Answer 8",
+          "visible_if": "{{ block.settings.items_limit >= 8 }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_question_8",
+          "label": "Hide question 8",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
           "visible_if": "{{ block.settings.items_limit >= 8 }}"
         },
         {
@@ -14861,6 +14924,14 @@
           "visible_if": "{{ block.settings.items_limit >= 9 }}"
         },
         {
+          "type": "checkbox",
+          "id": "hide_question_9",
+          "label": "Hide question 9",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
+          "visible_if": "{{ block.settings.items_limit >= 9 }}"
+        },
+        {
           "type": "image_picker",
           "id": "question_9_image",
           "label": "Question 9 image (optional)",
@@ -14876,6 +14947,14 @@
           "type": "richtext",
           "id": "answer_10",
           "label": "Answer 10",
+          "visible_if": "{{ block.settings.items_limit >= 10 }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_question_10",
+          "label": "Hide question 10",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
           "visible_if": "{{ block.settings.items_limit >= 10 }}"
         },
         {
