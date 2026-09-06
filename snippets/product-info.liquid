@@ -264,7 +264,7 @@
         </div>
 
         <a
-          href="#reviews"
+          href="{{ block.settings.rating_link | strip | default: '#reviews' }}"
           class="rating-text-content"
           style="font-size: {{ block.settings.rating_text_size | default: 12 }}px; font-weight: 500; color: {% if block.settings.use_theme_colors %}{{ settings.global_section_text_color }}{% else %}{{ block.settings.rating_text_color }}{% endif %}; letter-spacing: -0.3px; line-height: 1.3;"
         >

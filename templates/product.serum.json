@@ -30,7 +30,8 @@
             "satisfaction_text_size_mobile": 12,
             "margin_top": 0,
             "margin_bottom": 15,
-            "element_gap": 4
+            "element_gap": 4,
+            "rating_link": "#reviews"
           }
         },
         "viewer_notice_YHX7Dm": {
@@ -993,7 +994,7 @@
         "subtitle_color": "#666666",
         "heading_accent_color": "#000000",
         "button_text": "See Our Reviews",
-        "button_link": "",
+        "button_link": "#reviews",
         "before_label_bg_color": "#ffffff",
         "before_label_text_color": "#282828",
         "after_label_bg_color": "#282828",
@@ -1081,7 +1082,8 @@
         "custom_css": "",
         "custom_js": "",
         "show_on_desktop": true,
-        "show_on_mobile": true
+        "show_on_mobile": true,
+        "default_category": "Women"
       }
     },
     "pattern_by_gender_serum": {
