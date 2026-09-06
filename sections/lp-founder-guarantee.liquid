@@ -1,0 +1,121 @@
+{%- render 'lp-tokens' -%}
+{%- liquid
+  assign s = section.settings
+  assign tiles = section.blocks | where: 'type', 'tile'
+  assign proofs = section.blocks | where: 'type', 'proof'
+-%}
+<section class="lp lp-meet" id="lp-meet-{{ section.id }}">
+  {%- if s.bg_image != blank -%}{{ s.bg_image | image_url: width: 1200 | image_tag: class: 'lp-meet__bg', loading: 'lazy', alt: '' }}{%- endif -%}
+  <div class="lp-meet__inner">
+    <div class="lp-meet__left">
+      {%- if s.kicker != blank -%}<span class="lp-pill">{{ s.kicker | escape }}</span>{%- endif -%}
+      {%- if s.heading != blank -%}<h2 class="lp-meet__h">{{ s.heading | escape }}</h2>{%- endif -%}
+      {%- if s.cred != blank -%}<div class="lp-meet__cred">{{ s.cred | escape }}</div>{%- endif -%}
+      {%- if s.body != blank -%}<blockquote class="lp-meet__quote">{{ s.body }}</blockquote>{%- endif -%}
+      {%- if s.signature != blank -%}{{ s.signature | image_url: width: 300 | image_tag: class: 'lp-meet__sig', loading: 'lazy', alt: s.attrib_name }}{%- endif -%}
+      {%- if s.attrib_name != blank or s.attrib_cred != blank -%}
+        <div class="lp-meet__attrib">
+          {%- if s.attrib_name != blank -%}<div class="lp-meet__attrib-name">{{ s.attrib_name | escape }}</div>{%- endif -%}
+          {%- if s.attrib_cred != blank -%}<div class="lp-meet__attrib-cred">{{ s.attrib_cred | escape }}</div>{%- endif -%}
+        </div>
+      {%- endif -%}
+      {%- if s.cta_label != blank -%}
+        <a class="lp-cta lp-meet__cta" href="{{ s.cta_link | default: '#plan-selector' }}" data-lp-meet-cta>{{ s.cta_label | escape }}<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 6 15 12 9 18"/></svg></a>
+        {%- if s.cta_sub != blank -%}<p class="lp-meet__cta-sub">{{ s.cta_sub | escape }}</p>{%- endif -%}
+      {%- endif -%}
+    </div>
+    {%- if tiles.size > 0 -%}
+      <div class="lp-meet__creds">
+        <div class="lp-meet__tiles">
+          {%- for block in tiles -%}
+            <div class="lp-meet__tile" {{ block.shopify_attributes }}>
+              {%- if block.settings.image != blank -%}<div class="lp-meet__tile-logo">{{ block.settings.image | image_url: width: 280 | image_tag: loading: 'lazy', alt: block.settings.label }}</div>{%- endif -%}
+              {%- if block.settings.label != blank -%}<div class="lp-meet__tile-label">{{ block.settings.label | escape }}</div>{%- endif -%}
+              {%- if block.settings.text != blank -%}<div class="lp-meet__tile-body">{{ block.settings.text | escape }}</div>{%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    {%- endif -%}
+    {%- if proofs.size > 0 -%}
+      <div class="lp-meet__proof">
+        {%- for block in proofs -%}
+          {%- unless forloop.first -%}<span class="lp-meet__proof-sep" aria-hidden="true"></span>{%- endunless -%}
+          <div class="lp-meet__proof-item" {{ block.shopify_attributes }}>{%- if block.settings.value != blank -%}<strong>{{ block.settings.value | escape }}</strong> {% endif -%}{{ block.settings.text | escape }}</div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+    {%- if s.photo != blank -%}<div class="lp-meet__right">{{ s.photo | image_url: width: 1000 | image_tag: class: 'lp-meet__photo', loading: 'lazy', alt: s.attrib_name }}</div>{%- endif -%}
+  </div>
+</section>
+{% style %}
+  #lp-meet-{{ section.id }} { position: relative; padding: 48px 16px; background: var(--lp-bg-warm); overflow: hidden; border-top: 1px solid var(--lp-line); isolation: isolate; }
+  #lp-meet-{{ section.id }} .lp-meet__bg { position: absolute; bottom: 0; right: max(16px, calc((100% - 1200px) / 2)); width: 560px; max-width: calc(100% - 32px); height: 480px; object-fit: cover; object-position: center 18%; opacity: .12; z-index: -1; pointer-events: none; filter: saturate(.55); -webkit-mask-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 30%); mask-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, #000 30%); }
+  #lp-meet-{{ section.id }} .lp-meet__inner { max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px; }
+  #lp-meet-{{ section.id }} .lp-meet__h { font-size: 28px; font-weight: 800; line-height: 1.2; color: var(--lp-ink); letter-spacing: -.02em; margin: 0 0 6px; text-wrap: balance; text-transform: none; }
+  #lp-meet-{{ section.id }} .lp-meet__cred { font-size: 12px; font-weight: 700; color: var(--lp-accent-dark); letter-spacing: .5px; text-transform: uppercase; margin: 0 0 18px; }
+  #lp-meet-{{ section.id }} .lp-meet__quote { margin: 12px 0 16px; padding: 0; border: 0; font-size: 14px; line-height: 1.7; color: var(--lp-ink-2); }
+  #lp-meet-{{ section.id }} .lp-meet__quote p { margin: 0 0 12px; } #lp-meet-{{ section.id }} .lp-meet__quote p:last-child { margin: 0; }
+  #lp-meet-{{ section.id }} .lp-meet__quote strong { font-weight: 700; color: var(--lp-ink); }
+  #lp-meet-{{ section.id }} .lp-meet__sig { height: 52px; width: auto; display: block; opacity: .85; margin: 0 0 14px; }
+  #lp-meet-{{ section.id }} .lp-meet__attrib { margin: 0 0 16px; display: flex; flex-direction: column; gap: 3px; }
+  #lp-meet-{{ section.id }} .lp-meet__attrib-name { font-size: 14px; font-weight: 800; color: var(--lp-ink); }
+  #lp-meet-{{ section.id }} .lp-meet__attrib-cred { font-size: 12px; font-weight: 700; color: var(--lp-accent-dark); letter-spacing: .5px; text-transform: uppercase; }
+  #lp-meet-{{ section.id }} .lp-meet__cta { padding: 13px 20px; font-size: 12.5px; letter-spacing: .8px; border-radius: 9px; }
+  #lp-meet-{{ section.id }} .lp-meet__cta-sub { margin: 8px 0 0; font-size: 11.5px; font-weight: 600; color: var(--lp-muted); letter-spacing: .3px; }
+  #lp-meet-{{ section.id }} .lp-meet__tiles { display: flex; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding: 4px 0 14px; }
+  #lp-meet-{{ section.id }} .lp-meet__tiles::-webkit-scrollbar { display: none; }
+  #lp-meet-{{ section.id }} .lp-meet__tile { flex: 0 0 78%; max-width: 320px; scroll-snap-align: start; background: rgba(255,255,255,.94); border: 1px solid var(--lp-line); border-radius: 12px; padding: 18px 16px 16px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; box-shadow: 0 6px 20px rgba(var(--lp-ink-rgb), .08); }
+  #lp-meet-{{ section.id }} .lp-meet__tile-logo { height: 40px; display: flex; align-items: center; justify-content: center; width: 100%; }
+  #lp-meet-{{ section.id }} .lp-meet__tile-logo img { max-height: 40px; max-width: 140px; width: auto; height: auto; object-fit: contain; opacity: .9; filter: grayscale(100%); }
+  #lp-meet-{{ section.id }} .lp-meet__tile-label { font-size: 10.5px; font-weight: 800; letter-spacing: 1.4px; text-transform: uppercase; color: var(--lp-accent-dark); line-height: 1; }
+  #lp-meet-{{ section.id }} .lp-meet__tile-body { font-size: 12px; font-weight: 500; color: var(--lp-ink-2); line-height: 1.5; }
+  #lp-meet-{{ section.id }} .lp-meet__proof { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px 14px; padding: 14px 20px; background: linear-gradient(160deg, var(--lp-tint-4) 0%, var(--lp-tint-3) 100%); border: 1px solid var(--lp-tint-line); border-radius: 12px; }
+  #lp-meet-{{ section.id }} .lp-meet__proof-item { font-size: 12.5px; font-weight: 500; color: var(--lp-ink-2); text-align: center; }
+  #lp-meet-{{ section.id }} .lp-meet__proof-item strong { font-weight: 800; color: var(--lp-ink); }
+  #lp-meet-{{ section.id }} .lp-meet__proof-sep { width: 3px; height: 3px; border-radius: 50%; background: var(--lp-line-2); display: none; }
+  #lp-meet-{{ section.id }} .lp-meet__right { display: flex; justify-content: center; line-height: 0; }
+  #lp-meet-{{ section.id }} .lp-meet__photo { width: 100%; max-width: 480px; height: auto; display: block; }
+  @media (min-width: 640px) { #lp-meet-{{ section.id }} .lp-meet__proof-sep { display: inline-block; } }
+  @media (min-width: 900px) { #lp-meet-{{ section.id }} .lp-meet__tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); overflow: visible; padding: 0; } #lp-meet-{{ section.id }} .lp-meet__tile { flex: none; max-width: none; min-height: 150px; } }
+  @media (min-width: 980px) { #lp-meet-{{ section.id }} { padding: 56px 24px 48px; } #lp-meet-{{ section.id }} .lp-meet__h { font-size: 36px; } #lp-meet-{{ section.id }} .lp-meet__quote { font-size: 15px; } }
+  @media (min-width: 1100px) { #lp-meet-{{ section.id }} .lp-meet__inner { display: grid; grid-template-columns: minmax(0, 1fr) 400px; gap: 40px; align-items: start; } #lp-meet-{{ section.id }} .lp-meet__creds { grid-column: 2; grid-row: 1; } #lp-meet-{{ section.id }} .lp-meet__proof { grid-column: 1 / -1; } #lp-meet-{{ section.id }} .lp-meet__right { grid-column: 1 / -1; } #lp-meet-{{ section.id }} .lp-meet__tiles { grid-template-columns: 1fr 1fr; } }
+{% endstyle %}
+<script>
+(function () {
+  var root = document.getElementById('lp-meet-{{ section.id }}'); if (!root) return;
+  var cta = root.querySelector('[data-lp-meet-cta]');
+  if (cta && cta.getAttribute('href').charAt(0) === '#') cta.addEventListener('click', function (e) { var t = document.querySelector(cta.getAttribute('href')); if (!t) return; e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+})();
+</script>
+{% schema %}
+{
+  "name": "LP · Personal guarantee / founder",
+  "tag": "section",
+  "class": "lp-section",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Kicker", "default": "Our Promise" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Our 90-Day Guarantee" },
+    { "type": "text", "id": "cred", "label": "Line under heading" },
+    { "type": "richtext", "id": "body", "label": "Body" },
+    { "type": "image_picker", "id": "signature", "label": "Signature image" },
+    { "type": "text", "id": "attrib_name", "label": "Attribution name" },
+    { "type": "text", "id": "attrib_cred", "label": "Attribution credential" },
+    { "type": "text", "id": "cta_label", "label": "Button label", "default": "Start Today" },
+    { "type": "text", "id": "cta_link", "label": "Button link", "default": "#plan-selector" },
+    { "type": "text", "id": "cta_sub", "label": "Under button", "default": "90-Day Money-Back Guarantee" },
+    { "type": "image_picker", "id": "photo", "label": "Photo (below)" },
+    { "type": "image_picker", "id": "bg_image", "label": "Faded background image" }
+  ],
+  "blocks": [
+    { "type": "tile", "name": "Credential tile", "settings": [
+      { "type": "image_picker", "id": "image", "label": "Logo" },
+      { "type": "text", "id": "label", "label": "Label" },
+      { "type": "text", "id": "text", "label": "Text" } ] },
+    { "type": "proof", "name": "Proof item", "settings": [
+      { "type": "text", "id": "value", "label": "Bold value" },
+      { "type": "text", "id": "text", "label": "Text" } ] }
+  ],
+  "presets": [ { "name": "LP · Personal guarantee / founder" } ]
+}
+{% endschema %}

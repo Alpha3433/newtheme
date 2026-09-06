@@ -1,0 +1,30 @@
+{%- render 'lp-tokens' -%}
+{%- if section.settings.text != blank -%}
+<div class="lp lp-announce" id="lp-announce-{{ section.id }}">
+  <span class="lp-announce__inner">
+    {%- if section.settings.show_icon -%}
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+    {%- endif -%}
+    {{ section.settings.text | escape }}
+  </span>
+</div>
+{% style %}
+  #lp-announce-{{ section.id }} { background: {{ section.settings.background | default: 'var(--lp-ink)' }}; color: {{ section.settings.text_color | default: '#ffffff' }}; text-align: center; padding: 8px 16px; font-size: 11.5px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; line-height: 1; }
+  #lp-announce-{{ section.id }} .lp-announce__inner { display: inline-flex; align-items: center; gap: 8px; }
+  #lp-announce-{{ section.id }} svg { width: 14px; height: 14px; flex-shrink: 0; display: block; }
+{% endstyle %}
+{%- endif -%}
+{% schema %}
+{
+  "name": "LP · Announce strip",
+  "tag": "div",
+  "class": "lp-section",
+  "settings": [
+    { "type": "text", "id": "text", "label": "Text", "default": "90-Day Money-Back Guarantee On All Orders" },
+    { "type": "checkbox", "id": "show_icon", "label": "Show shield icon", "default": true },
+    { "type": "color", "id": "background", "label": "Background", "default": "#282828" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#ffffff" }
+  ],
+  "presets": [ { "name": "LP · Announce strip" } ]
+}
+{% endschema %}
