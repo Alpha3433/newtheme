@@ -120,7 +120,7 @@
 
       {%- comment -%} ───────────────── PURCHASE ───────────────── {%- endcomment -%}
       <div class="lp-hero__purchase" id="plan-selector" style="scroll-margin-top: 90px;">
-        {%- if s.bundle_heading != blank -%}<h3 class="lp-hero__bundle-h">{{ s.bundle_heading | escape }}</h3>{%- endif -%}
+        {%- if s.bundle_heading != blank and use_theme_plans -%}<h3 class="lp-hero__bundle-h">{{ s.bundle_heading | escape }}</h3>{%- endif -%}
 
         <product-form class="product-form" data-section-id="{{ section.id }}">
           {%- form 'product', product, id: form_id, class: 'form lp-hero__form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
@@ -244,7 +244,7 @@
               </div>
             {%- endif -%}
 
-            <button type="submit" name="add" class="lp-hero__cta product-form__submit disable-global-button-styling{% if current_variant.available == false %} sold-out{% endif %}" {% if current_variant.available == false %}disabled{% endif %} data-lp-cta>
+            <button type="submit" name="add" class="lp-hero__cta lp-hero__cta--{{ s.cta_style | default: 'ink' }} disable-global-button-styling{% if current_variant.available == false %} sold-out{% endif %}" {% if current_variant.available == false %}disabled{% endif %} data-lp-cta>
               <span class="lp-hero__cta-main">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M6 6L5 3H2"/></svg>
                 <span class="button-text">{%- if current_variant.available == false -%}{{ 'products.product.sold_out' | t }}{%- else -%}{{ s.cta_label | escape }}{%- endif -%}</span>
@@ -462,13 +462,18 @@
   .lp-offer-badge__check { flex-shrink: 0; width: 20px; height: 20px; border-radius: 50%; background: var(--lp-accent); color: #fff; display: inline-flex; align-items: center; justify-content: center; }
   .lp-offer-badge__check svg { width: 11px; height: 11px; }
   .lp-offer-badge__text p { margin: 0; }
-  .lp-hero__cta { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 100%; padding: 14px 18px 12px; background: var(--lp-cta-bg); color: var(--lp-cta-text); border: 0; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; line-height: 1; transition: filter .15s ease, transform .1s ease; }
-  .lp-hero__cta:hover { filter: brightness(.94); }
+  /* High specificity + !important: the theme's global-button-fix styles every button[type=submit] with !important. */
+  #lp-hero-{{ section.id }} .lp-hero__cta[type="submit"] { position: relative; display: flex !important; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 100%; padding: 15px 18px 13px !important; border: 0 !important; border-radius: {{ s.cta_radius | default: 10 }}px !important; cursor: pointer; font-family: inherit !important; font-size: 14px !important; font-weight: 800 !important; letter-spacing: 1.2px !important; text-transform: uppercase !important; line-height: 1; box-shadow: none !important; transition: filter .15s ease, transform .1s ease; }
+  #lp-hero-{{ section.id }} .lp-hero__cta--ink[type="submit"], #lp-hero-{{ section.id }} .lp-hero__cta--ink[type="submit"]:hover, #lp-hero-{{ section.id }} .lp-hero__cta--ink[type="submit"]:focus { background: var(--lp-ink) !important; color: #fff !important; }
+  #lp-hero-{{ section.id }} .lp-hero__cta--accent[type="submit"], #lp-hero-{{ section.id }} .lp-hero__cta--accent[type="submit"]:hover, #lp-hero-{{ section.id }} .lp-hero__cta--accent[type="submit"]:focus { background: var(--lp-accent) !important; color: #fff !important; }
+  #lp-hero-{{ section.id }} .lp-hero__cta--gradient[type="submit"], #lp-hero-{{ section.id }} .lp-hero__cta--gradient[type="submit"]:hover, #lp-hero-{{ section.id }} .lp-hero__cta--gradient[type="submit"]:focus { background: var(--lp-cta-bg) !important; color: var(--lp-cta-text) !important; }
+  #lp-hero-{{ section.id }} .lp-hero__cta[type="submit"]:hover { filter: brightness(1.12); }
+  #lp-hero-{{ section.id }} .lp-hero__cta .button-text { color: inherit !important; }
   .lp-hero__cta:active { transform: scale(.98); }
   .lp-hero__cta[disabled], .lp-hero__cta.sold-out { opacity: .6; cursor: not-allowed; }
   .lp-hero__cta-main { display: inline-flex; align-items: center; justify-content: center; gap: 10px; line-height: 1; }
   .lp-hero__cta-main svg { width: 18px; height: 18px; display: block; }
-  .lp-hero__cta-sub { font-size: 10px; font-weight: 700; letter-spacing: 1.4px; color: rgba(255,255,255,.75); line-height: 1.2; text-transform: uppercase; }
+  .lp-hero__cta-sub { font-size: 10px; font-weight: 700; letter-spacing: 1.4px; color: inherit; opacity: .72; line-height: 1.2; text-transform: uppercase; }
   .lp-hero__cta .loading__spinner { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: inherit; border-radius: inherit; }
   .lp-hero__cta .loading__spinner.hidden { display: none; }
   .lp-hero__cta .spinner { width: 22px; height: 22px; animation: lp-spin .9s linear infinite; }
@@ -537,7 +542,6 @@
     #lp-hero-{{ section.id }} .lp-hero__grid { max-width: {{ s.max_width | default: 1200 }}px; grid-template-areas: "info gallery" "info faq"; grid-template-columns: minmax(0, 1fr) minmax(0, 560px); grid-template-rows: auto 1fr; column-gap: 56px; row-gap: 24px; padding: 40px 24px 64px; }
     #lp-hero-{{ section.id }} .lp-hero__grid.flip-cols { grid-template-areas: "gallery info" "faq info"; grid-template-columns: minmax(0, 560px) minmax(0, 1fr); }
     #lp-hero-{{ section.id }} .lp-hero__info { padding: 8px 0 0; }
-    #lp-hero-{{ section.id }} .lp-hero__gallery { position: sticky; top: 90px; }
     .lp-thumb { flex-basis: 80px; width: 80px; height: 80px; }
     .lp-hero__rating { font-size: 14px; margin: 0 0 20px; }
     .lp-hero__title { font-size: 30px; margin: 0 0 18px; }
@@ -728,6 +732,8 @@
     { "type": "textarea", "id": "subscription_notes", "label": "Subscription details (one per line)", "default": "Free shipping on every order\nCancel or pause anytime" },
     { "type": "richtext", "id": "offer_line", "label": "Applied offer line (optional)" },
     { "type": "header", "content": "Button" },
+    { "type": "select", "id": "cta_style", "label": "Button style", "options": [ { "value": "ink", "label": "Solid dark (text colour)" }, { "value": "accent", "label": "Solid accent" }, { "value": "gradient", "label": "Theme button gradient" } ], "default": "ink" },
+    { "type": "range", "id": "cta_radius", "min": 0, "max": 30, "step": 1, "unit": "px", "label": "Button corner radius", "default": 10 },
     { "type": "text", "id": "cta_label", "label": "Button label", "default": "Add to cart" },
     { "type": "text", "id": "cta_sublabel", "label": "Button sub-label", "default": "90-Day Money-Back Guarantee" },
     { "type": "header", "content": "Promise box" },
