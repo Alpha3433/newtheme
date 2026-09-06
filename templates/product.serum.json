@@ -1084,113 +1084,6 @@
         "show_on_mobile": true
       }
     },
-    "statistics_grid_pXC34G": {
-      "type": "statistics-grid",
-      "blocks": {
-        "statistic_acnwta": {
-          "type": "statistic",
-          "settings": {
-            "percentage": 89,
-            "title": "Reduction in Hair Shedding",
-            "description": "3 in 4 customers report noticeably less shedding within the first 30 days."
-          }
-        },
-        "statistic_k4mcQt": {
-          "type": "statistic",
-          "settings": {
-            "percentage": 82,
-            "title": "Saw Visible Regrowth",
-            "description": "Over 4 in 5 customers noticed new hair growth within 90 days of consistent use."
-          }
-        },
-        "statistic_bLf9xr": {
-          "type": "statistic",
-          "settings": {
-            "percentage": 85,
-            "title": "Reported Thicker Hair",
-            "description": "More than two thirds of customers said their hair felt denser and fuller after completing a full cycle."
-          }
-        },
-        "statistic_m9tA4T": {
-          "type": "statistic",
-          "settings": {
-            "percentage": 90,
-            "title": "Would Recommend",
-            "description": "9 out of 10 customers said they would recommend our Pumpkin Seed Oil Serum to someone."
-          }
-        }
-      },
-      "block_order": [
-        "statistic_acnwta",
-        "statistic_k4mcQt",
-        "statistic_bLf9xr",
-        "statistic_m9tA4T"
-      ],
-      "name": "Statistics Grid",
-      "settings": {
-        "use_theme_colors": false,
-        "heading_part_1": "The Numbers Don't",
-        "heading_part_2": "Lie",
-        "subheading": "Backed by clinical research and validated by thousands of real customers who've seen the results firsthand.",
-        "header_bottom_margin": 10,
-        "stats_grid_margin_top": 30,
-        "mobile_columns": "1",
-        "section_max_width": 1100,
-        "remove_card_background": false,
-        "hide_progress_circle": false,
-        "card_border_radius": 0,
-        "card_min_height_desktop_no_circle": 180,
-        "card_min_height_mobile_no_circle": 140,
-        "percentage_font_size_desktop": 48,
-        "percentage_font_size_mobile": 36,
-        "percentage_margin_bottom_desktop": 10,
-        "percentage_margin_bottom_mobile": 10,
-        "background_color": "#282828",
-        "card_background_color": "#363636",
-        "use_gradient": false,
-        "gradient_background": "linear-gradient(180deg, rgba(239, 74, 101, 1), rgba(216, 27, 96, 1) 100%)",
-        "accent_color": "#282828",
-        "circle_bg_color": "#2b2b2b",
-        "use_gradient_circle": true,
-        "circle_gradient_type": "linear",
-        "circle_gradient_start": "#ff8354",
-        "circle_gradient_end": "#ffdb9e",
-        "circle_gradient_angle": 90,
-        "heading_color": "#ffffff",
-        "heading_accent_color": "#ffffff",
-        "subtitle_color": "#9c9c9c",
-        "statistic_title_color": "#ffffff",
-        "statistic_description_color": "#9c9c9c",
-        "percentage_text_color": "#ffffff",
-        "heading_font_size_desktop": 54,
-        "heading_font_size_mobile": 44,
-        "text_font_size": 16,
-        "statistic_title_font_size_desktop": 15,
-        "statistic_title_font_size_mobile": 15,
-        "statistic_description_font_size_desktop": 14,
-        "statistic_description_font_size_mobile": 12,
-        "percentage_text_font_size_desktop": 40,
-        "percentage_text_font_size_mobile": 32,
-        "circle_width_desktop": 80,
-        "circle_width_tablet": 55,
-        "circle_width_mobile": 75,
-        "override_global_accent": false,
-        "accent_text_margin": -4,
-        "use_accent_gradient": true,
-        "accent_text_gradient": "linear-gradient(180deg, rgba(251, 121, 72, 1), rgba(255, 219, 158, 1) 97%)",
-        "accent_font_family": "inherit",
-        "accent_font_style": "normal",
-        "accent_font_weight": "inherit",
-        "desktop_padding_top": 60,
-        "desktop_padding_right": 40,
-        "desktop_padding_bottom": 100,
-        "desktop_padding_left": 40,
-        "mobile_padding_top": 60,
-        "mobile_padding_right": 20,
-        "mobile_padding_bottom": 60,
-        "mobile_padding_left": 20
-      }
-    },
     "pattern_by_gender_serum": {
       "type": "two-column-content",
       "blocks": {
@@ -3183,7 +3076,6 @@
     "image_with_text_MnK3Cx",
     "divider_cH7pyC",
     "before_after_KeXf6z",
-    "statistics_grid_pXC34G",
     "pattern_by_gender_serum",
     "4_cards_WYHJLQ",
     "4_benefits_jtwY6M",
