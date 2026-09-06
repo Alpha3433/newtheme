@@ -1,0 +1,52 @@
+{%- comment -%}
+  Reviews anchor
+
+  Renders an empty, zero-height landmark with a stable id (default "reviews").
+  Place it directly above the Trustoo review widget (an app section, which
+  cannot carry its own id) so that in-page links like the proof strip rating
+  and the "Rated 4.8" link have a real target instead of a dead "#reviews".
+{%- endcomment -%}
+{%- assign anchor_id = section.settings.anchor_id | strip | default: 'reviews' -%}
+<div
+  id="{{ anchor_id | escape }}"
+  class="reviews-anchor"
+  style="height: 0; margin: 0; padding: 0; scroll-margin-top: {{ section.settings.scroll_offset | default: 100 }}px;"
+  aria-hidden="true"
+  {{ section.shopify_attributes }}
+></div>
+
+{% schema %}
+{
+  "name": "Reviews anchor",
+  "tag": "div",
+  "class": "reviews-anchor-section",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Invisible scroll target. Put this section right above your reviews widget so links to #reviews land on it."
+    },
+    {
+      "type": "text",
+      "id": "anchor_id",
+      "label": "Anchor id",
+      "default": "reviews",
+      "info": "Without the #. Links should use #reviews."
+    },
+    {
+      "type": "range",
+      "id": "scroll_offset",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Offset for sticky header",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews anchor"
+    }
+  ]
+}
+{% endschema %}

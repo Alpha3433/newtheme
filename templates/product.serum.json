@@ -330,6 +330,22 @@
             "text_alignment": "left"
           }
         },
+        "proof_strip_atf": {
+          "type": "proof_strip",
+          "settings": {
+            "show_rating": true,
+            "rating_value": "4.8",
+            "rating_count": "43",
+            "rating_link": "#reviews",
+            "item_2_text": "Clinically studied ingredient",
+            "item_3_text": "Free express shipping",
+            "font_size": 13,
+            "text_color": "#333030",
+            "star_color": "#ef4a65",
+            "margin_top": 4,
+            "margin_bottom": 8
+          }
+        },
         "quantity_selector_qJAYDN": {
           "type": "quantity_selector",
           "disabled": true,
@@ -549,6 +565,7 @@
         "custom_text_6gdF7K",
         "benefits_grid_TYPpNT",
         "shipping_notice_ycmz4B",
+        "proof_strip_atf",
         "quantity_selector_qJAYDN",
         "add_to_cart_7nhY9K",
         "guarantee_badges_HAWQYD",
@@ -3293,6 +3310,13 @@
         "section_bottom_border_color": "#1b1b1b"
       }
     },
+    "reviews_anchor": {
+      "type": "reviews-anchor",
+      "settings": {
+        "anchor_id": "reviews",
+        "scroll_offset": 100
+      }
+    },
     "1787461899b7b1b6f7": {
       "type": "apps",
       "blocks": {
@@ -3360,6 +3384,7 @@
     "who_its_for_serum",
     "satisfaction_guarantee_J4ypTy",
     "store_faq_hidFcc",
+    "reviews_anchor",
     "1787461899b7b1b6f7",
     "17740590596d2788d8",
     "1773652095685ba445",

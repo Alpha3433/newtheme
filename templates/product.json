@@ -243,6 +243,22 @@
             "text_alignment": "left"
           }
         },
+        "proof_strip_atf": {
+          "type": "proof_strip",
+          "settings": {
+            "show_rating": true,
+            "rating_value": "4.8",
+            "rating_count": "43",
+            "rating_link": "#reviews",
+            "item_2_text": "Clinically studied ingredient",
+            "item_3_text": "Free express shipping",
+            "font_size": 13,
+            "text_color": "#333030",
+            "star_color": "#ef4a65",
+            "margin_top": 4,
+            "margin_bottom": 8
+          }
+        },
         "kaching_bundles_app_block_969AMy": {
           "type": "shopify://apps/kaching-bundles/blocks/app-block/6c637362-a106-4a32-94ac-94dcfd68cdb8",
           "settings": {
@@ -591,6 +607,7 @@
         "custom_text_6gdF7K",
         "benefits_grid_TYPpNT",
         "shipping_notice_ycmz4B",
+        "proof_strip_atf",
         "kaching_bundles_app_block_969AMy",
         "quantity_selector_gk43hi",
         "offer_reminder",
@@ -3610,6 +3627,13 @@
         "padding_bottom": 0
       }
     },
+    "reviews_anchor": {
+      "type": "reviews-anchor",
+      "settings": {
+        "anchor_id": "reviews",
+        "scroll_offset": 100
+      }
+    },
     "17740590596d2788d8": {
       "type": "apps",
       "blocks": {
@@ -3674,6 +3698,7 @@
     "satisfaction_guarantee_J4ypTy",
     "store_faq_hidFcc",
     "divider_cH7pyC",
+    "reviews_anchor",
     "17740590596d2788d8",
     "1773652095685ba445",
     "17738904936c54e966"
