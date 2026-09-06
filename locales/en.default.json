@@ -609,5 +609,8 @@
       "send_on": "YYYY-MM-DD",
       "send_on_label": "Send on (optional)"
     }
+  },
+  "date_formats": {
+    "delivery_day": "%a %-d %b"
   }
 }

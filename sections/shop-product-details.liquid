@@ -4142,6 +4142,13 @@
           "default": "<p>Rated <strong>4.7</strong> (<em>137</em>)</p>",
           "info": "Complete rating text with formatting. Use <strong> for rating value and <em> for count. You can also use product metafields by leaving this blank - the system will use 'custom.rating' and 'custom.rating_count' metafields if available."
         },
+        {
+          "type": "text",
+          "id": "rating_link",
+          "label": "Rating link target",
+          "default": "#reviews",
+          "info": "Anchor the rating text scrolls to. #reviews is provided by the 'Reviews anchor' section placed above the Trustoo widget."
+        },
 
         {
           "type": "color",
@@ -4747,6 +4754,13 @@
           "id": "show_fast_payment",
           "label": "Show dynamic checkout",
           "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "show_reassurance_chip",
+          "label": "Show reassurance chip under the button",
+          "default": false,
+          "info": "Text comes from Theme settings > Product Page > Reassurance line."
         },
         {
           "type": "select",
@@ -14710,6 +14724,13 @@
           "info": "This will be used only if 'Use product description' is disabled above"
         },
         {
+          "type": "checkbox",
+          "id": "hide_question_1",
+          "label": "Hide question 1",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion."
+        },
+        {
           "type": "image_picker",
           "id": "question_1_image",
           "label": "Question 1 image (optional)"
@@ -14726,6 +14747,14 @@
           "id": "answer_2",
           "label": "Answer 2",
           "default": "<p>Application instructions go here.</p>",
+          "visible_if": "{{ block.settings.items_limit >= 2 }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_question_2",
+          "label": "Hide question 2",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
           "visible_if": "{{ block.settings.items_limit >= 2 }}"
         },
         {
@@ -14749,6 +14778,14 @@
           "visible_if": "{{ block.settings.items_limit >= 3 }}"
         },
         {
+          "type": "checkbox",
+          "id": "hide_question_3",
+          "label": "Hide question 3",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
+          "visible_if": "{{ block.settings.items_limit >= 3 }}"
+        },
+        {
           "type": "image_picker",
           "id": "question_3_image",
           "label": "Question 3 image (optional)",
@@ -14766,6 +14803,14 @@
           "id": "answer_4",
           "label": "Answer 4",
           "default": "<p>Information about efficacy goes here.</p>",
+          "visible_if": "{{ block.settings.items_limit >= 4 }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_question_4",
+          "label": "Hide question 4",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
           "visible_if": "{{ block.settings.items_limit >= 4 }}"
         },
         {
@@ -14789,6 +14834,14 @@
           "visible_if": "{{ block.settings.items_limit >= 5 }}"
         },
         {
+          "type": "checkbox",
+          "id": "hide_question_5",
+          "label": "Hide question 5",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
+          "visible_if": "{{ block.settings.items_limit >= 5 }}"
+        },
+        {
           "type": "image_picker",
           "id": "question_5_image",
           "label": "Question 5 image (optional)",
@@ -14804,6 +14857,14 @@
           "type": "richtext",
           "id": "answer_6",
           "label": "Answer 6",
+          "visible_if": "{{ block.settings.items_limit >= 6 }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_question_6",
+          "label": "Hide question 6",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
           "visible_if": "{{ block.settings.items_limit >= 6 }}"
         },
         {
@@ -14825,6 +14886,14 @@
           "visible_if": "{{ block.settings.items_limit >= 7 }}"
         },
         {
+          "type": "checkbox",
+          "id": "hide_question_7",
+          "label": "Hide question 7",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
+          "visible_if": "{{ block.settings.items_limit >= 7 }}"
+        },
+        {
           "type": "image_picker",
           "id": "question_7_image",
           "label": "Question 7 image (optional)",
@@ -14840,6 +14909,14 @@
           "type": "richtext",
           "id": "answer_8",
           "label": "Answer 8",
+          "visible_if": "{{ block.settings.items_limit >= 8 }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_question_8",
+          "label": "Hide question 8",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
           "visible_if": "{{ block.settings.items_limit >= 8 }}"
         },
         {
@@ -14861,6 +14938,14 @@
           "visible_if": "{{ block.settings.items_limit >= 9 }}"
         },
         {
+          "type": "checkbox",
+          "id": "hide_question_9",
+          "label": "Hide question 9",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
+          "visible_if": "{{ block.settings.items_limit >= 9 }}"
+        },
+        {
           "type": "image_picker",
           "id": "question_9_image",
           "label": "Question 9 image (optional)",
@@ -14876,6 +14961,14 @@
           "type": "richtext",
           "id": "answer_10",
           "label": "Answer 10",
+          "visible_if": "{{ block.settings.items_limit >= 10 }}"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_question_10",
+          "label": "Hide question 10",
+          "default": false,
+          "info": "Keeps the content but removes this item from the accordion.",
           "visible_if": "{{ block.settings.items_limit >= 10 }}"
         },
         {

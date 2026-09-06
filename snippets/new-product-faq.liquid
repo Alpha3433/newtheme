@@ -65,6 +65,9 @@
 						assign question_image = block.settings.question_10_image
 				endcase
 
+        assign hide_key = 'hide_question_' | append: i
+        assign hide_item = block.settings[hide_key]
+
         if question.value != blank
           assign question = question.value
         endif
@@ -73,7 +76,7 @@
           assign answer = answer.value
         endif
 			-%}
-			{% if question != blank %}
+			{% if question != blank and hide_item != true %}
 				<div class="faq-item {% if i == 1 and block.settings.question_1_open_by_default %}active{% endif %}" data-faq-index="{{ i }}">
 					<button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-{{ i }}">
 						{% if question_image %}

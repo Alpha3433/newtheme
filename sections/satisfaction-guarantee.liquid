@@ -148,6 +148,9 @@
           {% when 'scroll' %}
             {% assign button_href = '#' %}
             {% assign button_data_attrs = 'data-scroll-to-first-section="true"' %}
+          {% when 'scroll_to_plan_selector' %}
+            {% assign button_href = '#plan-selector' %}
+            {% assign button_data_attrs = 'data-scroll-to-plan-selector="true"' %}
           {% when 'url' %}
             {% if section.settings.custom_url != blank %}
               {% assign button_href = section.settings.custom_url %}
@@ -474,6 +477,26 @@
       });
     });
   });
+</script>
+
+<script>
+  (function () {
+    function init() {
+      document.querySelectorAll('[data-scroll-to-plan-selector]').forEach(function (el) {
+        if (el.dataset.planSelectorBound) return;
+        el.dataset.planSelectorBound = '1';
+        el.addEventListener('click', function (e) {
+          var target = document.getElementById('plan-selector') || document.querySelector('.shop-add-to-cart-wrapper');
+          if (!target) return;
+          e.preventDefault();
+          var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+        });
+      });
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+    document.addEventListener('shopify:section:load', init);
+  })();
 </script>
 
 {% schema %}
@@ -863,6 +886,10 @@
         {
           "value": "scroll",
           "label": "Scroll to Section"
+        },
+        {
+          "value": "scroll_to_plan_selector",
+          "label": "Scroll to plan selector / buy box"
         },
         {
           "value": "url",

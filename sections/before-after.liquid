@@ -693,11 +693,28 @@
     {%- endfor -%}
     
     {%- assign category_array = categories | split: ',' -%}
+    {%- comment -%} Default active tab (section setting). Falls back to "All" when the category has no slides. {%- endcomment -%}
+    {%- assign default_category_handle = section.settings.default_category | default: 'All' | handleize -%}
+    {%- if default_category_handle == blank or default_category_handle == 'all' or category_array.size < 2 -%}
+      {%- assign default_category_handle = 'all' -%}
+    {%- else -%}
+      {%- assign default_category_found = false -%}
+      {%- for category in category_array -%}
+        {%- assign category_handle = category | handleize -%}
+        {%- if category_handle == default_category_handle -%}
+          {%- assign default_category_found = true -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- unless default_category_found -%}
+        {%- assign default_category_handle = 'all' -%}
+      {%- endunless -%}
+    {%- endif -%}
     {%- if category_array.size > 1 -%}
       <div class="category-filters">
-        <button class="category-filter-btn active" data-category="all">All</button>
+        <button class="category-filter-btn{% if default_category_handle == 'all' %} active{% endif %}" data-category="all">All</button>
         {%- for category in category_array -%}
-          <button class="category-filter-btn" data-category="{{ category | handleize }}">{{ category }}</button>
+          {%- assign category_handle = category | handleize -%}
+          <button class="category-filter-btn{% if category_handle == default_category_handle %} active{% endif %}" data-category="{{ category_handle }}">{{ category }}</button>
         {%- endfor -%}
       </div>
     {%- endif -%}
@@ -713,7 +730,8 @@
                       assign after_image = this.after_image
                       assign category = this.category | default: 'General'
                   -%}
-                  <div class="swiper-slide" data-category="{{ category | handleize }}" {{  block.shopify_attributes }}>
+                  {%- assign slide_category_handle = category | handleize -%}
+                  <div class="swiper-slide" data-category="{{ slide_category_handle }}"{% if default_category_handle != 'all' and slide_category_handle != default_category_handle %} style="display: none;"{% endif %} {{  block.shopify_attributes }}>
                       <div class="slide-container container--before">
                           <div class="label">{{ before_label }}</div>
                           <div class="image-container before-image">
@@ -1188,6 +1206,14 @@
           "label": "Subtitle",
           "default": "See the amazing transformations and results from our treatments.",
           "info": "Optional subtitle text to appear below the heading",
+          "visible_if": "{{ section.settings.settings_tab == 'general' }}"
+        },
+        {
+          "type": "text",
+          "id": "default_category",
+          "label": "Default active tab",
+          "default": "All",
+          "info": "Category tag to show first, e.g. Women. Use All (or leave blank) to show every slide. Must match a block's Category Tag.",
           "visible_if": "{{ section.settings.settings_tab == 'general' }}"
         },
         {
