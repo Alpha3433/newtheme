@@ -9,389 +9,663 @@
  */
 {
   "sections": {
-    "lp_announce": {
-      "type": "lp-announce",
-      "settings": {
-        "text": "90-Day Money-Back Guarantee On All Orders",
-        "show_icon": true,
-        "background": "#282828",
-        "text_color": "#ffffff"
-      }
-    },
-    "lp_hero": {
-      "type": "lp-product-hero",
+    "shop_product_details_JbqzwH": {
+      "type": "shop-product-details",
       "blocks": {
-        "rating": {
-          "type": "rating",
+        "reviews_4Q87j7": {
+          "type": "reviews",
           "settings": {
-            "rating": "4.8",
-            "count": "43 reviews",
-            "link": "#reviews"
+            "use_theme_colors": false,
+            "star_color": "#ef4a65",
+            "empty_star_color": "#e0e0e0",
+            "star_spacing": 2,
+            "rating_text_content": "<p>Rated <strong>4.8</strong> (<em>43</em>)</p>",
+            "rating_text_color": "#000000",
+            "satisfaction_text": "Happy Customers",
+            "satisfaction_text_color": "#fa9e00",
+            "satisfaction_bg_color": "#ffeaee",
+            "rating_text_size": 15,
+            "rating_text_size_mobile": 13,
+            "satisfaction_text_size": 14,
+            "satisfaction_text_size_mobile": 12,
+            "margin_top": 0,
+            "margin_bottom": 15,
+            "element_gap": 4,
+            "rating_link": "#reviews"
+          },
+          "disabled": true
+        },
+        "viewer_notice_YHX7Dm": {
+          "type": "viewer_notice",
+          "disabled": true,
+          "settings": {
+            "notice_text": "Selling Fast!",
+            "suffix_text": "people viewing right now",
+            "min_viewers": 30,
+            "max_viewers": 60,
+            "background_color": "#fb7948",
+            "text_color": "#ffffff",
+            "dot_color": "#e4e2bc",
+            "border_radius": 16,
+            "box_shadow": true,
+            "margin_top": -12,
+            "margin_bottom": 0,
+            "show_border": true,
+            "border_style": "solid",
+            "border_color": "#fb7948",
+            "border_width": 1,
+            "use_icon": false,
+            "custom_icon": "",
+            "icon_size": 24,
+            "text_alignment": "left"
           }
         },
-        "title": {
+        "title_4EWLUd": {
           "type": "title",
           "settings": {
-            "title": "",
-            "second_line": "Less shedding in 2 weeks. Fuller in 90."
+            "dynamic_variant_title_option": "none",
+            "use_custom_title": false,
+            "custom_title": "SUNNY SIDE UP",
+            "font_size": 40,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "title_color": "#333030",
+            "line_height": 1
           }
         },
-        "desc": {
-          "type": "text",
+        "headline_promise": {
+          "type": "custom_text",
           "settings": {
-            "text": "<p>Cold-pressed pumpkin seed oil and <strong>1% caffeine</strong> in a lightweight, non-greasy scalp serum. Apply 1–2 ml to the scalp nightly, massage in and leave on overnight. It absorbs in minutes.</p>"
+            "text": "<p><strong>Less shedding in 2 weeks. Fuller in 90.</strong></p>",
+            "show_description": false,
+            "description": "<p>Add additional descriptive text here</p>",
+            "description_font_size": 8,
+            "description_spacing": 4,
+            "description_color": "#666666",
+            "description_opacity": 0.8,
+            "show_accent_text": false,
+            "accent_text": "Accent Text",
+            "accent_text_position": "before",
+            "use_accent_gradient": true,
+            "accent_text_gradient": "linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1) 100%)",
+            "accent_text_color": "#667eea",
+            "accent_text_font_size": 8,
+            "accent_text_font_weight": "semibold",
+            "accent_text_spacing": 8,
+            "show_icon": false,
+            "custom_icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" class=\"bi bi-stars\"><path d=\"M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z\"></path></svg>",
+            "icon_color": "#333333",
+            "icon_size": 14,
+            "icon_spacing": 8,
+            "icon_alignment": "center",
+            "icon_margin_left": 0,
+            "icon_margin_right": 8,
+            "use_image_icon": false,
+            "show_after_icon": false,
+            "after_custom_icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><path d=\"M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z\"></path></svg>",
+            "after_icon_color": "#333333",
+            "after_icon_size": 20,
+            "after_icon_alignment": "center",
+            "after_icon_margin_left": 8,
+            "after_icon_margin_right": 0,
+            "use_image_after_icon": false,
+            "text_align": "left",
+            "font_size": 17,
+            "text_color": "#282828",
+            "link_color": "#0066cc",
+            "margin_top": 0,
+            "margin_bottom": 4,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "use_container": false,
+            "container_bg_type": "color",
+            "container_bg": "#f8f8f8",
+            "container_bg_gradient": "linear-gradient(180deg, rgba(248, 248, 248, 1), rgba(229, 229, 229, 1) 100%)",
+            "container_padding_v": 10,
+            "container_padding_h": 14,
+            "container_fit_content": false,
+            "border_radius": 4,
+            "show_border": false,
+            "border_width": 1,
+            "border_color": "#e0e0e0",
+            "show_divider": false,
+            "divider_color": "#e0e0e0",
+            "divider_height": 1,
+            "divider_style": "solid",
+            "divider_spacing": 12
           }
         },
-        "bullet_1": {
-          "type": "bullet",
+        "divider_UJYaan": {
+          "type": "divider",
           "settings": {
-            "lead": "Less shedding",
-            "text": "in the first 2 weeks"
+            "color": "#e0e0e0",
+            "style": "solid",
+            "thickness": 1,
+            "width": "100%",
+            "max_width": "100%",
+            "alignment": "center",
+            "margin_top": 5,
+            "margin_bottom": 6
           }
         },
-        "bullet_2": {
-          "type": "bullet",
+        "custom_text_CtXXXE": {
+          "type": "custom_text",
           "settings": {
-            "lead": "Fine new hairs",
-            "text": "at the part and temples by weeks 6–8"
+            "text": "<p>Our cold-pressed pumpkin seed oil and 1% caffeine formula absorbs into the scalp, helping support the follicle against DHT while supporting the natural growth cycle. Lightweight, non-greasy, and applied nightly.</p>",
+            "show_description": false,
+            "description": "<p>Add additional descriptive text here</p>",
+            "description_font_size": 14,
+            "description_spacing": 4,
+            "description_color": "#666666",
+            "description_opacity": 0.8,
+            "show_accent_text": false,
+            "accent_text": "Accent Text",
+            "accent_text_position": "before",
+            "use_accent_gradient": true,
+            "accent_text_gradient": "linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1) 100%)",
+            "accent_text_color": "#667eea",
+            "accent_text_font_size": 16,
+            "accent_text_font_weight": "semibold",
+            "accent_text_spacing": 8,
+            "show_icon": false,
+            "custom_icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" class=\"bi bi-stars\"><path d=\"M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z\"></path></svg>",
+            "icon_color": "#333333",
+            "icon_size": 20,
+            "icon_spacing": 8,
+            "icon_alignment": "center",
+            "icon_margin_left": 0,
+            "icon_margin_right": 8,
+            "use_image_icon": false,
+            "show_after_icon": false,
+            "after_custom_icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><path d=\"M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z\"></path></svg>",
+            "after_icon_color": "#333333",
+            "after_icon_size": 20,
+            "after_icon_alignment": "center",
+            "after_icon_margin_left": 8,
+            "after_icon_margin_right": 0,
+            "use_image_after_icon": false,
+            "text_align": "left",
+            "font_size": 14,
+            "text_color": "#333333",
+            "link_color": "#0066cc",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "use_container": false,
+            "container_bg_type": "color",
+            "container_bg": "#f8f8f8",
+            "container_bg_gradient": "linear-gradient(180deg, rgba(248, 248, 248, 1), rgba(229, 229, 229, 1) 100%)",
+            "container_padding_v": 10,
+            "container_padding_h": 14,
+            "container_fit_content": false,
+            "border_radius": 4,
+            "show_border": false,
+            "border_width": 1,
+            "border_color": "#e0e0e0",
+            "show_divider": false,
+            "divider_color": "#e0e0e0",
+            "divider_height": 1,
+            "divider_style": "solid",
+            "divider_spacing": 12
+          },
+          "disabled": true
+        },
+        "custom_text_6gdF7K": {
+          "type": "custom_text",
+          "settings": {
+            "text": "<p><strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller</p>",
+            "show_description": false,
+            "description": "<p>Add additional descriptive text here</p>",
+            "description_font_size": 12,
+            "description_spacing": 4,
+            "description_color": "#666666",
+            "description_opacity": 0.8,
+            "show_accent_text": false,
+            "accent_text": "Accent Text",
+            "accent_text_position": "before",
+            "use_accent_gradient": true,
+            "accent_text_gradient": "linear-gradient(135deg, rgba(102, 126, 234, 1), rgba(118, 75, 162, 1) 100%)",
+            "accent_text_color": "#667eea",
+            "accent_text_font_size": 16,
+            "accent_text_font_weight": "semibold",
+            "accent_text_spacing": 8,
+            "show_icon": false,
+            "custom_icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\" class=\"bi bi-stars\"><path d=\"M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z\"></path></svg>",
+            "icon_color": "#333333",
+            "icon_size": 20,
+            "icon_spacing": 8,
+            "icon_alignment": "center",
+            "icon_margin_left": 0,
+            "icon_margin_right": 8,
+            "use_image_icon": false,
+            "show_after_icon": false,
+            "after_custom_icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 16 16\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"currentColor\"><path d=\"M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z\"></path></svg>",
+            "after_icon_color": "#333333",
+            "after_icon_size": 20,
+            "after_icon_alignment": "center",
+            "after_icon_margin_left": 8,
+            "after_icon_margin_right": 0,
+            "use_image_after_icon": false,
+            "text_align": "left",
+            "font_size": 14,
+            "text_color": "#333333",
+            "link_color": "#0066cc",
+            "margin_top": 12,
+            "margin_bottom": 4,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "use_container": false,
+            "container_bg_type": "color",
+            "container_bg": "#f8f8f8",
+            "container_bg_gradient": "linear-gradient(180deg, rgba(248, 248, 248, 1), rgba(229, 229, 229, 1) 100%)",
+            "container_padding_v": 10,
+            "container_padding_h": 14,
+            "container_fit_content": false,
+            "border_radius": 4,
+            "show_border": false,
+            "border_width": 1,
+            "border_color": "#e0e0e0",
+            "show_divider": false,
+            "divider_color": "#e0e0e0",
+            "divider_height": 1,
+            "divider_style": "solid",
+            "divider_spacing": 12
           }
         },
-        "bullet_3": {
-          "type": "bullet",
+        "benefits_grid_TYPpNT": {
+          "type": "benefits_grid",
           "settings": {
-            "lead": "Visibly fuller",
-            "text": "by day 90 — or your money back"
+            "benefit_1_text": "Reduced Shedding",
+            "benefit_1_use_image": true,
+            "benefit_1_use_custom_icon": true,
+            "benefit_1_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"32\" y1=\"18\" x2=\"30\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"16\" x2=\"40\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"48\" y1=\"18\" x2=\"50\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <path d=\"M30 52 L40 62 L50 52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "benefit_2_text": "Thicker Hair Density",
+            "benefit_2_use_image": true,
+            "benefit_2_use_custom_icon": true,
+            "benefit_2_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M16 58 Q40 50 64 58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <line x1=\"22\" y1=\"56\" x2=\"19\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"31\" y1=\"54\" x2=\"29\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"52\" x2=\"40\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"49\" y1=\"54\" x2=\"51\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"58\" y1=\"56\" x2=\"61\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
+            "benefit_3_text": "Fuller-looking part",
+            "benefit_3_use_image": true,
+            "benefit_3_use_custom_icon": true,
+            "benefit_3_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M16 58 Q40 50 64 58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <line x1=\"22\" y1=\"56\" x2=\"19\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"31\" y1=\"54\" x2=\"29\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"52\" x2=\"40\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"49\" y1=\"54\" x2=\"51\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"58\" y1=\"56\" x2=\"61\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
+            "benefit_4_text": "Less hair in the shower",
+            "benefit_4_use_image": true,
+            "benefit_4_use_custom_icon": true,
+            "benefit_4_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"32\" y1=\"18\" x2=\"30\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"16\" x2=\"40\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"48\" y1=\"18\" x2=\"50\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <path d=\"M30 52 L40 62 L50 52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "icon_bg_color": "#ffffff",
+            "enable_icon_circle_stroke": true,
+            "icon_circle_stroke_color": "#282828",
+            "icon_circle_stroke_width": 1,
+            "icon_stroke_color": "#282828",
+            "text_color": "#282828",
+            "font_size": 13,
+            "icon_size": 24,
+            "icon_container_size": 36,
+            "grid_gap": 15,
+            "container_margin_top": -15,
+            "container_margin_bottom": 15
           }
         },
-        "plan_monthly": {
-          "type": "plan_card",
+        "shipping_notice_ycmz4B": {
+          "type": "shipping_notice",
           "settings": {
-            "variant_index": 1,
-            "plan_match": "every month",
-            "banner": "Ships every month",
-            "title": "Monthly",
-            "subtitle": "1 bottle delivered every month",
-            "pills": "1× Serum",
-            "style": "default",
-            "selected": true
+            "notice_text_before": "Order today, arrives",
+            "notice_text_after": "",
+            "days_ahead": 4,
+            "show_suffix": true,
+            "custom_shipping_text": "#333030",
+            "custom_date_color": "#333030",
+            "custom_highlight_color_off_theme": "#333030",
+            "custom_bg_color_off_theme": "#ffffff",
+            "highlight_color": "#ffffff",
+            "dot_color": "#08ff12",
+            "enable_background": true,
+            "bg_color": "#f5f5f5",
+            "enable_border": true,
+            "border_color": "#333030",
+            "border_width": 1,
+            "border_style": "solid",
+            "font_size": 13,
+            "container_margin_top": 4,
+            "container_margin_bottom": 15,
+            "enable_animation": true,
+            "suffix_text": ".",
+            "text_alignment": "left"
           }
         },
-        "plan_quarterly": {
-          "type": "plan_card",
+        "quantity_selector_qJAYDN": {
+          "type": "quantity_selector",
+          "disabled": true,
           "settings": {
-            "variant_index": 2,
-            "plan_match": "every 3 months",
-            "banner": "Ships every 3 months",
-            "title": "Every 3 Months",
-            "subtitle": "1 bottle delivered every 3 months",
-            "pills": "1× Serum",
-            "style": "popular",
-            "selected": false
+            "background_color": "#f2f2f2",
+            "button_color": "#ffffff",
+            "text_color": "#000000",
+            "margin_top": 0,
+            "margin_bottom": 12
           }
         },
-        "plan_biannual": {
-          "type": "plan_card",
+        "add_to_cart_7nhY9K": {
+          "type": "add_to_cart",
           "settings": {
-            "variant_index": 3,
-            "plan_match": "every 6 months",
-            "banner": "Ships every 6 months",
-            "title": "Every 6 Months",
-            "subtitle": "1 bottle delivered every 6 months",
-            "pills": "1× Serum",
-            "style": "best",
-            "selected": false
+            "use_theme_colors": false,
+            "use_global_button_styling": true,
+            "show_fast_payment": false,
+            "button_behavior": "add_to_cart",
+            "button_text_override": "ADD TO CART",
+            "show_price_in_button": false,
+            "multiply_values_by_quantity": true,
+            "apply_selected_subscription_discount": true,
+            "button_icon": "none",
+            "custom_icon": "",
+            "icon_size": 20,
+            "button_border_color": "#ef4a65",
+            "buy_box_button_bg_color": "#fdda36",
+            "button_text_color": "#ffffff",
+            "buy_box_button_hover_color": "#fdda36",
+            "price_color": "#333030",
+            "custom_button_padding_y": 12,
+            "custom_button_font_size": 18,
+            "button_border_radius": 10,
+            "show_reassurance_chip": true
           }
         },
-        "pill_shipping": {
-          "type": "trust_pill",
+        "guarantee_badges_HAWQYD": {
+          "type": "guarantee_badges",
           "settings": {
-            "icon": "truck",
-            "text": "Free Shipping"
+            "use_theme_colors": true,
+            "badge_1_show": true,
+            "badge_1_text": "90-Day Money-Back Guarantee — no return needed",
+            "badge_1_icon": "custom",
+            "badge_1_dot_color": "#4caf50",
+            "badge_1_custom_icon": "",
+            "badge_2_show": true,
+            "badge_2_text": "Free Shipping Included",
+            "badge_2_icon": "custom",
+            "badge_2_dot_color": "#4caf50",
+            "badge_2_custom_icon": "",
+            "icon_color": "#333030",
+            "text_color": "#333030",
+            "container_margin_top": 5,
+            "container_margin_right": 0,
+            "container_margin_bottom": 10,
+            "container_margin_left": 0,
+            "font_size": 12,
+            "icon_size": 16,
+            "gap": 6,
+            "align_center": true,
+            "mobile_stack": false
           }
         },
-        "pill_delivery": {
-          "type": "trust_pill",
+        "divider_DttfTp": {
+          "type": "divider",
           "settings": {
-            "icon": "clock",
-            "text": "3–7 Day Delivery"
+            "color": "#e0e0e0",
+            "style": "solid",
+            "thickness": 1,
+            "width": "100%",
+            "max_width": "100%",
+            "alignment": "center",
+            "margin_top": 10,
+            "margin_bottom": 10
           }
         },
-        "pill_guarantee": {
-          "type": "trust_pill",
+        "custom_money_back_FNGwrh": {
+          "type": "custom_money_back",
           "settings": {
-            "icon": "shield",
-            "text": "90-Day Guarantee"
+            "use_theme_colors": true,
+            "title_text": "Less than 1%",
+            "description_text": "of customers claim our Money Back Guarantee",
+            "badge_svg": "",
+            "use_svg_badge": false,
+            "badge_size": 90,
+            "gradient_start_color": "#ffff00",
+            "gradient_end_color": "#ffa500",
+            "title_color": "#000000",
+            "text_color": "#000000",
+            "title_font_size": 15,
+            "description_font_size": 13,
+            "border_style": "dotted",
+            "border_color": "#000000",
+            "border_radius": 6,
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "enable_shine": true,
+            "padding_top": 3,
+            "padding_right": 10,
+            "padding_bottom": 3,
+            "padding_left": 10
+          },
+          "disabled": true
+        },
+        "product_faq_4yXjYU": {
+          "type": "product_faq",
+          "settings": {
+            "use_theme_colors": false,
+            "items_limit": 10,
+            "image_size": 40,
+            "image_border_radius": 4,
+            "image_fit": "cover",
+            "text_size": 14,
+            "answer_text_size": 14,
+            "item_padding": 5,
+            "question_padding": 8,
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "faq_border_radius": 10,
+            "border_color": "#e5e5e5",
+            "border_style": "bottom_only",
+            "question_color": "#000000",
+            "question_bg_color": "#ffffff",
+            "answer_color": "#000000",
+            "answer_bg_color": "#ffffff",
+            "accordion_mode": true,
+            "question_1": "What is it?",
+            "use_product_description_for_question_1": false,
+            "answer_1": "<p>A lightweight scalp serum with cold-pressed pumpkin seed oil and 1% caffeine. Pumpkin seed oil is a clinically studied ingredient that helps support the follicle against DHT, the hormone linked to thinning. Caffeine absorbs in minutes and supports the natural growth cycle.</p><p>Non-greasy, no residue, no prescription. Made for women noticing a widening part, a thinner ponytail or more hair in the shower, and suitable for men too.</p>",
+            "question_2": "How do I apply it?",
+            "answer_2": "<p>Apply 1–2 ml to a dry or towel-dried scalp each night, focusing on the part and temples. Massage for 3–5 minutes, leave on overnight, don't rinse. <strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller. Apply it nightly for the full 90 days.</p>",
+            "question_3": "",
+            "answer_3": "",
+            "question_4": "Does it really work?",
+            "answer_4": "<p>Pumpkin seed oil is a clinically studied ingredient for thinning hair. Most customers notice less shedding in the first 2 weeks and visibly fuller hair by day 90 with nightly use, and every order is covered by our 90-day money-back guarantee.</p>",
+            "question_5": "What's the 90-day guarantee?",
+            "answer_5": "<p>90-Day Money-Back Guarantee — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
+            "question_6": "",
+            "answer_6": "",
+            "question_7": "",
+            "answer_7": "",
+            "question_8": "",
+            "answer_8": "",
+            "question_9": "",
+            "answer_9": "",
+            "question_10": "",
+            "answer_10": "",
+            "hide_question_3": true
           }
         },
-        "pill_studied": {
-          "type": "trust_pill",
+        "customer_review_4FYVwJ": {
+          "type": "customer_review",
           "settings": {
-            "icon": "leaf",
-            "text": "Clinically Studied Ingredient"
+            "reviewer_name": "Rachel M.",
+            "review_text": "Six weeks in and the shedding has almost stopped. I used to dread washing my hair because of how much came out — that's gone now.",
+            "rating": 5,
+            "show_avatar": true,
+            "use_theme_colors": false,
+            "background_color_start": "#ffffff",
+            "background_color_end": "#ffffff",
+            "text_color": "#000000",
+            "border_color": "#181b1d",
+            "border_radius": 0,
+            "border_style": "solid",
+            "show_shadow": true,
+            "star_color": "#fb7948",
+            "reviewer_name_size": 16,
+            "review_text_size": 14,
+            "star_size": 16,
+            "avatar_size_desktop": 75,
+            "avatar_size_mobile": 65,
+            "margin_top": 0,
+            "margin_right": 0,
+            "margin_bottom": 15,
+            "margin_left": 0,
+            "verified_icon_color": "#282828",
+            "review_text_color": "#666666",
+            "enable_carousel": true,
+            "show_navigation": true,
+            "pagination_dot_color": "#dddddd",
+            "pagination_dot_active_color": "#333333",
+            "show_active_shadow": true
           }
         },
-        "acc_what": {
-          "type": "accordion",
-          "settings": {
-            "title": "What is it?",
-            "content": "<p>A lightweight scalp serum with cold-pressed pumpkin seed oil and 1% caffeine. Pumpkin seed oil is a clinically studied ingredient that helps support the follicle against DHT, the hormone linked to thinning. Caffeine absorbs in minutes and supports the natural growth cycle.</p><p>Non-greasy, no residue, no prescription. Made for women noticing a widening part, a thinner ponytail or more hair in the shower, and suitable for men too.</p>",
-            "open": false
-          }
-        },
-        "acc_apply": {
-          "type": "accordion",
-          "settings": {
-            "title": "How do I apply it?",
-            "content": "<p>Apply 1–2 ml to a dry or towel-dried scalp each night, focusing on the part and temples. Massage for 3–5 minutes, leave on overnight, don't rinse. <strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller. Apply it nightly for the full 90 days.</p>",
-            "open": false
-          }
-        },
-        "acc_shipping": {
-          "type": "accordion",
-          "settings": {
-            "title": "Shipping & guarantee",
-            "content": "<p><strong>Free shipping</strong> on every order. Delivery takes 3–7 business days.</p><p>90-Day Money-Back Guarantee — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
-            "open": false
-          }
-        },
-        "acc_work": {
-          "type": "accordion",
-          "settings": {
-            "title": "Does it really work?",
-            "content": "<p>Pumpkin seed oil is a clinically studied ingredient for thinning hair. Most customers notice less shedding in the first 2 weeks and visibly fuller hair by day 90 with nightly use, and every order is covered by our 90-day money-back guarantee.</p>",
-            "open": false
-          }
-        }
-      },
-      "block_order": [
-        "rating",
-        "title",
-        "desc",
-        "bullet_1",
-        "bullet_2",
-        "bullet_3",
-        "plan_monthly",
-        "plan_quarterly",
-        "plan_biannual",
-        "pill_shipping",
-        "pill_delivery",
-        "pill_guarantee",
-        "pill_studied",
-        "acc_what",
-        "acc_apply",
-        "acc_shipping",
-        "acc_work"
-      ],
-      "settings": {
-        "gallery_left": false,
-        "show_thumbnails": true,
-        "image_ratio": "1/1",
-        "max_width": 1200,
-        "background_color": "#ffffff",
-        "plan_mode": "app",
-        "bundle_heading": "",
-        "show_autoship": true,
-        "autoship_default": true,
-        "one_time_single_card": true,
-        "autoship_label": "Subscribe & Save + Free Shipping",
-        "frequency_heading": "Subscription details",
-        "subscription_notes": "Free shipping on every order\nCancel or pause anytime",
-        "offer_line": "",
-        "cta_label": "Add to cart",
-        "cta_sublabel": "90-Day Money-Back Guarantee",
-        "promise_text": "<p>Your order is protected by a <strong>90-Day Money-Back Guarantee</strong> — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
-        "expert_more_label": "Know More",
-        "cta_style": "ink",
-        "cta_radius": 10
-      }
-    },
-    "lp_logos": {
-      "type": "lp-logo-marquee",
-      "blocks": {
-        "logo_7XKwQ6": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/buzzfeed-logo-black-transparent.png",
-            "alt": "BuzzFeed"
-          }
-        },
-        "logo_VcJnmr": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/today-show-seeklogo.png",
-            "alt": "TODAY Show"
-          }
-        },
-        "logo_jCzRpU": {
-          "type": "logo",
-          "settings": {
-            "image": "shopify://shop_images/TikTok_logo_svg.png",
-            "alt": "TikTok"
-          }
-        }
-      },
-      "block_order": [
-        "logo_7XKwQ6",
-        "logo_VcJnmr",
-        "logo_jCzRpU"
-      ],
-      "settings": {
-        "label": "As Seen In",
-        "logo_height": 44,
-        "speed": 40,
-        "grayscale": false
-      }
-    },
-    "lp_guarantee": {
-      "type": "lp-guarantee-band",
-      "settings": {
-        "badge_number": "90",
-        "badge_word": "DAY",
-        "heading": "Visible Results In 90 Days Or Your Money Back",
-        "body": "<p>Apply it nightly for 90 days. If you're not seeing fuller hair by day 90, email us for a full refund — <strong>no return needed</strong>. No forms. No hassle. No questions asked.</p>"
-      }
-    },
-    "lp_routine": {
-      "type": "lp-routine",
-      "blocks": {
-        "step_serum": {
-          "type": "step",
-          "settings": {
-            "use_product_image": true,
-            "tag": "Step 1",
-            "title": "The Serum — 60 Seconds",
-            "text": "<p>Cold-pressed pumpkin seed oil, a <strong>clinically studied ingredient</strong> that helps support the follicle against DHT, with 1% caffeine that absorbs in minutes and supports the natural growth cycle.</p>",
-            "apply": "Apply nightly to a dry or towel-dried scalp, focusing on the part and temples. Leave on overnight."
-          }
-        },
-        "ing_pso": {
-          "type": "ingredient",
-          "settings": {
-            "name": "Cold-Pressed Pumpkin Seed Oil",
-            "text": "<p>Cold-pressed, virgin pumpkin seed oil is a clinically studied ingredient. Its beta-sitosterol helps support the follicle against DHT, the hormone linked to follicle miniaturisation, and it absorbs into the scalp without leaving a greasy film.</p>",
-            "open": true
-          }
-        },
-        "ing_caffeine": {
-          "type": "ingredient",
-          "settings": {
-            "name": "1% Caffeine",
-            "text": "<p>1% caffeine absorbs into the scalp within minutes of application. It helps support the follicle against DHT and supports the natural growth cycle from the outside in.</p>",
-            "open": false
-          }
-        }
-      },
-      "block_order": [
-        "step_serum",
-        "ing_pso",
-        "ing_caffeine"
-      ],
-      "settings": {
-        "pill": "What's in your order",
-        "heading": "One Serum. 60 Seconds. Nightly.",
-        "subheading": "<p>Apply 1–2 ml to a dry or towel-dried scalp before bed, massage for 3–5 minutes and leave on overnight. <strong>No rinse. No residue.</strong></p>",
-        "columns": "one",
-        "max_width": 1200
-      }
-    },
-    "lp_trust_1": {
-      "type": "lp-trust-strip",
-      "blocks": {
-        "item_1": {
-          "type": "item",
-          "settings": {
-            "icon": "check",
-            "text": "Clinically Studied Ingredient"
-          }
-        },
-        "item_2": {
-          "type": "item",
-          "settings": {
-            "icon": "ban",
-            "text": "No Prescription"
-          }
-        },
-        "item_3": {
-          "type": "item",
-          "settings": {
-            "icon": "user",
-            "text": "For Women & Men"
-          }
-        },
-        "item_4": {
-          "type": "item",
-          "settings": {
-            "icon": "shield",
-            "text": "90-Day Guarantee"
-          }
-        }
-      },
-      "block_order": [
-        "item_1",
-        "item_2",
-        "item_3",
-        "item_4"
-      ],
-      "settings": {}
-    },
-    "lp_community": {
-      "type": "lp-community",
-      "blocks": {
-        "video_1": {
-          "type": "video",
+        "carousel_default_video_Myp4Dj": {
+          "type": "carousel_default_video",
           "settings": {
             "video": "shopify://files/videos/cea7880afc9142719cb81e5ce4f24091.mov",
-            "tag": "Verified",
-            "name": "",
-            "role": "Verified Customer"
+            "enable_autoplay": false,
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
-        "video_2": {
-          "type": "video",
+        "carousel_default_video_Dhh9ke": {
+          "type": "carousel_default_video",
           "settings": {
             "video": "shopify://files/videos/F946F11C-917F-41AD-B82B-5C6EA666176D.mp4",
-            "tag": "Verified",
-            "name": "",
-            "role": "Verified Customer"
+            "enable_autoplay": false,
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
-        "video_3": {
-          "type": "video",
+        "carousel_default_video_KAaPQx": {
+          "type": "carousel_default_video",
           "settings": {
             "video": "shopify://files/videos/604D5A09-36C1-49FA-AB0F-264EBD1DD6CD.mp4",
-            "tag": "Verified",
-            "name": "",
-            "role": "Verified Customer"
+            "enable_autoplay": false,
+            "margin_top": 0,
+            "margin_bottom": 0
           }
         },
-        "review_rachel": {
-          "type": "review",
+        "bogo_offer_line": {
+          "type": "custom_text",
           "settings": {
-            "name": "Rachel M.",
-            "tag": "Verified buyer",
-            "rating": 5,
-            "text": "Six weeks in and the shedding has almost stopped. I used to dread washing my hair because of how much came out — that's gone now.",
-            "purchased": ""
+            "text": "<p><strong>Buy 1, Get 1 Free</strong> on the 2-month plan</p>",
+            "show_description": false,
+            "show_accent_text": false,
+            "show_icon": false,
+            "show_after_icon": false,
+            "text_align": "left",
+            "font_size": 13,
+            "text_color": "#282828",
+            "margin_top": 0,
+            "margin_bottom": 4,
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "use_container": false,
+            "show_border": false,
+            "show_divider": false
+          }
+        },
+        "proof_strip_serum": {
+          "type": "proof_strip",
+          "settings": {
+            "show_rating": true,
+            "rating_value": "4.8",
+            "rating_count": "43",
+            "rating_link": "#reviews",
+            "item_2_text": "Clinically studied ingredient",
+            "item_3_text": "Free express shipping",
+            "font_size": 13,
+            "text_color": "#333030",
+            "star_color": "#ef4a65",
+            "margin_top": 2,
+            "margin_bottom": 8
+          }
+        },
+        "price_serum": {
+          "type": "price",
+          "settings": {
+            "multiply_price_by_quantity": true,
+            "apply_selected_subscription_discount": true,
+            "price_color": "#333030",
+            "compare_price_color": "#999999",
+            "show_save_badge": true,
+            "price_font_size": 24,
+            "compare_price_font_size": 16,
+            "price_margin_top": 0,
+            "price_margin_bottom": 4
           }
         }
       },
       "block_order": [
-        "video_1",
-        "video_2",
-        "video_3",
-        "review_rachel"
+        "reviews_4Q87j7",
+        "viewer_notice_YHX7Dm",
+        "title_4EWLUd",
+        "headline_promise",
+        "proof_strip_serum",
+        "price_serum",
+        "bogo_offer_line",
+        "quantity_selector_qJAYDN",
+        "add_to_cart_7nhY9K",
+        "guarantee_badges_HAWQYD",
+        "shipping_notice_ycmz4B",
+        "divider_DttfTp",
+        "custom_money_back_FNGwrh",
+        "custom_text_6gdF7K",
+        "benefits_grid_TYPpNT",
+        "divider_UJYaan",
+        "custom_text_CtXXXE",
+        "product_faq_4yXjYU",
+        "customer_review_4FYVwJ",
+        "carousel_default_video_Myp4Dj",
+        "carousel_default_video_Dhh9ke",
+        "carousel_default_video_KAaPQx"
       ],
+      "custom_css": [],
+      "name": "Product Details",
       "settings": {
-        "pill": "From the community",
-        "heading": "What Women Are Saying",
-        "tab_videos": "Customer Videos",
-        "tab_reviews": "Reviews",
-        "tab_screenshots": "Comments",
-        "default_tab": "videos"
+        "use_theme_colors": false,
+        "main_image_border_radius": 0,
+        "thumbnail_border_radius": 0,
+        "current_product": "",
+        "section_bg_color": "#ffffff",
+        "blocks_spacing": 4,
+        "text_color": "#333030",
+        "accent_color": "#181b1d",
+        "divider_color": "#f2f2f2",
+        "show_product_info": true,
+        "show_product_gallery": true,
+        "show_product_variants": true,
+        "thumbnail_border_color": "#f2f2f2",
+        "thumbnail_active_border_color": "#181b1d",
+        "thumbnails_include_section_padding": false,
+        "dots_color": "#cccccc",
+        "enable_full_width_image": false,
+        "enable_mobile_full_width_image": true,
+        "image_aspect_ratio": "1:1",
+        "hide_thumbnails": false,
+        "dot_size": 8,
+        "dot_color": "#cccccc",
+        "dot_active_color": "#000000",
+        "show_desktop_arrows": true,
+        "desktop_arrow_background": "#ffffff",
+        "desktop_arrow_border": "#e0e0e0",
+        "desktop_arrow_icon": "#000000",
+        "desktop_arrow_hover_background": "#f5f5f5",
+        "desktop_arrow_hover_border": "#d0d0d0",
+        "arrow_border_radius": 50,
+        "arrow_opacity": 90,
+        "desktop_arrow_placement": "overlaid",
+        "show_mobile_arrows": true,
+        "mobile_arrow_placement": "overlaid",
+        "mobile_thumbnails_2x2_grid": false,
+        "hide_thumbnails_mobile": false,
+        "thumbnails_left_column_desktop": false,
+        "thumbnails_fade_to_white_desktop": false,
+        "control_app_subscription_preselect": false,
+        "seal_selling_plan_id_preselect": ""
       }
     },
-    "lp_results": {
-      "type": "lp-results",
+    "before_after_KeXf6z": {
+      "type": "before-after",
       "blocks": {
         "before_and_after_cfGH8f": {
           "type": "before_and_after",
@@ -400,8 +674,7 @@
             "before_image": "shopify://shop_images/hf_20260316_130652_95a6504b-554e-460d-ba60-1db62d494ba4.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_130633_6450372b-4a30-497b-90f7-d743e3971404.png",
-            "category": "Women",
-            "caption": ""
+            "category": "Women"
           }
         },
         "before_and_after_HWdqJN": {
@@ -411,8 +684,7 @@
             "before_image": "shopify://shop_images/hf_20260316_131657_f6728ed6-c41c-4677-896b-df3e3bf4976e.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_131633_ec843593-47fa-4dd5-a603-de1a3ef6be1d.png",
-            "category": "Women",
-            "caption": ""
+            "category": "Women"
           }
         },
         "before_and_after_epAB4r": {
@@ -422,8 +694,7 @@
             "before_image": "shopify://shop_images/hf_20260316_131918_c1713c8c-9aca-4e7d-abe1-db63c0e8a78c.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_132119_22281636-79f4-4b40-8147-917f51dc30c0.png",
-            "category": "Women",
-            "caption": ""
+            "category": "Women"
           }
         },
         "before_and_after_yqRiFt": {
@@ -433,8 +704,7 @@
             "before_image": "shopify://shop_images/hf_20260316_124108_2eb3b3b4-134b-4d58-9f56-7183c35390f4.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_124412_77b309f4-0cf8-4f6e-85da-956fe0b58667.png",
-            "category": "General",
-            "caption": ""
+            "category": "General"
           }
         },
         "before_and_after_r8excL": {
@@ -444,8 +714,7 @@
             "before_image": "shopify://shop_images/hf_20260316_131110_248ce412-0b03-41d6-9bb5-e3e9667d75ab.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_131154_676a117d-c5b9-4e9d-813a-02ab51d4d63f.png",
-            "category": "General",
-            "caption": ""
+            "category": "General"
           }
         },
         "before_and_after_awXjxE": {
@@ -455,8 +724,7 @@
             "before_image": "shopify://shop_images/hf_20260317_110737_6dd67269-0dcc-4f65-8bab-f5cdacb1121e.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260317_110637_ceae7150-6a01-431c-97da-adda39d81f42.png",
-            "category": "General",
-            "caption": ""
+            "category": "General"
           }
         },
         "before_and_after_xNNaYm": {
@@ -466,8 +734,7 @@
             "before_image": "shopify://shop_images/hf_20260317_122732_a2c7adfa-c6e5-4198-836e-26134b23c236.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260317_122943_80cf094f-e3ef-4679-a564-d06eeadeed68.png",
-            "category": "General",
-            "caption": ""
+            "category": "General"
           }
         },
         "before_and_after_JzVkkc": {
@@ -477,8 +744,7 @@
             "before_image": "shopify://shop_images/hf_20260316_125422_a86b2a58-df6e-4706-a176-dc70ea4861cb.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_125601_7b0fa0f0-d938-4e8f-967b-6f10ea6ada23.png",
-            "category": "90 Days",
-            "caption": ""
+            "category": "90 Days"
           }
         },
         "before_and_after_w6ekrN": {
@@ -488,8 +754,7 @@
             "before_image": "shopify://shop_images/hf_20260316_124901_a999785d-4e19-4165-bcb5-b8b48eb25af6.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_124854_b2e156fe-8407-476f-8071-d24ba9f22a0a.png",
-            "category": "Men",
-            "caption": ""
+            "category": "Men"
           }
         },
         "before_and_after_8t6Gjh": {
@@ -499,8 +764,7 @@
             "before_image": "shopify://shop_images/hf_20260316_130318_cf8ed94c-da76-41ac-b69b-11a6bea84e17.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_130345_96ed7bcd-1fc0-4406-af02-f73203a818e5.png",
-            "category": "Men",
-            "caption": ""
+            "category": "Men"
           }
         },
         "before_and_after_ztma3M": {
@@ -510,8 +774,7 @@
             "before_image": "shopify://shop_images/hf_20260316_132722_6f8c6140-dc2c-44d8-a432-43fb82af7cd5.png",
             "after_label": "After 90 Days",
             "after_image": "shopify://shop_images/hf_20260316_132957_b8cff676-07ea-44c8-973e-41fba631e494.png",
-            "category": "Men",
-            "caption": ""
+            "category": "Men"
           }
         }
       },
@@ -528,188 +791,254 @@
         "before_and_after_8t6Gjh",
         "before_and_after_ztma3M"
       ],
+      "custom_css": [
+        ".label {font-size: 12px !important; padding: 1px 12px !important;}"
+      ],
+      "name": "Before & After Slider",
       "settings": {
-        "pill": "Before & After",
-        "heading": "Real Results In 90 Days",
-        "subheading": "<p>See the hair transformations our customers experience in 90 days.</p>",
-        "all_label": "All",
-        "default_category": "Women",
-        "ratio": "1/1",
-        "columns": 3,
-        "disclaimer": "Individual results vary.",
-        "cta_label": "Choose My Plan",
-        "cta_link": "#plan-selector"
+        "settings_tab": "general",
+        "heading": "Before & After",
+        "heading_size": 56,
+        "heading_size_mobile": 46,
+        "heading_accent": "Results",
+        "use_accent_gradient": false,
+        "accent_text_gradient": "linear-gradient(135deg, rgba(25, 189, 255, 1), rgba(14, 165, 233, 1) 100%)",
+        "accent_text_margin_left": 0,
+        "subtitle": "See the hair transformations our customers experience in 90 days.",
+        "subtitle_size": 18,
+        "heading_color": "#000000",
+        "subtitle_color": "#666666",
+        "heading_accent_color": "#000000",
+        "button_text": "See Our Reviews",
+        "button_link": "#reviews",
+        "before_label_bg_color": "#ffffff",
+        "before_label_text_color": "#282828",
+        "after_label_bg_color": "#282828",
+        "after_label_text_color": "#ffffff",
+        "label_border_radius": 0,
+        "use_global_nav_buttons": true,
+        "nav_button_bg_color": "#121212",
+        "nav_button_text_color": "#ffffff",
+        "nav_button_hover_bg_color": "#333333",
+        "nav_button_hover_text_color": "#ffffff",
+        "pagination_bullet_color": "#cccccc",
+        "pagination_bullet_active_color": "#121212",
+        "image_border_color": "#282828",
+        "image_border_width": 1,
+        "image_border_radius": 0,
+        "slide_background_color": "rgba(0,0,0,0)",
+        "active_slide_background_color": "rgba(0,0,0,0)",
+        "category_filter_bg_color": "#ffffff",
+        "category_filter_text_color": "#333333",
+        "category_filter_active_bg_color": "#282828",
+        "category_filter_active_text_color": "#ffffff",
+        "category_filter_border_radius": 0,
+        "category_filter_border_width": 1,
+        "category_filter_border_color": "#e0e0e0",
+        "category_filter_active_border_color": "#282828",
+        "action_button_bg_color": "#121212",
+        "action_button_text_color": "#ffffff",
+        "action_button_hover_bg_color": "#333333",
+        "action_button_hover_text_color": "#ffffff",
+        "action_button_border_color": "#121212",
+        "action_button_hover_border_color": "#333333",
+        "section_styling": "default",
+        "section_width": "default",
+        "custom_section_width": 1400,
+        "background_type": "default",
+        "bg_color": "",
+        "bg_gradient": "",
+        "simple_section_background": "#ffffff",
+        "heading_style": "default",
+        "heading_font": "inter_n7",
+        "heading_text_size": 40,
+        "heading_text_line_height": 1.2,
+        "heading_text_color": "",
+        "body_style": "default",
+        "body_font": "inter_n4",
+        "body_text_size": 16,
+        "body_text_line_height": 1.2,
+        "body_text_color": "",
+        "button_style": "default",
+        "button_text_size": 20,
+        "button_text_color": "#ffffff",
+        "button_color": "#121212",
+        "button_text_color_hover": "#000000",
+        "button_color_hover": "#ffffff",
+        "button_border_width": 1,
+        "button_border_color": "#000000",
+        "button_border_color_hover": "#000000",
+        "button_radius": 0,
+        "border_type": "none",
+        "border_color": "",
+        "border_width_top": 1,
+        "border_width_bottom": 1,
+        "border_width_left": 1,
+        "border_width_right": 1,
+        "enable_top_border": false,
+        "top_border_width": 1,
+        "top_border_color": "#e0e0e0",
+        "enable_bottom_border": false,
+        "bottom_border_width": 1,
+        "bottom_border_color": "#e0e0e0",
+        "simple_enable_top_border": false,
+        "simple_top_border_width": 1,
+        "simple_top_border_color": "#e0e0e0",
+        "simple_enable_bottom_border": false,
+        "simple_bottom_border_width": 1,
+        "simple_bottom_border_color": "#e0e0e0",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_left": 0,
+        "padding_right": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_left": 0,
+        "margin_right": 0,
+        "custom_css": "",
+        "custom_js": "",
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "default_category": "Women"
       }
     },
-    "lp_trust_2": {
-      "type": "lp-trust-strip",
-      "blocks": {
-        "rating": {
-          "type": "rating",
-          "settings": {
-            "rating": "4.8",
-            "count": "43 Reviews"
-          }
-        },
-        "item_1": {
-          "type": "item",
-          "settings": {
-            "icon": "truck",
-            "text": "Free Shipping"
-          }
-        },
-        "item_2": {
-          "type": "item",
-          "settings": {
-            "icon": "shield",
-            "text": "90-Day Guarantee"
-          }
-        },
-        "item_3": {
-          "type": "item",
-          "settings": {
-            "icon": "ban",
-            "text": "No Prescription"
-          }
-        }
-      },
-      "block_order": [
-        "rating",
-        "item_1",
-        "item_2",
-        "item_3"
-      ],
-      "settings": {}
-    },
-    "lp_comparison": {
-      "type": "lp-comparison",
-      "blocks": {
-        "row_1": {
-          "type": "row",
-          "settings": {
-            "label": "All natural ingredients",
-            "us_type": "yes",
-            "us_text": "",
-            "them_type": "no",
-            "them_text": ""
-          }
-        },
-        "row_2": {
-          "type": "row",
-          "settings": {
-            "label": "Works for women & men",
-            "us_type": "yes",
-            "us_text": "",
-            "them_type": "yes",
-            "them_text": ""
-          }
-        },
-        "row_3": {
-          "type": "row",
-          "settings": {
-            "label": "No prescription required",
-            "us_type": "yes",
-            "us_text": "",
-            "them_type": "no",
-            "them_text": ""
-          }
-        },
-        "row_4": {
-          "type": "row",
-          "settings": {
-            "label": "Third-party tested",
-            "us_type": "yes",
-            "us_text": "",
-            "them_type": "yes",
-            "them_text": ""
-          }
-        },
-        "row_5": {
-          "type": "row",
-          "settings": {
-            "label": "Free shipping",
-            "us_type": "yes",
-            "us_text": "",
-            "them_type": "no",
-            "them_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "row_1",
-        "row_2",
-        "row_3",
-        "row_4",
-        "row_5"
-      ],
+    "satisfaction_guarantee_J4ypTy": {
+      "type": "satisfaction-guarantee",
       "settings": {
-        "kicker": "How we compare",
-        "heading": "Elaren vs. Prescription Treatments",
-        "subheading": "<p>No prescription, no appointments. Here's how the serum compares.</p>",
-        "us_label": "Elaren",
-        "them_label": "Prescription treatments",
-        "closing": "<p>Apply it at home, nightly, in 60 seconds.</p><p>No prescription. No appointments. <strong>90-day money-back guarantee.</strong></p>",
-        "cta_label": "Choose My Plan",
-        "cta_link": "#plan-selector"
+        "use_theme_colors": false,
+        "show_photos": false,
+        "allow_overflow": false,
+        "icon_style": "original",
+        "custom_svg_code": "",
+        "icon_color": "#ffffff",
+        "icon_margin_bottom": 10,
+        "accent_text": "RISK-FREE",
+        "heading_text": "Guarantee",
+        "description_text": "We back every order with a 90-Day Money-Back Guarantee — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund. Apply it nightly for 90 days. No forms. No hassle. No questions asked.",
+        "product_name": "Elaren Pumpkin Seed Oil Serum",
+        "heading_text_color": "#ffffff",
+        "description_color": "#ffffff",
+        "benefit_text_color": "#ffffff",
+        "checkmark_icon_color": "#ffffff",
+        "heading_size_desktop": 54,
+        "heading_size_mobile": 45,
+        "heading_line_height": 1,
+        "description_size_desktop": 14,
+        "description_size_mobile": 14,
+        "benefit_size_desktop": 14,
+        "benefit_size_mobile": 14,
+        "description_line_height": 1.5,
+        "accent_color": "#ffffff",
+        "accent_text_margin_left": 4,
+        "use_global_accent_typography": false,
+        "use_accent_gradient": true,
+        "accent_text_gradient": "linear-gradient(180deg, rgba(251, 121, 72, 1), rgba(255, 202, 113, 1) 97%)",
+        "accent_font_family": "inherit",
+        "accent_font_style": "normal",
+        "accent_font_weight": "300",
+        "button_text": "Try It Risk-Free Today",
+        "button_action_type": "scroll_to_plan_selector",
+        "redirect_product": "elaren-pumpkin-seed-oil-regrowth-serum",
+        "custom_url": "",
+        "use_global_button_style": true,
+        "button_color": "#211a28",
+        "button_text_color": "#333030",
+        "button_font_size": 16,
+        "button_font_weight": "600",
+        "button_border_radius": 8,
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 20,
+        "benefit_1": "100% Satisfaction",
+        "benefit_2": "Fast Shipping",
+        "benefit_3": "",
+        "polaroid_size_desktop": 180,
+        "polaroid_size_mobile": 100,
+        "image_extension": 80,
+        "image_vertical_offset": 0,
+        "content_padding_mobile": 5,
+        "content_padding_desktop": 70,
+        "content_width_with_photos": 50,
+        "content_max_width_with_photos": 600,
+        "content_max_width_no_photos": 450,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "padding_top_no_photos_mobile": 15,
+        "padding_top_no_photos_desktop": 15,
+        "section_padding_vertical": 30,
+        "section_padding_horizontal": 0,
+        "section_padding_vertical_mobile": 0,
+        "section_padding_horizontal_mobile": 0,
+        "enable_top_border": false,
+        "top_border_width": 1,
+        "top_border_color": "#000000",
+        "enable_bottom_border": false,
+        "bottom_border_width": 1,
+        "bottom_border_color": "#000000",
+        "section_background": "linear-gradient(180deg, rgba(40, 40, 40, 1), rgba(40, 40, 40, 1) 100%)",
+        "background_image_position": "center top",
+        "background_image_size": "cover",
+        "background_image_repeat": "no-repeat",
+        "contain_section": false,
+        "container_padding": 0,
+        "container_background": "linear-gradient(90deg, rgba(242, 247, 249, 1), rgba(255, 255, 255, 1) 47%, rgba(253, 255, 255, 1) 100%)",
+        "container_bg_size": "cover",
+        "container_bg_position": "center center",
+        "enable_container_bg_overlay": false,
+        "container_bg_overlay_color": "#000000",
+        "container_bg_overlay_opacity": 30,
+        "enable_border": true,
+        "border_width": 1,
+        "border_style": "solid",
+        "border_color": "#b4e1ed",
+        "border_radius": 8,
+        "enable_shadow": false
       }
     },
-    "lp_faq": {
-      "type": "lp-faq",
+    "store_faq_hidFcc": {
+      "type": "store-faq",
       "blocks": {
         "faq_item_3rMhPA": {
           "type": "faq_item",
           "settings": {
             "question": "How long until I see results?",
-            "answer": "<p>Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller. Apply it nightly for the full 90 days.</p>",
-            "open": false
+            "answer": "<p>Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller. Apply it nightly for the full 90 days.</p>"
           }
         },
         "faq_item_yT7tBh": {
           "type": "faq_item",
           "settings": {
             "question": "How do I apply it?",
-            "answer": "<p>Apply 1–2 ml to a dry scalp nightly, focusing on the part and temples. Massage in circular motions for 3–5 minutes. Leave on overnight, do not rinse.</p><p><strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller.</p>",
-            "open": false
+            "answer": "<p>Apply 1–2 ml to a dry scalp nightly, focusing on the part and temples. Massage in circular motions for 3–5 minutes. Leave on overnight, do not rinse.</p><p><strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller.</p>"
           }
         },
         "faq_item_zJpqH3": {
           "type": "faq_item",
           "settings": {
             "question": "Does it work for both women and men?",
-            "answer": "<p>Yes. DHT-related thinning affects both women and men, and the serum is applied the same way for both.</p>",
-            "open": false
+            "answer": "<p>Yes. DHT-related thinning affects both women and men, and the serum is applied the same way for both.</p>"
           }
         },
         "faq_item_U4fWGe": {
           "type": "faq_item",
           "settings": {
             "question": "Are there any side effects?",
-            "answer": "<p>Pumpkin seed oil and caffeine are well-studied natural ingredients and are generally well tolerated on the scalp. If you have a sensitive scalp, do a small patch test before full application.</p>",
-            "open": false
-          }
-        },
-        "faq_item_pregnancy": {
-          "type": "faq_item",
-          "settings": {
-            "question": "Is it safe during pregnancy or breastfeeding?",
-            "answer": "<p>Please check with your doctor or pharmacist before using any new scalp product during pregnancy or while breastfeeding.</p>",
-            "open": false
+            "answer": "<p>Pumpkin seed oil and caffeine are well-studied natural ingredients and are generally well tolerated on the scalp. If you have a sensitive scalp, do a small patch test before full application.</p>"
           }
         },
         "faq_item_wYAhz7": {
           "type": "faq_item",
           "settings": {
             "question": "How long does shipping take?",
-            "answer": "<p>3-7 business days. Free on all orders.</p>",
-            "open": false
+            "answer": "<p>3-7 business days. Free on all orders.</p>"
           }
         },
-        "faq_item_guarantee": {
+        "faq_item_pregnancy": {
           "type": "faq_item",
           "settings": {
-            "question": "What's the 90-day guarantee?",
-            "answer": "<p>90-Day Money-Back Guarantee — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
-            "open": false
+            "question": "Is it safe during pregnancy or breastfeeding?",
+            "answer": "<p>Please check with your doctor or pharmacist before using any new scalp product during pregnancy or while breastfeeding.</p>"
           }
         }
       },
@@ -719,30 +1048,71 @@
         "faq_item_zJpqH3",
         "faq_item_U4fWGe",
         "faq_item_pregnancy",
-        "faq_item_wYAhz7",
-        "faq_item_guarantee"
+        "faq_item_wYAhz7"
       ],
+      "name": "Store FAQ",
       "settings": {
-        "kicker": "Common Questions",
-        "heading": "Frequently Asked Questions",
-        "max_width": 840,
-        "cta_label": "Choose My Plan",
-        "cta_link": "#plan-selector",
-        "guarantee_line": "90-Day Money-Back Guarantee"
-      }
-    },
-    "lp_founder": {
-      "type": "lp-founder-guarantee",
-      "settings": {
-        "kicker": "Our Promise",
-        "heading": "Our 90-Day Guarantee",
-        "cred": "",
-        "body": "<p>Apply the serum nightly for 90 days. If your hair isn't visibly fuller and shedding less, email us and we'll refund you in full — <strong>no bottles to return</strong>.</p><p>We'd rather lose the sale than take your money for something that won't help.</p>",
-        "attrib_name": "",
-        "attrib_cred": "",
-        "cta_label": "Start Today",
-        "cta_link": "#plan-selector",
-        "cta_sub": "90-Day Money-Back Guarantee"
+        "use_theme_colors": false,
+        "heading": "Have Questions? We Have Answers.",
+        "subtitle": "<p>Everything you need to know about our Pumpkin Seed Oil Serum.</p>",
+        "heading_color": "#000000",
+        "subtitle_color": "#111111",
+        "section_padding": 40,
+        "container_padding_mobile": 15,
+        "container_padding_desktop": 15,
+        "section_bg_color": "#f4f4f4",
+        "border_radius": 0,
+        "border_color": "#1b1b1b",
+        "divider_color": "#e5e5e5",
+        "border_style": "full",
+        "border_width": 1,
+        "question_color": "#000000",
+        "question_bg_color": "#ffffff",
+        "answer_color": "#000000",
+        "answer_bg_color": "#ffffff",
+        "accordion_mode": true,
+        "image_border_radius": 0,
+        "image_full_height": true,
+        "full_height_min_height": 900,
+        "use_background_image": false,
+        "background_image_size": "cover",
+        "background_image_position": "center center",
+        "background_image_attachment": "scroll",
+        "background_overlay_enable": false,
+        "background_overlay_color": "#0000004d",
+        "background_overlay_opacity": 30,
+        "center_when_no_image": false,
+        "center_max_width": 600,
+        "two_column_desktop": false,
+        "column_gap": 30,
+        "faq_item_spacing": 0,
+        "individual_item_borders": false,
+        "question_padding_top": 15,
+        "question_padding_bottom": 15,
+        "question_padding_left": 20,
+        "question_padding_right": 20,
+        "answer_padding_top": 15,
+        "answer_padding_bottom": 15,
+        "answer_padding_left": 20,
+        "answer_padding_right": 20,
+        "heading_font_size": 54,
+        "heading_font_size_mobile": 40,
+        "heading_line_height": 1.2,
+        "subtitle_font_size": 16,
+        "subtitle_font_size_mobile": 14,
+        "subtitle_line_height": 1.5,
+        "question_font_size": 16,
+        "question_font_size_mobile": 14,
+        "answer_font_size": 14,
+        "answer_font_size_mobile": 13,
+        "enable_section_top_border": true,
+        "section_top_border_width": 1,
+        "section_top_border_style": "solid",
+        "section_top_border_color": "#1b1b1b",
+        "enable_section_bottom_border": true,
+        "section_bottom_border_width": 1,
+        "section_bottom_border_style": "solid",
+        "section_bottom_border_color": "#1b1b1b"
       }
     },
     "reviews_anchor": {
@@ -768,438 +1138,14 @@
       "settings": {
         "include_margins": true
       }
-    },
-    "lp_study": {
-      "type": "lp-study",
-      "blocks": {
-        "stat_1": {
-          "type": "stat",
-          "settings": {
-            "num": "Weeks 1–2",
-            "width": 35,
-            "label": "Less shedding",
-            "body": "<p>Most customers notice less hair in the shower and on their pillow within the first 2 weeks of nightly use.</p>",
-            "before_image": "shopify://shop_images/hf_20260316_130652_95a6504b-554e-460d-ba60-1db62d494ba4.png",
-            "before_label": "Before",
-            "after_image": "shopify://shop_images/hf_20260316_130633_6450372b-4a30-497b-90f7-d743e3971404.png",
-            "after_label": "After 90 Days",
-            "caption": ""
-          }
-        },
-        "stat_2": {
-          "type": "stat",
-          "settings": {
-            "num": "Weeks 6–8",
-            "width": 70,
-            "label": "Fine new hairs",
-            "body": "<p>Fine new hairs at the part and temples as the natural growth cycle is supported.</p>",
-            "before_image": "shopify://shop_images/hf_20260316_131657_f6728ed6-c41c-4677-896b-df3e3bf4976e.png",
-            "before_label": "Before",
-            "after_image": "shopify://shop_images/hf_20260316_131633_ec843593-47fa-4dd5-a603-de1a3ef6be1d.png",
-            "after_label": "After 90 Days",
-            "caption": ""
-          }
-        },
-        "stat_3": {
-          "type": "stat",
-          "settings": {
-            "num": "Day 90",
-            "width": 100,
-            "label": "Visibly fuller",
-            "body": "<p>By day 90 the part looks fuller and shedding stays low with continued nightly use. If not, email us for a full refund.</p>",
-            "before_image": "shopify://shop_images/hf_20260316_131918_c1713c8c-9aca-4e7d-abe1-db63c0e8a78c.png",
-            "before_label": "Before",
-            "after_image": "shopify://shop_images/hf_20260316_132119_22281636-79f4-4b40-8147-917f51dc30c0.png",
-            "after_label": "After 90 Days",
-            "caption": ""
-          }
-        }
-      },
-      "block_order": [
-        "stat_1",
-        "stat_2",
-        "stat_3"
-      ],
-      "settings": {
-        "pill": "What to expect",
-        "heading": "Less Shedding In 2 Weeks. Fuller In 90.",
-        "subheading": "<p>Apply 1–2 ml nightly, massage in and leave on overnight. Here's the timeline our customers see.</p>",
-        "cue": "Tap each milestone to see it",
-        "ratio": "1/1",
-        "disclaimer": "Individual results vary."
-      }
-    },
-    "lp_quiz": {
-      "type": "lp-quiz",
-      "blocks": {
-        "q1": {
-          "type": "question",
-          "settings": {
-            "eyebrow": "Where",
-            "question": "Where are you noticing it most?",
-            "tag": "Concern match",
-            "opt_1": "A widening part",
-            "title_1": "Widening part",
-            "note_1": "<p>Apply along the part line each night and massage it in. The part is where fine new hairs are usually noticed first, around weeks 6–8.</p>",
-            "opt_2": "Thinning at the temples",
-            "title_2": "Temples",
-            "note_2": "<p>Work the serum into both temples nightly. Judge it at day 90 — that's the point the guarantee covers.</p>",
-            "opt_3": "A thinner ponytail",
-            "title_3": "Thinner ponytail",
-            "note_3": "<p>Overall density takes the full 90 days. Less shedding in the first 2 weeks is the early sign it's working.</p>",
-            "opt_4": "More hair in the shower or on the pillow",
-            "title_4": "Shedding",
-            "note_4": "<p>Shedding is usually the first thing to change — most customers notice less hair in the shower within 2 weeks of nightly use.</p>"
-          }
-        },
-        "q2": {
-          "type": "question",
-          "settings": {
-            "eyebrow": "Stage",
-            "question": "Which best describes you?",
-            "tag": "Stage match",
-            "opt_1": "Under 35",
-            "title_1": "Under 35",
-            "note_1": "<p>Starting early means you're judging results against thinning that hasn't progressed far. Apply nightly and check in at 2 weeks, 6–8 weeks and day 90.</p>",
-            "opt_2": "Perimenopause",
-            "title_2": "Perimenopause",
-            "note_2": "<p>Shedding during perimenopause is one of the most common patterns we hear about. The routine is the same: 1–2 ml nightly, massaged into the scalp.</p>",
-            "opt_3": "Post-menopause",
-            "title_3": "Post-menopause",
-            "note_3": "<p>Give it the full 90 days before judging. If you're not seeing fuller hair by then, email us for a full refund.</p>",
-            "opt_4": "After pregnancy",
-            "title_4": "After pregnancy",
-            "note_4": "<p>Post-partum shedding is common. If you're breastfeeding, check with your doctor or pharmacist before starting any new scalp product.</p>"
-          }
-        },
-        "q3": {
-          "type": "question",
-          "settings": {
-            "eyebrow": "Timing",
-            "question": "When did you first notice it?",
-            "tag": "Timing match",
-            "opt_1": "In the last 6 months",
-            "title_1": "Recent",
-            "note_1": "<p>Start nightly now and judge it at day 90. Less shedding in 2 weeks is the first checkpoint.</p>",
-            "opt_2": "6–12 months ago",
-            "title_2": "This year",
-            "note_2": "<p>Consistency matters more than anything: nightly, on a dry scalp, no rinse. Judge it at day 90.</p>",
-            "opt_3": "1–3 years ago",
-            "title_3": "A few years",
-            "note_3": "<p>Take a photo of your part before you start so you can compare at weeks 6–8 and day 90.</p>",
-            "opt_4": "Longer than that",
-            "title_4": "Long-standing",
-            "note_4": "<p>Take before photos and give it the full 90 days. If it hasn't helped, the guarantee refunds you in full — no return needed.</p>"
-          }
-        },
-        "q4": {
-          "type": "question",
-          "settings": {
-            "eyebrow": "History",
-            "question": "What have you tried so far?",
-            "tag": "Routine match",
-            "opt_1": "Nothing yet",
-            "title_1": "First try",
-            "note_1": "<p>Good place to start: one serum, 60 seconds a night. No prescription, no appointments.</p>",
-            "opt_2": "Supplements",
-            "title_2": "Supplements",
-            "note_2": "<p>The serum is topical — apply it to the scalp rather than taking anything. You can keep your usual routine alongside it.</p>",
-            "opt_3": "Minoxidil or a prescription",
-            "title_3": "Prescription",
-            "note_3": "<p>If you're on prescription medication, check with your doctor before adding a new scalp product. Apply the serum to a clean, dry scalp at night.</p>",
-            "opt_4": "Shampoos and oils",
-            "title_4": "Shampoos & oils",
-            "note_4": "<p>Keep your shampoo and conditioner. Apply the serum at night to a dry or towel-dried scalp so it absorbs without interference.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "q1",
-        "q2",
-        "q3",
-        "q4"
-      ],
-      "settings": {
-        "pill": "Find your match",
-        "heading": "Find Out Which Pattern You're In",
-        "subheading": "<p>Answer four quick questions and we'll show you what to expect from the serum for your pattern.</p>",
-        "step_label": "Question",
-        "of_label": "of",
-        "back_label": "Back",
-        "results_pill": "Your match",
-        "results_heading": "Here's what fits",
-        "results_em": "your pattern",
-        "results_intro": "",
-        "results_bottom": "<p><strong>Whatever your pattern, the routine is the same:</strong> 1–2 ml massaged into the scalp nightly. Less shedding in 2 weeks, fuller in 90 — or your money back.</p>",
-        "cta_label": "Choose My Plan",
-        "cta_link": "#plan-selector",
-        "trust_1": "Free Shipping",
-        "trust_2": "90-Day Money-Back Guarantee",
-        "restart_label": "Start over",
-        "discount_code": "",
-        "claim_eyebrow": "Your reward",
-        "claim_heading": "Claim your discount",
-        "claim_sub": "Drop your email and we'll show your code.",
-        "claim_placeholder": "Your email",
-        "claim_button": "Show my code",
-        "claim_trust": "No spam. Unsubscribe anytime.",
-        "applied_label": "unlocked",
-        "applied_sub": "Use this code at checkout.",
-        "show_float_tab": true,
-        "float_icon": "✨",
-        "float_label": "Find your match",
-        "float_claimed_label": "Discount unlocked"
-      }
-    },
-    "lp_research": {
-      "type": "lp-research",
-      "blocks": {
-        "i1": {
-          "type": "item",
-          "settings": {
-            "text": "Cold-pressed pumpkin seed oil"
-          }
-        },
-        "i2": {
-          "type": "item",
-          "settings": {
-            "text": "1% caffeine"
-          }
-        },
-        "i3": {
-          "type": "item",
-          "settings": {
-            "text": "Clinically studied ingredient"
-          }
-        }
-      },
-      "block_order": [
-        "i1",
-        "i2",
-        "i3"
-      ],
-      "settings": {
-        "label": "What's in the serum",
-        "grayscale": true
-      }
-    },
-    "lp_hero_2": {
-      "type": "lp-product-hero",
-      "blocks": {
-        "rating": {
-          "type": "rating",
-          "settings": {
-            "rating": "4.8",
-            "count": "43 reviews",
-            "link": "#reviews"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "title": "",
-            "second_line": "Less shedding in 2 weeks. Fuller in 90."
-          }
-        },
-        "desc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Cold-pressed pumpkin seed oil and <strong>1% caffeine</strong> in a lightweight, non-greasy scalp serum. Apply 1–2 ml to the scalp nightly, massage in and leave on overnight. It absorbs in minutes.</p>"
-          }
-        },
-        "bullet_1": {
-          "type": "bullet",
-          "settings": {
-            "lead": "Less shedding",
-            "text": "in the first 2 weeks"
-          }
-        },
-        "bullet_2": {
-          "type": "bullet",
-          "settings": {
-            "lead": "Fine new hairs",
-            "text": "at the part and temples by weeks 6–8"
-          }
-        },
-        "bullet_3": {
-          "type": "bullet",
-          "settings": {
-            "lead": "Visibly fuller",
-            "text": "by day 90 — or your money back"
-          }
-        },
-        "plan_monthly": {
-          "type": "plan_card",
-          "settings": {
-            "variant_index": 1,
-            "plan_match": "every month",
-            "banner": "Ships every month",
-            "title": "Monthly",
-            "subtitle": "1 bottle delivered every month",
-            "pills": "1× Serum",
-            "style": "default",
-            "selected": true
-          }
-        },
-        "plan_quarterly": {
-          "type": "plan_card",
-          "settings": {
-            "variant_index": 2,
-            "plan_match": "every 3 months",
-            "banner": "Ships every 3 months",
-            "title": "Every 3 Months",
-            "subtitle": "1 bottle delivered every 3 months",
-            "pills": "1× Serum",
-            "style": "popular",
-            "selected": false
-          }
-        },
-        "plan_biannual": {
-          "type": "plan_card",
-          "settings": {
-            "variant_index": 3,
-            "plan_match": "every 6 months",
-            "banner": "Ships every 6 months",
-            "title": "Every 6 Months",
-            "subtitle": "1 bottle delivered every 6 months",
-            "pills": "1× Serum",
-            "style": "best",
-            "selected": false
-          }
-        },
-        "pill_shipping": {
-          "type": "trust_pill",
-          "settings": {
-            "icon": "truck",
-            "text": "Free Shipping"
-          }
-        },
-        "pill_delivery": {
-          "type": "trust_pill",
-          "settings": {
-            "icon": "clock",
-            "text": "3–7 Day Delivery"
-          }
-        },
-        "pill_guarantee": {
-          "type": "trust_pill",
-          "settings": {
-            "icon": "shield",
-            "text": "90-Day Guarantee"
-          }
-        },
-        "pill_studied": {
-          "type": "trust_pill",
-          "settings": {
-            "icon": "leaf",
-            "text": "Clinically Studied Ingredient"
-          }
-        },
-        "acc_what": {
-          "type": "accordion",
-          "settings": {
-            "title": "What is it?",
-            "content": "<p>A lightweight scalp serum with cold-pressed pumpkin seed oil and 1% caffeine. Pumpkin seed oil is a clinically studied ingredient that helps support the follicle against DHT, the hormone linked to thinning. Caffeine absorbs in minutes and supports the natural growth cycle.</p><p>Non-greasy, no residue, no prescription. Made for women noticing a widening part, a thinner ponytail or more hair in the shower, and suitable for men too.</p>",
-            "open": false
-          }
-        },
-        "acc_apply": {
-          "type": "accordion",
-          "settings": {
-            "title": "How do I apply it?",
-            "content": "<p>Apply 1–2 ml to a dry or towel-dried scalp each night, focusing on the part and temples. Massage for 3–5 minutes, leave on overnight, don't rinse. <strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller. Apply it nightly for the full 90 days.</p>",
-            "open": false
-          }
-        },
-        "acc_shipping": {
-          "type": "accordion",
-          "settings": {
-            "title": "Shipping & guarantee",
-            "content": "<p><strong>Free shipping</strong> on every order. Delivery takes 3–7 business days.</p><p>90-Day Money-Back Guarantee — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
-            "open": false
-          }
-        },
-        "acc_work": {
-          "type": "accordion",
-          "settings": {
-            "title": "Does it really work?",
-            "content": "<p>Pumpkin seed oil is a clinically studied ingredient for thinning hair. Most customers notice less shedding in the first 2 weeks and visibly fuller hair by day 90 with nightly use, and every order is covered by our 90-day money-back guarantee.</p>",
-            "open": false
-          }
-        }
-      },
-      "block_order": [
-        "rating",
-        "title",
-        "desc",
-        "bullet_1",
-        "bullet_2",
-        "bullet_3",
-        "plan_monthly",
-        "plan_quarterly",
-        "plan_biannual",
-        "pill_shipping",
-        "pill_delivery",
-        "pill_guarantee",
-        "pill_studied",
-        "acc_what",
-        "acc_apply",
-        "acc_shipping",
-        "acc_work"
-      ],
-      "settings": {
-        "gallery_left": true,
-        "show_thumbnails": true,
-        "image_ratio": "1/1",
-        "max_width": 1200,
-        "background_color": "#ffffff",
-        "plan_mode": "app",
-        "bundle_heading": "",
-        "show_autoship": true,
-        "autoship_default": true,
-        "one_time_single_card": true,
-        "autoship_label": "Subscribe & Save + Free Shipping",
-        "frequency_heading": "Subscription details",
-        "subscription_notes": "Free shipping on every order\nCancel or pause anytime",
-        "offer_line": "",
-        "cta_label": "Add to cart",
-        "cta_sublabel": "90-Day Money-Back Guarantee",
-        "promise_text": "<p>Your order is protected by a <strong>90-Day Money-Back Guarantee</strong> — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
-        "expert_more_label": "Know More",
-        "cta_style": "ink",
-        "cta_radius": 10,
-        "anchor_id": "plan-selector-2"
-      }
-    },
-    "lp_footer": {
-      "type": "lp-footer",
-      "settings": {
-        "logo_height": 32,
-        "invert_logo": true,
-        "tagline": "A lightweight scalp serum for thinning hair.",
-        "rights": "All rights reserved."
-      }
     }
   },
   "order": [
-    "lp_announce",
-    "lp_hero",
-    "lp_logos",
-    "lp_quiz",
-    "lp_guarantee",
-    "lp_routine",
-    "lp_trust_1",
-    "lp_community",
+    "shop_product_details_JbqzwH",
+    "before_after_KeXf6z",
+    "satisfaction_guarantee_J4ypTy",
+    "store_faq_hidFcc",
     "reviews_anchor",
-    "1787461899b7b1b6f7",
-    "lp_research",
-    "lp_study",
-    "lp_results",
-    "lp_trust_2",
-    "lp_comparison",
-    "lp_hero_2",
-    "lp_faq",
-    "lp_founder",
-    "lp_footer"
+    "1787461899b7b1b6f7"
   ]
 }
