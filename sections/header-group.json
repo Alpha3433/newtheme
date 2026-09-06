@@ -74,7 +74,8 @@
         "cart_icon_type": "cart",
         "margin_bottom": 0,
         "padding_top": 2,
-        "padding_bottom": 2
+        "padding_bottom": 2,
+        "hide_icons_on_templates": "product.serum"
       }
     },
     "sticky_add_to_cart_QBhMc4": {

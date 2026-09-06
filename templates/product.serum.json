@@ -188,8 +188,8 @@
         "image_ratio": "1/1",
         "max_width": 1200,
         "background_color": "#ffffff",
-        "plan_mode": "theme",
-        "bundle_heading": "Choose Your Plan",
+        "plan_mode": "app",
+        "bundle_heading": "",
         "show_autoship": true,
         "autoship_default": true,
         "one_time_single_card": true,
@@ -200,7 +200,9 @@
         "cta_label": "Add to cart",
         "cta_sublabel": "90-Day Money-Back Guarantee",
         "promise_text": "<p>Your order is protected by a <strong>90-Day Money-Back Guarantee</strong> — no return needed. If you're not seeing fuller hair by day 90, email us for a full refund.</p>",
-        "expert_more_label": "Know More"
+        "expert_more_label": "Know More",
+        "cta_style": "ink",
+        "cta_radius": 10
       }
     },
     "lp_logos": {
@@ -766,6 +768,66 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "lp_study": {
+      "type": "lp-study",
+      "blocks": {
+        "stat_1": {
+          "type": "stat",
+          "settings": {
+            "num": "Weeks 1–2",
+            "width": 35,
+            "label": "Less shedding",
+            "body": "<p>Most customers notice less hair in the shower and on their pillow within the first 2 weeks of nightly use.</p>",
+            "before_image": "shopify://shop_images/hf_20260316_130652_95a6504b-554e-460d-ba60-1db62d494ba4.png",
+            "before_label": "Before",
+            "after_image": "shopify://shop_images/hf_20260316_130633_6450372b-4a30-497b-90f7-d743e3971404.png",
+            "after_label": "After 90 Days",
+            "caption": ""
+          }
+        },
+        "stat_2": {
+          "type": "stat",
+          "settings": {
+            "num": "Weeks 6–8",
+            "width": 70,
+            "label": "Fine new hairs",
+            "body": "<p>Fine new hairs at the part and temples as the natural growth cycle is supported.</p>",
+            "before_image": "shopify://shop_images/hf_20260316_131657_f6728ed6-c41c-4677-896b-df3e3bf4976e.png",
+            "before_label": "Before",
+            "after_image": "shopify://shop_images/hf_20260316_131633_ec843593-47fa-4dd5-a603-de1a3ef6be1d.png",
+            "after_label": "After 90 Days",
+            "caption": ""
+          }
+        },
+        "stat_3": {
+          "type": "stat",
+          "settings": {
+            "num": "Day 90",
+            "width": 100,
+            "label": "Visibly fuller",
+            "body": "<p>By day 90 the part looks fuller and shedding stays low with continued nightly use. If not, email us for a full refund.</p>",
+            "before_image": "shopify://shop_images/hf_20260316_131918_c1713c8c-9aca-4e7d-abe1-db63c0e8a78c.png",
+            "before_label": "Before",
+            "after_image": "shopify://shop_images/hf_20260316_132119_22281636-79f4-4b40-8147-917f51dc30c0.png",
+            "after_label": "After 90 Days",
+            "caption": ""
+          }
+        }
+      },
+      "block_order": [
+        "stat_1",
+        "stat_2",
+        "stat_3"
+      ],
+      "settings": {
+        "pill": "What to expect",
+        "heading": "Less Shedding In 2 Weeks. Fuller In 90.",
+        "subheading": "<p>Apply 1–2 ml nightly, massage in and leave on overnight. Here's the timeline our customers see.</p>",
+        "cue": "Tap each milestone to see it",
+        "ratio": "1/1",
+        "disclaimer": "Individual results vary."
+      }
     }
   },
   "order": [
@@ -778,6 +840,7 @@
     "lp_community",
     "reviews_anchor",
     "1787461899b7b1b6f7",
+    "lp_study",
     "lp_results",
     "lp_trust_2",
     "lp_comparison",
