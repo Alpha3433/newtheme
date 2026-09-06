@@ -884,7 +884,7 @@
         var showPriceButton = {{ block.settings.show_price_in_button  }}
       </script>
 
-      <div class="shop-add-to-cart-wrapper">
+      <div class="shop-add-to-cart-wrapper" id="plan-selector" style="scroll-margin-top: 90px;">
         <product-form class="product-form" data-section-id="{{ section.id }}">
           {% assign product_form_id = 'product-form-' | append: section.id %}
           {%- form 'product',
