@@ -597,7 +597,7 @@
 </style>
 
 {% comment %} Only render if we have a product context {% endcomment %}
-{% if product or section.settings.select_button_behavior == 'scroll_to_section' or section.settings.select_button_behavior == 'scroll_to_percentage' or section.settings.select_button_behavior == 'scroll_to_plan_selector' or section.settings.select_button_behavior == 'link' %}
+{% if product or section.settings.select_button_behavior == 'scroll_to_section' or section.settings.select_button_behavior == 'scroll_to_percentage' or section.settings.select_button_behavior == 'link' %}
   <!-- Sticky Add to Cart Main Container -->
   <div
     id="stickyAddToCart"
@@ -716,21 +716,17 @@
               {{ delivery_text_prefix }}
             {% endif %}
           </span>
-          <span class="delivery-date">
-            {%- render 'delivery-estimate' -%}
+          <span
+            class="delivery-date"
+            data-timestamp="{{ delivery_timestamp }}"
+            data-locale="{{ request.locale.iso_code }}"
+            data-format="{{ section.settings.delivery_date_display_format }}"
+          >
+            <!-- Placeholder - JavaScript will format this date -->
           </span>
         </div>
 
-        {% if section.settings.select_button_behavior == 'scroll_to_plan_selector' %}
-          <button
-            type="button"
-            class="theme-button sticky-add-to-cart__button"
-            id="stickyAddToCartBtn"
-            onclick="scrollToPlanSelector(event)"
-          >
-            <span class="button-text">{{ button_text }}</span>
-          </button>
-        {% elsif section.settings.select_button_behavior == 'scroll_to_section' or section.settings.select_button_behavior == 'scroll_to_percentage' %}
+        {% if section.settings.select_button_behavior == 'scroll_to_section' or section.settings.select_button_behavior == 'scroll_to_percentage' %}
           <button
             class="theme-button sticky-add-to-cart__button"
             id="stickyAddToCartBtn"
@@ -771,16 +767,7 @@
 
       <div class="mobile-view{% if section.settings.mobile_style == 'full_width' %} mobile-view--full-width{% endif %}">
         <div class="mobile-button-wrapper">
-          {% if section.settings.select_button_behavior == 'scroll_to_plan_selector' %}
-            <button
-              type="button"
-              class="theme-button sticky-add-to-cart__button"
-              id="stickyAddToCartBtnMobile"
-              onclick="scrollToPlanSelector(event)"
-            >
-              <span class="button-text">{{ button_text }}</span>
-            </button>
-          {% elsif section.settings.select_button_behavior == 'scroll_to_section' or section.settings.select_button_behavior == 'scroll_to_percentage' %}
+          {% if section.settings.select_button_behavior == 'scroll_to_section' or section.settings.select_button_behavior == 'scroll_to_percentage' %}
             <button
               class="theme-button sticky-add-to-cart__button"
               id="stickyAddToCartBtnMobile"
@@ -853,8 +840,13 @@
               {{ delivery_text_prefix }}
             {% endif %}
           </span>
-          <span class="delivery-date">
-            {%- render 'delivery-estimate' -%}
+          <span
+            class="delivery-date"
+            data-timestamp="{{ delivery_timestamp }}"
+            data-locale="{{ request.locale.iso_code }}"
+            data-format="{{ section.settings.delivery_date_display_format }}"
+          >
+            <!-- Placeholder - JavaScript will format this date -->
           </span>
         </div>
       </div>
@@ -1059,7 +1051,6 @@
       "label": "Select button behavior",
       "options": [
         { "value": "atc", "label": "Add to cart" },
-        { "value": "scroll_to_plan_selector", "label": "Scroll to plan selector / buy box" },
         { "value": "scroll_to_section", "label": "Scroll to section" },
         { "value": "scroll_to_percentage", "label": "Scroll to page percentage" },
         { "value": "link", "label": "Go to link" }
@@ -1165,8 +1156,7 @@
       "max": 14,
       "step": 1,
       "default": 5,
-      "label": "Delivery Days Ahead (legacy)",
-      "info": "No longer used. The delivery range now comes from Theme settings > Product Page (business days, weekends skipped)."
+      "label": "Delivery Days Ahead"
     },
     {
       "type": "text",

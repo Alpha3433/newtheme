@@ -2378,49 +2378,5 @@
         "placeholder": "advertorial-page\nlanding-page\nspecial-offer"
       }
     ]
-  },
-  {
-    "name": "Product Page",
-    "settings": [
-      {
-        "type": "header",
-        "content": "Delivery estimate"
-      },
-      {
-        "type": "paragraph",
-        "content": "Used by the buy-box shipping notice and the sticky add-to-cart bar. Counted in business days (weekends skipped) from today, in the shop's locale."
-      },
-      {
-        "type": "range",
-        "id": "delivery_min_days",
-        "min": 1,
-        "max": 14,
-        "step": 1,
-        "unit": "d",
-        "label": "Earliest delivery (business days)",
-        "default": 3
-      },
-      {
-        "type": "range",
-        "id": "delivery_max_days",
-        "min": 1,
-        "max": 21,
-        "step": 1,
-        "unit": "d",
-        "label": "Latest delivery (business days)",
-        "default": 7
-      },
-      {
-        "type": "header",
-        "content": "Add to cart"
-      },
-      {
-        "type": "text",
-        "id": "atc_reassurance_line",
-        "label": "Reassurance line under the add-to-cart button",
-        "default": "Lightweight, non-greasy, absorbs in minutes.",
-        "info": "Shown on product pages whose Add to Cart block has 'Show reassurance chip' turned on."
-      }
-    ]
   }
 ]

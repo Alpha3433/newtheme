@@ -853,9 +853,6 @@
                   {% when 'scroll_top' %}
                     {% assign button_href = '#' %}
                     {% assign button_data_attrs = 'data-scroll-to-top="true"' %}
-                  {% when 'scroll_to_plan_selector' %}
-                    {% assign button_href = '#plan-selector' %}
-                    {% assign button_data_attrs = 'data-scroll-to-plan-selector="true"' %}
                   {% when 'url' %}
                     {% if section.settings.custom_url != blank %}
                       {% assign button_href = section.settings.custom_url %}
@@ -902,9 +899,6 @@
             {% when 'scroll_top' %}
               {% assign button_href = '#' %}
               {% assign button_data_attrs = 'data-scroll-to-top="true"' %}
-            {% when 'scroll_to_plan_selector' %}
-              {% assign button_href = '#plan-selector' %}
-              {% assign button_data_attrs = 'data-scroll-to-plan-selector="true"' %}
             {% when 'url' %}
               {% if section.settings.custom_url != blank %}
                 {% assign button_href = section.settings.custom_url %}
@@ -935,17 +929,6 @@ document.addEventListener('DOMContentLoaded', function() {
       button.addEventListener('click', function(e) {
         e.preventDefault();
         console.warn('⚠️ Roadmap button clicked but no valid redirect URL is set. Please configure the product or URL in the section settings.');
-      });
-    }
-
-    // Smooth-scroll to the buy box / plan selector
-    if (button.hasAttribute('data-scroll-to-plan-selector')) {
-      button.addEventListener('click', function(e) {
-        var target = document.getElementById('plan-selector') || document.querySelector('.shop-add-to-cart-wrapper');
-        if (!target) return;
-        e.preventDefault();
-        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-        target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
       });
     }
 
@@ -1989,10 +1972,6 @@ document.addEventListener('DOMContentLoaded', function() {
         {
           "value": "scroll_top",
           "label": "Scroll to Top of Page"
-        },
-        {
-          "value": "scroll_to_plan_selector",
-          "label": "Scroll to plan selector / buy box"
         },
         {
           "value": "url",
