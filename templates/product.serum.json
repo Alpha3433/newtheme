@@ -74,7 +74,7 @@
         "headline_promise": {
           "type": "custom_text",
           "settings": {
-            "text": "<p><strong>Less Shedding in 14 Days</strong></p>",
+            "text": "<p><strong>Less shedding in 2 weeks. Fuller in 90.</strong></p>",
             "show_description": false,
             "description": "<p>Add additional descriptive text here</p>",
             "description_font_size": 8,
@@ -211,7 +211,7 @@
         "custom_text_6gdF7K": {
           "type": "custom_text",
           "settings": {
-            "text": "<p><strong>After 6 weeks, visibly see:</strong></p>",
+            "text": "<p><strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller</p>",
             "show_description": false,
             "description": "<p>Add additional descriptive text here</p>",
             "description_font_size": 12,
@@ -281,14 +281,14 @@
             "benefit_2_use_image": true,
             "benefit_2_use_custom_icon": true,
             "benefit_2_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M16 58 Q40 50 64 58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <line x1=\"22\" y1=\"56\" x2=\"19\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"31\" y1=\"54\" x2=\"29\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"52\" x2=\"40\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"49\" y1=\"54\" x2=\"51\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"58\" y1=\"56\" x2=\"61\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
-            "benefit_3_text": "Blocked DHT",
+            "benefit_3_text": "Fuller-looking part",
             "benefit_3_use_image": true,
             "benefit_3_use_custom_icon": true,
-            "benefit_3_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M40 12 L62 24 L62 44 Q62 60 40 68 Q18 60 18 44 L18 24 Z\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linejoin=\"round\"></path>\n  <line x1=\"22\" y1=\"58\" x2=\"58\" y2=\"22\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
-            "benefit_4_text": "Stronger Follicles",
+            "benefit_3_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <path d=\"M16 58 Q40 50 64 58\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <line x1=\"22\" y1=\"56\" x2=\"19\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"31\" y1=\"54\" x2=\"29\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"52\" x2=\"40\" y2=\"18\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"49\" y1=\"54\" x2=\"51\" y2=\"20\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"58\" y1=\"56\" x2=\"61\" y2=\"24\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
+            "benefit_4_text": "Less hair in the shower",
             "benefit_4_use_image": true,
             "benefit_4_use_custom_icon": true,
-            "benefit_4_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <ellipse cx=\"40\" cy=\"62\" rx=\"10\" ry=\"8\" stroke=\"currentColor\" stroke-width=\"3\"></ellipse>\n  <path d=\"M40 54 Q36 40 38 18\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></path>\n  <path d=\"M34 58 Q24 42 22 24\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"></path>\n  <path d=\"M46 58 Q56 42 58 24\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\"></path>\n</svg>",
+            "benefit_4_custom_icon": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"32\" y1=\"18\" x2=\"30\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"16\" x2=\"40\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"48\" y1=\"18\" x2=\"50\" y2=\"46\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <path d=\"M30 52 L40 62 L50 52\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
             "icon_bg_color": "#ffffff",
             "enable_icon_circle_stroke": true,
             "icon_circle_stroke_color": "#282828",
@@ -458,7 +458,7 @@
             "use_product_description_for_question_1": false,
             "answer_1": "<p>Our cold-pressed pumpkin seed oil and caffeine formula absorbs directly into the scalp, blocking DHT at the follicle level while reactivating dormant roots from the outside in. DHT shrinks your follicles from the inside. </p><p>Caffeine reactivates them from the outside. Together they address hair loss from both directions simultaneously</p>",
             "question_2": "How do I apply it?",
-            "answer_2": "<p>Apply 1-2ml directly to dry or towel-dried scalp focusing on thinning areas. Massage in circular motions for 3-5 minutes to stimulate circulation and maximise absorption. </p><p>Leave on and do not rinse. Use every evening before bed. Follicles repair while you sleep. Consistent daily use for 90 days minimum for visible results.</p>",
+            "answer_2": "<p>Apply 1–2 ml to a dry or towel-dried scalp each night, focusing on the part and temples. Massage in circular motions for 3–5 minutes. Leave on overnight and do not rinse.</p><p><strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller. Apply it nightly for the full 90 days.</p>",
             "question_3": "",
             "answer_3": "",
             "question_4": "Does it really work?",
@@ -1428,7 +1428,7 @@
           "type": "benefit",
           "settings": {
             "title": "Reduces Shedding Fast",
-            "description": "Most customers notice significantly less hair in the shower and on their pillow within the first 2 weeks of daily use.",
+            "description": "Most customers notice significantly less hair in the shower and on their pillow within the first 2 weeks of nightly use.",
             "preset_icon": "shield",
             "use_custom_icon": true,
             "custom_icon_svg": "<svg viewbox=\"0 0 80 80\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n  <line x1=\"28\" y1=\"14\" x2=\"26\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"40\" y1=\"12\" x2=\"40\" y2=\"42\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <line x1=\"52\" y1=\"14\" x2=\"54\" y2=\"44\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n  <path d=\"M26 50 L40 62 L54 50\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n  <line x1=\"18\" y1=\"70\" x2=\"62\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\"></line>\n</svg>",
@@ -1564,8 +1564,8 @@
           "type": "roadmap_step",
           "settings": {
             "badge_text": "Phase 1",
-            "title": "DHT Blocking Begins",
-            "description": "<p>From day one, pumpkin seed oil starts inhibiting the 5-alpha reductase enzyme, cutting off the DHT supply that's been shrinking your follicles.</p>",
+            "title": "Nightly Application Begins",
+            "description": "<p>Apply 1–2 ml to the scalp each night. Massage in, leave on overnight, no rinse. It absorbs in minutes and is non-greasy.</p>",
             "custom_icon": "",
             "bullet_icon_size": 16
           }
@@ -1574,8 +1574,8 @@
           "type": "roadmap_step",
           "settings": {
             "badge_text": "Phase 2",
-            "title": "Shedding Slows Down",
-            "description": "<p>By week 2, most customers notice less hair in the shower and on their pillow. Your follicles are stabilising and the loss cycle is breaking.</p>",
+            "title": "Weeks 1–2: Less Shedding",
+            "description": "<p>Most customers notice less hair in the shower and on their pillow within the first 2 weeks.</p>",
             "custom_icon": "",
             "bullet_icon_size": 16
           }
@@ -1584,8 +1584,8 @@
           "type": "roadmap_step",
           "settings": {
             "badge_text": "Phase 3",
-            "title": "New Growth Appears",
-            "description": "<p>Around day 30, baby hairs begin emerging along your hairline and parting. This is your dormant follicles waking back up.</p>",
+            "title": "Weeks 6–8: Fine New Hairs",
+            "description": "<p>Fine new hairs at the part and temples as the natural growth cycle is supported.</p>",
             "custom_icon": "",
             "bullet_icon_size": 16
           }
@@ -1594,8 +1594,8 @@
           "type": "roadmap_step",
           "settings": {
             "badge_text": "Phase 4",
-            "title": "Thicker, Fuller Hair",
-            "description": "<p>By day 90 you'll see measurable density improvement. Hair grows back stronger, your part looks fuller, and shedding stays low with continued use.</p>",
+            "title": "Day 90: Visibly Fuller",
+            "description": "<p>By day 90 your part looks fuller and shedding stays low with continued nightly use.</p>",
             "custom_icon": "",
             "bullet_icon_size": 16
           }
@@ -2998,14 +2998,14 @@
           "type": "faq_item",
           "settings": {
             "question": "How long until I see results?",
-            "answer": "<p>Most customers notice reduced shedding within the first 2 weeks. Visible new growth typically appears around day 30. Full results, thicker, denser hair are seen at the 90-day mark with consistent daily use.</p>"
+            "answer": "<p>Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller. Apply it nightly for the full 90 days.</p>"
           }
         },
         "faq_item_yT7tBh": {
           "type": "faq_item",
           "settings": {
             "question": "How do I apply it?",
-            "answer": "<p>Apply 1-2ml to your dry scalp nightly focusing on thinning areas. Massage in circular motions for 3-5 minutes. Leave on overnight, do not rinse. That's it.</p>"
+            "answer": "<p>Apply 1–2 ml to a dry scalp nightly, focusing on the part and temples. Massage in circular motions for 3–5 minutes. Leave on overnight, do not rinse.</p><p><strong>What to expect:</strong> Weeks 1–2: less shedding · Weeks 6–8: fine new hairs at the part and temples · Day 90: visibly fuller.</p>"
           }
         },
         "faq_item_zJpqH3": {
