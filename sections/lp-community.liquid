@@ -1,0 +1,255 @@
+{%- render 'lp-tokens' -%}
+{%- liquid
+  assign s = section.settings
+  assign videos = section.blocks | where: 'type', 'video'
+  assign reviews = section.blocks | where: 'type', 'review'
+  assign shots = section.blocks | where: 'type', 'screenshot'
+  assign tab_count = 0
+  if videos.size > 0
+    assign tab_count = tab_count | plus: 1
+  endif
+  if reviews.size > 0
+    assign tab_count = tab_count | plus: 1
+  endif
+  if shots.size > 0
+    assign tab_count = tab_count | plus: 1
+  endif
+  assign default_tab = s.default_tab
+  if default_tab == 'videos' and videos.size == 0
+    assign default_tab = ''
+  elsif default_tab == 'reviews' and reviews.size == 0
+    assign default_tab = ''
+  elsif default_tab == 'screenshots' and shots.size == 0
+    assign default_tab = ''
+  endif
+  if default_tab == ''
+    if videos.size > 0
+      assign default_tab = 'videos'
+    elsif reviews.size > 0
+      assign default_tab = 'reviews'
+    else
+      assign default_tab = 'screenshots'
+    endif
+  endif
+-%}
+{%- if tab_count > 0 -%}
+<section class="lp lp-testi" id="lp-testi-{{ section.id }}" data-lp-testi>
+  <div class="lp-testi__head">
+    {%- if s.pill != blank -%}<div class="lp-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>{{ s.pill | escape }}</div>{%- endif -%}
+    {%- if s.heading != blank -%}<h2 class="lp-testi__h">{{ s.heading | escape }}</h2>{%- endif -%}
+  </div>
+
+  {%- if tab_count > 1 -%}
+    <div class="lp-tabs" style="grid-template-columns: repeat({{ tab_count }}, 1fr);">
+      {%- if videos.size > 0 -%}<button type="button" class="lp-tabs__tab{% if default_tab == 'videos' %} active{% endif %}" data-lp-tab="videos">{{ s.tab_videos | escape }}</button>{%- endif -%}
+      {%- if reviews.size > 0 -%}<button type="button" class="lp-tabs__tab{% if default_tab == 'reviews' %} active{% endif %}" data-lp-tab="reviews">{{ s.tab_reviews | escape }}</button>{%- endif -%}
+      {%- if shots.size > 0 -%}<button type="button" class="lp-tabs__tab{% if default_tab == 'screenshots' %} active{% endif %}" data-lp-tab="screenshots">{{ s.tab_screenshots | escape }}</button>{%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- if videos.size > 0 -%}
+    <div class="lp-panel{% if default_tab == 'videos' %} active{% endif %}" data-lp-panel="videos">
+      <div class="lp-slider" data-lp-slider>
+        {%- for block in videos -%}
+          <div class="lp-vid" data-lp-vid {{ block.shopify_attributes }}>
+            <div class="lp-vid__media">
+              {%- if block.settings.tag != blank -%}<span class="lp-vid__tag"><span class="lp-vid__tag-dot"></span>{{ block.settings.tag | escape }}</span>{%- endif -%}
+              {%- if block.settings.video != blank -%}
+                {{ block.settings.video | video_tag: controls: false, autoplay: false, muted: true, playsinline: true, loop: true, preload: 'metadata', image_size: '600x' }}
+              {%- elsif block.settings.poster != blank -%}
+                {{ block.settings.poster | image_url: width: 600 | image_tag: loading: 'lazy', alt: block.settings.name }}
+              {%- endif -%}
+              <span class="lp-vid__play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><polygon points="7 4 20 12 7 20"/></svg></span>
+            </div>
+            <div class="lp-vid__body">
+              {%- if block.settings.name != blank -%}<div class="lp-vid__name">{{ block.settings.name | escape }}</div>{%- endif -%}
+              {%- if block.settings.role != blank -%}<p class="lp-vid__role">{{ block.settings.role | escape }}</p>{%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      {%- if videos.size > 1 -%}{%- render 'lp-slider-nav', count: videos.size -%}{%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- if reviews.size > 0 -%}
+    <div class="lp-panel{% if default_tab == 'reviews' %} active{% endif %}" data-lp-panel="reviews">
+      <div class="lp-slider" data-lp-slider>
+        {%- for block in reviews -%}
+          <div class="lp-card" {{ block.shopify_attributes }}>
+            {%- if block.settings.image != blank -%}{{ block.settings.image | image_url: width: 700 | image_tag: class: 'lp-card__img', loading: 'lazy', alt: block.settings.image.alt }}{%- endif -%}
+            <div class="lp-card__body">
+              <div class="lp-card__hd">
+                {%- if block.settings.avatar != blank -%}{{ block.settings.avatar | image_url: width: 80 | image_tag: class: 'lp-card__pfp', loading: 'lazy', alt: '' }}{%- else -%}<span class="lp-card__pfp lp-card__pfp--initial" aria-hidden="true">{{ block.settings.name | slice: 0 }}</span>{%- endif -%}
+                <div>
+                  <div class="lp-card__name">{{ block.settings.name | escape }}</div>
+                  {%- if block.settings.tag != blank -%}<div class="lp-card__tag">{{ block.settings.tag | escape }}</div>{%- endif -%}
+                </div>
+              </div>
+              <div class="lp-card__stars" aria-label="{{ block.settings.rating }} out of 5">{%- for i in (1..5) -%}{%- if i <= block.settings.rating -%}★{%- else -%}☆{%- endif -%}{%- endfor -%}</div>
+              <p class="lp-card__text">“{{ block.settings.text | escape }}”</p>
+              {%- if block.settings.purchased != blank -%}
+                <div class="lp-card__purchased">
+                  {%- if product.featured_image != blank -%}{{ product.featured_image | image_url: width: 80 | image_tag: class: 'lp-card__purchased-img', loading: 'lazy', alt: '' }}{%- endif -%}
+                  <div class="lp-card__purchased-text">
+                    <span class="lp-card__purchased-date">{{ block.settings.purchased | escape }}</span>
+                    <span class="lp-card__purchased-name">{{ product.title | escape }}</span>
+                  </div>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      {%- if reviews.size > 1 -%}{%- render 'lp-slider-nav', count: reviews.size -%}{%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- if shots.size > 0 -%}
+    <div class="lp-panel{% if default_tab == 'screenshots' %} active{% endif %}" data-lp-panel="screenshots">
+      <div class="lp-slider" data-lp-slider>
+        {%- for block in shots -%}
+          {%- if block.settings.image != blank -%}
+            <button type="button" class="lp-fb" data-lp-zoom="{{ block.settings.image | image_url: width: 1400 }}" {{ block.shopify_attributes }}>
+              {{ block.settings.image | image_url: width: 700 | image_tag: class: 'lp-fb__img', loading: 'lazy', alt: block.settings.image.alt }}
+            </button>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      {%- if shots.size > 1 -%}{%- render 'lp-slider-nav', count: shots.size -%}{%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="lp-modal lp-modal--img" data-lp-zoom-modal hidden>
+    <button type="button" class="lp-modal__close" data-lp-zoom-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <img src="" alt="" data-lp-zoom-img>
+  </div>
+</section>
+{% style %}
+  #lp-testi-{{ section.id }} { background: var(--lp-bg); padding: 48px 0 56px; border-top: 1px solid var(--lp-line); overflow: hidden; }
+  #lp-testi-{{ section.id }} .lp-testi__head { max-width: 1200px; margin: 0 auto 24px; padding: 0 20px; text-align: center; }
+  #lp-testi-{{ section.id }} .lp-testi__h { font-size: 24px; font-weight: 800; color: var(--lp-ink); letter-spacing: -.02em; line-height: 1.2; margin: 0; text-wrap: balance; text-transform: none; }
+  #lp-testi-{{ section.id }} .lp-tabs { display: grid; gap: 6px; max-width: 620px; margin: 18px auto 22px; background: var(--lp-bg-soft); border: 1px solid var(--lp-line); border-radius: 12px; padding: 5px; }
+  #lp-testi-{{ section.id }} .lp-tabs__tab { appearance: none; background: transparent; border: 0; border-radius: 8px; padding: 12px 10px; cursor: pointer; font-size: 12.5px; font-weight: 700; color: var(--lp-muted); line-height: 1.2; text-align: center; transition: background .15s ease, color .15s ease, box-shadow .15s ease; }
+  #lp-testi-{{ section.id }} .lp-tabs__tab.active { background: #fff; color: var(--lp-ink); box-shadow: 0 2px 6px rgba(var(--lp-ink-rgb), .10); }
+  #lp-testi-{{ section.id }} .lp-panel { display: none; }
+  #lp-testi-{{ section.id }} .lp-panel.active { display: block; }
+  #lp-testi-{{ section.id }} .lp-slider { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; padding: 4px 20px 18px 20px; margin: 0; scrollbar-width: none; scroll-padding-left: 20px; }
+  #lp-testi-{{ section.id }} .lp-slider::-webkit-scrollbar { display: none; }
+  #lp-testi-{{ section.id }} .lp-vid, #lp-testi-{{ section.id }} .lp-card, #lp-testi-{{ section.id }} .lp-fb { flex: 0 0 280px; scroll-snap-align: start; background: #fff; border: 1px solid rgba(var(--lp-ink-rgb), .10); border-radius: 16px; overflow: hidden; box-shadow: 0 6px 18px rgba(var(--lp-ink-rgb), .06); }
+  #lp-testi-{{ section.id }} .lp-vid { position: relative; display: flex; flex-direction: column; cursor: pointer; }
+  #lp-testi-{{ section.id }} .lp-vid__media { position: relative; width: 100%; aspect-ratio: 9/16; background: var(--lp-ink); overflow: hidden; }
+  #lp-testi-{{ section.id }} .lp-vid__media video, #lp-testi-{{ section.id }} .lp-vid__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+  #lp-testi-{{ section.id }} .lp-vid__play { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 54px; height: 54px; border-radius: 50%; background: rgba(255,255,255,.95); display: flex; align-items: center; justify-content: center; color: var(--lp-ink); pointer-events: none; box-shadow: 0 6px 22px rgba(0,0,0,.35); transition: opacity .2s ease; z-index: 2; }
+  #lp-testi-{{ section.id }} .lp-vid__play svg { width: 20px; height: 20px; margin-left: 3px; }
+  #lp-testi-{{ section.id }} .lp-vid.is-playing .lp-vid__play { opacity: 0; }
+  #lp-testi-{{ section.id }} .lp-vid__tag { position: absolute; left: 12px; top: 12px; display: inline-flex; align-items: center; gap: 5px; padding: 5px 9px 5px 7px; background: rgba(var(--lp-ink-rgb), .85); color: #fff; border-radius: 999px; font-size: 9.5px; font-weight: 800; letter-spacing: 1.1px; text-transform: uppercase; line-height: 1; z-index: 2; }
+  #lp-testi-{{ section.id }} .lp-vid__tag-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--lp-accent); }
+  #lp-testi-{{ section.id }} .lp-vid__body { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 4px; }
+  #lp-testi-{{ section.id }} .lp-vid__name { font-size: 13px; font-weight: 800; color: var(--lp-ink); }
+  #lp-testi-{{ section.id }} .lp-vid__role { font-size: 10.5px; font-weight: 600; color: var(--lp-muted); margin: 0; }
+  #lp-testi-{{ section.id }} .lp-card__img { width: 100%; height: auto; display: block; }
+  #lp-testi-{{ section.id }} .lp-card__body { padding: 16px 16px 14px; }
+  #lp-testi-{{ section.id }} .lp-card__hd { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; }
+  #lp-testi-{{ section.id }} .lp-card__pfp { width: 36px; height: 36px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid #fff; box-shadow: 0 2px 6px rgba(var(--lp-ink-rgb), .15); display: inline-flex; align-items: center; justify-content: center; background: var(--lp-tint-1); color: var(--lp-ink); font-weight: 800; font-size: 14px; }
+  #lp-testi-{{ section.id }} .lp-card__name { font-size: 13px; font-weight: 700; color: var(--lp-ink); }
+  #lp-testi-{{ section.id }} .lp-card__tag { font-size: 10px; font-weight: 500; color: var(--lp-muted); margin-top: 1px; }
+  #lp-testi-{{ section.id }} .lp-card__stars { display: flex; gap: 2px; color: var(--lp-star); font-size: 12px; margin: 0 0 8px; letter-spacing: .5px; }
+  #lp-testi-{{ section.id }} .lp-card__text { font-size: 12.5px; line-height: 1.6; color: var(--lp-ink-2); font-style: italic; margin: 0; }
+  #lp-testi-{{ section.id }} .lp-card__purchased { display: flex; align-items: center; gap: 10px; margin: 14px 0 0; padding: 8px 12px 8px 8px; background: var(--lp-bg-warm); border-radius: 10px; }
+  #lp-testi-{{ section.id }} .lp-card__purchased-img { width: 40px; height: 40px; border-radius: 8px; object-fit: cover; background: #fff; flex-shrink: 0; }
+  #lp-testi-{{ section.id }} .lp-card__purchased-text { display: flex; flex-direction: column; gap: 1px; line-height: 1.2; }
+  #lp-testi-{{ section.id }} .lp-card__purchased-date { font-size: 10.5px; color: var(--lp-faint); font-weight: 500; }
+  #lp-testi-{{ section.id }} .lp-card__purchased-name { font-size: 12.5px; color: var(--lp-ink); font-weight: 700; }
+  #lp-testi-{{ section.id }} .lp-fb { padding: 0; cursor: zoom-in; aspect-ratio: 1/1; display: block; }
+  #lp-testi-{{ section.id }} .lp-fb__img { width: 100%; height: 100%; object-fit: contain; object-position: left center; display: block; }
+  #lp-testi-{{ section.id }} .lp-nav { display: flex; justify-content: center; align-items: center; gap: 14px; margin: 6px 0 0; padding: 0 20px; }
+  #lp-testi-{{ section.id }} .lp-nav__btn { appearance: none; border: 1px solid rgba(var(--lp-ink-rgb), .18); background: #fff; color: var(--lp-ink); width: 44px; height: 44px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 8px rgba(var(--lp-ink-rgb), .08); padding: 0; transition: background .15s ease, color .15s ease; }
+  #lp-testi-{{ section.id }} .lp-nav__btn:hover { background: var(--lp-ink); color: #fff; border-color: var(--lp-ink); }
+  #lp-testi-{{ section.id }} .lp-nav__btn svg { width: 18px; height: 18px; display: block; }
+  #lp-testi-{{ section.id }} .lp-nav__dots { display: inline-flex; align-items: center; gap: 8px; }
+  #lp-testi-{{ section.id }} .lp-nav__dot { appearance: none; border: 0; background: rgba(var(--lp-ink-rgb), .22); width: 8px; height: 8px; border-radius: 50%; padding: 0; cursor: pointer; transition: background .15s ease, width .2s ease; }
+  #lp-testi-{{ section.id }} .lp-nav__dot.is-active { background: var(--lp-ink); width: 22px; border-radius: 6px; }
+  #lp-testi-{{ section.id }} .lp-modal { position: fixed; inset: 0; z-index: 99999; display: flex; align-items: center; justify-content: center; padding: 20px; background: rgba(var(--lp-ink-rgb), .7); }
+  #lp-testi-{{ section.id }} .lp-modal[hidden] { display: none; }
+  #lp-testi-{{ section.id }} .lp-modal img { max-width: min(92vw, 720px); max-height: 88vh; object-fit: contain; border-radius: 12px; background: #fff; }
+  #lp-testi-{{ section.id }} .lp-modal__close { position: absolute; top: 14px; right: 14px; width: 38px; height: 38px; border-radius: 50%; background: #fff; border: 0; color: var(--lp-ink); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0; }
+  #lp-testi-{{ section.id }} .lp-modal__close svg { width: 14px; height: 14px; }
+  @media (min-width: 640px) { #lp-testi-{{ section.id }} { padding: 56px 0 64px; } #lp-testi-{{ section.id }} .lp-testi__h { font-size: 28px; } #lp-testi-{{ section.id }} .lp-slider { padding: 4px 24px 22px 36px; } #lp-testi-{{ section.id }} .lp-nav { margin-top: 10px; } #lp-testi-{{ section.id }} .lp-tabs__tab { padding: 14px; font-size: 13.5px; } }
+  @media (min-width: 980px) { #lp-testi-{{ section.id }} { padding: 64px 0 72px; } #lp-testi-{{ section.id }} .lp-testi__h { font-size: 32px; } #lp-testi-{{ section.id }} .lp-slider { padding: 4px 24px 24px 40px; gap: 18px; max-width: 1200px; margin: 0 auto; } #lp-testi-{{ section.id }} .lp-vid, #lp-testi-{{ section.id }} .lp-card { flex-basis: 320px; } #lp-testi-{{ section.id }} .lp-vid { flex-basis: 300px; } }
+{% endstyle %}
+<script>
+(function () {
+  var root = document.getElementById('lp-testi-{{ section.id }}');
+  if (!root || root.dataset.lpInit) return; root.dataset.lpInit = '1';
+  /* tabs */
+  root.querySelectorAll('[data-lp-tab]').forEach(function (t) {
+    t.addEventListener('click', function () {
+      root.querySelectorAll('[data-lp-tab]').forEach(function (x) { x.classList.toggle('active', x === t); });
+      root.querySelectorAll('[data-lp-panel]').forEach(function (p) { p.classList.toggle('active', p.dataset.lpPanel === t.dataset.lpTab); });
+      root.querySelectorAll('video').forEach(function (v) { v.pause(); });
+      root.querySelectorAll('.lp-vid').forEach(function (c) { c.classList.remove('is-playing'); });
+    });
+  });
+  /* sliders + nav */
+  root.querySelectorAll('[data-lp-panel]').forEach(function (panel) {
+    var slider = panel.querySelector('[data-lp-slider]'); if (!slider) return;
+    var cards = slider.children; var nav = panel.querySelector('[data-lp-nav]'); if (!nav) return;
+    var dots = nav.querySelectorAll('[data-lp-dot]');
+    var scrollTo = function (i) { if (cards[i]) slider.scrollTo({ left: cards[i].offsetLeft - slider.offsetLeft - 20, behavior: 'smooth' }); };
+    var current = function () { var l = slider.scrollLeft, best = 0, bd = 1e9; for (var i = 0; i < cards.length; i++) { var d = Math.abs(cards[i].offsetLeft - slider.offsetLeft - 20 - l); if (d < bd) { bd = d; best = i; } } return best; };
+    var sync = function () { var c = current(); dots.forEach(function (d, i) { d.classList.toggle('is-active', i === c); }); };
+    nav.querySelector('[data-lp-prev]').addEventListener('click', function () { scrollTo(Math.max(0, current() - 1)); });
+    nav.querySelector('[data-lp-next]').addEventListener('click', function () { scrollTo(Math.min(cards.length - 1, current() + 1)); });
+    dots.forEach(function (d, i) { d.addEventListener('click', function () { scrollTo(i); }); });
+    slider.addEventListener('scroll', function () { window.requestAnimationFrame(sync); }, { passive: true });
+  });
+  /* videos: tap to play/pause */
+  root.querySelectorAll('[data-lp-vid]').forEach(function (card) {
+    var v = card.querySelector('video'); if (!v) return;
+    card.addEventListener('click', function () {
+      if (v.paused) { root.querySelectorAll('video').forEach(function (o) { if (o !== v) { o.pause(); o.closest('.lp-vid').classList.remove('is-playing'); } }); v.muted = false; v.play(); card.classList.add('is-playing'); }
+      else { v.pause(); card.classList.remove('is-playing'); }
+    });
+    v.addEventListener('ended', function () { card.classList.remove('is-playing'); });
+  });
+  /* zoom */
+  var modal = root.querySelector('[data-lp-zoom-modal]'), img = root.querySelector('[data-lp-zoom-img]');
+  root.querySelectorAll('[data-lp-zoom]').forEach(function (b) { b.addEventListener('click', function () { img.src = b.dataset.lpZoom; modal.hidden = false; }); });
+  if (modal) { modal.addEventListener('click', function (e) { if (e.target === modal || e.target.closest('[data-lp-zoom-close]')) { modal.hidden = true; img.src = ''; } }); }
+})();
+</script>
+{%- endif -%}
+{% schema %}
+{
+  "name": "LP · Community / testimonials",
+  "tag": "section",
+  "class": "lp-section",
+  "settings": [
+    { "type": "text", "id": "pill", "label": "Pill", "default": "From the community" },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "What Women Are Saying" },
+    { "type": "text", "id": "tab_videos", "label": "Videos tab label", "default": "Customer Videos" },
+    { "type": "text", "id": "tab_reviews", "label": "Reviews tab label", "default": "Reviews" },
+    { "type": "text", "id": "tab_screenshots", "label": "Screenshots tab label", "default": "Comments" },
+    { "type": "select", "id": "default_tab", "label": "Default tab", "options": [ { "value": "", "label": "First available" }, { "value": "videos", "label": "Videos" }, { "value": "reviews", "label": "Reviews" }, { "value": "screenshots", "label": "Screenshots" } ], "default": "" }
+  ],
+  "blocks": [
+    { "type": "video", "name": "Customer video", "settings": [
+      { "type": "video", "id": "video", "label": "Video" },
+      { "type": "image_picker", "id": "poster", "label": "Fallback image" },
+      { "type": "text", "id": "tag", "label": "Tag", "default": "Verified" },
+      { "type": "text", "id": "name", "label": "Name" },
+      { "type": "text", "id": "role", "label": "Role", "default": "Verified Customer" } ] },
+    { "type": "review", "name": "Review card", "settings": [
+      { "type": "image_picker", "id": "image", "label": "Photo (top of card)" },
+      { "type": "image_picker", "id": "avatar", "label": "Avatar" },
+      { "type": "text", "id": "name", "label": "Name" },
+      { "type": "text", "id": "tag", "label": "Tag", "default": "Verified buyer" },
+      { "type": "range", "id": "rating", "min": 1, "max": 5, "step": 1, "label": "Stars", "default": 5 },
+      { "type": "textarea", "id": "text", "label": "Review text" },
+      { "type": "text", "id": "purchased", "label": "Purchased line", "info": "e.g. 'Purchased 11 February 2026'. Blank hides the product row." } ] },
+    { "type": "screenshot", "name": "Comment screenshot", "settings": [ { "type": "image_picker", "id": "image", "label": "Image" } ] }
+  ],
+  "presets": [ { "name": "LP · Community / testimonials" } ]
+}
+{% endschema %}
